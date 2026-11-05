@@ -49,7 +49,24 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 | [路线比较与可推翻条件](../decisions/2026-11-05-goal-options.md) | P6、P7 | 保留当时选择及其失效条件 |
 | [跨领域评测计划](../evaluation/first-cross-domain-tests.md) | P7 | 是设计，尚未执行独立模型对照 |
 
-## 五、示例：用户说“搜索越来越多，但越研究越没头绪”
+## 五、首批九条真实研究认识的归位示范
+下面是真正用于检查分类是否可用的例子，**不是九项均已在 ai-d 的模型任务中验证**。仅将公开来源与历史研究的认识定位到问题类别，不复制内容，不建立九个孤立知识卡。
+
+| 认识／专业入口 | 主问题；关联问题 | 来源性质与当前边界 |
+|---|---|---|
+| 从普通表达重构问题 ≠ 擅自修改用户长期目标 | P1；P6 | [项目初步定位](../README.md)；用户目标与 AI 提议分开，属于当前协作原则 |
+| 只保存对话历史 ≠ 保存执行检查点或验证后的方法 | P4；P7 | [此前 Agent 源码研究的索引](source-register-2026-11-05.md)；SDK 功能与本项目实际跨重启验收分开 |
+| 知识可能促进也可能妨碍迁移 | P4；P8 | [National Academies](https://www.nationalacademies.org/read/9853/chapter/6)；人类学习证据，迁移至 LLM 属待检验假设 |
+| 搜索来源单一会增加筛选偏差风险 | P3；P5 | [Cochrane Handbook](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04)；来自系统综述实践，泛化程度须限定 |
+| 同义词、层级和概念关联必须区分 | P4；P8 | [W3C SKOS](https://www.w3.org/TR/skos-primer/)；概念组织规范，不代表因果关系 |
+| 来源及加工链应可追溯 | P5；P7 | [W3C PROV-O](https://www.w3.org/TR/prov-o/)；可追溯不等于结论真实 |
+| 探索新方向与交付现有成果需要权衡 | P6；P3 | [March 1991](https://pubsonline.informs.org/doi/abs/10.1287/orsc.2.1.71)；组织学习原始研究，不提供 Agent 最优预算 |
+| 知识管理不只是文件保存，涉及利用和改进 | P4；P7 | [HBR Press](https://store.hbr.org/product/working-knowledge-how-organizations-manage-what-they-know/3014)、[ISO 30401](https://www.iso.org/standard/68683.html)；来自企业管理，应用到个人系统是设计推论 |
+| 先明确研究问题，再决定检索、证据筛选和综合方法 | P2；P3、P5 | [Cochrane](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-01)；不是要求任何问答都采用系统综述的全部程序 |
+
+这一表格验证了**一条认识可以被多个问题入口找到，同时仍指向同一原始来源**。下一步要验证的是：实际检索/回答是否因此改善，而不是继续增加表格条目。
+
+## 六、示例：用户说“搜索越来越多，但越研究越没头绪”
 - **问题**：P1 当前目标可能没被正确恢复；P3 检索范围扩散；P4 同义知识重复；P8 无关历史污染；P6 没有停止决策。
 - **学科连接**：图书情报学负责术语和检索结构；Cochrane 的系统检索思想提示记录来源和选择偏差；管理学的探索/利用权衡说明不该无限搜；认知科学提示知识相关但不被正确调用的风险。
 - **判断变化**：先检查检索/目标的适配问题，不立即增加另一套专家架构或“必经十步”。
