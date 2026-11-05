@@ -32,6 +32,7 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 
 ## 三、浏览入口
 - [跨学科成熟知识来源与适用条件](foundations/cross-disciplinary-foundations.md)
+- **[专业关键词与概念关系导航：从普通表达深入跨行业知识与专家思维](foundations/expert-concept-navigation-v0.1.md)**（七八月概念邻域研究的继承与新专业来源补全）
 - [分类、来源、知识生命周期与去噪原则](foundations/organization-protocol.md)
 - [2026-11-05 人机协调领域研究](../research/2026-11-05-ai-coordination-reverse-inference.md)
 - [AI 工作流的工具/运行时与认知方法边界](../research/workflow-components-and-boundaries.md)
