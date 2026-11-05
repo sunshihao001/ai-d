@@ -88,3 +88,12 @@
 ---
 
 本仓库的定位允许持续修正。**保留已经得到验证的知识，撤销造成负担的旧操作规则，用真实任务推动下一轮认知与产品方向的变化。**
+
+## 2026-11-05｜最新多轮外部研究（仅研究成果，未部署）
+- [从 2026 AI 研究逆向推演目标、认知与决策](research/2026-11-05-ai-coordination-reverse-inference.md)
+- [AI 工作流组件与认知内核的边界图谱](research/workflow-components-and-boundaries.md)
+- [专业原始资料与证据等级索引](knowledge/source-register-2026-11-05.md)
+- [四类发展路线与可推翻条件](decisions/2026-11-05-goal-options.md)
+- [第一批跨领域验证计划（尚未执行）](evaluation/first-cross-domain-tests.md)
+
+> 本轮外部资料改变了我们的研究问题，但没有证明当前方法已经提高模型表现；README V0.1 保持用户已确认的初步目标，未来可根据验证结果继续演化。
