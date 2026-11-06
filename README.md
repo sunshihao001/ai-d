@@ -1,5 +1,13 @@
 # ai-d｜AI 与人协调：通用专业认知内核（初步定位）
 
+## 给其他项目调用整套认知体系（2026-11-06）
+
+**主入口：[可移植 ai-d Cognitive Core Skill](.agents/skills/ai-d-cognitive-core/SKILL.md)**。该 Skill 为 Meme、开发、制造及其他项目提供**七项并行长期能力的完整导航**，按需转到 [目标与跨域研究](planning/goal-navigation-v0.1.md)、[知识总索引 P1–P8](knowledge/INDEX.md)、[专业认知总图](knowledge/COGNITIVE-MAP.md)、[专家认知研究](research/expert-cognition-distillation-positioning-2026-11-06.md)、[方案与实际交付](planning/proposal-review-v0.1.md)和[真实证据与评测](evaluation/first-cross-domain-tests.md)。**全面可发现与按需读取，不等于每次全量注入上下文、模型已训练或 Bot 自动加载。**
+
+**首个消费者**：`sunshihao001/grok@blix` 的 [Blix 消费端 Skill](https://github.com/sunshihao001/grok/blob/blix/.grok/skills/ai-d-cognitive-core/SKILL.md)，由 [Blix AGENTS.md](https://github.com/sunshihao001/grok/blob/blix/AGENTS.md) 指向。消费者保持 Meme 自身业务目标、链上知识、源码与只读权限，ai-d 是通用认知知识源；不把两者代码或知识树强行合并。Blix 当前适配面向 **Grok CLI 仓库 Skill**；在 Grok Bot 原生云电脑的私人 Skill 库仍须单独启用/实测，GitHub 提交不能代替实际安装。
+
+**其他模型/项目**：有 GitHub 读取能力可从本页或 Skill 入口按需取得权威原文；Codex/兼容 Agent Skills 的开发环境需安装 Skill 到被识别目录；ChatGPT Project 需有适用的项目资料或连接权限。不同运行时的自动发现和调用不能互相推定。原始私有研究资料不因公开入口而自动开放，全部历史原文继承尚未完成。
+
 ## 从一句普通话找到真正需要的知识
 
 本项目不是让你先学习专业术语或理解所有文件。以下是**当前草案分支已有的知识入口**，不是一个自动执行的智能体：
