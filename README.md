@@ -1,5 +1,38 @@
 # ai-d｜AI 与人协调：通用专业认知内核（初步定位）
 
+## 给其他项目调用整套认知体系（2026-11-06）
+
+**主入口：[可移植 ai-d Cognitive Core Skill](.agents/skills/ai-d-cognitive-core/SKILL.md)**。该 Skill 为 Meme、开发、制造及其他项目提供**七项并行长期能力的完整导航**，按需转到 [目标与跨域研究](planning/goal-navigation-v0.1.md)、[知识总索引 P1–P8](knowledge/INDEX.md)、[专业认知总图](knowledge/COGNITIVE-MAP.md)、[专家认知研究](research/expert-cognition-distillation-positioning-2026-11-06.md)、[方案与实际交付](planning/proposal-review-v0.1.md)和[真实证据与评测](evaluation/first-cross-domain-tests.md)。**全面可发现与按需读取，不等于每次全量注入上下文、模型已训练或 Bot 自动加载。**
+
+**首个消费者**：`sunshihao001/grok@blix` 的 [Blix 消费端 Skill](https://github.com/sunshihao001/grok/blob/blix/.grok/skills/ai-d-cognitive-core/SKILL.md)，由 [Blix AGENTS.md](https://github.com/sunshihao001/grok/blob/blix/AGENTS.md) 指向。消费者保持 Meme 自身业务目标、链上知识、源码与只读权限，ai-d 是通用认知知识源；不把两者代码或知识树强行合并。Blix 当前适配面向 **Grok CLI 仓库 Skill**；在 Grok Bot 原生云电脑的私人 Skill 库仍须单独启用/实测，GitHub 提交不能代替实际安装。
+
+**其他模型/项目**：有 GitHub 读取能力可从本页或 Skill 入口按需取得权威原文；Codex/兼容 Agent Skills 的开发环境需安装 Skill 到被识别目录；ChatGPT Project 需有适用的项目资料或连接权限。不同运行时的自动发现和调用不能互相推定。原始私有研究资料不因公开入口而自动开放，全部历史原文继承尚未完成。
+
+## 从一句普通话找到真正需要的知识
+
+本项目不是让你先学习专业术语或理解所有文件。以下是**当前草案分支已有的知识入口**，不是一个自动执行的智能体：
+
+| 你可能只会这样表达 | 先看什么 | 能得到什么；不能误认为已实现什么 |
+|---|---|---|
+| “我想研究一个想法，但不知道专业上叫什么、还有哪些方向” | [知识总入口](knowledge/INDEX.md) → [专业概念与机制导航](knowledge/COGNITIVE-MAP.md) | 找到专业术语、理论关系、跨领域研究入口；**不表示模型已经自动掌握领域知识** |
+| “我有好几个目标和方案，帮我看哪个更值得做” | [目标导航](planning/goal-navigation-v0.1.md) → [方案比较](planning/proposal-review-v0.1.md) | 区分整体目标、并行能力、局部任务和方案取舍；不是固定审批流程 |
+| “研究做完了吗？GitHub 里到底有什么实际成果？” | [实验与验收记录](evaluation/first-cross-domain-tests.md) → [研究交付方法](planning/research-to-github-v0.1.md) | 区分 **已执行的静态检索/单元测试**、**尚未执行的独立模型能力对照**及 GitHub Draft 交付 |
+| “以前那套知识还在吗？旧规则会不会重新约束 AI？” | [知识与历史归位](planning/historical-consolidation-v0.1.md) → [知识生命周期规范](knowledge/foundations/organization-protocol.md) | 保留原始专业认识的可追溯指针，历史操作规则不自动恢复 |
+
+**实际状态（2026-11-06）**：已经完成知识来源研究与草案写入、冻结文档上的三法检索比较、来源判断的21项单元测试及 GitHub 文件回读；**没有完成**独立模型的端到端 A/B 测试、跨模型能力增益证明、自动 Skill/Agent 运行或全部历史原文迁移。主分支不因本 Draft PR 更新而自动生效。
+
+
+**整体视角先于局部方案**：先辨认 G0/G1 的最终目的和七项并行能力，再对同一问题从人的目标、专业认知、任务交付、证据可靠性、知识演化等角度形成不同理解；最后才分解到 P1–P8 知识问题和具体任务。局部发现可以反馈修正方案和知识，但不能凭单次搜索或测试自动改变重大目标。详见 [从整体统领局部的多视角分解与反馈](planning/goal-navigation-v0.1.md)。这是认识与规划结构，**不是新增软件模块、强制五步流程或 ISO 合规声明**。
+
+## 多重目标锚点：不让局部研究替代整体目标
+
+本项目始终同时关注：**普通语言的专业理解、专业知识组织、主动跨领域发现、独立判断与多方案比较、实际工作与验收、证据与反证纠错、长期知识继承与能力迁移**。它们是并行能力，不是固定七阶段。详见 [目标导航中的多重锚点与偏移识别](planning/goal-navigation-v0.1.md)。
+
+**当前纠偏提醒（2026-11-06）**：关键词扩展、RAG 文档排名、来源适用性单元测试是知识选择问题的**局部研究手段**，不等于本项目完成了“简单意图→专业研究与发现→合理方案→可核查成果”的整体能力。未来继续研究时应同时对照上层目的和其他并行目标，防止局部指标越来越好、整个项目却停在原地；不为此再建固定检查流程或专家制度。
+
+## 2026-11-06｜规划与 GPT→GitHub 知识交付（草案，未合并）
+- [从简单意图到目标导航、多方案评审、知识交付和历史审查](planning/README.md)：已建立可评审草案，尚非现行强制规则；重要方案先验证再确认。
+
 ## 2026-11-06｜跨学科知识组织正式入口
 
 本仓库的知识不再只按 AI 工具或社交平台分类。以 **“实际解决的问题”** 为主分类，结合 **学科来源、知识类型、证据状态和适用条件** 的多维标注，减少旧研究碎片化、重复总结和过度约束。
@@ -105,6 +138,6 @@
 - [AI 工作流组件与认知内核的边界图谱](research/workflow-components-and-boundaries.md)
 - [专业原始资料与证据等级索引](knowledge/source-register-2026-11-05.md)
 - [四类发展路线与可推翻条件](decisions/2026-11-05-goal-options.md)
-- [第一批跨领域验证计划（尚未执行）](evaluation/first-cross-domain-tests.md)
+- [跨领域评测总记录（已开展静态与单元测试；独立模型对照尚未执行）](evaluation/first-cross-domain-tests.md)
 
 > 本轮外部资料改变了我们的研究问题，但没有证明当前方法已经提高模型表现；README V0.1 保持用户已确认的初步目标，未来可根据验证结果继续演化。
