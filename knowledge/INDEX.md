@@ -99,6 +99,11 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 - [第二轮：认知委托、任务表现、人的长期能力及协同效果](../research/2026-11-07-human-ai-delegation-performance-learning.md)（P5/P6/P7/P8）：随机实验、荟萃分析、工作论文与理论方案的区分。
 - **与旧目标关系**：外挂大脑是个人化的能力增强研究对象，既不覆盖 ai-d 通用研究目标，也不替代其他专业项目。两份文件作为问题入口，不是新的固定流程或必加载上下文。
 
+## 2026-11-07｜先研究成熟的整体系统，而不是继续堆局部能力
+
+- [全系统参照研究：OpenHuman、Hermes Agent、OpenClaw、Meta 第二大脑、OpenWiki、Dify 等](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md)（P1–P8 的完整用户目标与交付链）。目标是先理解成熟整体如何解决问题、真实运行与维护，再判断哪些知识/能力已成熟、哪些才是需要本项目研究的缺口。
+- **本轮裁决**：不为搜索、记忆、停止和专家新建独立框架；下一轮集中审查 OpenHuman 与 Hermes Agent 的实际完整业务链，以 Meta 专家认知—推理—纠错和 OpenWiki 主张更新作为参照。尚非已验证的唯一底座选择。
+
 ## 2026-11-07｜理论互证可初步通过：避免证据过度保守
 
 - [多轮原始文献研究：稳健性、多路径互证、溯因与分阶段评价](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md)（P2/P5/P6/P7/P8）；[现有知识组织规则的原位修订](foundations/organization-protocol.md)。
