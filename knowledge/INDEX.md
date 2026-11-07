@@ -49,6 +49,7 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 - **约束 CONSTRAINT**：安全与授权的硬边界、可修订的偏好或旧工作方法；不得混为一谈。
 
 ## 三、浏览入口
+- [2026-11-07｜全项目独立回溯、研究污染及原目标审查（批判性研究，非新规则）](../research/2026-11-07-independent-whole-project-direction-audit.md)：并列检查七八月原意、十月纠偏、十一月产品研究，以及学习、专业交付、现实决策和人的长期能力；**仅作为可质疑的审查报告，不自动替代 README 或决定下一轮唯一主题**。
 - [2026-11-07｜问题驱动的未知知识发现：中间机制、跨学科桥接及可检验边界](../research/2026-11-07-problem-driven-unknown-discovery.md)（P1/P2/P3/P4/P5/P6/P7/P8）；[第九节：为何研究停留表面或无限扩张，何时暂停、停止和复开](../research/2026-11-07-problem-driven-unknown-discovery.md)。这是现有研究的原位修订，不是新专家系统。
 - [跨学科成熟知识来源与适用条件](foundations/cross-disciplinary-foundations.md)
 - [分类、来源、知识生命周期与去噪原则](foundations/organization-protocol.md)
