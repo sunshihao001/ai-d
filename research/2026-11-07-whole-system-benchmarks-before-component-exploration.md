@@ -133,3 +133,41 @@
 - GitHub 元数据：以上仓库均在本轮核查，OpenHuman README 标注 Early Beta；Hermes/OpenClaw/DeerFlow 代码仍活跃。GitHub stars 与仓库提交活跃度不是任务成功率。
 - **未完成**：真实安装、连续多日执行、第三方成本账本、OpenHuman 与 Hermes 相同用户任务的受控比较，以及整个 ai-d 目标在任何一套成品中全部实现。
 
+## 七、V0.3｜短句到长期修订的端到端候选裁决（2026-11-07）
+
+**结论：** NousResearch/hermes-agent 列为第一完整产品复用与实跑候选（CANDIDATE，NOT_DEPLOYED）；tinyhumansai/openhuman 为第二完整产品对照；Meta 的 Organizational Second Brain 是专家认知/纠错方法对照，langchain-ai/openwiki 是带源码证据版本的知识维护对照。现阶段不另建个人 Agent 框架、不安装四种系统拼装、不替换 ai-d 或现有 Meme/Blix 业务主体。
+
+### 7.1 真实可复用链路，不把功能名当验收
+
+- **Hermes：** 官方 [目标文档](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/goals.md)、[goals.py](https://github.com/NousResearch/hermes-agent/blob/main/hermes_cli/goals.py) 与 [goal-gate 测试](https://github.com/NousResearch/hermes-agent/blob/main/tests/hermes_cli/test_goal_gates.py) 核查了自然语言起草完成合约（outcome、verification、constraints、boundaries、stop_when）、跨轮续执行、确定性质量门、失败结果反馈；单会话 Goal 与多卡 Kanban 不会自动联动。其 [记忆](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/memory.md)、[Skills](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/skills.md)、[Curator](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/curator.md) 已有保存与维护机制；基础记忆有字符上限，保存并不等于再次调用正确；Curator 的模型合并默认关闭。代码与单元测试存在，不代表本轮重跑或长期任务验证。
+- **OpenHuman：** 官方 [Goals & Todos](https://github.com/tinyhumansai/openhuman/blob/main/gitbooks/features/goals-and-todos.md) 区分长期目标、线程目标、任务板，[Agent Harness](https://github.com/tinyhumansai/openhuman/blob/main/gitbooks/developing/architecture/agent-harness.md) 有 checkpoint、子代理、审批及恢复机制；README 自标 Early Beta，产品效果和维护成本仍待实测。
+- **Meta：** [2026-09-02 原始工程文章](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) 核心是区分事实/机构立场与推理 recipes；发现错误时先问来源里是否已有正确知识，分别归因知识缺失、方法使用错误、专家合理分歧；用最小修改、回放、回归和人工审核提高质量。内部案例不能当可直接安装成品。
+- **OpenWiki：** [Grounded Claims](https://github.com/langchain-ai/openwiki/blob/main/openwiki/concepts/grounded-claims.md) 和 [Claims Reconciliation](https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md) 将代码主张绑定版本化源码；源变化后确认、更新或撤回。此等级的证据管理目前只适用于 repository code wiki；不能推定所有网页/论文/私有材料享有同样自动核验。
+
+### 7.2 反向验收：本轮新发现的 Hermes 已知风险
+
+- [Issue #133643](https://github.com/NousResearch/hermes-agent/issues/133643)（2026-10-06 提交，本轮检查 Open）：活动目标及其合约在部分 mid-turn 上下文压缩路径未重新注入，可能遗失完成标准和边界。检验：长任务压缩/插话后是否仍坚持相同验收条款。
+- [Issue #26986](https://github.com/NousResearch/hermes-agent/issues/26986)（本轮检查 Open）：代理明确报告未完成时，Goal 可能仍被判完成。检验：留下未完成的可观测检查项，必须仍显示 incomplete/blocked。
+- [Issue #100954](https://github.com/NousResearch/hermes-agent/issues/100954)（本轮显示 Closed）：旧版不可达目标误判完成。作为回归测试，**不**宣称是当前未修复问题。
+- 社区个人体验与历史 Bug 是用来选择测试条件的，不是现版整体成功率统计。
+
+### 7.3 单一完整场景的实际验收合约
+
+**自然语言输入：** “继续上次那个项目，看看别人现成的是怎么做的，帮我把最值得做的先完成；以后有新证据再修正。”
+
+预置隔离资料：两个不同长期目标、一个未完成任务、一份历史研究、一个有意设置的过时主张及后续反证；不使用私密个人数据/交易凭据。
+
+| 链路关卡 | 需要在真实运行中观察到什么 | 首选问题定位 |
+| --- | --- | --- |
+| T1 目标恢复 | 正确定位当前项目和仍有效的长期目标，不误把旧办法当目标 | Hermes Memory / Session Search；对照 OpenHuman Goals |
+| T2 专业表征 | 发现非字面专业问题、合理替代解释和需要的新证据 | ai-d 已有认知研究；Meta reasoning recipes |
+| T3 知识选择 | 选择正确来源和适用边界，不注入全部历史提示词 | Hermes Skills；ai-d 旧知识索引 |
+| T4 真实执行 | 在授权隔离环境生成工作成果，文件与测试确实存在；失败不能报成功 | Hermes Goal Completion Contract、Quality Gates |
+| T5 保存与恢复 | 复查持久化状态；开启新会话仍能识别未完工作与已有成果 | Hermes Memory、Kanban、Sessions |
+| T6 新证据修订 | 注入能推翻旧认识的证据，保留来源和旧结论，最小幅修订 | Meta 反馈诊断；OpenWiki 源码版本机制仅作适用范围内参考 |
+| T7 迁移与复用 | 再次新会话不复发旧错误，不把另一个项目的修订误当通用规律 | ai-d 迁移/专业认知 |
+| T8 故障边界 | 插话、上下文压缩、断线、工具失败或权限拒绝后不越权、不假称完成 | Hermes 已知 Issue；OpenHuman durable task 对照 |
+
+**裁决方式：** T1/T4/T5/T8 表明 Hermes 执行承载存在实质性问题，才用同一任务转向 OpenHuman 对照；T2/T3/T6/T7 表明认知欠缺，才从 ai-d 原位选方法补充并做有区别的同题比较。不能因为单次任务成功就宣称普通人长期综合智能已实现。
+
+**本轮状态：** 源码、原始文档、上游测试设计、公开 Issue 已复核；HERMES_END_TO_END = NOT_RUN；OPENHUMAN_END_TO_END = NOT_RUN；AI_D_UPLIFT = UNKNOWN。GitHub 保存研究不等于在 Hermes 里部署。后续优先完成上述贯通测试；遇到真实付费、凭据或对外副作用需另行授权。
