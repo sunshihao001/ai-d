@@ -68,3 +68,68 @@
 - **下一轮优先深入** OpenHuman 与 Hermes Agent 的**完整实际业务链**及已知失败/回归测试，同时用 Meta 的专家知识—推理—纠错闭环检查两者的专业认知短板。只有出现明确的产品缺口，才再选择新的专项论文或安装扩建。
 - 成本、真实部署稳定性、非程序员使用门槛、权限模型、能否独立于模型供应商迁移与真实复杂任务效果：目前只有局部资料，尚需深入产品审查；保持 UNKNOWN，不以“已有功能名”当实现通过。
 - **本轮只做研究整理，不修改代码、不安装软件、不改变总目标**。
+
+## 六、V0.2｜完整业务链的源码级交叉审查（2026-11-07）
+
+> **本轮不另建架构或产品目录。** 本节是 V0.1 的实质深入；优先检验已有成熟系统的目标→执行→知识→维护→恢复链，而非从各种功能名称推导“完整解决”。GitHub 源码与测试、2026 年社区使用反馈、Meta 工程原始文章相互对照。没有第三方程序真实安装/生产验收。
+
+### 6.1 产品成熟度与角色重判
+
+| 整体候选 | 本轮看到的真实业务链与源码/测试证据 | 直接复用/定位 | 目前必须保留的局限 |
+| --- | --- | --- | --- |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | [持久目标说明](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/goals.md)和 [goals.py](https://github.com/NousResearch/hermes-agent/blob/main/hermes_cli/goals.py)：自然语言 `/goal draft` 可起草 completion contract（交付物、验证、边界）；会话内 goal judge 继续尝试，质量门禁可先执行确定性检查；[goal-gate 测试](https://github.com/NousResearch/hermes-agent/blob/main/tests/hermes_cli/test_goal_gates.py)覆盖超时、异常输出及失败反馈。[Memory](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/memory.md) + [Skills](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/skills.md) + [Curator](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/curator.md) 形成记忆/经验/技能维护流程。 | **个人全流程 Agent 首选完整业务对照**：先研究直接使用它的功能，不应复制其整套命令中心和记忆框架。 | `/goal` 主要单会话，不是全局多目标关系网；Kanban 是多卡任务板、两者不同。基础 MEMORY.md 2,200 字符、USER.md 1,375 字符，另有 session_search/Skills；内存保存需要真实 tool call。Curator 的 LLM 整理默认关闭，文档说明一次可有 50–100 次 API 调用；不能直接声称自动知识维护便宜且可靠。 |
+| [OpenHuman](https://github.com/tinyhumansai/openhuman) | [goals/mod.rs](https://github.com/tinyhumansai/openhuman/blob/main/crates/openhuman-core/src/agent/goals/mod.rs) 和 [goals/mod_tests.rs](https://github.com/tinyhumansai/openhuman/blob/main/crates/openhuman-core/src/agent/goals/mod_tests.rs)：目标按 thread、agent、profile、workspace 的上下文隔离，明确 goal_set/complete。 [task_ledger.rs](https://github.com/tinyhumansai/openhuman/blob/main/crates/openhuman-core/src/agent/orchestration/running_subagents/task_ledger.rs) 实现任务记录、孤儿任务恢复处理；[approval.rs](https://github.com/tinyhumansai/openhuman/blob/main/crates/openhuman-core/src/agent/tinyagents/middleware/approval.rs) 显示外部副作用的审批中间件、执行结果审计。 | **整体产品体验与运行环境对照**：个人目标/消息/任务/工具/审批连接在一个 app/harness 中，值得考察整套可用性。 | [README](https://github.com/tinyhumansai/openhuman/blob/main/README.md) 仍标 Early Beta；性能指标来自开发方自测；thread goal 不是用户全部长期目标的层级/冲突网络。持久存储失败时某些任务账本降级为 in-memory，保证“可继续处理”≠保证“所有状态永不丢失”。GPL-3.0 代码复用时需考虑许可。 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 现成多渠道、长期消息 Agent、定时与工具/插件能力；[Reddit 实际对比](https://www.reddit.com/r/openclaw/comments/1sky2w1/openclaw_vs_hermes_agent_my_experience_after/) 提及个人对 Hermes 自主性/Token 成本的不同体验；[记忆失效讨论](https://www.reddit.com/r/openclaw/comments/1s7hh01/what_is_the_best_openclaw_alternative/) 暴露长期会话痛点。 | **渠道与普通用户操作路径对照**，需要何种通讯入口可直接借鉴成熟产品。 | 社区自述不是客观性能结论；大量权限与工具接入会提高用户安全配置负担。没有证据证明它自动获得专家级跨学科问题表征。 |
+| [DeerFlow](https://github.com/bytedance/deer-flow) | 任务、沙箱、记忆、Goal 续执行与停止状态有源码和离线回归；原[停止故障复现](https://github.com/bytedance/deer-flow/blob/main/backend/scripts/benchmark/goal_loop_stop/README.md)把“任务循环停止”与“真正完成”区别开。 | **复杂长任务与执行可靠性对照**；若以后确定需要自建长时研究程序，再研究其可复用工程。 | 目标完成逻辑不代替专业解释真值；集成复杂度高，不应该先整体迁入文档型 ai-d。 |
+| [Meta Organizational Second Brain](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) | 2026-09-02 官方工程案例：知识文件保存机构立场与适用条件，recipes 保存方法；先问“来源里是否已有正确知识”，据此区分知识缺口、方法错误或专家分歧。最小修改→独立反向审查→定向回放→回归→专家批准更新。 | **专业认知质量的首要完整方法参照**：直接修复 ai-d “知识很多但调用与判断不改善”的核心缺口，不是装一个新模型。 | 内部组织场景、单个合规领域、自报时间/效果，**无可直接安装的完整公共产品**；高度依赖可用专家纠错信号，不能机械复制为个人每次必须审批的制度。 |
+| [OpenWiki](https://github.com/langchain-ai/openwiki) | [Grounded Claims](https://github.com/langchain-ai/openwiki/blob/main/openwiki/concepts/grounded-claims.md)、[mutations.ts](https://github.com/langchain-ai/openwiki/blob/main/src/claims/core/mutations.ts) 和 [forgetting.test.ts](https://github.com/langchain-ai/openwiki/blob/main/evals/ledger/evaluator/forgetting.test.ts)：证据有版本，主张操作先解析验证，测试涵盖过时知识是否继续滞留、证据精确引用、评估失败降级等。 | **长期 GitHub 研究资产与代码事实版本维护对照**，可先研究已有 CLI/更新/索引策略，不必重建知识图谱。 | 官方明确：当前 Grounded Claims 仅针对 **repository code wiki 与仓库源码证据**；不是任何 X/论文/个人资料都能自动做同等级主张验证；不是独立个人 Agent。 |
+
+**外部使用反馈只用于定位测试题**：Reddit 2026 年社区反馈提及 OpenClaw 的长会话忘记、Hermes 的 Token 消耗以及 24/7 Agent 持续成本（如[日常比较](https://www.reddit.com/r/openclaw/comments/1sky2w1/openclaw_vs_hermes_agent_my_experience_after/)、[长期遗忘报告](https://www.reddit.com/r/AskClaw/comments/1rci23e/i_spent_5_days_fixing_my_ai_agents_memory_heres/)、[长期运行成本讨论](https://www.reddit.com/r/AI_Agents/comments/1tjs12x/how_are_people_keeping_openclawhermes_agents/)）；不能把论坛观点当全体用户统计。X 讨论用于发现线索，但本轮没有找到足以改变核心选型、可独立核实的额外技术结论，不强行引用。
+
+### 6.2 实际系统从“简单一句话”贯穿到什么程度？
+
+采用一个贯通场景，不按模块名点名：
+
+**场景**：用户仅说“我想让 AI 帮我研究一个陌生领域，提出合适的方向，完成一份工作；以后我说继续时，它要从已保存的认识恢复，并从失败中吸取经验”。
+
+| 业务环节 | 成熟系统中已经存在什么 | 这仍不等于什么 |
+| --- | --- | --- |
+| 接收自然语言并形成可验证的任务 | Hermes `/goal draft` 将短句展开为可审核的完成合约；OpenHuman 有 thread goal 和 UI | **自动发现用户未意识的更有价值专业问题**，尚无本轮直接验证 |
+| 多任务、定时、权限与执行 | Hermes Kanban、cron、quality gate；OpenHuman workflow/subagent/审批；OpenClaw 多渠道 | 程序任务完结不一定等于现实目标达成 |
+| 长期保留个人上下文 | Hermes 有极小的核心记忆+会话搜索/Skills；OpenHuman 按需注入记忆并有作用域约束 | 所有历史知识都被正确选择、长期目标没有相互覆盖 |
+| 将专家研究真正用于判断 | Meta 区分立场/方法/原始资料，并在调用后归因错误；OpenWiki 记录可查版本证据 | 用更多角色名或更多 RAG 页直接得到专家判断 |
+| 持续纠错与长期积累 | Hermes Curator 的历史追踪、审计、回滚；Meta 的最小差异+回放；OpenWiki 的过时主张检测 | 多次自动更新必然改善任务成功率、用户本人学会技能 |
+| 面向普通人的可用性 | OpenHuman Desktop、Hermes 多种 UI/聊天入口、OpenClaw 现成聊天渠道，ChatGPT Work 作为托管成品基线 | 不代表各平台具有相同低门槛、成本和安全性；尚无统一真实用户测试 |
+
+### 6.3 比较后的知识变化：重新认识“整体”与“认知内核”
+
+1. **之前低估了 Hermes 的完整度**：不只是记忆和 Skills，它有目标完成合约、质量门禁、跨会话恢复、Kanban、技能整理与审计回滚；部分能力已在代码/单测出现。因此不应该为 ai-d 重新开发同类基本代理底座。
+2. **之前可能高估了 OpenHuman 的“Goal”含义**：在已核源码里主要是会话目标作用域和生命周期，并不能自动代表多层的人生/产品长期目标网络。仓库非常庞大，且 Early Beta，优先作为第二候选，而不是因功能更多就定为最优底座。
+3. **Meta 是专业认知桥梁而非纯知识库**：区分“该知识已存在却用错”和“源知识本来不存在”，正好对应 ai-d 的真实质量问题。不是把企业的复杂分类/审查原样迁入个人项目；应先在一个真实错误上验证其问题归因能否用得上。
+4. **OpenWiki 直接回应当前 GitHub 文件可维护性**：主张不应只靠一段摘要；能有版本来源、过时判断和最小更新，且该机制已有测试。它对外部非代码资料的同等支持仍有限，不能冒称全知识自动维护。
+5. **成熟的 Agent 运行时与成熟的专业认知质量是两条轴**：整用代理可以立即获得大量工作能力，但不等于目标解释、未知发现、跨领域迁移与人的长期学习自然获得。保留 ai-d 在这些方向上的独立研究目标。
+
+### 6.4 现阶段真正应该怎样做？
+
+**已经足以初步通过的选择**：
+- **优先复用已成熟的 Agent 业务链**，不新造个人命令中心、任务队列、记忆格式或多 Agent SDK；在有实际用户环境时，先比较直接使用 Hermes 与已有托管工具。
+- 将专业认知改进从“增新专家角色”改为“已有知识是否足以形成正确判断、何时遗漏、何时使用了错误方法”；对照 Meta 的诊断思路。
+- 优先复用 OpenWiki 等可审计知识维护成品处理代码来源，并保留 ai-d 原来对学术/社区/领域知识的适用判断，而不是强迫所有知识进入代码 wiki。
+
+**尚不值得做**：
+- 同时安装 OpenHuman、Hermes、DeerFlow、Dify 和独立 Memory/Graph DB 并拼装；
+- 宣布任一产品已经覆盖整个普通人生活/学习/职业和专业领域；
+- 因某个仓库 Star 数高或 README 的 benchmark 获胜而决定产品主干；
+- 新建一套十几层架构，让用户继续靠一次次简单表达纠正产品偏航。
+
+**下一项有最高区分力的验证**：直接拿**一个已知的完整跨阶段问题**，分别查看 Hermes 已有的任务合约/Skill/记忆管理是否能承接“短句→知识→执行→持久保存→后来修订”的全过程，并以 Meta 的故障归因 + OpenWiki 源版本方法检查哪一步不可靠。用已有源代码/公开测试/无敏感凭据的材料；需要实际第三方部署时另做安全和成本审查。此轮不声称全套已跑。
+
+### 6.5 本轮核查索引与证据状态
+
+- OpenHuman 公开源码：`goals/mod.rs` blob `3dceba05358b6dbdb73033ecbcedfb3752e7b09e`；`task_ledger.rs` blob `03cbd66f9a0614200c6bb7e53094487ddd371c6b`；`approval.rs` blob `06c21be604198f5ea738427f3cabe994a15bb78b`；相应 Goal 范围测试已查。
+- Hermes 官方源码/文档：`hermes_cli/goals.py`、`test_goal_gates.py`、`memory.md`、`skills.md`、`curator.md`、`curator.py`、`test_memory_review_grounding.py` 已定向读取。**源码存在与单测设计不等于本轮重新运行测试。**
+- Meta：2026-09-02 发布方工程原始文章（作者自报 6 周三次迭代中，特定任务专家体验和执行效率改善；未经独立受试者研究，且受组织专用流程限制）。
+- OpenWiki：`src/claims/core/mutations.ts`、`evals/ledger/evaluator/forgetting.test.ts`、Grounded Claims 文档已核对，明确其 repository-code evidence 的限定。
+- GitHub 元数据：以上仓库均在本轮核查，OpenHuman README 标注 Early Beta；Hermes/OpenClaw/DeerFlow 代码仍活跃。GitHub stars 与仓库提交活跃度不是任务成功率。
+- **未完成**：真实安装、连续多日执行、第三方成本账本、OpenHuman 与 Hermes 相同用户任务的受控比较，以及整个 ai-d 目标在任何一套成品中全部实现。
+
