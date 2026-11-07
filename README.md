@@ -123,8 +123,9 @@
 
 - [第一轮：人机认知增强理论与目标关系](research/2026-11-07-human-ai-cognitive-augmentation-foundations.md)。
 - [第二轮：认知委托、任务表现与人的独立能力](research/2026-11-07-human-ai-delegation-performance-learning.md)。
-- [开源成品审查：如何研究得深又适时停止](research/2026-11-07-open-source-research-depth-scope-stop-audit.md)
-- [GPT Researcher 源码与逐题实证：相关性筛选不能代替未知机制发现](research/2026-11-07-gpt-researcher-context-selection-audit.md)：复核有意设计的过滤快捷路径、原项目测试与 28 题原始汇总；不把报告偏好等同科学真值。：基于 GitHub 源码、Issue 和 2026 年原始论文，区分停止预算、证据覆盖、机制解释与真实完成；暂停继续堆叠抽象理论，保留开放研究目标。
+- [开源成品审查：如何研究得深又适时停止](research/2026-11-07-open-source-research-depth-scope-stop-audit.md)：基于 GitHub 源码、Issue 与原始论文，区分预算停止、证据覆盖、机制解释及目标真实完成。
+- [GPT Researcher 源码与逐题实证：相关性筛选不能代替未知机制发现](research/2026-11-07-gpt-researcher-context-selection-audit.md)：检查正常的过滤快捷路径和原项目 28 题评测数据；不把报告偏好等同科学真值。
+- [理论互证与有条件的初步认可：不以实跑作为所有知识的先决条件](research/2026-11-07-theoretical-triangulation-provisional-acceptance.md)：借鉴稳健性、多路径论证与设计科学，允许有依据地继续低风险研究/方案；把现实绩效验收单独保留。
 - [第三轮：短句到专业判断、目标恢复、上下文选择与人机委托](research/2026-11-07-short-intent-goal-context-delegation.md)：从原始人机交互、专家问题表征与 2025–2026 澄清/长期上下文的实证中提出可反证机制。**已存研究，不等于自动运行；独立 A/B 未执行**。
 - 仍统一从 [P1–P8 知识索引](knowledge/INDEX.md) 按问题调用；不扩建专家系统、Skill 或固定执行阶段。
 - **持续研究时的承接原则**：对有实质成果的研究，先追溯本仓库相关知识及用户已确认目标；形成可核查主张、来源、反例、未知和决策变化；保存到对应原位或一份必要的新报告，并更新入口；回读确认 GitHub 实际保存；再从真实未解问题进入下一轮。
