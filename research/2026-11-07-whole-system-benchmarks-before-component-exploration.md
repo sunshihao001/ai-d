@@ -171,3 +171,62 @@
 **裁决方式：** T1/T4/T5/T8 表明 Hermes 执行承载存在实质性问题，才用同一任务转向 OpenHuman 对照；T2/T3/T6/T7 表明认知欠缺，才从 ai-d 原位选方法补充并做有区别的同题比较。不能因为单次任务成功就宣称普通人长期综合智能已实现。
 
 **本轮状态：** 源码、原始文档、上游测试设计、公开 Issue 已复核；HERMES_END_TO_END = NOT_RUN；OPENHUMAN_END_TO_END = NOT_RUN；AI_D_UPLIFT = UNKNOWN。GitHub 保存研究不等于在 Hermes 里部署。后续优先完成上述贯通测试；遇到真实付费、凭据或对外副作用需另行授权。
+
+## 八、V0.4｜跨项目能力复用与按需组合，而非指定唯一主体（2026-11-07）
+
+### 8.1 修正上一轮选型偏差：执行环境候选 ≠ 整套项目唯一主体
+
+用户明确补充：目标是“配合不同项目的技能，形成工作流”。因此撤销“先把 Hermes 固定为全系统主体，再给它补其他能力”的暗含路线。Hermes 仍是成熟的执行/Skills 候选，但不预设唯一主体；OpenHuman、OpenWiki、Meta 的不同成果可按任务以不同方式复用。ai-d 的原有多层目标（普通表达、目标演化、专业理解、知识/来源、实际执行、人机协作、纠错与迁移）继续保留，不因‘工作流’替换更高层目标。
+
+**核心区分**：某软件整体可用、某项目导出 Skill、某项目开放 MCP 工具、某项目的专业理论可借鉴，是四种不同程度的复用。不能把研究方法文件谎称成可立即调用的工具，也不能把 MCP 工具调用理解成共享全部 Agent 内部状态。
+
+### 8.2 确认的成熟协议与实际入口
+
+| 可复用单位 | 机制及可检查来源 | 能直接解决 | 不应过度推断 |
+| --- | --- | --- | --- |
+| 可迁移专业操作知识 | [Agent Skills 规范](https://agentskills.io/specification)：目录、SKILL.md 元数据及渐进式 references/scripts；[2026-10-22 开放治理声明](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation) | 在兼容主机之间携带任务知识和操作说明 | “格式兼容”不保证运行环境、依赖、权限、工具名兼容，更不保证会选对 Skill |
+| 外部可调用功能 | [MCP 官方 Tool 规范](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)；[Hermes MCP 文档](https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp) | 发现和调用独立程序暴露的工具（本地 stdio/远程 HTTP），可限定工具可见范围 | MCP 不自动同步不同项目的长期目标、记忆真值或数据模型 |
+| 独立代理协作 | [A2A 官方协议](https://a2a-protocol.org/) | 已部署、支持协议的独立 Agent 可通信及委托 | 并非所有项目天然提供 A2A；没有实际需要不先建多代理网络 |
+| 特定宿主原生能力 | [Hermes Plugins](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/plugins.md)、项目已有 API/CLI、[OpenWiki README](https://github.com/langchain-ai/openwiki) | 若已有功能不能通过标准接口完整表达，可在其原有运行环境使用 | 宿主私有插件不自动跨平台可移植；需要真实适配才算“组合成功” |
+| 专业方法/知识 | [Meta Second Brain](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/)、[ai-d 知识索引](../knowledge/INDEX.md) | 影响问题表征、知识选择、反馈归因和证据修订 | Meta 的内部经验方法不是可安装的通用 Skill 或 MCP server |
+
+### 8.3 源码与文档确认的三个具体复用方法
+
+**Hermes 的按需加载：**
+
+- [Skills 文档](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/skills.md) 明确支持 external_dirs、skill_view 和渐进式内容加载；同名技能按项目/本地/外部目录的优先顺序遮蔽；外部目录若可写，agent 的 skill_manage 可能直接修改它。共享参考资产须保持只读权限并留变更路径。
+- [Tool Search](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/tool-search.md) 的 tool_search / tool_describe / tool_call 构成按需工具发现和调用；针对大量 MCP/插件的 schema 避免在每一轮全部注入上下文。**这是工具发现机制，不是专业判断质量的证明**。
+- [Skill Bundle 源码](https://github.com/NousResearch/hermes-agent/blob/main/agent/skill_bundles.py)：YAML 中配置 skills 列表与说明，斜杠命令加载多项 Skill。这个 bundle 是显式预设组合，不等于面对陌生问题自动发现、评估和重组未知技能。
+
+**OpenHuman 作为能力提供者，不必整体接管：**
+
+- [Core MCP Server](https://github.com/tinyhumansai/openhuman/blob/main/docs/gitbooks/en/developing/mcp-server.md) 明确提供可选 stdio MCP server，含 memory.recall、memory.fetch、memory.learn、memory.forget、web_search、agent.run_subagent 等工具；其中写入、删除和子代理执行有权限门，部分搜索工具依赖配置。
+- [OpenHuman MCP Client](https://github.com/tinyhumansai/openhuman/blob/main/docs/gitbooks/en/developing/embed/concepts/mcp.md) 又可按 AgentSpec 配置服务器/允许的工具，含本地 stub 的握手、发现和调用测试。说明它既能是工具提供者，也能是使用者，**但并未在本轮证明和 Hermes 真实连接成功**。
+- 由 Hermes 的标准 MCP 客户端与 OpenHuman 的 stdio 服务端推得“存在可验证的连接路径”，而非断言全功能无缝互操作。具体凭据、权限、启动、数据隔离和部署仍需联调验证。
+
+**OpenWiki 把文档检索做成技能+工具：**
+
+- [OpenWiki 原生 SKILL.md](https://github.com/langchain-ai/openwiki/blob/main/integrations/openwiki/SKILL.md) 规定只有当遇到实际架构/依赖不确定时才检索，且先 search 后 read；不要求每轮预读所有 Wiki。仓库事实须复查当前源码。
+- [OpenWiki README](https://github.com/langchain-ai/openwiki/blob/main/README.md) 和 MCP 接口公开 openwiki_search、openwiki_read、工作区列表和文档生成生命周期。现有多个 coding-agent 宿主有预设集成，但**Hermes 不在 README 的官方现成集成名单中**；通过通用 MCP 的潜在接法须实测，不能声称官方即插即用。
+- Grounded Claims 的严格版本依据是仓库源代码，不等于自动验证论文、X 帖文、个人长期目标和市场解释。
+
+### 8.4 一个任务怎么选择能力：按实质需要，不建固定 P1→P8 流水线
+
+真实用户只说“继续 AI 项目，研究其他项目的技能能否一起用，把有价值的结果保存下来”。
+
+1. **目标恢复与任务范围**：使用会话提供的上一轮目标和 ai-d 原有知识索引；本轮不启动 OpenHuman/Hermes，是因为在当前 GPT + GitHub + 浏览环境已经具备所需读取、调查和写入权限。
+2. **识别专业问题**：不是“有哪些 Skills”，而是“专业知识载体、工具调用、独立 Agent 和闭源研究方法分别怎么复用？什么时候真的有必要运行另一个系统？”这避免无依据地强制拼接。
+3. **动态选择能力**：查 Agent Skills 原始规范、Hermes Skills/Tool Search/Bundle、OpenHuman MCP Server、OpenWiki Skill；用 GitHub 连接器读取本项目原文件，再对原位知识进行最小更新。没有请求对外发信、付费、安装或运行陌生代码，因此不执行这些动作。
+4. **验收**：需回读 GitHub 文件，确认本节完整落地；同时报告“本轮是当前 GPT 的工具选择与实际 GitHub 提交，不是已运行 Hermes 的动态 Skill 选择实验”。
+
+因此，在当前环境已能完成该任务时，**最优的动态组合可能只使用既有 GPT 能力和 GitHub 连接器，而不是一定调用四个产品**。这本身是重要的“少做但做对”的反证。
+
+### 8.5 可反驳的下一轮测试，而非永久强制流程
+
+- **测试 A：** 给相同短句及相同目标资料，比较“预先硬编码三 Skill 的 bundle”与“仅提供技能索引、由 AI 按需加载”能否识别未知专业问题、是否调用无关技能；记录遗漏、成本和事实错误。注意不同模型/工具集对照条件。
+- **测试 B：** 在安全隔离环境把 OpenHuman 的只读 memory.recall 通过 MCP 暴露给 Hermes；验证能否发现、调用并保留来源/任务作用域。若无法联通，记录错误，不新造桥接器前先审查官方 MCP 兼容性。
+- **测试 C：** OpenWiki 官方 Skill/检索工具按需读取代码事实并对源码变化修订；检验是否避免以旧版 Wiki 覆盖当前实现。非代码来源不套用它的源码证据声明。
+- **测试 D：** 同题的知识分析和任务交付分别比较“普通 Agent”和“调用 ai-d 相应专业认知方法”；只有观察到专业问题生成、证据选择、反证或决策质量有改善，才宣称认知增益。
+- **安全/限制：** Skills、MCP server 和外部数据都可能包含不可信内容和可执行依赖；默认只读、来源核查、工具最小授权、对外/高风险需单独批准；共享 Skill 目录不得随意被后台整理覆盖。
+
+**更新裁决：** 本项目当前只需复用现有工具与研究成果，继续以“按任务最小组合”为默认选项；Hermes、OpenHuman 保持被选择和可测试的候选，而非系统上下级关系。只有真实任务证明必要时才建立特定 Skill、MCP 连接或跨 Agent 工作流。此轮未实际安装 Hermes/OpenHuman/OpenWiki，未执行跨代理联调或受控模型 A/B。
