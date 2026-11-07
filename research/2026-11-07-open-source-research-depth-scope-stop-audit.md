@@ -117,3 +117,63 @@
 **下一轮优先证据动作**：从现有公开的“同一输入可能有两种专业机制解释”的真实软件故障中，选一个高价值案例，整理冻结源码及原始观察；独立检查增加一个关键问题时是否能找出新证据，而不是再扩展整套研究架构。先验证小范围可推翻机制，再决定是否需要任何专门的搜索 Agent/验证器。
 
 **记录原则**：本报告是已验证代码路径和原始来源的证据地图，仍是一份研究资料。若加入新项目，应先理解它自己的实际问题、架构/源码与失败，再判断能否改变本项目知识，不能因 README 名词相似就列为可复用成品。
+
+## 八、实际源级案例：子研究员失败如何伪装成研究完成（2026-11-07）
+
+**本次用户授权的真实任务**：不用新研究框架，选择现有开源程序回答“为什么一个研究代理可能在关键来源缺失时过早停止，却生成形式完整的报告？”不是改目标，也不是宣称 ai-d 研究已真正达成最终本质。
+
+### 8.1 研究范围如何由问题自己收束
+
+- 从[上一篇的多项目调查](#二github-公开成品全景按它们实际解决的问题比较)中选择与“研究停止≠研究完成”最直接相关的 Open Deep Research；不再扩大项目列表。
+- 优先查 [实际主管逻辑](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/deep_researcher.py)、[公开 Issue #283](https://github.com/langchain-ai/open_deep_research/issues/283)、[停止提示词](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/prompts.py)、[配置](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/configuration.py)、[评价代码](https://github.com/langchain-ai/open_deep_research/blob/main/tests/evaluators.py)。
+- 以 [DeerFlow 的真实离线停止故障](https://github.com/bytedance/deer-flow/blob/main/backend/scripts/benchmark/goal_loop_stop/README.md)作独立设计对照；不因两者同类症状，就判定同一具体原因。
+- **已知版本/证据**：Open Deep Research 于 2026-11-07 的公开仓库状态 `archived=true`，`deep_researcher.py` blob SHA `279dbffd9e49e07962fb4e1cfeff79e45adc43e9`，Issue #283 创建于 2026-06-23 且本次检查仍 open。未运行原程序依赖。
+
+### 8.2 逐行追踪的源事实
+
+- `supervisor_tools` 第 246–255 行：`research_iterations > max_researcher_iterations`、无 tool call 或调用 `ResearchComplete` 均使研究子图 `goto=END`。
+- 第 294–305 行：多个 `ConductResearch` 子任务通过 `asyncio.gather(*research_tasks)` 汇总。
+- 第 332–341 行：`except Exception as e` 中包含 `if is_token_limit_exceeded(e, configurable.research_model) or True`，它恒成立，返回 `goto=END`，只附已有 notes 和 brief，不携带明确的本轮异常类别。
+- 第 695–715 行的外层工作流：研究子图退出后接 `final_report_generation`，因此**能够**以部分调查材料生成报告，而非必须暴露本轮失败。
+- [prompts.py](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/prompts.py) 第 165–174 行：提示词建议复杂查询最多搜索五次，满足“三条相关来源”等条件可停止；**这是提示词式启发，不是对证据独立性的程序证明**。
+- [Issue #283](https://github.com/langchain-ai/open_deep_research/issues/283) 由外部报告者独立指出相同故障路径，附官方依赖环境下的最小 PoC；本轮未执行该完整依赖 PoC。
+
+### 8.3 本轮执行的七个隔离控制分支测试
+
+为了不把“静态推测”冒充“运行测试”，本轮独立**转录相关函数控制逻辑**（不是直接 import GitHub 原函数），使用假的 `Configuration`、`Command`、`researcher_subgraph` 和 `AIMessage`，在 Python asyncio 环境注入条件；没有访问模型、API 和网络。
+
+| 注入场景 | 观察到的路由 | 已产生结果是否在该分支输出中保留 | 事实意义 |
+| --- | --- | --- | --- |
+| 1 个研究员成功 | `supervisor` | 是，包含 raw_notes | 正常进入下一轮 |
+| 普通 `RuntimeError` | `END` | 否 | 非 token 错误也触发结束 |
+| `ValueError` | `END` | 否 | 不区分解析与上下文错误 |
+| 模拟 context overflow | `END` | 否 | 与其他错误走同一分支 |
+| 2 个研究员都成功 | `supervisor` | 是，保留两者摘要 | 并行成功能够汇总 |
+| 1 个成功 + 1 个失败 | `END` | **否，成功者本轮 raw_notes 未汇总输出** | `asyncio.gather` 异常跳过逐结果汇总；不代表已持久化的旧资料被删除 |
+| 主管没有 tool call | `END` | 否 | 即使没有 `ResearchComplete` 也可结束 |
+
+**测试状态**：`SOURCE_PATH_INSPECTED=YES`，`CONTROL_FLOW_TRANSCRIPTION_7_CASES=PASS`，`UPSTREAM_DEPENDENCY_RUN=NOT_RUN`，`PRODUCTION_INCIDENT_FREQUENCY=UNKNOWN`，`AI_D_MODEL_AB=NOT_RUN`。这些案例是**机制重演**，不是上游完整框架的端到端验证。绝不能在评估“AI 是否学会发现未知”时拿已公开 Issue #283 当未见题。
+
+### 8.4 新增认识，而不是重述已知 BUG
+
+最初的普通问题是：“研究 Agent 什么时候应该停止？”
+
+按提示词/README 表面研究会回答“满足足够来源或超过最大轮数”。
+
+**这次源码与反例真正改变了问题表征**：
+
+1. **控制流层面**：不同错误路径可被合并为同一个“结束”输出。
+2. **并发/证据层面**：一个子研究员失败，可能阻断其他已成功子研究员的本轮结果汇总。
+3. **交付层面**：研究子图结束后，报告生成仍有路由，不能以用户看见报告倒推研究已完成。
+4. **验证层面**：要区分“内容正确但有部分未查”“错误退出导致缺证据”“达到预算但仍有关键未知”，必须在结果与报告交付之间保留可核对的真实状态。
+
+竞争解释与限制：如果报告仍准确，可能是旧 notes 已足够，不能简单将所有异常结束判为错误答案；同样，触发 END 可能是有意做容错，但不等于标注完整性。要验证真实损害还需运行完整依赖、构造受控的并发失败及报告验收，当前没有执行。
+
+### 8.5 对 ai-d 下一步的真实选择与停止裁决
+
+- **不再继续盲搜“AI 何时停止”通用教程**：已经找到有明确源码、公开 Issue、分支实验的具体机制；当前证据足以形成针对这条控制路径的阶段性解释。
+- 若任务是设计研究报告的验收，应要求明确记录：`COMPLETE` / `PARTIAL` / `BLOCKED` / `BUDGET_STOP` / `FAILED` 等**语义区别**；具体实现名称可不同，不在文档中强制新平台/新流程。
+- 对下一项研究优先检验**公开的独立新案例**能否让按问题选择知识的方法主动发现关键隐藏条件；同一次同上下文人工查出的 Issue #283 不能反过来证明模型 A/B 改善。
+- 既有 Solana Meme 等领域本身的应用目标保持不变。这次发现可迁移的是**证据和停止状态不混级**，不是将原研究 Agent 直接融合进业务产品。
+
+**来源校验边界**：Issue 属作者/用户报告；源码属当前公开实现事实；七场景属于已执行的隔离逻辑测试；对用户项目的迁移属于解释性建议，暂未证明性能增益。
