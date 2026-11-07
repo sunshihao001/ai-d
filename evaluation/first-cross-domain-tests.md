@@ -130,3 +130,25 @@ A1b（新增比较组）：与 A1 使用**完全相同的专业来源集合**，
 **停止与继续同样可反证**：如果证据已足够支持阶段性判断，不因抽象“还可能有别的解释”无限延迟；如果新证据可能根本改变排序，继续深读；若额外反证只会重复同一种模糊疑虑，应停止该支线。评价应包括“给出恰当积极判断”的能力，而非只计算指出错误的数量。
 
 **状态**：本节为用户反馈驱动的评测目标修订，`MODEL_AB=NOT_RUN`。此前HoldTech/Hermes等源码演示属于已见样本，不能拿其重新包装为独立盲测成功。领域参考与主文件：[Blix知识实际使用入口](https://github.com/sunshihao001/grok/blob/blix/docs/project/knowledge-use.md)。
+
+## 2026-11-07｜Open Deep Research 过早结束与并发证据丢失：隔离分支复现
+
+**输入**：使用公开仓库 [Open Deep Research 的真实源级控制逻辑](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/deep_researcher.py)（2026-11-07 核对时 blob `279dbffd9e49e07962fb4e1cfeff79e45adc43e9`），及 [Issue #283](https://github.com/langchain-ai/open_deep_research/issues/283) 作为独立公开故障报告。具体原因与原始行号见 [深入研究第八节](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)。
+
+**方法**：将关键 `supervisor_tools` 函数控制流转录到隔离的 Python asyncio 试验脚本，以 stub 替代 LangChain、模型提供者、网络检索；使用 assert 验证七组分支。不是安装官方依赖，也没有在真实模型上运行 Agent。
+
+| 情景 | 实测转向 | 相关输出状态 |
+| --- | --- | --- |
+| 研究员成功 | `supervisor` | 带 `raw_notes` |
+| 普通运行错误 | `END` | 未带异常类型 |
+| 解析错误 | `END` | 未带异常类型 |
+| 上下文超限错误 | `END` | 与其他错误同路由 |
+| 两名研究员成功 | `supervisor` | 汇总 raw_notes |
+| 一成功、一失败 | `END` | **该分支未汇总成功者的 raw_notes** |
+| 主管未产生工具调用 | `END` | 未显式声明 ResearchComplete |
+
+`7/7` 条隔离路径断言通过。源码显示的原因包括无条件 `or True`、`asyncio.gather` 抛错使本轮数据汇总未走到、外层图可直接进入报告生成。**不能推论本来已保存的以前证据丢失，也不能由此得出真实报告一定错误。**
+
+**新的评估要求**：A/B 对照除“是否回答正确”外，还要记录研究员异常、实际证据覆盖、是否部分完成、是否超预算、是否真实执行成功，以及正常研究完成与非正常退出是否被混成一个状态。不能把本次已见案例当留出任务，也不能将 `7/7` 隔离断言说成 `ai-d` 的模型性能提升。
+
+状态：`UPSTREAM_SOURCE_CONFIRMED=YES`、`CONTROL_FLOW_TRANSCRIPTION=PASS_7_OF_7`、`FULL_UPSTREAM_EXECUTION=NOT_RUN`、`INDEPENDENT_MODEL_AB=NOT_RUN`、`REAL_WORLD_EFFECT=UNKNOWN`。
