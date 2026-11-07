@@ -59,6 +59,14 @@
 - DeerFlow 的 [真实离线故障复现](https://github.com/bytedance/deer-flow/blob/main/backend/scripts/benchmark/goal_loop_stop/README.md) 表明：循环已触发硬停止，但未满足的 Goal 仍可能产生隐藏下一轮；修复前主管模型调用 6 次、隐藏续执行 1 次，修复后分别为 5 和 0。该测试中两种运行状态仍报告 success，**但均不代表 Goal achievement**。
 - 对 ai-d：GitHub 提交成功＝研究成果已保存；不能变成“专业方法已有效”或“本次科学问题已经解答”。评测设计 `NOT_RUN` 应保持 `NOT_RUN`，而非下一轮又凭语言升级为已实现。
 
+### 3.5 GitHub Issue 与现行代码的交叉核对：真实失败优先于营销演示
+
+- [GPT Researcher Issue #1579](https://github.com/assafelovic/gpt-researcher/issues/1579)（2025-12-16，状态 closed）报告：检索器没有正确 API Key/断网时，Deep 模式反复循环并可能卡住机器。已读当前 [deep_research.py 的失败停止分支](https://github.com/assafelovic/gpt-researcher/blob/main/gpt_researcher/skills/deep_research.py)：当本层没有成功研究结果时直接结束继续递归。**静态源码支持“防空结果重复下降的处理存在”，未独立复跑失效前后运行。**
+- [DeerFlow Issue #6555](https://github.com/bytedance/deer-flow/issues/6555)（2026-10-09，closed）记录 Goal 未完成、被阻塞或成功时的前端展示与实际状态不同步；其相关[离线回归案例](https://github.com/bytedance/deer-flow/blob/main/backend/scripts/benchmark/goal_loop_stop/README.md)具体复现了硬停止后的隐藏续执行。**要将终止原因、真实完成证据与下一步恢复方式明确分开**；单凭一个 success 标签不够。
+- 两条 Issues 是真实用户/开发者报告和仓库内复现，但**仓库 Issue 关闭、存在修复代码并不自动证明所有生产环境已消除同类问题**。
+
+**对本项目的直接改变**：停止不只是认知上的“已经查够了”。缺数据、任务失败、预算耗尽、信息不可获得、需要用户输入及目标真正达成，必须给出不同的可检查状态；不要在任何一种未完成状态下无限自动扩展研究。
+
 ## 四、对现有全项目认知的修订（不增架构）
 
 既有 [ai-d P1–P8](../knowledge/INDEX.md) 仍适用，但需要改变调用时的实际判断：
