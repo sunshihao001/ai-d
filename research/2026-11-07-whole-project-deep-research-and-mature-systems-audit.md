@@ -56,13 +56,13 @@
 
 ### 3. GPT Researcher：多数据来源、子问题计划与上下文筛选
 
-**完整用途：** 根据原始 query 与首批结果规划研究 outline；依场景使用 URL/公开网络/本地文档/混合检索；去重历史访问，组合资料与源整理、最后生成报告。[ResearchConductor 实际代码](https://github.com/assafelovic/gpt-researcher/blob/master/gpt_researcher/skills/researcher.py)，blob 59e688e764be1feef316301321baba0301a64f00；[项目 README](https://github.com/assafelovic/gpt-researcher)。
+**完整用途：** 根据原始 query 与首批结果规划研究 outline；依场景使用 URL/公开网络/本地文档/混合检索；去重历史访问，组合资料与源整理、最后生成报告。[ResearchConductor 实际代码](https://github.com/assafelovic/gpt-researcher/blob/main/gpt_researcher/skills/researcher.py)，blob 59e688e764be1feef316301321baba0301a64f00；[项目 README](https://github.com/assafelovic/gpt-researcher)。
 
 **独特可复用：** 不同来源在同一研究中补足：用户私有文档提供目标上下文、互联网补现况和外部专业经验；历史 visited_urls 让子主题减少重复浏览。**边界与反例：** ai-d 既有对官方 28 题评测的重算显示，相似度/相关性筛选有时损害开放题最终报告偏好；“过滤提高相关度”与“探索找未知”是不同目标。不存在所有任务都应启用同一检索策略的依据。
 
 ### 4. Deep Agents / LangGraph：长期任务的执行底座，不是专业认知答案
 
-**完整用途：** 多步骤工具任务、委派隔离上下文子代理、文件工作空间、状态/存储、持久任务、权限与人类审批。源码：[DeepAgents graph.py](https://github.com/langchain-ai/deepagents/blob/master/libs/deepagents/deepagents/graph.py) blob 3f2b528409767e372cc5d05d18d92dd8fc13ea94；实际 create_deep_agent 支持 model/tools/subagents/skills/memory/permissions/checkpointer/store/interrupt_on；通过 Middleware 将文件、子代理、摘要、Skills、Memory、HITL 等组合起来。
+**完整用途：** 多步骤工具任务、委派隔离上下文子代理、文件工作空间、状态/存储、持久任务、权限与人类审批。源码：[DeepAgents graph.py](https://github.com/langchain-ai/deepagents/blob/main/libs/deepagents/deepagents/graph.py) blob 3f2b528409767e372cc5d05d18d92dd8fc13ea94；实际 create_deep_agent 支持 model/tools/subagents/skills/memory/permissions/checkpointer/store/interrupt_on；通过 Middleware 将文件、子代理、摘要、Skills、Memory、HITL 等组合起来。
 
 **能直接解决：** 如果一个业务需要持续执行/跨会话恢复/权限控制，不应从零写 agent runtime。**不能自动解决：** 用户根本不知道的问题是什么、某个经济机制是否成立、专家证据是否充分、长期人生选择应是什么。没有真实运行前，README 的“生产可用”不是 ai-d 对自身场景的端到端验收。
 
