@@ -7,6 +7,8 @@
 
 **本轮知识如何融入**：原始目标、专业来源、跨学科未知发现、成熟系统及真实验证结果已按关系整理到[全项目知识整合与研究入口](knowledge/2026-11-07-whole-project-research-integration.md)。已有[未知发现纵深研究](research/2026-11-07-problem-driven-unknown-discovery.md)继续作为原始理论/源码的维护位置；不会把这些研究重复抄成新的强制提示词或固定专家团队。
 
+**新增全局深审（非强制规则）**：[整件事的深度研究能力：成熟系统源码、专家覆盖和真实价值反证](research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md)。按完整人类目标而非三个小案例审查，含 Co-STORM / Open Deep Research / GPT Researcher / DeepAgents / Hermes / OpenWiki / LiveDRBench 的目标、源码、失败和复用判断；已核实的源码与尚未实跑的整体能力明确分开。
+
 **历史方案的适用边界**：下文早期提出的“知识库 A → 认知 Skill B”等是当时的阶段性技术选择，不是整个 ai-d 已确认的唯一终点。知识写入 GitHub ≠ 模型参数改变；是否能在新问题里不经提醒主动发现关键未知、改善真实判断，仍需独立对照验证。
 
 
