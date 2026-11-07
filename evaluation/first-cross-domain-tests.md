@@ -131,6 +131,18 @@ A1b（新增比较组）：与 A1 使用**完全相同的专业来源集合**，
 
 **状态**：本节为用户反馈驱动的评测目标修订，`MODEL_AB=NOT_RUN`。此前HoldTech/Hermes等源码演示属于已见样本，不能拿其重新包装为独立盲测成功。领域参考与主文件：[Blix知识实际使用入口](https://github.com/sunshihao001/grok/blob/blix/docs/project/knowledge-use.md)。
 
+## 2026-11-07｜来源筛选 vs 开放未知发现：成熟项目实证反例（非 ai-d A/B）
+
+参考：[GPT Researcher 上下文选择源码与原始 28 题评测深审](../research/2026-11-07-gpt-researcher-context-selection-audit.md)。
+
+**已实际完成**：读取官方 `select.py`、`lexical.py`、现有单测、设计文档以及 `scored_vs_none_jev_jev_large_jev_wide_embeddings.json` 中 112 条逐题记录；按 `kind × strategy` 重算偏好比较。开放题 8 道中，Embeddings 相对 None 为 0胜1平7负，Jev 相对 None 为 0胜2平6负；SimpleQA 正确率 Embeddings 18/20、Jev 19/20、None 20/20。相对过滤精度指标与最终报告偏好不等价。
+
+**真正反例**：源码小输入直通、BM25 零匹配时返回首页片段，都在上游文档或测试中被明示为设计；不能把 AI 抓到一个“意外分支”就自动判作者 Bug。另一方面，也不能因为某种过滤有 0.73 相关精度就断言更擅长发现未知机制。
+
+**下一次独立评测（尚未执行）**：在原先不在训练/案例说明中的公开源码任务上比较严格词面筛选、问题驱动的选择性跨域扩展、全量历史注入。两个方向都评分——重要遗漏召回与无依据联想误报；保留预算/证据独立性/实际判断变化。不得将原项目模型偏好结果当作 ai-d 方法胜利，也不能用此已见案例宣布盲测通过。
+
+状态：`UPSTREAM_CASE_DATA_REAGGREGATED=YES`、`INTENTIONAL_DESIGN_NEGATIVE_CONTROL=PASS`（依据原项目测试与源码）、`UPSTREAM_LIVE_RUN=NOT_RUN`、`AI_D_INDEPENDENT_AB=NOT_RUN`。
+
 ## 2026-11-07｜Open Deep Research 过早结束与并发证据丢失：隔离分支复现
 
 **输入**：使用公开仓库 [Open Deep Research 的真实源级控制逻辑](https://github.com/langchain-ai/open_deep_research/blob/main/src/open_deep_research/deep_researcher.py)（2026-11-07 核对时 blob `279dbffd9e49e07962fb4e1cfeff79e45adc43e9`），及 [Issue #283](https://github.com/langchain-ai/open_deep_research/issues/283) 作为独立公开故障报告。具体原因与原始行号见 [深入研究第八节](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)。
