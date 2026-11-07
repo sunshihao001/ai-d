@@ -99,6 +99,13 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 - [第二轮：认知委托、任务表现、人的长期能力及协同效果](../research/2026-11-07-human-ai-delegation-performance-learning.md)（P5/P6/P7/P8）：随机实验、荟萃分析、工作论文与理论方案的区分。
 - **与旧目标关系**：外挂大脑是个人化的能力增强研究对象，既不覆盖 ai-d 通用研究目标，也不替代其他专业项目。两份文件作为问题入口，不是新的固定流程或必加载上下文。
 
+## 2026-11-07｜GitHub 成品反证：深度研究范围与停止
+
+- [开源研究代理/停止机制与真实故障审查](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)（P2/P3/P5/P6/P7/P8）。定向读取 STORM、GPT Researcher、Open Deep Research、DeerFlow、HALT、AutoSearch、Pi 扩展与 ReportBench 的可核查材料，含部分核心源码、测试和 Issue。
+- **实际修正**：研究预算停止≠证据覆盖≠解释深入≠任务完成；固定搜索次数只管资源；HALT 式逐主张覆盖和 RAAC 式新颖性/覆盖仅是特定任务上有证据的参考方法，不能凭文章长短或检索次数断言深度。
+- **重大失败案例**：GPT Researcher 检索为空导致循环的 Issue #1579；DeerFlow Goal 停止/续执行/完成状态的 Issue #6555 与离线复现。保留源码事实、作者陈述、论文实证和 ai-d 适用推论的不同等级。
+- **当前裁决**：不安装拼接所有研究系统；先利用既有公开源码真实错误案例检查知识调用、未知发现和研究终止判断。第三方完整运行和 ai-d 独立 A/B 均未完成。
+
 ## 2026-11-07｜短句意图与认知委托的深研
 
 - [第三轮：从普通短句到目标恢复、知识调用、澄清与行动选择](../research/2026-11-07-short-intent-goal-context-delegation.md)（P1/P3/P4/P5/P6/P7/P8）。
