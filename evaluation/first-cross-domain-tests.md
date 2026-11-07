@@ -51,3 +51,16 @@ A1b（新增比较组）：与 A1 使用**完全相同的专业来源集合**，
 **真正A/B保留待执行**：遵照上文A0/A1/A2/A1b设计，固定相同原始事实、工具和预算，采用独立隔离上下文、未见样本和盲评。评估“发现可核查漏洞/误归因/正确UNKNOWN/漏报/成本”，并记录新知识**确实改变哪一项判断**。此次没有调用四个独立模型，没有观察真实Blix输出或现实链上结果，故`MODEL_AB=NOT_RUN`，`AI_UPLIFT=UNKNOWN`；上述算术/接口检查仅支持`DETERMINISTIC_DIAGNOSTIC_PASS`。
 
 **对通用研究工作流的修正**：当多学科反证发现源公式根本缺乏测量有效性，应优先修正/禁止该公式作为事实，再讨论是否增加上下文、RAG、Agent Skill或业务自动化。吸收领域旧知识的成功标准不是知识文件增量，而是“源主张→复算条件→不同专业反证→业务决策或更可靠未知”的可追溯变化。
+
+
+## 2026-11-07｜外部参考项目的“未知知识发现”测试：源码关系、设计原因、样本留存
+
+**通用研究问题**：当AI要为一个现有软件主体学习多个参考项目时，是否会因“已有同类功能/目录已分类/只检索词面最相近源码”而遗漏真正能改变专业理解的知识？能否先独立重建参考项目知识，再从冲突和未知中发现新问题，最后选择是否接入主体？
+
+**外部证据与方法借鉴（原文）**：[Aider RepoMap](https://aider.chat/docs/repomap.html)按源码依赖组织任务上下文；[MADR](https://adr.github.io/adr-templates/)记录背景/备选/后果；[Anthropic Contextual Retrieval](https://www.anthropic.com/research/contextual-retrieval)为片段保留原文语境；[Microsoft GraphRAG DRIFT](https://microsoft.github.io/graphrag/query/drift_search/)在全局话题与局部证据之间生成新问题；[Agent Retrieval Bench 2026](https://arxiv.org/abs/2607.24882)以“下一步真正需要什么文件”评测检索；[Ragas](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/)区分检索和输出证据质量。**这些研究并没有证明任何一个图检索/Skill方法在用户的Meme任务中必然更好**。
+
+**静态源级试验（不是Agent A/B）**：[Blix参考项目深入研究第9节](https://github.com/sunshihao001/grok/blob/blix/knowledge/references/source-knowledge-deep-study-v0.1.md) 从Pulse原始`solana-stream.ts`发现保存早期买入依赖日后毕业/钱包标签/金额，并以3个纯条件演示确认“观察≠持久化”；从`merge.ts`复现两条同Mint冲突流动性观测的输入次序变化引起合并结果变化。由此提出**样本保留条件与来源优先规则也是知识可靠性的组成部分**，它会改变对历史早期交易、资金异常、所谓成功钱包的统计解释。Blix已有另一套短时流与24小时Journal语义，不能直接互换。
+
+**适合下一次独立验证的四组**：A0没有参考知识；A1只按旧功能标签查同名模块；A2广泛加载参考原文但不做关系追索；A3先读完整项目业务/源码/设计/测试，沿实际数据与因果关系按需扩展问题并保留未知。使用相同冻结源、相同任务/模型/工具/预算，盲审结果中真正新发现且被源证据支持的关键问题数、错误“作者为什么这么做”推断、跨源事实误并、正确UNKNOWN、上下文/成本。关键负例：源码没有提作者动机时应标`RATIONALE_UNKNOWN`；项目库没有保存某事件时不可推为链上没发生。
+
+**实证状态**：目前只有原始源码阅读和确定性逻辑复算，没有独立隔离模型实验、真实市场验证、生产集成。坚持先在少量真实任务/合成反例上证明判断增量，再考虑永久规则或额外知识检索基础设施。
