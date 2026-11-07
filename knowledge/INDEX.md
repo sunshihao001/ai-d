@@ -104,6 +104,7 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 - [开源研究代理/停止机制与真实故障审查](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)（P2/P3/P5/P6/P7/P8）。定向读取 STORM、GPT Researcher、Open Deep Research、DeerFlow、HALT、AutoSearch、Pi 扩展与 ReportBench 的可核查材料，含部分核心源码、测试和 Issue。
 - **实际修正**：研究预算停止≠证据覆盖≠解释深入≠任务完成；固定搜索次数只管资源；HALT 式逐主张覆盖和 RAAC 式新颖性/覆盖仅是特定任务上有证据的参考方法，不能凭文章长短或检索次数断言深度。
 - **重大失败案例**：GPT Researcher 检索为空导致循环的 Issue #1579；DeerFlow Goal 停止/续执行/完成状态的 Issue #6555 与离线复现。保留源码事实、作者陈述、论文实证和 ai-d 适用推论的不同等级。
+- **实际完成的一个源级分支复现**：[Open Deep Research #283 异常结束与并发调查证据汇总缺失](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)（第八节）；已用隔离的 Python 转录控制逻辑检查 7 组条件，结果见[跨领域评测记录](../evaluation/first-cross-domain-tests.md)。这不是完整官方依赖运行，也不是独立模型质量 A/B。
 - **当前裁决**：不安装拼接所有研究系统；先利用既有公开源码真实错误案例检查知识调用、未知发现和研究终止判断。第三方完整运行和 ai-d 独立 A/B 均未完成。
 
 ## 2026-11-07｜短句意图与认知委托的深研
