@@ -93,3 +93,24 @@ A1b（新增比较组）：与 A1 使用**完全相同的专业来源集合**，
 在相同模型、来源、任务与工具/Token 预算下对照：B0表层直接回答；B1按旧 P1–P8 选择相关资料；B2在 B1 上区分目标 G、知识 K、行动 A 和不确定性的归属；B3固定专家+过量旧上下文。先在公开真值/负例上冻结评分项，再使用未见案例盲评。指标：目标误替换、正确未知、应询问准确率、无效打断、证据错误、关键问题发现与实际完成、用户与计算成本。
 
 **当前仅完成测试设计与案例类型整理，无独立模型隔离运行。** 同一轮生成的案例不能同时作为证明 B2 效果的留出样本。若 B2 没有带来可核查增益或增加错因果/额外成本，就不得升级为项目默认工作法。
+
+
+## 2026-11-07｜首次新增来源HoldTech：问题表征方法的源码级压力测试（非独立A/B）
+
+源：[Blix参考项目全域知识研究第10节](https://github.com/sunshihao001/grok/blob/blix/knowledge/references/source-knowledge-deep-study-v0.1.md)；[HoldTech原仓](https://github.com/co-numina/holdtech)三个业务接口`app/api/analyze/route.ts`、`app/api/deep-scan/route.ts`、`app/api/holder-overlap/route.ts`，并与Solana官方RPC/Fee Payer语义及Blix相应源码作交叉对照。
+
+**本轮为什么属于新的源级诊断**：HoldTech在此前Pulse“选择性落库”和Hermes“公式/字段”案例设计中未被读取，因此新材料暴露了不同问题；但研究者在同一轮读取源码后自己构造并复算反例，**不能把它称为没见过答案的独立模型评测**。
+
+**任务原表述**：“一批跨币共同持有且在同Slot活动的钱包，是不是同一操盘群体？”若只用功能标签，则查Holder/Overlap/Bundle/Funder并直接解释。源码级逆向问题表征从**测量是什么**出发，发现：
+1. `holdDurationDays`直接等于钱包链上估计年龄，不等于此Mint连续持有时间；365天旧钱包今日买1小时仍可能被标“钻石手”。
+2. Bundle按同Slot的`SWAP|TRANSFER|UNKNOWN` Fee Payer聚类，3笔非买单`TRANSFER`也能触发候选。
+3. `getSignaturesForAddress(limit:20)`返回最近20条，排序并选最老不等于钱包首次交易；再将净入SOL交易的Fee Payer认作实际Funder也可能错。
+4. 跨币`getHolders(m,200)`内部整页请求1000个并先全部收集，不能把200当精确样本范围；Owner集合与Owner资产求和不同，重复Owner余额可能被后写值覆盖。
+5. 按当前观察集合得分`600/1000=60`、coordination`CRITICAL`，但若完整持有人各20000、交集仍600，则分母一致的完整重叠仅3；不经来源覆盖/快照时点核查不能升级为主体或行为协同真值。
+6. 把余额最大Token Account对应Owner无条件当池，会排除真实普通鲸鱼的可能；Solana官方只承诺取余额前20个Token Account，不承诺第一名一定是池。
+
+**独立贡献（有复算支持）**：把问题从“功能有没有”改成“变量究竟在测量钱包、Token持仓、事件、谁付费、谁提供SOL、多少人被观察到”后，产生可指出的**多类隐藏错误前提**：代理变量偷换、执行角色偷换、历史时序/分页截断、采样分母、实体聚合、未经证实的市场身份推断。**不能宣称这六类是以前无人发现的全新知识**；本次产出是把已知跨领域原则实际应用到此前未深入研究的领域源码。
+
+**对原评测的修正**：G0/G1/G2/G3应在独立来源上分两项评分：A. 是否识别并核对测量口径与来源真实控制流；B. 能否提出真正可区分的市场经济竞争机制及链上验收。仅能完成A不应冒充完成B。另需增加“模型指出原问题/指标错，但抹杀来源项目全部复用价值”的过度否定负例；成熟程序可能有可用功能，与局部原始指标失效是两层决定。
+
+**状态**：`STATIC_SOURCE_AUDIT=PASS`（已读并固定blob）、`PURE_BRANCH_REPRODUCTION=PASS`（简化输入/规则）、`INDEPENDENT_MODEL_AB=NOT_RUN`、`HOLDTECH_DEPLOYED_TEST=NOT_RUN`、`SOLANA_REAL_TX_REPLAY=NOT_RUN`、`MARKET_MECHANISM_VERIFIED=NO`。不可把单次同上下文研究写成认知增强的统计显著证据。
