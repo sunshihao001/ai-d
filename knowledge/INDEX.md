@@ -102,7 +102,7 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 ## 2026-11-07｜先研究成熟的整体系统，而不是继续堆局部能力
 
 - [全系统参照研究：OpenHuman、Hermes Agent、OpenClaw、Meta 第二大脑、OpenWiki、Dify 等](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md)（P1–P8 的完整用户目标与交付链）。目标是先理解成熟整体如何解决问题、真实运行与维护，再判断哪些知识/能力已成熟、哪些才是需要本项目研究的缺口。
-- **本轮裁决**：不为搜索、记忆、停止和专家新建独立框架；下一轮集中审查 OpenHuman 与 Hermes Agent 的实际完整业务链，以 Meta 专家认知—推理—纠错和 OpenWiki 主张更新作为参照。尚非已验证的唯一底座选择。
+- **截至 2026-11-07 的进一步裁决（原报告 V0.4）**：不同成熟项目的 Skills、MCP 工具、独立 Agent 和专业研究方法可以按任务复用，不必预设 Hermes 或 OpenHuman 为整套 AI 系统唯一主体。Agent Skills 是可移植操作知识，MCP 是工具调用，A2A 是独立代理协作；Meta 的研究仍是认知方法参考，不能当可直接调用的工具。Hermes 外部 Skills、Tool Search、预设 Bundle，OpenHuman MCP 服务端以及 OpenWiki 的 SKILL.md/MCP 接口均已有源码或文档入口；端到端互联与 AI 自主技能选择质量**未实跑**。下一步先做一个跨项目短句任务的最小组合与可核查验收，参见[成熟整体参照报告第八节](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md)。
 
 ## 2026-11-07｜理论互证可初步通过：避免证据过度保守
 
