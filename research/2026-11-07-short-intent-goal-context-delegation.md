@@ -167,3 +167,48 @@
 **在已有 evaluation/first-cross-domain-tests.md 中如何验证，而不新建制度：** 选不同领域完整任务，对每个任务同时看：初始问题的多种合理解释、已知上下文能恢复什么、是否有必须让用户回答的条件、纠正后的实际判断或动作是否改变、未纠正时产生的成本、是否反复问已知信息、是否静默改变用户长期目标。基线与改进组需要在相同知识和工具/成本条件下比较，任务真值不能由当前模型自己随手拟定。**本轮仅完成资料检索和源码审查**，没有新模型隔离 A/B、用户真实收益实测；因已见例子不适合未来作为盲测留出题。
 
 **核心定位修订**：ai-d 应从“让普通人学会提更专业的问题”转向“AI 即使面对不专业、模糊或错误问题，也能自己识别事实与目标缺口、修复不合理的假设、发现用户不知道的相关领域，并按授权得到更正确的结果”。这是研究判断，可被未来实证推翻；不是要求每轮都执行十项纠错门禁。
+
+
+## 九、2026-11-08｜表达不是提示词分类：成熟系统的意图、变更与跨轮承接
+
+> **本轮用户问题**：多轮深入搜索后，判断“表达种类很多，现在真正需要哪一种表达”，比较成熟成品怎样从简单表达展开专业工作，并且继承上一轮修改与持续研究。**新结论**：优先研究「意图导向表达（intent / goal articulation）与持续任务承接（stateful continuation）」的组合；**用户不需要掌握专业语言，模型应生成必要的专业工作规格**。本节是研究与实现模式核查，不等于已集成这些项目或已验证 ai-d 模型性能。
+
+### 9.1 三轮来源与证据（与前八节已有 AskBench、Co-STORM 互补）
+
+**第一轮：信息需求与目标工程原理**。
+- Robert S. Taylor, *The Process of Asking Questions* (1962), https://doi.org/10.1002/asi.5090130405：实际但尚未表达的需要 → 主观认识 → 形式化的问题 → 提交给系统的查询；由此不能把输入措辞等同完整目标。
+- *A systematic mapping of goal-oriented requirements engineering: reflections, impact, and the way forward* (2026), https://doi.org/10.1007/s00766-026-00476-7：目标、质量要求、代理责任、依赖与手段可以分开表示；文章明确提出意图驱动 AI 与 GORE 的关系，同时承认更丰富的目标模型是否优于简单意图尚需研究。**不应由此强制用户学习 KAOS、iStar 记号。**
+- CLARITI, ICML 2026, https://proceedings.mlr.press/v306/vijayvargiya26a.html：澄清的价值受任务相关性与用户可回答性影响。结论仅对受测软件任务有实证基础，不能绝对限制每轮询问数。
+
+**第二轮：成熟 GitHub 成品的实际形态（README + 具体原始文档已读取）**。
+| 项目及直接核查入口 | 用户简短表达的处理 | AI/系统保存与承接什么 | 复用判断与边界 |
+| --- | --- | --- | --- |
+| [OpenSpec](https://github.com/Fission-AI/OpenSpec) 与 [existing-projects](https://github.com/Fission-AI/OpenSpec/blob/main/docs/existing-projects.md) | 探索不清楚的想法，提议具体变更，应用、归档；用户无需预先写全规格 | proposal / delta specs / design / tasks；已存在项目只记录本次 ADDED/MODIFIED/REMOVED 差异 | **最值得借用的「增量变更」思想**：不重新总结和重建全项目；但其命令主要面向软件更改，未证明通用跨领域效用 |
+| [GSD Core](https://github.com/open-gsd/gsd-core) 与 [recover guide](https://github.com/open-gsd/gsd-core/blob/main/docs/how-to/recover-and-troubleshoot.md) | 「继续」通过 /gsd-resume-work、/gsd-progress --next 恢复下一项工作 | .planning/ 的 PROJECT / ROADMAP / STATE / phase context 与 HANDOFF 等 | **最值得借用的「外部状态恢复」思想**；旧 gsd-build/get-shit-done README 已重定向到 open-gsd/gsd-core，不能将旧仓作为最新版本 |
+| [GitHub Spec Kit](https://github.com/github/spec-kit) 与 [agentic SDD](https://github.com/github/spec-kit/blob/main/docs/reference/agentic-sdd.md) | 自然语言说明 what/why → specify、plan、tasks、implement、converge | spec / plan / tasks，后续检查遗漏再追加任务 | **借用「从意图到可验收规格」**；全套质量门不适合每次开放知识研究 |
+| [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) | 简单改动直接 build，复杂工作才 clarify/plan；允许从现有程序起步 | 关键决策与上下文持续保存 | **借用「按实际工作大小调节方法」**；main 的 V7 是 preview alpha，v6.12 是稳定线，不能混称稳定产品 |
+| [OpenClaw workspace](https://github.com/openclaw/openclaw/blob/main/docs/reference/templates/AGENTS.md) 与 [Hermes Agent skills](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/guides/work-with-skills.md) | 对话+按需技能，不要求每轮复制完整历史 | 将稳定偏好、长期事实、程序方法分开；过期偏好被 supersede，技能按需加载 | **借用「长期目标/事实/技能分开，按需调用」**，防止历史规则污染；两者官方自述并不等于在 ai-d 上已经通过独立实验 |
+
+**第三轮：反证与能力边界**。
+- [How Coding Agents Fail Their Users, EMNLP 2026](https://aclanthology.org/2026.emnlp-main.1011/)：20,574 次真实 Agent 会话中，已观察到解决方式的失配事件仍高度依赖开发者主动纠正；即使有执行层，目标误解和不实汇报不会自动消失。
+- [LongCLI-Bench, ACL Findings 2026](https://aclanthology.org/2026.findings-acl.1497/)：在 20 个精挑的长期 CLI 软件任务上受测最强 Agent 通过率低于 20%；这是困难基准的**具体测量**，不表示 AI 所有复杂工作仅有此成功率。
+- [Controlled Natural Language for Requirements Specification, ACM CSUR 2026](https://doi.org/10.1145/3778169)：133 篇原始研究的综述指出，许多受控自然语言形式缺乏充分现实采纳验证；进一步支持不要把学会严格提示词语言当普通人的前提。
+
+### 9.2 表达问题真正的「两个承载面」，不是新四层强制框架
+
+**人的界面（意图、变化、纠正、授权）**：用户说「想达到什么」「现在哪里不对」「下一轮按什么方向继续」，必要时表达非代办的个人价值取舍和风险边界。默认普通自然语言；**不要求掌握专家术语、模板、命令或任务字段**。
+
+**AI 的工作表达（专业问题表征与状态文件）**：主动转化为可检查的目标/问题、相关专业知识与证据、已确认修改与待决假设、最有价值的下一行动、验收标准和跨轮状态；复杂任务才生成必要的规格、待办或 handoff。所有权：专业翻译和资料查核优先由 AI 承担；决定最终目标或不可逆外部授权仍归人。
+
+**重要反例**：「根据上一轮建议继续建设」≠ 允许把上一轮 AI 的任何建议当用户已确认，也不等于只能继续原先小议题；应恢复较高层长期目标后选择下一项有价值工作。目标、上轮确认事项和最新证据矛盾时，先说明冲突，不静默重写。
+
+### 9.3 下一轮优先差异化验证（接现有 C01–C05，无新系统）
+
+设计两个不同领域的完整、脱敏多轮任务，包含一次「按照建议建设」、一次「方向偏了」、一次独立成果核验；每个任务比较：
+1. **只有自然短句、无额外规则**；
+2. **短句 + 精简、相关的已确认目标及未完成/修改状态**；
+3. **短句 + 冗长固定专家/提示词流程**（负面对照）。
+
+记录遗漏修改数、错误执行未经确认建议数、关键未知识别、任务真正完成、错误证据、用户纠正成本与总开销。此次检索结论支持优先检验**轻量持久状态 + 模型自主专业化**，但没有执行隔离对照；不得声称已能跨所有会话自动恢复和执行。
+
+**现实路线建议**：先复用当前 README 锚点、evaluation 的 C01–C05 台账与本报告。不移植 OpenSpec/GSD/BMad 的全套工作流，不增加固定专家数量；未来只在真实跨会话任务揭示缺口后，再有依据比较完整采纳/小改/参考知识。
