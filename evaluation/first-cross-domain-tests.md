@@ -367,3 +367,20 @@ A1b（新增比较组）：与 A1 使用**完全相同的专业来源集合**，
 **独立核验的对照要点**：是否发现SSG-0004与SSG-0002的桥接而非只重复“4组”；是否仍明确资金金额/时间缺失，不能编造已实证两跳；是否指出“全退出但无已观察出售”的4条矛盾；是否不把单Mint记录字段repeated当成跨Mint复现；是否能提出高价值、可操作的下一只读取证（原始签名、时序、公共服务排除、Swap/Transfer分离）。另外对**过度保守**计入误差：不能因同控未证实就把真实候选桥接完全忽略，合理的候选跟踪与高价值补证属于正向结果。
 
 **真正的问题不是某次回答能否列五个领域名**，而是有无发现先前被隐藏的关系、纠正误归因、影响下一次资料选择及Blix产品证据接口。各组输出须盲评并记录用户接管步骤、工具/时间与无证据断言；不能拿本轮研究者已经知道答案的静态解读冒充独立实验。**当前：STATIC_SOURCE_RECHECK=YES；B0–B3_MODEL_AB=NOT_RUN；MEASURED_UPLIFT=UNKNOWN；BLIX_RUNTIME_FEATURE=NOT_IMPLEMENTED。**
+
+
+## 2026-11-09｜知识深度回归：同源证据被重复当成多个专家证明
+
+**研究动机**：旧Hermes的[13篇 Evidence Chain](https://github.com/sunshihao001/-/blob/main/learning/13.md)将“多个Skill一致”列为质量线索；旧meme-的[结构风险模型](https://github.com/sunshihao001/meme-/blob/main/04_风险管理/结构风险评分模型_v0.1.md)将failed_reclaim、bull_trap、death_market等派生评分并列。它们有不同的解释角度，但可能读取**同一个GMGN快照/相同窗口的价格/同一资金边**。如果把相关的派生判断当独立证据，便会产生假性的“专家共识”。NIST的[自相关测量研究](https://www.nist.gov/programs-projects/uncertainty-analysis-autocorrelated-measurement-data)说明依赖数据不能无条件套用独立测量假设；但它不直接验证本项目的具体钱包识别器。
+
+**固定小任务（只需冻结档案，可在授权后开展独立评测）**：某Mint的三个观察标签分别是“同源”“同步”和“协调候选”，由同一供应商快照和两条交易事件生成；另一个市场结构问题的三个标签都由同一段价格序列生成。请辨别分别有哪些**独立可观察事实**、不同机制解释、什么新增原始证据能改变判断，而非只汇总三个标签并给高置信度。
+
+评测应对照：
+- A0：只有三个结论名称，检查模型是否错误肯定同控或操盘。
+- A1：提供原始文件/来源时窗、三个标签的推导关系，以及Hermes/meme的原问题和反证，检验是否识别**证据并非独立**。
+- A2：不限制知识量地灌入全部专家和历史文件，检查是否因冗余认知和重叠主张虚增自信。
+- A3：A1＋qb的[判断治理原始反假完成样本](https://github.com/sunshihao001/qb-/blob/main/hermes_harness/15_judgment_governance/benchmark_cases/fake_closure_dry_run_as_real_completion.json)，同时评估是否将设计/模板误报为已运行验收。
+
+**判定正误**：是否能解释标签与原始观察的非独立性；是否分别处理“关联、共同控制、协调行动、真实卖出”各自证据；是否建议新签名/资产差分/独立时点与对价取证；是否发现市场机制的反例或高价值未知；是否避免把4组候选直接当4个实证控制实体；是否减少用户需要反复指导的步骤。分辨“正确的UNKNOWN”与“一味拒绝调查候选”。
+
+**本轮只在原研究与相关Blix知识正文中进行静态交叉审查，A0–A3尚未运行。** qb旧[21判断benchmark README](https://github.com/sunshihao001/qb-/blob/main/hermes_harness/21_judgment_benchmark/README.md)自述是benchmark skeleton，其样本和预期结果不能被当作已独立验证的模型效果。若后续独立实验显示新增知识不提高正确率/未知发现或拖累成本，应限制调用范围，而非继续提高默认注入量。
