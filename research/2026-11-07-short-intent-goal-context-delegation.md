@@ -212,3 +212,14 @@
 记录遗漏修改数、错误执行未经确认建议数、关键未知识别、任务真正完成、错误证据、用户纠正成本与总开销。此次检索结论支持优先检验**轻量持久状态 + 模型自主专业化**，但没有执行隔离对照；不得声称已能跨所有会话自动恢复和执行。
 
 **现实路线建议**：先复用当前 README 锚点、evaluation 的 C01–C05 台账与本报告。不移植 OpenSpec/GSD/BMad 的全套工作流，不增加固定专家数量；未来只在真实跨会话任务揭示缺口后，再有依据比较完整采纳/小改/参考知识。
+
+
+### 9.4 再查真实命令文件与在途修改：不是只有 README
+
+为检验上表不是仅抄项目宣传，再读取当前具体文件：
+
+- [GSD Core `commands/gsd/progress.md`（next）](https://github.com/open-gsd/gsd-core/blob/next/commands/gsd/progress.md)：`--do "task description"` 接收**自由文本**并将意图路由到具体命令；文件明确写着 **“Never does the work itself”**，意图路由本身不是任务交付。`--next` 读取 STATE/ROADMAP/阶段目录，先检索未完成任务再决定下一步。
+- [GSD Core `commands/gsd/resume-work.md`（next）](https://github.com/open-gsd/gsd-core/blob/next/commands/gsd/resume-work.md)：明确路由到 resume-project 流程，读取或重建 STATE，检查 checkpoint、PLAN 缺 SUMMARY 的中断工作，再给下一行动；本轮核查了命令定义，**未运行其完整工作流**。
+- [OpenSpec 真实在途 proposal](https://github.com/Fission-AI/OpenSpec/blob/main/openspec/changes/add-global-install-scope/proposal.md) 与 [tasks](https://github.com/Fission-AI/OpenSpec/blob/main/openspec/changes/add-global-install-scope/tasks.md)：前者记 **Why / What Changes**、兼容和迁移理由；后者以未勾选工作项细分设置、适配器、配置、测试。**这是在途变更文件，不等于已实现或测试通过**。
+
+**新的判断**：最重要的“表达接口”其实不是高级语法，而是「用户当前意图 → AI 确定任务入口与状态 → 记录本轮相对上轮的变化 → 真实执行与验收」之间可检查的转换。应分别评测**识别对任务**和**任务实际完成**，不能只因输出一张专业任务计划就计成功。
