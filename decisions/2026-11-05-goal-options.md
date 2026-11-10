@@ -86,6 +86,27 @@
 
 来源核验说明：这一轮直接经 GitHub 读取以上仓库主页或指定目录；部分是作者功能声明，**未在 ai-d 统一安装、跑整套系统、验收跨仓集成或实际性能增益**。与 11 月 7 日已有成熟系统研究交叉时只补有改变的发现，不重复建立第二份成品索引。
 
+### 2026-11-10｜补充：高阶专业能力必须体现为细微判断，而不是扩大“专家名称”
+
+本次沿用已有 **L0–L6 能力等级**，不新增另一套“V3 七级体系”。用户明确强调：跟单选手的专业知识远超“跟单软件设置”，需要认识 Solana 交易协议、Meme 发行与流动性、链上身份/资金/库存、市场微观结构、执行与延迟、收益与统计偏差、社区信息、风控与软件产品等，并能发现不同子领域之间改变决策的细微联系。**专家的覆盖不是每次全讲，而是面对实际目标时能准确进入重要领域，追究微小但关键的专业差异。**
+
+**四个决定性的区分（有可用开源依据，均不是本项目已验证盈利策略）**：
+
+| 同一个普通问题 | 初级回答常漏掉的条件 | 深入专业研究应当触发的区别 | 可参考的项目证据 |
+| --- | --- | --- | --- |
+| “多个钱包同时买，能不能跟？” | 地址数不等于独立资金决策；卖单与买单竞争 | 分清 Jito Bundle/同槽/同资金来源，按有根据的关联去重，再看同期净卖压与交易时点；不凭共享服务推同控 | [Million opportunities 源码](https://github.com/Kelows/million/blob/main/apps/api/src/opportunities/opportunities.service.ts)，其中 `tryConsensus` 有 owner 去重及可选净流过滤 |
+| “这个钱包很赚钱，跟它行吗？” | 源钱包收益不等于跟随者净收益 | 首次可见时刻、成交价、池深、买卖费、跟卖方式、不能复制的首槽优势；研究退出而非只看胜率 | [Million copyability 源码](https://github.com/Kelows/million/blob/main/apps/api/src/copyability/copyability.service.ts)，用延迟一分钟的价格近似测量，注意该代理未代表真实执行 |
+| “一个回测策略很好，可以直接用吗？” | 样本选择偏差、未来信息、回测理想成交假设 | 按时点封存信息、检查 look-ahead、漏掉的失败/未成交/被过滤信号，比较前向纸上结果 | [Freqtrade lookahead-analysis](https://github.com/freqtrade/freqtrade/blob/develop/docs/lookahead-analysis.md) 与 [backtesting 假设](https://github.com/freqtrade/freqtrade/blob/develop/docs/backtesting.md) |
+| “能不能多几个 AI 专家一起研究？” | 多角色名字不代表真实独立知识 | 依据真正不同的证据/方法提出问题、互相校正，并向用户解释关键变化；任务未需要的专业不强制加入 | [Co-STORM](https://github.com/stanford-oval/storm) 的多视角提问/Moderator，[TradingAgents](https://github.com/TauricResearch/TradingAgents) 的交易角色分析 |
+
+**细分专业覆盖不是“全知要求”**：按请求判断涉及哪些真实相邻领域，例如协议交易解析、市场微观结构、交易员策略、量化统计、链上取证、产品实操与社区传播；对每个关键领域追究具体事件/指标/时间窗/交易成本/错误归因，发现更重要的未知领域后允许转向。某方向缺少可靠资料时明确未知，不能凭角色扮演制造专业经验。
+
+**对 L0–L6 的新验收含义**：L2 不计术语数量，要在用户未提供关键词时主动发现正确的交易机制；L3 不计来源数量，要给出跨领域的、会改变决策的细微区别；L4 需要同一场景的真实只读证据/工具输出与软件操作确认；L5 不计自动任务数量，要在跨轮时恢复被验证的关键判断及新证据；L6 需要与真实熟练 AI 使用者的隔离对照，不能 AI 自称胜出。必要时同时测量用户是否能理解并有效指挥 AI，而不要求用户自己变成程序员/交易员。
+
+**更新的仓库状态**：2026-11-10 GitHub 元数据核验：[Open Deep Research](https://github.com/langchain-ai/open_deep_research) 已归档，仅保留可参考的研究源代码，不宜作为“当前活跃部署首选”；[DeerFlow 2.0](https://github.com/bytedance/deer-flow) 是重写的多能力 Agent 底座，与旧 1.x 深研版本不能混为同一源码；[Hermes Agent](https://github.com/NousResearch/hermes-agent) 继续可作为长期任务与技能经验参照。重新核对 [Million](https://github.com/Kelows/million)、[Sentric](https://github.com/brandononchain/sentric)（公开只读 MCP/REST，含可选 x402 支付路径，不执行支付）和 [Freqtrade](https://github.com/freqtrade/freqtrade)；一个更成熟的基础架构也不必然包含更深的 Meme 交易专业知识。以上属于原始仓库/代码审阅，不是下载运行、独立专家验收或策略盈利证明。
+
+**最小不重复实施决策**：优先沿用现有 [跨领域评测](../evaluation/first-cross-domain-tests.md) 的 A0/A1/A1b/A2 对照，加入新的、未在上述论文和本仓举例中出现的跟单真实问题，评估是否无提示发现重要相邻领域、验证细微指标、主动修正自身误判并少让用户纠正；另加完全不同领域防止只对跟单过拟合。达到 L2/L3 的独立证据前不建设新专家委员会、知识图谱服务或常驻 Agent。此段是**研究路线更新，不是模型实际已提升**。
+
 ### 实施优先级：先证明“更懂行”，再决定要不要做常驻代理
 
 **近期优先 P0（L2/L3）**：用未被 AI-D 现有报告提前剧透的问题，固定用户原始短句、资料时点、工具与工作预算，对照 A 普通回答、B 按需读取 ai-d 专业判断方法、C 过量历史/固定专家负对照。核心评分是找到用户不懂但重要的专业线索、证据准确率、错误增补、任务决策变化、用户需纠正次数、成本；不让同一生成者给自己独立打分。**当前 NOT_RUN**。
