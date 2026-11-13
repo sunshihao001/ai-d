@@ -7,6 +7,19 @@
 > 对用户的要求不变：用户可以只说“继续”“按照建设来”“这次研究太浅”；AI 应自行恢复历史目标和材料，把口语意图转成足以执行、可核验的专业任务说明。**专业化表述是 AI 的工作责任，不是用户的准入门槛。** 专业化也不等于写长、写满术语或堆专家身份。
 
 
+## 2026-11-14｜K-A06：纠偏方法的第二次源码实证——纠正钱包采集的错误覆盖判定
+
+**触发与正确基线**：用户同意从概念研究进入“主动发现、正确定位、独立验证”的实际试点；维持新确认的“上游源问题修上游，不让AI工作台重新采集”。在Blix原版钱包采集层server/wallets.js::pageSignatures中，若增量扫描没有旧签名锚点(lastSig=null)，原实现初始reached=true；即使RPC每页满额、达到pages上限并未见到历史终止边界，仍返回reached=true。这是可由源码逻辑证明的**错误覆盖状态**，不需要声称主网已经发生丢交易事故。
+
+**实际修复**：在既有wallets.js将reached初始化为Boolean(first)而非first||!lastSig；没有上次锚点的增量扫描必须通过真实短页或识别旧锚点才能判已到达边界。原函数下游checkpointWalletPage继续沿既有钱包签名作业、水位与风险记账，不创建第二套采集源；未验证状态用“older events may be missing”替代“the oldest were skipped”的过度断言。
+
+**反例与对照**：test/wallet-evidence-chain.test.mjs新增纯离线模拟：无lastSig、连续两页各50签名、刚好达到页上限，必须reached=false；短页返回true；已有lastSig短页场景不应回归。这是可复现的本地算法边界测试，并非模拟真实第三方供应商全部行为。相关源码：[wallets.js](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/server/wallets.js)、[wallet-evidence-chain.test.mjs](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/test/wallet-evidence-chain.test.mjs)。
+
+**跨层关系**：目标O2/O3/O4、来源采集S4、事实覆盖契约S5、反例S6、纠偏S7；纠错发生在已有数据源接入所有者，而非AI sidecar或提示词。纠偏范围只限“历史覆盖状态”，不扩大成“全市场实际漏报已证实”，也不能将满页视作一定漏包。
+
+**状态与下一步**：已提交源码修复与回归测试；GitHub Actions最终验收按最后提交SHA核查。真实供应商签名补查/数据覆盖质量与完整Mint链仍UNKNOWN。若CI成功，可把此例视为SOURCE_CODE_FIXED + OFFLINE_REGRESSION_PASSED，**不能称REAL_MARKET_COVERAGE_VERIFIED**。下一步优先用有界真实RPC证据验证补查和旧历史窗的风险，但不重复造数据源系统。
+
+
 ## 2026-11-13｜K-A05：纠偏方法首次纠正自身诊断（已执行，非仅写方法论）
 
 **真实进展**：反向核对Blix原版跨模块源码发现，旧调查过分关注sources.js::pumpStream的重连而没有检查engine.js::backfillLaunches、fillLaunchGaps、livetrades.js::onLiveCreate、钱包pollOne/Page Signatures及签名窗口持久化，导致“原版补查能力缺失”的宽泛说法有误导风险。**已经撤回宽泛缺失假设**，改为“原版存在有界发行列表补查/链上交叉发现/钱包历史轮询，仍未验证特定断流窗口的完整性和源时点/交易原文复原”。
