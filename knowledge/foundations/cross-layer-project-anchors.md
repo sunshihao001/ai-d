@@ -395,3 +395,23 @@ ASQ的[失效模式与影响分析（FMEA）](https://asq.org/quality-resources/
 **轻量取舍**：真正高价值的纠偏不是单独多写一份FMEA，而是让一个已存在的高风险业务测试增加恰当负例或上游健康证据，改变错误输出；只有跨模块、高后果问题才需要详细预演。若纠偏成本大于风险降低，回退为最小可验证边界。
 
 **外部理论边界**：FMEA和SRE实践支持“主动预防+事后验证”是成熟的可靠性工作方法；这不证明目前AI已具备可靠自主纠偏，也不证明Blix实际发生过上面列举的所有错误。
+
+
+### 13.10 真实项目反向纠偏：不仅检查别人做错什么，也检查AI之前诊断是否过度扩大
+
+**2026-11-13 源码复核产生的实质修订**：之前仅从Blix的server/sources.js::pumpStream确认存在WebSocket重连，未在该文件看到补查，于是建议“优先补齐发行源的断流恢复”。**该观察本身局部正确，若据此推断“原版Blix不存在发行补查”则是错误的全局结论。** 进一步跨文件核对发现：
+- server/engine.js::fillLaunchGaps()使用livetrades.js的链上create补充PumpPortal；
+- server/engine.js::backfillLaunches()具有启动及周期性的pump.fun近期列表有界补查，遇429会停止；另有scanRecent与其他发行平台的近期代币发现；
+- server/livetrades.js已有短时状态保存/恢复（并非完整断线事件重放）；
+- server/wallets.js::pollOne/pageSignatures与wallet-signature-coverage.mjs已经有钱包签名补查、原子检查点和缺口状态；
+- server/rpc-stream.js仍存在延迟大时从最新链头重新订阅的取舍，但并不能凭它证明其他现有补查组件失效。
+
+**纠错动作已经执行**：对应[Blix映射第11–12节](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/docs/project/cross-layer-anchor-map-20261113.md)与[建设台账R-32](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/docs/project/build-register.md)撤回“没有补查能力”的笼统假设。真正待验的是**已有补查对特定断流/源时点/原始交易和覆盖的准确保证**，而不是开发一套新的采集器。
+
+这说明AI做根因归因前必须核查**同一责任链上的现有缓解/补偿机制**。如果一份文件没有功能，不能推断整个系统没有功能；如果系统存在补查函数，也不能直接认定所有缺口均被补回。**两个方向的轻率推断都需纠偏。** 这个案例是SOURCE_REVIEWED + DOCUMENT_DIAGNOSIS_CORRECTED，未证实真实主网遗漏、上游修复或模型自主发现能力。
+
+### 13.11 纠偏结果的外部独立检查：检测误报也可能伤害项目
+
+Google SRE将“症状是什么”与“原因为什么”分开，并要求监控具有可操作性，避免过量误报：https://sre.google/sre-book/monitoring-distributed-systems/ 。NIST AI RMF 将Map/Measure/Manage和用户实际反馈/独立评审视为风险管理活动，不把方法当固定清单：https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ 。
+
+对本项目的实际要求：以未经提示的真实任务比较纠偏前后**真实错误发现数、错判为缺陷的数量、发现位置/修复位置是否一致、回归副作用、用户重复纠错次数、成本和完成时间**；不能让提出错误诊断的同一轮AI自行说“现在解决了”就视为验收。AI因一次用户反馈不断改整体目标，属于纠偏误报和策略振荡，不是更积极。简单问题不增加纠偏负担，重大反复/跨层问题才做深审。
