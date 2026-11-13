@@ -205,7 +205,7 @@ B. 从知识/数据/业务锚点双向回查受影响调用方、说明和负例
 | [OMG SysML v2](https://www.omg.org/sysml/sysmlv2/) | 需求、结构、行为、分析、验证的一致性与可追溯模型 | 多个视图对应同一项目目的 | 直接在轻量Blix上引入完整SysML工具链 |
 | [W3C PROV-O](https://www.w3.org/TR/prov-o/) | Entity/Activity/Agent及衍生/使用/生成 | 将来源与处理过程连接到具体主张 | 使用形式本体自动推断真实经济控制 |
 | [W3C SHACL](https://www.w3.org/TR/shacl/) / [pySHACL](https://github.com/RDFLib/pySHACL) | 对RDF关系图的形状、约束和验证结果 | 重要语义/数据契约可以被工具检查 | 没有RDF需求却直接安装RDF数据库 |
-| [NIST Digital Thread](https://www.nist.gov/) | 不同产品生命周期信息的跨阶段连续性与互操作研究 | 用“跨阶段连续信息”理解项目历史、设计/实现/运行联系 | 将数字制造平台当AI代理运行时 |
+| [NIST Digital Thread](https://www.nist.gov/programs-projects/digital-thread-smart-manufacturing) | 不同产品生命周期信息的跨阶段连续性与互操作研究 | 用“跨阶段连续信息”理解项目历史、设计/实现/运行联系 | 将数字制造平台当AI代理运行时 |
 | [Doorstop](https://github.com/doorstop-dev/doorstop) | YAML需求项、测试项、版本控制与追溯校验 | 小规模需求/验收双向关联 | 为每个项目函数新建YAML；未评估LGPLv3许可直接复制实现 |
 | [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | 技术/业务元数据、语义、血缘、质量、合约的统一目录 | 领域术语和事实来源的多视图检索 | 大型元数据平台直接内嵌Blix |
 | [DataHub](https://github.com/datahub-project/datahub) | 上下游字段级数据血缘与影响分析，面向代理查询 | 某字段改变时找真正下游消费者 | 误以为“数据目录发现”本身证明链上语义正确 |
