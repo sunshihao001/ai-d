@@ -1,4 +1,4 @@
-# 项目多层锚点与跨层一致性｜从认知约束到可核查工程关系（候选 V0.1）
+# 项目多层锚点与跨层一致性｜从认知约束到可核查工程关系（候选 V0.2）
 
 日期：2026-11-13｜状态：已核对现有ai-d与Blix源码的知识/方法候选；**没有建立通用自动锚点系统，也没有独立实验验证有效性**。
 
@@ -141,3 +141,97 @@ A. 只检查变更文件的局部测试；
 B. 从知识/数据/业务锚点双向回查受影响调用方、说明和负例。
 
 记录是否发现真正新漏项、错误减少、审查耗时/误报增加多少，以及哪些关系本身错误。**只有B在真实任务上的实际改进，才支持继续建设自动化锚点工具。** 不为了锚点数量而建新图谱。
+
+
+## 11. 2026-11-13 体系收束：从关键词集合走向“可解释、可验证的项目关系”（V0.2）
+
+**用户明确确认的新方向**：锚点与映射并非偶然有用的两个词，而是指向完整项目内目标、专业知识、来源、数据、业务、设计、代码、测试、运行与反馈能够相互联系、理解、验证和修正的能力。用户对这一方向的正面反馈，是重要的**需求反馈**，不是已独立证明的模型或研发效率改善。
+
+**为什么此前连续数月的研究容易空转（解释性假设）**：
+1. **问题表征过局部**：把普通人的目标马上缩成一个按钮、一条策略或一个专家主题；少考虑完整业务范围、前置条件和隐藏失败。
+2. **层次常被混用**：知识分类、项目阶段、来源证据、运行测试、AI能力、市场结果本来不同，却在摘要中被视为同一层“进展”。
+3. **资料与实现断开**：搜索许多GitHub成品，却没有充分回答其自身设计问题、数据如何形成、现成代码在哪、为何能改变当前业务判断。
+4. **单向报告缺反馈**：从参考资料到总结的单向流容易越写越完整，却缺从失败源码、真实测试、应用效果回到知识与目标的逆向修正。
+5. **缺失错误传播的视角**：一个时点或账户语义错误可能同时污染选币、资金网络和盈利模拟，但之前只修当前文件。
+6. **反复纠偏被过度固化**：每发现一次遗漏，就建新的阶段、标签、专家制度，而不是回到共享的关系/证据根因。
+
+**为什么这次的解释更贴近用户意图（待实证）**：以“锚定、映射、关系语义、双向追溯、可执行约束、保障论证、变化影响”共同解释整个项目，首次较完整地同时连接了**知识形成、项目组织、真实数据语义、代码行为与可核查结果**；外部成熟项目为每一种机制提供了对应原型，且明确可用与不适用的边界。前面的分析是对用户反馈和既有失败的**竞争性解释**，未排除项目复杂度、可用工具、历史上下文、真实数据许可等其他原因。必须用下一次相同任务/独立材料的对照检验。
+
+### 11.1 七类核心能力：收束后只保留七个“问题”，不新增七个系统
+
+| 汇总能力 | 核心问题 | 主要专业概念 | 现有承载/实际改变 |
+|---|---|---|---|
+| **S1 方向保持** | 为什么做、谁确认、何时可改？ | 锚定 Anchoring、目标追踪 Goal Alignment、需求分解 Decomposition、ADR 决策记录 | ai-d现有意图理解/发展/选择、用户授权，业务项目原目标与决策台账；不让AI最新建议覆盖已确认目标 |
+| **S2 结构理解** | 什么对象、哪种层级、哪个上下文？ | 分层 Layering、抽象 Abstraction、聚合 Aggregation、领域本体 Ontology、限界上下文 Bounded Context、概念消歧 | P1–P8问题与专业领域分开，项目内把Token Account/Owner/Controller等语义区分 |
+| **S3 映射对齐** | A与B在哪些条件下真正对应？ | 结构/语义/关系/跨层/动态映射、对齐 Alignment、关联 Linking、知识图谱 Knowledge Graph | 主张级联系，比文件名和关键词更精确；保留映射版本、范围与失效条件 |
+| **S4 双向追溯** | 这个结论从何来、修改后影响哪里？ | 依赖 Dependency、双向追溯 Traceability、血缘 Lineage、来源 Provenance、数字线程 Digital Thread | 目标↔实现↔测试、原始来源→处理→主张；有实际运行才可补运行血缘 |
+| **S5 契约约束** | 哪些条件不可违反，越界时怎样降级？ | 数据契约 Contract、不变量 Invariant、断言 Assertion、约束传播 Constraint Propagation、语义一致性 Consistency、覆盖度 Coverage | 把知识边界变成API/数据定义、逻辑限制和反例测试；文档警告不是程序执行 |
+| **S6 证据保障** | 声称“做到了”实际有何依据？ | 交叉核验 Cross-checking、三角互证 Triangulation、反证 Falsification、保障论证 Assurance Case、回归 Regression Testing、样本外验证 | 对每条主张记录证据链、反例和无法支持的升级；统计Cross-validation不等于多来源三角互证 |
+| **S7 演化治理** | 新证据/代码/环境变化应改哪里、何时停止？ | 变更影响 Impact Analysis、传播 Change Propagation、可观测性 Observability、漂移检测 Drift Detection、版本 Versioning、闭环反馈 Feedback、持续改进 Continuous Improvement | 有证据才沿直接关系影响局部，必要时回滚/撤销；避免无穷制度化 |
+
+**最重要的区分**：七类是共同工作的**认知责任**，不是七个软件服务或强制执行步骤。知识九阶段 K1–K9仍回答知识怎样形成与演化；P1–P8仍回答研究什么；具体业务项目继续自己定义产出与安全边界。
+
+### 11.2 全部关联专业术语归位清单（便于外部研究不漏项）
+
+| 家族 | 相关关键词/概念（英文检索同义方向） | 与邻近概念的边界 |
+|---|---|---|
+| 意图/结构 | Goal Anchoring、Goal Alignment、Layering、Decomposition、Abstraction、Aggregation、Ontology、Bounded Context、System Modeling / Model-Based Systems Engineering (MBSE / SysML) | 目标不是知识目录；系统模型覆盖结构与行为，但不保证运行效果 |
+| 映射/关系 | Mapping、Structural Mapping、Semantic Mapping、Relational Mapping、Cross-layer Mapping、Dynamic Mapping、Bidirectional Mapping、Semantic Alignment、Linking、Knowledge Graph、Entity Resolution | 映射是“可能/有条件的对应”，不能把相近术语、地址、身份自动做等价关系；双向可追溯不等于数学一一可逆 |
+| 依赖/来源 | Dependency、Bidirectional Traceability、Data Lineage、Data Provenance、Knowledge Provenance、Digital Thread、OpenLineage Job/Run/Dataset/Facet | 文件链接不是已观察到的执行；血缘是形成路线，来源是事实与生成活动的可信依据，数字线程强调跨生命周期连续性 |
+| 约束/质量 | Contract、Data Contract、Semantic Contract、Invariant、Assertion、Constraint Propagation、Consistency Maintenance、Coverage、SHACL Shapes、Architecture Tests、Schema Evolution | 业务不变量可以约束代码；语义契约不同于对某一用户直接给出交易建议 |
+| 验证/论证 | Verification、Validation、Cross-check、Statistical Cross-validation、Triangulation、Falsification、Assurance Case、Claim–Argument–Evidence、Regression Testing、Negative Testing、Independent Baseline、Out-of-sample Evaluation | 单元/离线测试可验证具体实现行为，不证明真实来源覆盖、因果关系或市场收益；三角互证需核证据独立性 |
+| 演化/运维 | Impact Analysis、Change Propagation、Versioning、Architecture Decision Record (ADR)、Observability、Feedback Loop、Drift Detection、Continuous Improvement、Change Management、Rollback | 观察到变化不等于自动授权变更；传播需经真实依赖和条件判断，避免全仓误报 |
+| 产品参考 | Doorstop、OpenMetadata、DataHub、OpenLineage、ArchUnit、pySHACL，以及NASA Requirements Management、W3C PROV-O / SHACL、OMG SysML v2、NIST Digital Thread | 研究各自成熟能力和边界；不是同一种产品，不预设照搬完整框架或复制受许可证限制的代码 |
+
+**关键词是资料检索入口，不是要求在运行代码内构建50种节点。** 若某术语只换名字不提供新机制、边界或影响关系，不另建知识单元。
+
+### 11.3 五张逻辑网络与唯一“跨图”语义
+
+1. **目标网络**：用户确认目标、候选解释、业务结果、授权边界；关系如 refines / requires / approved_by。
+2. **知识网络**：概念、原始来源、专业主张、方法、竞争假说、反例；关系如 broader / contradicts / applies_to。
+3. **数据与事实网络**：真实事件、原始RPC、账户/Owner、行情快照、转换、时间、来源和数据覆盖；关系如 observed_in / derived_from / lineage_of。
+4. **工程网络**：已有接口、代码、数据契约、依赖、架构决策、功能开关；关系如 implements / calls / constrained_by。
+5. **验证与反馈网络**：测试、真实案件、负例、CI运行、影子分析、业务效果、修订；关系如 verifies / fails_when / triggers_review / supersedes。
+
+这些是**观察同一个项目的五种视图**；可以由一个现有Markdown目录、源代码、SQLite与测试共同承载，绝不等于采购/部署五套图数据库。跨图的连接单元优先是**能改变判断的具体主张**，再沿关系找来源、依赖、实现和可检查的验收。
+
+关系强度必须区分：DIRECT_SOURCE_FACT（有路径/真实证据）、CODE_STATIC_REFERENCE（代码可见）、IMPLEMENTED_BEHAVIOR_TESTED（限定测试）、THEORETICAL_ANALOGY（理论类比）、REVIEW_CANDIDATE（待查影响）、UNKNOWN；**关联不能凭相同标签升级成真实经济同控或因果关系**。
+
+### 11.4 研究检索到的完整成熟参考与是否值得复用
+
+| 来源 | 可核对的具体机制 | 值得借鉴 | 不应照搬 |
+|---|---|---|---|
+| [NASA Requirements Management](https://www.nasa.gov/reference/6-2-requirements-management/) | 用户/技术需求→设计/组件→测试之间的双向追溯与变化管理 | 上下游需求有依据；缺上游价值支持的功能可及时删减 | 航天全套规程、每条小改必须开委员会 |
+| [OMG SysML v2](https://www.omg.org/sysml/sysmlv2/) | 需求、结构、行为、分析、验证的一致性与可追溯模型 | 多个视图对应同一项目目的 | 直接在轻量Blix上引入完整SysML工具链 |
+| [W3C PROV-O](https://www.w3.org/TR/prov-o/) | Entity/Activity/Agent及衍生/使用/生成 | 将来源与处理过程连接到具体主张 | 使用形式本体自动推断真实经济控制 |
+| [W3C SHACL](https://www.w3.org/TR/shacl/) / [pySHACL](https://github.com/RDFLib/pySHACL) | 对RDF关系图的形状、约束和验证结果 | 重要语义/数据契约可以被工具检查 | 没有RDF需求却直接安装RDF数据库 |
+| [NIST Digital Thread](https://www.nist.gov/) | 不同产品生命周期信息的跨阶段连续性与互操作研究 | 用“跨阶段连续信息”理解项目历史、设计/实现/运行联系 | 将数字制造平台当AI代理运行时 |
+| [Doorstop](https://github.com/doorstop-dev/doorstop) | YAML需求项、测试项、版本控制与追溯校验 | 小规模需求/验收双向关联 | 为每个项目函数新建YAML；未评估LGPLv3许可直接复制实现 |
+| [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | 技术/业务元数据、语义、血缘、质量、合约的统一目录 | 领域术语和事实来源的多视图检索 | 大型元数据平台直接内嵌Blix |
+| [DataHub](https://github.com/datahub-project/datahub) | 上下游字段级数据血缘与影响分析，面向代理查询 | 某字段改变时找真正下游消费者 | 误以为“数据目录发现”本身证明链上语义正确 |
+| [OpenLineage](https://github.com/OpenLineage/OpenLineage) | Run Event、Job、Dataset、Facet区分运行与静态描述 | 采集/解析/调查一次真实处理的来源路径 | 仅创建静态索引就宣布“运行血缘已验证” |
+| [ArchUnit](https://github.com/TNG/ArchUnit) | Java字节码包/层依赖和架构测试 | 借鉴自动阻止跨层违规依赖的原则 | Blix是JS/TS，不要直接安装Java测试库 |
+| [ADR](https://martinfowler.com/bliki/ArchitectureDecisionRecord.html) | 单项重大决策的背景、取舍、状态及后果 | 保留为何选择原Blix/只读侧车等决策 | 为每个变量创建ADR，导致决策记录噪音 |
+| [OpenTelemetry版本稳定性](https://opentelemetry.io/docs/specs/otel/versioning-and-stability/) | 稳定语义发生变化会破坏下游消费者 | 数据字段语义变化须追查接口、UI和告警依赖 | 声称现有系统已安装或需要全量追踪 |
+
+所有来源在本轮只支持“**外部存在成熟机制可借鉴**”这一源级判断；它们不验证“融合后对ai-d或Blix一定提升多少”。
+
+### 11.5 关键关系之间的判别（避免概念混用）
+
+- **Mapping vs Alignment**：Mapping指对象之间的对应规则；Alignment更强调两边定义/条件/粒度是否一致；一份映射可存在但语义对齐仍失败。
+- **Link vs Dependency vs Trace**：Link可能只是参考；Dependency表示后续结果确实依赖前项；Trace说明关联路径及其责任/证据；不能由普通链接自动得出需重构代码。
+- **Provenance vs Lineage**：前者重在出处、生成过程和使用依据，后者重在输入经过怎样的处理流到输出，二者可重叠但不等价。
+- **Ontology vs Knowledge Graph**：本体定义概念和有效关系；图谱表达具体对象/事实/关系，图谱正确连接不表示本体或结论正确。
+- **Contract vs Invariant vs Assertion**：契约声明输入/输出及使用条件；不变量是必须保持的业务/算法性质；断言是某个检查位置的可执行条件。写成Markdown不等于已强制执行。
+- **Verification vs Validation vs Assurance**：Verification核实现是否符合规格；Validation检验是否满足真实用途；Assurance Case把重要主张、论证、证据和反例组织起来，减少局部测试冒充整体成功。
+- **Triangulation vs Statistical Cross-validation**：三角互证比较不同来源/方法是否独立支持主张，统计交叉验证用于估计样本内模型泛化，不是直接证明链上同控；反证关注什么事实会推翻当前解释。
+- **Impact Analysis vs Change Propagation**：前者发现可能受影响的消费者；后者是确定并实施必要修改；范围不能无限扩大。
+- **Digital Thread vs Runtime Workflows**：数字线程强调跨阶段信息连续性；Agent执行框架负责真实动作和状态，二者不相互替代。
+
+### 11.6 在AI协作项目中的最终收束：七项能力不是新架构
+
+**不更改P1–P8问题索引、K1–K9知识生命周期，也不新建七套知识库。** 在实际任务中，AI先理解目标，然后按需定位当前哪一种关系能力不足：没有来源→回原始证据；语义对不齐→查上下文/概念；有知识却找不到代码→查实现映射；测试通过但主张太强→建证据论证；改一个接口影响其他地方→做变更影响；重复几轮仍无业务增益→用风险锚点停研/切路。
+
+**下一次可验证的实验**：以一个事先未预置“正确专业词”的Blix真实研发任务，在同样仓库版本、来源与预算下，比较(A)只审受改文件 vs (B)基于既有锚点与双向追溯检查。记录重要遗漏/假依赖、正确发现的下游、真实代码/测试变化、人工复核成本、最终业务质量。设失败条件：仅多出图、术语和报告却没有可核新增事实或修复，停止扩张。
+
+**认识锚点**：AI的价值不是“知道很多关键词”，而是知道什么时候应当连接哪些知识与工程事实，哪些关系没有证据，以及新事实改变了什么判断。
