@@ -7,6 +7,15 @@
 > 对用户的要求不变：用户可以只说“继续”“按照建设来”“这次研究太浅”；AI 应自行恢复历史目标和材料，把口语意图转成足以执行、可核验的专业任务说明。**专业化表述是 AI 的工作责任，不是用户的准入门槛。** 专业化也不等于写长、写满术语或堆专家身份。
 
 
+## 2026-11-13｜K-A05：纠偏方法首次纠正自身诊断（已执行，非仅写方法论）
+
+**真实进展**：反向核对Blix原版跨模块源码发现，旧调查过分关注sources.js::pumpStream的重连而没有检查engine.js::backfillLaunches、fillLaunchGaps、livetrades.js::onLiveCreate、钱包pollOne/Page Signatures及签名窗口持久化，导致“原版补查能力缺失”的宽泛说法有误导风险。**已经撤回宽泛缺失假设**，改为“原版存在有界发行列表补查/链上交叉发现/钱包历史轮询，仍未验证特定断流窗口的完整性和源时点/交易原文复原”。
+
+**已经写入并可回查**：ai-d[跨层锚点第13.10–13.11](../knowledge/foundations/cross-layer-project-anchors.md#1310-真实项目反向纠偏不仅检查别人做错什么也检查ai之前诊断是否过度扩大)提供实例和防止纠偏误报的证据要求；Blix[原知识映射第11–12节](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/docs/project/cross-layer-anchor-map-20261113.md)修正记录，[R-32](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/docs/project/build-register.md)写明原判断、反证、修复位置、保留未知和下一次验收。
+
+**价值与边界**：此成果属于SOURCE_CODE_REVIEWED + WRONG_DIAGNOSIS_RETRACTED + CANONICAL_DOC_CORRECTED，**不是模型已经学会自检、不等于源端实际增益，也不等于全市场交易历史补齐**。下一步应该根据R0/R1已有职责验证不同发行/交易/钱包流的独立覆盖与原版补查效果。若有现成补偿足够就不开发新采集器；若确有gap，先在负责该源的原组件修。保持外部来源许可与只读权限。
+
+
 ## 2026-11-13｜K-A04：纠偏深入——从现象修正到根因、双环学习与防复发
 
 **用户新意图**：目前项目多个地方需要纠错，要求将“纠偏”作为跨层重要能力完整深化，而不是只为每个已发现错误新增一条强制规则。**已研究**：[多层锚点与跨层一致性第13节](../knowledge/foundations/cross-layer-project-anchors.md#13-2026-11-13纠偏能力的深层扩写纠错校准根因修复与学习v03)；包括偏差/纠错/纠偏/根因/RCA/CAPA/校准、九类错误位置、即时遏制/单环修复/双环重审、最早可干预失效环节、责任归属、正反验收、过度纠偏风险、三组Blix案例。
