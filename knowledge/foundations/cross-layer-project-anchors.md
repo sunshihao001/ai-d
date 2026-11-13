@@ -397,7 +397,7 @@ ASQ的[失效模式与影响分析（FMEA）](https://asq.org/quality-resources/
 **外部理论边界**：FMEA和SRE实践支持“主动预防+事后验证”是成熟的可靠性工作方法；这不证明目前AI已具备可靠自主纠偏，也不证明Blix实际发生过上面列举的所有错误。
 
 
-### 13.10 真实项目反向纠偏：不仅检查别人做错什么，也检查AI之前诊断是否过度扩大
+### 13.11 真实项目反向纠偏：不仅检查别人做错什么，也检查AI之前诊断是否过度扩大
 
 **2026-11-13 源码复核产生的实质修订**：之前仅从Blix的server/sources.js::pumpStream确认存在WebSocket重连，未在该文件看到补查，于是建议“优先补齐发行源的断流恢复”。**该观察本身局部正确，若据此推断“原版Blix不存在发行补查”则是错误的全局结论。** 进一步跨文件核对发现：
 - server/engine.js::fillLaunchGaps()使用livetrades.js的链上create补充PumpPortal；
@@ -410,7 +410,7 @@ ASQ的[失效模式与影响分析（FMEA）](https://asq.org/quality-resources/
 
 这说明AI做根因归因前必须核查**同一责任链上的现有缓解/补偿机制**。如果一份文件没有功能，不能推断整个系统没有功能；如果系统存在补查函数，也不能直接认定所有缺口均被补回。**两个方向的轻率推断都需纠偏。** 这个案例是SOURCE_REVIEWED + DOCUMENT_DIAGNOSIS_CORRECTED，未证实真实主网遗漏、上游修复或模型自主发现能力。
 
-### 13.11 纠偏结果的外部独立检查：检测误报也可能伤害项目
+### 13.12 纠偏结果的外部独立检查：检测误报也可能伤害项目
 
 Google SRE将“症状是什么”与“原因为什么”分开，并要求监控具有可操作性，避免过量误报：https://sre.google/sre-book/monitoring-distributed-systems/ 。NIST AI RMF 将Map/Measure/Manage和用户实际反馈/独立评审视为风险管理活动，不把方法当固定清单：https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ 。
 
