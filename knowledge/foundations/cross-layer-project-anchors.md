@@ -439,3 +439,15 @@ Google SRE将“症状是什么”与“原因为什么”分开，并要求监�
 **修正**：把“外部来源知识的完整提取与追溯”“各类别可延伸的独立研究问题”“当前产品代码是否值得做/先做什么”分成不同判断。先按来源原名、原顺序、原适用场景登记各类并记录覆盖；之后才分层标注相关性、证据强度、研发收益与迁移限制；低当前适配度**不意味着缺少长远研究价值或可以从知识目录里删除**。反过来，完成全量目录也不代表内容已经深入掌握、可实跑或必须一次性开发。
 
 **验证案例**：[Blix Synapse 完整知识分类与延伸台账](https://github.com/sunshihao001/grok/blob/blix/knowledge/references/synapse-methodology-full-taxonomy-20261114.md)逐项覆盖 14 个链上信号、DEX 3 事件/3 形态、HyperLiquid 4 主信号/5 行为标签、5 原则、4 组噪音及完整产品要点，补充 T01–T14 自主延伸目录。其作用是纠正“按现有实现挑知识”，**不是建立跨项目强制14层分类或把外部金融信号写成通用 AI 规则**。仍待真实任务检验知识覆盖能否带来更好的研究与产品决策。
+
+
+### 13.13 旧 Grok × Hermes：纠偏不仅是理论，旧项目已有部分实现与失败反例（2026-11-14）
+
+**历史源码复核**：旧Grok `sunshihao001/grok@fa10e491`、旧Hermes `sunshihao001/-@2bf694b3`。完整逐项源/代码/测试对应及Blix取舍登记在[Blix旧项目交叉表](https://github.com/sunshihao001/grok/blob/integration/blix-evidence-readonly-20261108/knowledge/INTEGRATION-CROSSWALK.md#2026-11-14旧-grok--hermes-的纠偏机制源码复核不是重复移植整套工作流)。
+
+**三个方法学认识**：
+1. **Grok的认知纠偏**：旧`research.py::evaluate_observations`以source_ref和观察/可得/决策时间拒绝前视；`knowledge/method.md`强制区分事实、竞争解释、反证和下一项取证；`monitor.py`隔离live/fixture、旧时点和原子状态更新。这是“证据→判断→反馈”的有界原型，不代表主网可盈利能力。
+2. **Hermes的工程纠偏**：`missing_data_policy.md`把缺项与源技能、恢复动作和下游决定绑定；`phase_state.py`有恢复/状态记录；`pytest_failure_attribution.md`记录模块导入冲突导致的假失败，反证“看到大量红色CI就要改业务代码”。这是“错误现象→正确责任人→修正与验收”的可追溯案例。
+3. **旧制度本身需被反证**：Hermes的`cross_skill_handoff_contract.md`要求反证可传递，但`meme-evidence-chain/scripts/run.py`将`counter_evidence_count`固定为0、基础反证数组未被填充，分值用未独立校准的0.8基数加减；历史一个4币批次全部NEED_MORE_DATA，尚不能区分全部由源不足还是阈值/解释模型问题。**协议写了≠程序实现了；UNKNOWN多≠专业正确；分数精确≠经过校准。**
+
+**改变后续纠偏选择的方法**：比照旧项目优先问“已有反证/降级/恢复/失败归因机制是否确实在运行？一处失效的**真实所有者**是谁？”；再做源级、解析级或AI级最小修复，避免搬旧Hermes固定S01–S07流水线、新建状态机、复制未校准打分，或让AI重复做数据源职责。以上为SOURCE_REVIEWED + HISTORICAL_ARTIFACT_CHECKED；本轮没有运行旧项目的真实市场服务，没有验证旧例的链上真值，也没有证明完整自纠偏能力。
