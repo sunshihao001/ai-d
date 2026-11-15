@@ -137,3 +137,18 @@
 **优先检验“专业化任务表述是否真的减少人的纠错成本”**，而不继续为专业表达写宣传性原则。选择一项完整、此前没有预置答案的多领域问题，保留原始口语表达，对照一种只按表面回答的方案与一种由 AI 自行恢复目标、识别前提并选择来源的方案。评估的重点：是否找到用户不知道的重要专业问题，是否避免自造错误范围，实际结果是否更可核查，以及额外搜索/追问成本是否值得。
 
 若发现已有独立评测资料可复用，先复用；不得自行创造假的独立模型输出。完成本轮后只更新本表相关行，不必再创建新的“V3 研究流程”。
+
+
+## 2026-11-15｜K-A07：从“Agent 内核”假设转向“能力整合”假设
+
+**触发**：连续研究 Hermes、Skills、MCP、Agent Runtime、Memory、研究 Agent 后，用户进一步明确：真正可能脱颖的不是再发明一个组件，而是自己的**整合能力**。这不是用户不懂代码所以降低目标，而是对现有生态成熟度重新判断后的产品方向假设。
+
+**本轮外部研究**：Hermes v0.23.1 及当前文档显示其已经提供大量 Runtime、Tools、Skills、Memory、Session Search、Delegation、MCP、Plugins、Cron、Gateway 等能力；2026 Agent 综述显示工具、记忆、规划、编排已成为常见基础组成；2026 memory 研究进一步把重点推向更新、失效、遗忘、治理与长期一致性。结论：继续堆 Skill/Tool/Memory 不足以形成可靠差异化。详见 [能力整合与 Hermes 演化研究](2026-11-15-capability-integration-and-hermes-evolution.md)。
+
+**新研究假设**：ai-d 更值得研究的是 Goal-to-Capability Integration Layer：从人的真实目标出发，形成问题表征，判断能力缺口，发现可用能力提供者，按当前条件选择/组合模型、Agent、Skill、MCP、专业方法、数据与成熟项目，执行后用证据验证，再决定修订、替换、淘汰或沉淀组合经验。Adaptive Judgment / Epistemic Control 保留为其中的判断机制，不再提前宣布为最终产品内核。
+
+**与既有知识的关系**：不新增 P9、不新增强制阶段、不推翻 P1–P8、九阶段生命周期或跨层锚点。已有意图理解→专业问题、研究风险、证据状态、纠偏、跨层追溯分别成为整合层的入口、判断、证据、修订和关系支撑；Hermes 暂时是 Runtime provider，Skills 是 procedural capability，MCP 是 tool connectivity，成熟 GitHub 项目是 capability source。
+
+**最重要的边界**：尚未证明能力整合比普通 Agent workflow 更好；尚未证明需要改 Hermes 源码；尚未证明 Capability Graph 或专门软件必要；也不能宣称这是市场独有创新。当前状态：**SOURCE_RESEARCHED + DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_MODEL_VERIFIED**。
+
+**下一轮高价值工作**：不要再写同义理论。对 Hermes、DeepAgents、Open Deep Research、GPT Researcher、OpenWiki/Co-STORM 等逐项检查它们已经解决哪些能力选择/组合/验证问题，再选一个与 Solana 不同的完整现实任务，比较普通 Agent workflow 与动态能力整合是否减少用户纠错、无关工具调用、关键未知遗漏和失败成本。如果没有稳定收益，应停止扩大该方向。
