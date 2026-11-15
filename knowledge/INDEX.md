@@ -162,3 +162,12 @@ ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较�
 - [第三轮：从普通短句到目标恢复、知识调用、澄清与行动选择](../research/2026-11-07-short-intent-goal-context-delegation.md)（P1/P3/P4/P5/P6/P7/P8）。
 - **专业研究的关键分流**：用户意图不确定（用户才能定）、模型事实不确定（AI 自己研究）、历史知识适用不确定（追溯来源）、执行授权不确定（谨慎限制行为）不是同一种问题；无需因此建立四个专家 Bot。
 - **相关联的证据**：NAACL/ICML/ACL 2025–2026 澄清与信息增益研究；AACL 2026 JUMPSTARTER 的任务上下文选择；ACL 2026 PersonalAlign 的长期偏好；CHI 2026 Workshop 的目标作为一等对象。各自有效范围见研究原文，实际 ai-d 增益待独立验证。
+
+
+## 2026-11-15｜能力整合成为新的研究主线（假设，未完成模型验证）
+
+最新研究将现有 P1–P8、知识生命周期、跨层锚点、纠偏、Hermes、Skills、MCP、成熟开源项目重新放到“能力整合”关系中：**ai-d 不应以拥有更多知识/Skill/工具为目标，而应研究如何围绕真实目标发现能力缺口、选择已有能力、组合不同提供者、验证结果并在失败后修订组合。**
+
+这里的“整合”不是新增 P9、固定流程或 Capability Graph 数据库；它是当前的设计假设。Hermes 暂时定位为 Runtime provider，Skills 为 procedural capability，MCP 为 tool connectivity，外部专业方法为 method provider，证据和运行结果作为验证层。完整研究见 [2026-11-15 能力整合与 Hermes 演化研究](../research/2026-11-15-capability-integration-and-hermes-evolution.md)。
+
+当前最重要的 UNKNOWN：能力整合是否比普通 Agent workflow 有稳定收益；是否存在跨领域可迁移的组合机制；组合复杂度何时开始反噬；以及是否真的需要修改 Hermes。下一轮应做成熟系统能力整合的反证与真实任务对照，而不是继续堆理论文档。
