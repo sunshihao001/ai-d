@@ -153,3 +153,31 @@
 
 **下一轮高价值工作**：不要再写同义理论。对 Hermes、DeepAgents、Open Deep Research、GPT Researcher、OpenWiki/Co-STORM 等逐项检查它们已经解决哪些能力选择/组合/验证问题，再选一个与 Solana 不同的完整现实任务，比较普通 Agent workflow 与动态能力整合是否减少用户纠错、无关工具调用、关键未知遗漏和失败成本。如果没有稳定收益，应停止扩大该方向。
 \n\n## 2026-11-15｜K-A08：从“核心思想”进入“复杂全域系统”\n\n**触发**：用户进一步明确：最近几轮得到的是思想层认识，但真正的 ai-d 是一个复杂的全方面、多领域项目；不能因为“能力整合”解释力强，就把整个项目压缩成一个中间层。\n\n**本轮新增收束**：新增 [从“思想”到“复杂全域系统” V1.0](2026-11-15-from-idea-to-open-adaptive-system.md)，将系统暂时拆为 Human/Goal、Problem Formation、Epistemic/Evidence、Knowledge Learning、Capability Discovery、Capability Selection/Composition、Runtime/Execution、Domain/Project、Verification/Evaluation、Learning/Experience、Governance/Human Authority 等相互关联的层。它们不是固定执行阶段，而是需要共同解决的问题空间。\n\n**关键认识**：\n- “不会就学习优秀知识”是总思想，但 Learning 本身需要判断：查事实、学概念、找成熟实现、找真实证据、做实验、停止研究或交还用户，不能一律继续搜索。\n- “能力整合”只是从目标到执行之间的核心机制之一；它必须与目标理解、知识学习、证据、验证和经验学习形成闭环。\n- 多领域迁移必须区分通用方法与领域事实/方法/能力，Blix 可以作为复杂现实试验场，但不能单独证明通用性。\n- 长期资产不应只是知识文档，而应逐步形成能力资产、组合/决策经验和经过验证的评测经验。\n- 不能先把完整架构设计完；应由真实任务暴露缺口，再决定哪些需要程序化、哪些 Runtime 已经解决、哪些只是我们想复杂了。\n\n**状态**：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。保存新文件不代表系统已经实现，也不代表模型已经自动学会。\n\n**下一步**：选择一个完整、真实、可验收、且不同于 Solana 的任务，实际测试“普通人一句话 → 自己发现不知道什么 → 找优秀知识 → 找已有能力 → 组织能力 → 执行 → 验证 → 修正”。逐项记录缺口属于模型、知识、能力发现、组合、Runtime、验证、经验还是人类授权；不先开发完整 ai-d。\n
+
+## 2026-11-15｜K-A09：整合层收束为“内部机制”，验证/停止/追溯前置
+
+**触发**：用户进一步明确：如果整合层服务普通人，普通人不应该理解或操作能力地图、Skill、MCP、Runtime 等中间层；人只需要通过聊天窗口用自然语言表达目标。与此同时，真实 Agent 使用经验显示“做错不知道停、状态丢失、无法追溯、擅自改变目标”比能力数量不足更基础。
+
+**本轮纠偏**：
+- 用户界面目标固定为“人只跟聊天窗口说话，其余全部是系统内部机制”。
+- 暂不优先建设能力地图 UI / Capability Graph UI。
+- 优先把“自然语言目标 → 系统组织已有能力 → 完成或明确停下来”的最小闭环跑通。
+- 强制加入两个第一阶段行为：**不确定就停**、**可追溯**。
+- 同时加入 **不自造目标** 作为硬约束：系统可以发现子问题和提出建议，但不能无依据把自己的偏好、方便或假设升级成用户新目标。
+- 其余整合层设计从真实运行缺口中长出来，不预先完成全套架构。
+
+**第一阶段验收指标**：Goal Fidelity、Uncertainty Stop、Stop Explanation、Traceability、Recovery、State Continuity、Evidence Boundary、User Burden。它们是当前行为验收指标，不是永久固定框架。
+
+**知识收拢**：暂时将全域知识/系统问题导航为六个主域：
+1. Human & Goal
+2. Knowledge & Epistemics
+3. Capability & Method
+4. Runtime & Execution
+5. Domain & Reality
+6. Verification & Evolution
+
+六域是导航与收拢方式，不是六步工作流；不新增 P9，不推翻 P1–P8、知识九阶段或跨层锚点。
+
+**开发纪律**：真实任务闭环 → 验证 → 停止 → 追溯 → 失败定位 → 修正 → 观察新的缺口 → 再决定是否需要新的整合机制。暂不因理论完整性提前开发大而全的能力地图、Graph、巨型 Workflow、Hermes 核心改造或自动学习系统。
+
+**状态**：DESIGN_CORRECTION / HIGH_PRIORITY / NOT_IMPLEMENTED_AS_A_WHOLE。
