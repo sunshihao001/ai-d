@@ -181,3 +181,31 @@
 **开发纪律**：真实任务闭环 → 验证 → 停止 → 追溯 → 失败定位 → 修正 → 观察新的缺口 → 再决定是否需要新的整合机制。暂不因理论完整性提前开发大而全的能力地图、Graph、巨型 Workflow、Hermes 核心改造或自动学习系统。
 
 **状态**：DESIGN_CORRECTION / HIGH_PRIORITY / NOT_IMPLEMENTED_AS_A_WHOLE。
+
+
+## 2026-11-15｜K-A10：Hermes 深度能力账本——先掌握 Runtime，再决定 ai-d 如何承接
+
+**触发**：用户明确要求先把 Hermes 内部各方面能力研究、理解其实际使用方式，再结合最新 ai-d 认知决定如何做 Hermes；不能先把 ai-d 设计强行套进 Hermes。
+
+**本轮外部核查**：截至 2026-11-15，Hermes 最新稳定 release 为 v0.23.1（2026-11-09）；v0.23.0 已将 Gateway/Session、Desktop/Webapp、Plugins、Delegation、Memory、长期运行能力进一步整合。当前官方文档与 main 源码还包含可能领先稳定版的内容，因此本轮明确区分 STABLE 与 MAIN/DOC-LATEST。主要核查了官方 Tools/Tool Search/Skills/Memory/Context/MCP/Plugins/Hooks/Delegation/Cron/Security、架构源码与 release notes。
+
+**已形成的 Hermes 能力账本**：Model/Provider/Auxiliary Model；Built-in Tools/Toolsets；Tool Search/Progressive Disclosure；Skills；Memory/Session Search；Context Files；MCP；Plugins/Hooks；Delegation/Subagents；execute_code；Gateway/Sessions；Cron；Security/Approval。逐项记录了原生职责、实际使用边界以及与 ai-d 六域的映射，详见 [Hermes 深度能力账本](2026-11-15-hermes-deep-capability-ledger.md)。
+
+**最重要的新收束**：
+- Hermes 已经覆盖大量执行层能力，因此 ai-d 不应重新造 Tool/MCP/Skill/Memory/Delegation/Gateway/Cron 等基础设施。
+- Hermes Tool Search 解决的是“已有工具太多，如何渐进发现”；ai-d 仍要研究更上层的“目标需要什么能力”。二者不能混为一谈。
+- Skill 更接近 procedural memory；Memory 更适合少量稳定事实和按需历史召回；Context Files 是局部项目规则。三者都不能替代 ai-d 的知识适用性、证据和废弃治理。
+- Plugin/Hooks 已提供 pre_tool_call、pre_llm_call、pre_verify、session/API/subagent 生命周期等扩展点，因此未来 Traceability / Verification / Goal/Evidence context injection 可能优先通过插件/Hook 验证，而不是修改 Hermes core；这是候选方案，尚未实跑证明。
+- Gateway/Session 已成为长期运行和状态连续性的基础，不应再造第二套 Runtime，除非真实任务证明现有能力不足。
+- Security/Approval 应视为 Runtime 执行前提，并与未来“不确定就停、不可逆操作需要人工授权”衔接。
+
+**当前 ai-d 映射假设**：
+> ai-d 负责 Human/Goal、Problem、Epistemic/Evidence、Knowledge Learning、Capability Gap/Selection/Composition、Verification/Evolution 的判断与协调；Hermes 负责 Runtime/Execution。
+
+该假设尚未被真实跨领域任务验证，不能当成最终架构。
+
+**当前尚未证明**：Hermes 在真实复杂任务中的 Goal Fidelity、Uncertainty Stop、Traceability、Recovery 是否足够；Memory/Skill 是否带来长期净增益；ai-d 最终应采用 Plugin、外部协调层、MCP、混合还是其它承载方式；是否需要修改 Hermes core。
+
+**研究方式修订**：不再继续扩充 Hermes 功能清单。下一轮直接选一个与 Solana 明显不同、可验收的真实任务，实际运行 Hermes；记录用户原话→实际目标→能力选择→证据→验证→停止/修正→最终结果，并定位缺口属于模型、知识、能力选择、Runtime、验证还是人类授权。只有真实缺口出现后才决定 ai-d/Hermes 的新增机制。
+
+**状态**：SOURCE_RESEARCHED + CAPABILITY_LEDGER_COMPLETED + MAPPING_HYPOTHESIS / RUNTIME_VALIDATION_PENDING。
