@@ -1,4 +1,6 @@
-> **2026-11-15｜从思想进入系统工程：** [从“思想”到“复杂全域系统” V1.0](research/2026-11-15-from-idea-to-open-adaptive-system.md) 对最近几轮“普通人、不普通的 AI、不会就学习优秀知识、能力整合、Hermes Runtime”的认识做了进一步收束：**能力整合不是 ai-d 的全部，而是一个更大开放式系统中的核心机制之一。** 实际项目同时涉及人的目标、问题形成、知识学习、证据、能力发现/选择/组合、领域专业化、Runtime、执行、验证、经验学习、权限与人类授权。思想可以很简单——“我不懂，就让 AI 去学习并组织已有能力帮我把事情做成；做错就修正”——实现却是复杂的跨领域系统工程。当前不预设完整架构，优先让真实任务暴露缺口，再决定哪些需要程序化。**状态：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。**\n\n# ai-d｜帮助人理解问题、选择办法并把事情做成
+> **2026-11-15｜从思想进入系统工程：** [从“思想”到“复杂全域系统” V1.0](research/2026-11-15-from-idea-to-open-adaptive-system.md) 对最近几轮“普通人、不普通的 AI、不会就学习优秀知识、能力整合、Hermes Runtime”的认识做了进一步收束：**能力整合不是 ai-d 的全部，而是一个更大开放式系统中的核心机制之一。** 实际项目同时涉及人的目标、问题形成、知识学习、证据、能力发现/选择/组合、领域专业化、Runtime、执行、验证、经验学习、权限与人类授权。思想可以很简单——“我不懂，就让 AI 去学习并组织已有能力帮我把事情做成；做错就修正”——实现却是复杂的跨领域系统工程。当前不预设完整架构，优先让真实任务暴露缺口，再决定哪些需要程序化。**状态：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。**
+
+# ai-d｜帮助人理解问题、选择办法并把事情做成
 
 > **2026-11-13｜知识生命周期锚点已对齐：** [知识九阶段（规划→获取→接收→理解→关联→整合→转化→验证→进化）](knowledge/foundations/knowledge-lifecycle-nine-stages.md)。它说明知识如何形成、转化和修正；原有“意图理解/发展/选择”、P1–P8问题索引和AI帮助普通人实现完整目标仍然成立。九阶段不是固定九步执行流程或新专家制度；关键未知要提前预警，但已有充分证据的任务应直接完成。**保存GitHub不代表模型已自动习得、实际效果已验。**
 
@@ -238,4 +240,12 @@ X 更适合发现最新实践和争议；GitHub 更适合检查可运行机制�
 这不是“多装 Skill”，也不是新的固定工作流。核心研究问题是：**目标 → 问题 → 能力缺口 → 能力发现 → 能力选择 → 能力组合 → 结果 → 证据 → 修正 → 可复用经验**之间能否形成比普通 Agent workflow 更可靠的映射。
 
 完整研究与设计登记见 [2026-11-15 能力整合与 Hermes 演化研究](research/2026-11-15-capability-integration-and-hermes-evolution.md)。当前结论是 **CURRENT HYPOTHESIS / NOT MODEL VERIFIED**：先研究和验证能力整合，再决定是否需要修改 Hermes；不先重写 Runtime。
-\n\n## 当前优先级：自然语言目标 → 内部执行 → 验证/停止 → 追溯\n\n> **2026-11-15｜重要纠偏：** 普通人不需要理解 Capability Map、Skill、MCP、Runtime 等中间层。用户只通过聊天窗口用自然语言表达目标；能力发现、选择、组合、执行、验证和纠正全部属于系统内部机制。\n>\n> 第一阶段不先做能力地图 UI，也不先设计完整整合层。先真实跑通“说一件事 → 系统组织已有能力 → 做成或明确停下来”。其中 **不确定就停、明确解释为什么停、可追溯执行链、不自造目标** 是第一优先级。其余整合机制从真实运行暴露的缺口中逐步长出来。详见 [2026-11-15 系统级设计与纠偏](research/2026-11-15-from-idea-to-open-adaptive-system.md)。\n\n**当前六个知识/系统导航主域：** Human & Goal；Knowledge & Epistemics；Capability & Method；Runtime & Execution；Domain & Reality；Verification & Evolution。它们是知识收拢入口，不是固定工作流，也不新增 P9。\n
+
+
+## 当前优先级：自然语言目标 → 内部执行 → 验证/停止 → 追溯
+
+> **2026-11-15｜重要纠偏：** 普通人不需要理解 Capability Map、Skill、MCP、Runtime 等中间层。用户只通过聊天窗口用自然语言表达目标；能力发现、选择、组合、执行、验证和纠正全部属于系统内部机制。
+>
+> 第一阶段不先做能力地图 UI，也不先设计完整整合层。先真实跑通“说一件事 → 系统组织已有能力 → 做成或明确停下来”。其中 **不确定就停、明确解释为什么停、可追溯执行链、不自造目标** 是第一优先级。其余整合机制从真实运行暴露的缺口中逐步长出来。详见 [2026-11-15 系统级设计与纠偏](research/2026-11-15-from-idea-to-open-adaptive-system.md)。
+
+**当前六个知识/系统导航主域：** Human & Goal；Knowledge & Epistemics；Capability & Method；Runtime & Execution；Domain & Reality；Verification & Evolution。它们是知识收拢入口，不是固定工作流，也不新增 P9。
