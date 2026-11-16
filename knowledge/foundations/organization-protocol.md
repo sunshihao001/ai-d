@@ -1,3 +1,5 @@
+> **2026-11-16｜当前解释**：本文是轻量维护规范，不是固定知识工程流程。外部智能吸收新增的 Source → Claim/Observation → Evidence → Interpretation → Method/Pattern → Applicability → Capability → Application → Verification → Revision 只是研究关系；不要求每项知识逐格填写。污染治理的当前重点是证据混级、目标混级、旧规则继续生效、跨领域硬迁移和上下文堆叠，而不是继续增加分类字段。与 [本轮整合与清理裁决](../../research/2026-11-16-reconciliation-and-cleanup.md) 保持一致。
+
 # 知识分类、来源、更新与去噪｜轻量维护规范 V0.2
 
 > **2026-11-13｜知识九阶段对齐：** [完整知识生命周期锚点](knowledge-lifecycle-nine-stages.md)只补充“为什么需要这些来源/去重/关系/证据/适用条件，以及何时转化与验证”，并不改变本文既有的四类分类维度和单一主要维护位置。对于重大未知可按九阶段发现断点；无需为每个对象新建九列、九文件或九个必填记录。
