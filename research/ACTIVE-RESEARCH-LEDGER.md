@@ -152,7 +152,25 @@
 **最重要的边界**：尚未证明能力整合比普通 Agent workflow 更好；尚未证明需要改 Hermes 源码；尚未证明 Capability Graph 或专门软件必要；也不能宣称这是市场独有创新。当前状态：**SOURCE_RESEARCHED + DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_MODEL_VERIFIED**。
 
 **下一轮高价值工作**：不要再写同义理论。对 Hermes、DeepAgents、Open Deep Research、GPT Researcher、OpenWiki/Co-STORM 等逐项检查它们已经解决哪些能力选择/组合/验证问题，再选一个与 Solana 不同的完整现实任务，比较普通 Agent workflow 与动态能力整合是否减少用户纠错、无关工具调用、关键未知遗漏和失败成本。如果没有稳定收益，应停止扩大该方向。
-\n\n## 2026-11-15｜K-A08：从“核心思想”进入“复杂全域系统”\n\n**触发**：用户进一步明确：最近几轮得到的是思想层认识，但真正的 ai-d 是一个复杂的全方面、多领域项目；不能因为“能力整合”解释力强，就把整个项目压缩成一个中间层。\n\n**本轮新增收束**：新增 [从“思想”到“复杂全域系统” V1.0](2026-11-15-from-idea-to-open-adaptive-system.md)，将系统暂时拆为 Human/Goal、Problem Formation、Epistemic/Evidence、Knowledge Learning、Capability Discovery、Capability Selection/Composition、Runtime/Execution、Domain/Project、Verification/Evaluation、Learning/Experience、Governance/Human Authority 等相互关联的层。它们不是固定执行阶段，而是需要共同解决的问题空间。\n\n**关键认识**：\n- “不会就学习优秀知识”是总思想，但 Learning 本身需要判断：查事实、学概念、找成熟实现、找真实证据、做实验、停止研究或交还用户，不能一律继续搜索。\n- “能力整合”只是从目标到执行之间的核心机制之一；它必须与目标理解、知识学习、证据、验证和经验学习形成闭环。\n- 多领域迁移必须区分通用方法与领域事实/方法/能力，Blix 可以作为复杂现实试验场，但不能单独证明通用性。\n- 长期资产不应只是知识文档，而应逐步形成能力资产、组合/决策经验和经过验证的评测经验。\n- 不能先把完整架构设计完；应由真实任务暴露缺口，再决定哪些需要程序化、哪些 Runtime 已经解决、哪些只是我们想复杂了。\n\n**状态**：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。保存新文件不代表系统已经实现，也不代表模型已经自动学会。\n\n**下一步**：选择一个完整、真实、可验收、且不同于 Solana 的任务，实际测试“普通人一句话 → 自己发现不知道什么 → 找优秀知识 → 找已有能力 → 组织能力 → 执行 → 验证 → 修正”。逐项记录缺口属于模型、知识、能力发现、组合、Runtime、验证、经验还是人类授权；不先开发完整 ai-d。\n
+
+
+## 2026-11-15｜K-A08：从“核心思想”进入“复杂全域系统”
+
+**触发**：用户进一步明确：最近几轮得到的是思想层认识，但真正的 ai-d 是一个复杂的全方面、多领域项目；不能因为“能力整合”解释力强，就把整个项目压缩成一个中间层。
+
+**本轮新增收束**：新增 [从“思想”到“复杂全域系统” V1.0](2026-11-15-from-idea-to-open-adaptive-system.md)，将系统暂时拆为 Human/Goal、Problem Formation、Epistemic/Evidence、Knowledge Learning、Capability Discovery、Capability Selection/Composition、Runtime/Execution、Domain/Project、Verification/Evaluation、Learning/Experience、Governance/Human Authority 等相互关联的层。它们不是固定执行阶段，而是需要共同解决的问题空间。
+
+**关键认识**：
+- “不会就学习优秀知识”是总思想，但 Learning 本身需要判断：查事实、学概念、找成熟实现、找真实证据、做实验、停止研究或交还用户，不能一律继续搜索。
+- “能力整合”只是从目标到执行之间的核心机制之一；它必须与目标理解、知识学习、证据、验证和经验学习形成闭环。
+- 多领域迁移必须区分通用方法与领域事实/方法/能力，Blix 可以作为复杂现实试验场，但不能单独证明通用性。
+- 长期资产不应只是知识文档，而应逐步形成能力资产、组合/决策经验和经过验证的评测经验。
+- 不能先把完整架构设计完；应由真实任务暴露缺口，再决定哪些需要程序化、哪些 Runtime 已经解决、哪些只是我们想复杂了。
+
+**状态**：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。保存新文件不代表系统已经实现，也不代表模型已经自动学会。
+
+**下一步**：选择一个完整、真实、可验收、且不同于 Solana 的任务，实际测试“普通人一句话 → 自己发现不知道什么 → 找优秀知识 → 找已有能力 → 组织能力 → 执行 → 验证 → 修正”。逐项记录缺口属于模型、知识、能力发现、组合、Runtime、验证、经验还是人类授权；不先开发完整 ai-d。
+
 
 ## 2026-11-15｜K-A09：整合层收束为“内部机制”，验证/停止/追溯前置
 
@@ -209,3 +227,36 @@
 **研究方式修订**：不再继续扩充 Hermes 功能清单。下一轮直接选一个与 Solana 明显不同、可验收的真实任务，实际运行 Hermes；记录用户原话→实际目标→能力选择→证据→验证→停止/修正→最终结果，并定位缺口属于模型、知识、能力选择、Runtime、验证还是人类授权。只有真实缺口出现后才决定 ai-d/Hermes 的新增机制。
 
 **状态**：SOURCE_RESEARCHED + CAPABILITY_LEDGER_COMPLETED + MAPPING_HYPOTHESIS / RUNTIME_VALIDATION_PENDING。
+
+
+## 2026-11-16｜K-A11：外部智能吸收层——从“保存知识”转向“吸收可验证能力”
+
+**触发**：用户明确要求先建设真正值得关注的知识、项目和方法，为后续使用昂贵 AI 打基础；同时要求把新知识与旧知识结合，并清理已经造成污染的旧方向。
+
+**本轮收束**：新增 [外部智能吸收层](2026-11-16-external-intelligence-layer.md)。它不是新的知识库、固定阶段或 Agent，而是跨 K2–K9 的能力视图：
+
+> 外部世界 → 研究 → 证据判断 → 方法/模式 → 能力资产 → 项目应用 → 真实验证 → 修订/淘汰。
+
+**与已有知识的合并**：
+- K1–K9 保留，外部智能吸收层不新增 K10；
+- P1–P8 继续作为问题入口，不再扩展新的问题编号；
+- 跨层锚点继续负责目标、知识、数据、工程、测试和运行之间的可核查关系；
+- 六域继续作为导航，不作为工作流；
+- Hermes 深度能力账本继续作为 Runtime 事实来源；ai-d 不重复建设 Hermes 已有的 Tool/MCP/Skill/Memory/Delegation/Gateway/Cron 等基础设施；
+- 纠偏、风险判断、证据状态和“不确定就停”继续保留，并作为外部知识吸收后的验证/淘汰条件。
+
+**本轮明确清理的污染倾向**：
+- 不再把“大而全知识库”视为 ai-d 的主要终点；
+- 不再因为遗漏就不断新增阶段、专家、层级或系统；
+- 不再把外部资料全文搬进长期上下文；
+- 不再把 Capability Graph / Knowledge Graph / 大型 Workflow 视为当前必做；
+- 不再把 Skill/Memory/MCP 当成 ai-d 必须重新实现的底座；
+- 不再用文件数量、研究轮数、来源数量或模型自评证明能力提升；
+- 不再把一次成功案例、单篇帖子、README 或理论类比直接升级为长期规则；
+- 已出现的历史设计如果只是旧方案而没有当前证据支持，不再作为默认指令继续传播。
+
+**一个重要修订**：过去的“知识分类、知识生命周期、知识内核”材料不全部删除。能够提供来源、机制、反例或历史决策价值的保留；已经只是重复描述、没有独立机制/证据/用途的内容应在后续清理中删除或合并。删除的对象是**污染性结论和无效重复**，不是为了追求“文件更少”而删除证据。
+
+**当前状态**：SOURCE/DESIGN INTEGRATED；POLLUTION DIRECTIONS DEPRECATED；NOT_YET_RUNTIME_VALIDATED。
+
+**下一步**：不再继续写同义的外部知识框架。选一个真实 ai-d / Hermes / Muse 任务，实际执行一次“发现缺口→外部研究→成熟项目/方法→能力提炼→应用→验证→保留/淘汰”，用结果判断该结构是否真的减少成本、重复开发或用户纠错。
