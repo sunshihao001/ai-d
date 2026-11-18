@@ -72,6 +72,23 @@ AI 负责尽可能承担：
 - 不在本阶段建设完整自动化 Runtime；
 - 不以文件数量、来源数量、研究轮数作为进展指标。
 
+## 5. 批量入场与研究架构
+
+大批量外部搜索采用独立 Intake 层，不把搜索结果直接当成知识：
+
+`Batch → Raw → Normalize → Entity Resolution → Dedup/Cluster → Triage → Coverage → Research Run → Evidence → Candidate → Experiment → Decision → ai-d`
+
+其中：
+- Intake 负责高吞吐进入、来源血缘、标准化、去重和初筛；
+- Coverage 负责发现研究缺口并产生下一轮研究方向；
+- Run/Checkpoint 负责长任务、预算、失败恢复和执行追踪；
+- Entity/Claim/Evidence 负责把来源、对象、主张和证据分开；
+- Skill Evaluation 负责验证“研究得到的程序性知识”是否真的形成能力。
+
+成熟外部研究系统已经体现了这些机制：coverage-driven research、证据去重、claim-level grounding、bounded revision、per-run trace，以及 Skill 的 baseline 对比、独立 judge、回归和迭代评测。citeturn446721search8turn446721search0
+
+这些机制被吸收到本分支的结构契约中，但不会机械复制外部项目，也不会因此提前建设大型数据库、知识图谱或复杂评分体系。
+
 ## 5. 建议的研究状态
 
 `DISCOVERED → CANDIDATE → RESEARCHING → EVIDENCE_CHECK → EXTRACTED → TESTING → ADOPTED`
