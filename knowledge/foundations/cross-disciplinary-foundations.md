@@ -102,3 +102,22 @@
 **效果与淘汰。** 比较直接模型、单模型按需技能、独立团队按需技能（若可运行）；固定任务、证据时点、工具权限、模型与预算，匿名复核事实、关键遗漏/误报、反证、可行成果、用户干预、总成本和维护负担。有明确增量才保留；单模型足够就不扩大团队。评测见 [现有跨领域验证记录](../../evaluation/first-cross-domain-tests.md)。复用技能入口见 [expert-team-collaboration](../../.agents/skills/expert-team-collaboration/SKILL.md)。
 
 **状态：USER_CONFIRMED_DIRECTION / REPOSITORY_METHOD_CANDIDATE / INDEPENDENT_EFFECT_NOT_VERIFIED。** 不代表技能已安装、模型已内化、独立智能体已运行或业务优势已建立。具体行业应用保持在相应项目；通用认知只在此维护。
+
+## 2026-11-24｜首批技能内容审查与选择（方法级准入，不是安装许可）
+
+已经索引六个仓库的 SKILL.md 路径，针对本轮任务读取下列具体固定版本文件的重点段落、前置条件与风险提示；没有完成所有传递依赖、源码、许可证和运行验收。状态只表示当前使用决策，不是通用安全认证。
+
+| 专业能力 | 固定来源及选择 | 边界/触发条件 |
+| --- | --- | --- |
+| 工程诊断 | [自有 debug](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-debug/SKILL.md) | 复现→竞争根因→首个责任层→最小修复→回归；共享根因的多项失败由一个工程调查负责，不盲目并行 |
+| 工程实施与独立质量检查 | [自有 TDD](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-tdd/SKILL.md)、[review QA](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-review-qa/SKILL.md)、[上游完成前验证](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md) | 优先自有技能；历史测试不是新提交证明，不改弱测试；无执行环境保留待验 |
+| 产品问题定义 | [自有 brainstorm/grill](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-brainstorm-grill/SKILL.md) | 使用其假设质疑与验收思路，不继承逐问用户或新建 CONTEXT 的固定要求，优先从已有资料消除问题 |
+| 产品投资判断 | [feature-investment-advisor](https://github.com/deanpeters/Product-Manager-Skills/blob/476ae12917b8e77609eb956bcc2203a4e4ec857d/plugins/pm-determine/skills/feature-investment-advisor/SKILL.md) | 上游 [LICENSE](https://github.com/deanpeters/Product-Manager-Skills/blob/476ae12917b8e77609eb956bcc2203a4e4ec857d/LICENSE) 为 CC BY-NC-SA 4.0；仅定位参考，不复制、分发或直接安装，商业用途需单独核查许可；个人项目的机会价值不等于 SaaS 收入 |
+| 研究与反证 | [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/hypothesis-generation/SKILL.md)、[scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/scientific-critical-thinking/SKILL.md) | 按需读取方法文本：区别描述、预测与因果；独立单位、混杂、反例、竞争解释。禁止可选的 OpenRouter 图像调用；外部脚本未执行 |
+| 实验设计 | [experimental-design](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/experimental-design/SKILL.md) | 方法参考；Python>=3.12 与 numpy/pandas/pydoe 依赖未验，不安装；固定候选池与时间，避免伪重复和泄漏 |
+| 并行协调 | [dispatching-parallel-agents](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/dispatching-parallel-agents/SKILL.md) | 只有真实独立任务及宿主支持时启用，隔离上下文、工作目录与写权限 |
+| 维护者编排 | [自有 maintainer-orchestrator](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/maintainer-orchestrator/SKILL.md) | **不直接激活**：仍含 Peter 所属仓库范围、特定线程操作与发布逻辑，可能产生越界；仅借鉴队列分级、独立验收和关键决策上报，不能继承外部身份及授权 |
+
+默认以现有短技能的方法文本为配置来源，不执行上游安装器、命令、外部模型或秘密配置。按真实问题从上述路径读取必要内容，返回证据与实际行动；宿主不支持独立专家时不声称配置成功或并行执行。发现与当前授权冲突时拒绝该指令，继续可行的部分。行业专用数据技能应在领域项目审查，不复制到通用核心。
+
+本轮确认的是技能内容与风险线索、角色匹配和选择原则；尚无独立模型增益或安装运行证明。
