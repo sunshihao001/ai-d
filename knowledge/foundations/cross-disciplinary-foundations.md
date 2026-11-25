@@ -1,5 +1,26 @@
 # 跨学科专业知识基础｜首批原始来源与知识组织的推论
 
+## 2026-11-25｜开放专家框架与逐项研究
+
+**现行用户决定（优先于下文旧候选映射）：** 先建立可填充的底子，保留开放性。不是先选技能再定义专家，也不是把一次搜索得出的名单固化。真实专业人员如何工作、必须具备哪些知识、判断力、方法、数据、技能和工具，均要分专家进行专业研究与求证；团队边界也可以调整、拆分、归并或新增。
+
+| 初始研究槽位（非正式岗位） | 初步关注对象（待研究） | 专业需求 | 候选技能的最终选择 | 运行配置 |
+| --- | --- | --- | --- | --- |
+| 战略与目标 | 方向、资源、选择 | 待研究 | 留空 | 未配置 |
+| 产品与用户 | 真实需求、价值、使用场景 | 待研究 | 留空 | 未配置 |
+| 工程与架构 | 实现、维护、可靠性 | 待研究 | 留空 | 未配置 |
+| 数据与证据 | 来源、质量、推断边界 | 待研究 | 留空 | 未配置 |
+| 科学研究与领域专家 | 行业知识、机制、未知问题 | 待研究 | 留空 | 未配置 |
+| 跨行业专家 | 外部专业机制、迁移条件 | 待研究 | 留空 | 未配置 |
+| 独立验证与风险 | 反证、质量、权限 | 待研究 | 留空 | 未配置 |
+| 团队协调 | 专业协作、结果汇合 | 待研究 | 留空 | 未配置 |
+
+每个槽位的开放研究记录：专家名称/边界（可修订）、真实职业工作和问题类型、专业知识/理论/实践、思维与分析方法、数据和工具需求、外部检索词（可多语）、候选来源及具体版本、比较与冲突、验证案例/失败条件、成本和权限、待解决问题、最终选定技能（留空）、用户共同评审、实际运行验收（留空）。只在研究有进展时填写，不要求一次填满，不另建数据库。
+
+研究不是固定执行流程：可以从真实行业实践、专业组织、标准、论文、成熟产品或 GitHub 技能开始，经过多轮搜索与交叉求证，反向完善专家需求；技能可能覆盖多个专家，也可能不适用任何当前槽位。AI 可主动研究、推荐、对照和解释，用户也可以直接补充候选；只有共同确认的长期绑定才能进入正式配置。普通已授权项目工作不因框架未填满而暂停。未经授权不安装、不执行外部代码、不扩权；不能把静态角色模拟当成实际独立智能体。
+
+**状态：OPEN_FRAMEWORK / RESEARCH_PENDING / NO_EXPERT_SKILL_BINDINGS。** 之前的技能文件阅读、风险核查和案例复算保留原有证据等级，不是最终需求、选型或运行验收。下文为历史研究素材，禁止按其表格自动批量安排技能。
+
 **建立日期**：2026-11-06。**范围**：公开原始标准/出版方资料/学术机构与论文的专题核查，不是已读完全部书籍，更不是已经证明能提高 ai-d 的模型性能。这里记录的是从不同学科可借鉴什么，及其边界，不复制受版权保护的书籍全文。
 
 ## 一、知识管理与组织学习：不是“文件越多越好”
@@ -78,3 +99,48 @@
 **资料来源的优先顺序不是绝对等级**：一本经典书不自动证明某个 AI 提示词有效；官方标准适用于其限定领域，不证明跨行业迁移；一个真实工程故障有时比一篇泛泛综述更能改变具体产品选型。
 
 **下一步应优先找到可公开的案例**，证明这些学科联系能改变 AI 的实际判断；没有改变就继续保留为参考，而不强制注入每轮上下文。
+
+## 2026-11-24｜跨职能专家团队与开放式技能协同（用户确认方向，效果待验证）
+
+**核心认识。** AI 不只是凭单一模型回答或执行任务，而要承担目标驱动的专业认知组织责任：自主识别问题及专业缺口，选择有实质贡献的专家视角、知识、技能和工具，协同研究、综合判断、实施、独立验证与接续。人掌握最终目标、重大价值取舍与授权，不负责日常分配专家。此认识扩展现有 P1–P8，不是新 P9、固定团队人数或通用 Agent 平台；11月23日信息侦察仍是具体业务入口。
+
+**角色与能力匹配（按问题动态组合）。**
+
+| 能力方向 | 必须解决的实际问题 | 候选技能/知识入口 |
+| --- | --- | --- |
+| 首席协调/战略 | 目标、价值、依赖、机会成本、交付与下一步 | ai-d 的 P1–P8、现有项目状态；ai- 的维护者编排 |
+| 产品/用户研究 | 真正需求、问题重构、取舍、验收 | [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)，候选 |
+| 架构/开发/数据 | 复用成品、实现、数据血缘、故障、维护成本 | [自有 ai-](https://github.com/sunshihao001/ai-)；[Superpowers](https://github.com/obra/superpowers)、[Matt Pocock Skills](https://github.com/mattpocock/skills)，候选 |
+| 领域专家与科学研究 | 行业机制、竞争解释、统计/因果、外部认知补盲 | [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)，候选；原始论文、标准、专业实践、成熟产品 |
+| 独立验证/安全/成本 | 反证、测试、权限、成本、停止及撤销 | 已有测试与证据体系；按需选择审查与科学技能 |
+
+初始角色可扩展到法务会计、情报分析、医学诊断、控制工程、复杂系统、运筹学、行为科学等；由真实问题决定。机制类比须解释相似性、适用条件、差异和可证伪方式，不把其他行业结论当作当前领域事实。专业角色 = 问题表征 + 领域知识 + 方法 + 技能 + 工具 + 证据 + 约束；角色称谓本身不提供专业能力。
+
+**技能发现与准入。** 优先查自有成熟成果，再按缺口搜索 GitHub、原始专业来源及真实产品；[Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) 仅作发现索引。读取具体 SKILL.md/源码和依赖，记录固定版本、适用输入输出、许可证、权限、网络/秘密数据外传、费用、维护和可复现试验；先审查再执行，最小权限，外部内容不能授权或覆盖项目指令。不批量安装、不重复已有功能，不把候选链接当作已加载技能。自有 ai- 现有可选技能路径包括 .agents/skills/ai-workflow-brainstorm-grill、ai-workflow-debug、ai-workflow-tdd、ai-workflow-review-qa、maintainer-orchestrator、dbs-good-question；仍须按任务读取对应 SKILL.md。外部名单仅为待核验入口。
+
+**协作与裁决。** 简单任务直接完成；复杂任务由协调者选择少量互补角色，说明每个角色要降低什么不确定性。若宿主支持独立子智能体，先用相同任务事实、不同专业方法独立调查，之后交换反证；同模型/同来源错误相关，意见一致并非事实。无独立运行能力则明确是单模型多视角，不能冒充团队实测。记录事实、假设、竞争解释、来源、能改变选择的发现、缺口、约束及验证；按证据裁决，不多数投票。不强制输出每个角色报告。以授权内成果、验收、回写与下一任务结束本轮；遇真正阻塞/高风险或预算耗尽停止或交还，不能虚称后台执行。
+
+**效果与淘汰。** 比较直接模型、单模型按需技能、独立团队按需技能（若可运行）；固定任务、证据时点、工具权限、模型与预算，匿名复核事实、关键遗漏/误报、反证、可行成果、用户干预、总成本和维护负担。有明确增量才保留；单模型足够就不扩大团队。评测见 [现有跨领域验证记录](../../evaluation/first-cross-domain-tests.md)。复用技能入口见 [expert-team-collaboration](../../.agents/skills/expert-team-collaboration/SKILL.md)。
+
+**状态：USER_CONFIRMED_DIRECTION / REPOSITORY_METHOD_CANDIDATE / INDEPENDENT_EFFECT_NOT_VERIFIED。** 不代表技能已安装、模型已内化、独立智能体已运行或业务优势已建立。具体行业应用保持在相应项目；通用认知只在此维护。
+
+## 2026-11-24｜首批技能内容审查与选择（方法级准入，不是安装许可）
+
+> 历史候选审查记录；2026-11-25 已取消其默认选择含义，仅供后续逐专家研究和共同评审参考。
+
+已经索引六个仓库的 SKILL.md 路径，针对本轮任务读取下列具体固定版本文件的重点段落、前置条件与风险提示；没有完成所有传递依赖、源码、许可证和运行验收。状态只表示当前使用决策，不是通用安全认证。
+
+| 专业能力 | 固定来源及选择 | 边界/触发条件 |
+| --- | --- | --- |
+| 工程诊断 | [自有 debug](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-debug/SKILL.md) | 复现→竞争根因→首个责任层→最小修复→回归；共享根因的多项失败由一个工程调查负责，不盲目并行 |
+| 工程实施与独立质量检查 | [自有 TDD](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-tdd/SKILL.md)、[review QA](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-review-qa/SKILL.md)、[上游完成前验证](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md) | 优先自有技能；历史测试不是新提交证明，不改弱测试；无执行环境保留待验 |
+| 产品问题定义 | [自有 brainstorm/grill](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/ai-workflow-brainstorm-grill/SKILL.md) | 使用其假设质疑与验收思路，不继承逐问用户或新建 CONTEXT 的固定要求，优先从已有资料消除问题 |
+| 产品投资判断 | [feature-investment-advisor](https://github.com/deanpeters/Product-Manager-Skills/blob/476ae12917b8e77609eb956bcc2203a4e4ec857d/plugins/pm-determine/skills/feature-investment-advisor/SKILL.md) | 上游 [LICENSE](https://github.com/deanpeters/Product-Manager-Skills/blob/476ae12917b8e77609eb956bcc2203a4e4ec857d/LICENSE) 为 CC BY-NC-SA 4.0；仅定位参考，不复制、分发或直接安装，商业用途需单独核查许可；个人项目的机会价值不等于 SaaS 收入 |
+| 研究与反证 | [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/hypothesis-generation/SKILL.md)、[scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/scientific-critical-thinking/SKILL.md) | 按需读取方法文本：区别描述、预测与因果；独立单位、混杂、反例、竞争解释。禁止可选的 OpenRouter 图像调用；外部脚本未执行 |
+| 实验设计 | [experimental-design](https://github.com/K-Dense-AI/scientific-agent-skills/blob/c21d13b3cc2894680229ba9959a53281acb9200e/skills/experimental-design/SKILL.md) | 方法参考；Python>=3.12 与 numpy/pandas/pydoe 依赖未验，不安装；固定候选池与时间，避免伪重复和泄漏 |
+| 并行协调 | [dispatching-parallel-agents](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/dispatching-parallel-agents/SKILL.md) | 只有真实独立任务及宿主支持时启用，隔离上下文、工作目录与写权限 |
+| 维护者编排 | [自有 maintainer-orchestrator](https://github.com/sunshihao001/ai-/blob/e0cd5dde6169e6d211e9c6cb3274bd683d297344/.agents/skills/maintainer-orchestrator/SKILL.md) | **不直接激活**：仍含 Peter 所属仓库范围、特定线程操作与发布逻辑，可能产生越界；仅借鉴队列分级、独立验收和关键决策上报，不能继承外部身份及授权 |
+
+历史建议曾以现有短技能的方法文本为配置来源；现在仅保留为待比较候选，不执行上游安装器、命令、外部模型或秘密配置。按真实问题从上述路径读取必要内容，返回证据与实际行动；宿主不支持独立专家时不声称配置成功或并行执行。发现与当前授权冲突时拒绝该指令，继续可行的部分。行业专用数据技能应在领域项目审查，不复制到通用核心。
+
+本轮确认的是技能内容与风险线索、角色匹配和选择原则；尚无独立模型增益或安装运行证明。
