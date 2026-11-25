@@ -1,3 +1,32 @@
+## 2026-11-25｜全局知识收敛与现行入口（审查分支候选）
+
+**定位与边界**：沿用 README 的人类能力增强目标；专业能力发现、理解、判断、吸收、组织、协同、应用及验证是核心机制，不是整个项目的排他定义。“信息揽客”是待验证的具体产品入口；Hermes 是运行环境候选；专家视角是按问题调取的专业责任，不等于固定 Agent 数量。本次不新增架构、目录、P9、K10 或强制步骤。
+
+### 同一知识体系的不同观察轴
+
+六域用于组织知识，P1–P8 用于按问题进入，K1–K9 用于诊断知识生命周期断点，跨层锚点用于追溯目标、知识、数据、实现、结果和变更的关系；专家专业视角用于按需调用，不能互相替代。以下为入口映射（主归属不是排他分类）：
+
+| 六域 | 问题入口 | 优先读取的既有正本 |
+| --- | --- | --- |
+| 人类与目标 | P1/P6 | [简短意图与人机委托](../research/2026-11-07-short-intent-goal-context-delegation.md)、[认知增强](../research/2026-11-07-human-ai-cognitive-augmentation-foundations.md)、[任务表现与学习](../research/2026-11-07-human-ai-delegation-performance-learning.md) |
+| 知识与认知 | P2/P3/P4/P5/P8 | [知识维护规范](foundations/organization-protocol.md)、[知识生命周期](foundations/knowledge-lifecycle-nine-stages.md)、[未知发现](../research/2026-11-07-problem-driven-unknown-discovery.md)、[理论互证](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md) |
+| 能力与方法 | P2/P3/P6 | [能力整合](../research/2026-11-15-capability-integration-and-hermes-evolution.md)、[外部智能吸收](../research/2026-11-16-external-intelligence-layer.md)、[成熟整体系统对照](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md) |
+| 运行与执行 | P6/P7 | [Hermes 能力账本](../research/2026-11-15-hermes-deep-capability-ledger.md)、[整体系统设计及停止/追溯](../research/2026-11-15-from-idea-to-open-adaptive-system.md) |
+| 领域与现实 | P1/P2/P5/P6 | [人的现实能力与机会](../research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md)、[制造业案例](../cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md)、[信息价值链入口](../research/2026-11-23-information-scouting-value-chain-direction.md) |
+| 验证与进化 | P5/P7/P8 | [跨层锚点及纠偏](foundations/cross-layer-project-anchors.md)、[两领域实践结果](../evaluation/2026-11-07-two-domain-practice-results.md)、[跨领域对照](../evaluation/first-cross-domain-tests.md)、[现行台账](../research/ACTIVE-RESEARCH-LEDGER.md) |
+
+### 优先收敛的知识关系与冲突处理
+
+- 目标与方法：早期 [四类路线裁决](../decisions/2026-11-05-goal-options.md) 的 B 首选是历史条件性建议；能力整合层亦是候选，信息揽客是应用入口。都不覆盖人的长期目标。
+- 专业团队：按问题表征寻找有独立贡献的专业知识，结合[未知发现](../research/2026-11-07-problem-driven-unknown-discovery.md)与[工作流边界](../research/workflow-components-and-boundaries.md)，不将专家名称或角色一致性视为独立证据。常规质量工作留在系统内部；向人报告结论、证据、重要未知、风险、取舍、授权及停止原因。
+- 知识价值：外部吸收研究强调转化价值，但 [知识维护规范 2026-11-09](foundations/organization-protocol.md)明确纯理论也有独立价值。区分研究保存价值与程序化/执行价值；无近期应用不自动淘汰。
+- 停止与探索：[理论互证](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md)允许有条件初步判断；[系统设计](../research/2026-11-15-from-idea-to-open-adaptive-system.md)要求关键不确定无法补证时停止受影响的行动，不应停止所有低风险探索，也不应把候选当事实。
+- 能力地图与界面：能力关系可供内部选择，是否需图数据库、固定编排或独立 UI 由真实任务缺口决定。用户不承担内部调度；重大决定与必要证据可外显。
+- 证据与纠偏：[源级案例](../research/2026-11-07-gpt-researcher-context-selection-audit.md)、[研究停止审查](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)保留原始反例；[跨层锚点](foundations/cross-layer-project-anchors.md)承担根因与责任关系；[评测](../evaluation/first-cross-domain-tests.md)承担实际效果主张。不要将同源重复、已见样本或文档提交升级为独立验证。
+- 对重复课题采用“唯一主要正文 + 原始研究与反例链接”；保留历史文本与适用边界，暂不删除材料。具体缺口和下一项验证见[研究台账](../research/ACTIVE-RESEARCH-LEDGER.md#2026-11-25全局研究架构收敛与能力转化缺口审查)。
+
+**本轮证据**：固定 main 提交 f89a300d154e6c85cbb61d81ca511664926b9725；31 份文件完整目录及定向正文审查，非逐字校勘、非独立模型实验。GitHub 星标清单仍不可由当前连接直接读取；无收藏分类结论，不凭空补充。此分支为可逆知识导航修订，不代表主分支已更新或 Hermes 已部署。
+
 > **2026-11-15｜系统级设计入口：** [从“思想”到“复杂全域系统” V1.0](../research/2026-11-15-from-idea-to-open-adaptive-system.md)。最近几轮的核心认识进一步收束：ai-d 的思想可以很简单——普通人不知道时，AI 去学习优秀知识并组织已有能力把事情做成；但实现它不是一个知识库、Skill 或单一能力整合层，而是同时处理目标、问题、知识、证据、能力、模型、Agent、Skill、MCP、领域、Runtime、执行、验证、经验和人类授权的开放式系统。该文件用于承接系统级设计，不新增 P9、不定义固定工作流。当前优先让真实任务暴露缺口，再决定哪些需要程序化。\n\n# 知识总入口｜从实际问题出发，跨学科调用
 
 > **2026-11-13｜新增纵向知识生命周期锚点：** [九阶段：规划→获取→接收→理解→关联→整合→转化→验证→进化](foundations/knowledge-lifecycle-nine-stages.md)。本索引的P1–P8仍是“研究什么问题”的横向入口；九阶段是“知识经过哪些形成与验证工作”的视角；具体行业业务目标是第三种独立层次。不要将九阶段改造成九个新分类、九个固定Agent或替代本索引。
