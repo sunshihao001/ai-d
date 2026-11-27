@@ -1,3 +1,6 @@
+## 2026-11-27｜V3主张级校勘与真实证据工程（PR #4）
+[实际记录](2026-11-27-semantic-activation-v3-execution.md)：79固定资产/28主张/19校勘/9候选/34关系，实际89标准案例、28记录、13变异、13静态及17代表浏览器断言；最新88资产并行回收及12专题映射，未全量投影。MODEL_AB/CROSS_CHAT/FULL_UI_BROWSER/RESTORE=NOT_RUN；UPLIFT=UNKNOWN。[V4任务](../prompts/tasks/evidence-grounded-execution-v4.md)。
+
 ## 2026-11-27｜V2 知识深层重整与实际专业运行（PR #4审查分支）
 [本轮执行记录](2026-11-27-semantic-activation-v2-execution.md)：72固定基线原件实际获取；59文档/846章节/308有效文件引用；27主张候选/32关系，真实并行分支回收、语义结构反例及新专业求解（双停运最小服务距离1178.798919英里，91/91情景，7断言）。[收据](artifacts/semantic-reorganization/knowledge-use-receipts.json)；[V3下一任务](../prompts/tasks/semantic-activation-and-review-v3.md)。主张逐段证据复核、完整历史回收、实际浏览器、独立会话/模型增益和恢复未完成；无主分支/调度修改。
 

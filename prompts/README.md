@@ -1,3 +1,6 @@
+## V3实际执行及V4接力（候选）
+- [证据契约事前规格](tasks/evidence-contract-validation-v1.md)；[实作记录](../research/2026-11-27-semantic-activation-v3-execution.md)；[V4完整任务](tasks/evidence-grounded-execution-v4.md)。以实际最新分支和权限为准，不自动部署。
+
 ## V2实际任务与V3候选接力
 - [V2实际成果与限制](../research/2026-11-27-semantic-activation-v2-execution.md)，[事前专业任务](tasks/dual-outage-service-boundary-v1.md)，[V3主张级校勘及独立运行任务](tasks/semantic-activation-and-review-v3.md)（下一轮候选，不自动部署）。现行AGENTS、历史25章及手机V0.2保留。
 
