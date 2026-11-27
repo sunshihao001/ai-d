@@ -26,7 +26,8 @@
 触发：缺少外部证据、搜索过窄或成本高。行动：根据具体证据缺口建立搜索路径，查原始论文、源码和负例，先对照既有资产。
 验收：明确来源版本、覆盖范围、关键未知，不将搜索数量当深度。
 - **K-SEARCH 上下文筛选与探索权衡**：筛选相关性、成本、事实正确率与开放报告偏好各异；漏掉陌生机制是待检验解释；按需任务比较检索与探索范围，保留可能改变判断的弱线索，独立验收未知发现；边界：8道开放题、同家族模型评审不证明未知机制发现率；不能推导全部全文注入。[2026-11-07-gpt-researcher-context-selection-audit.md L38–68](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-gpt-researcher-context-selection-audit.md#L38-L68)
-- **K-STOP 研究停止与价值判断**：按边际信息价值及实际交付判断停止；运行完成不等于目标达成；按需记录停止和复开条件；边界：一次受阻不应否定全部探索。[organization-protocol.md L42–49](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L42-L49)
+- **K-SEARCH 检索颗粒度实测**：历史12题旧条件路由Recall@3=.750，标题分段=.583，融合=.625；少读文本不等于不漏条件。先依知识职责找现行原件，分段只作定位，必要时展开上下文与互补来源。[实验](../evaluation/retrieval-multiscale-v3-results.json) · [组织规范3B](foundations/organization-protocol.md#3b-研究与知识颗粒度控制)。非独立模型增益。
+- **K-STOP 研究停止与价值判断**：按边际信息价值及实际交付判断停止；运行完成不等于目标达成；按需记录停止和复开条件；边界：一次受阻不应否定全部探索；[可逆行动的五项判据](../planning/proposal-review-v0.1.md#提前规划的停止条件避免钻牛角尖)（目标、竞争路线、风险、边际信息价值、验收）。[organization-protocol.md L42–49](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L42-L49)
 - **K-BUDGET 深度生产与执行预算**：运行时长不能证明具体资源限制或停止原因；按需保留可恢复阶段和真实日志缺口；边界：48秒不能证明平台一分钟硬上限。[2026-11-27-deep-cognitive-production-and-execution-budget.md L3–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-deep-cognitive-production-and-execution-budget.md#L3-L5)
 
 ### P4｜知识组织和检索
