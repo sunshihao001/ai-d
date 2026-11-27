@@ -49,14 +49,35 @@
       "target": "knowledge/INDEX.md",
       "reason": "共享治理，不共享目标、数据语义、权限、验收；不修改MEME",
       "keep": "AGENTS.md"
+    },
+    {
+      "operation": "deduplicate_canonical_entry",
+      "target": "knowledge/INDEX.md",
+      "removedDuplicateFullEntries": 6,
+      "uniqueFullEntries": 28,
+      "reason": "重复完整主张收敛为唯一首入口，其它问题只交叉调用。"
+    },
+    {
+      "operation": "delete_redundant_generated_intermediates",
+      "target": [
+        "research/artifacts/semantic-reorganization/v4-evidence-lines-a.json",
+        "research/artifacts/semantic-reorganization/v4-evidence-lines-b.json"
+      ],
+      "reason": "29个版本核验记录已逐对象无损归并进最终30记录；移除冗余中间结果，非删除原始证据。",
+      "keep": "research/artifacts/semantic-reorganization/v4-evidence-lines-verified.json",
+      "oldCommit": "4d940871b0fc60705b2eb4d557a50487973c9701",
+      "oldBlobs": [
+        "2e43defd576bee01339ee1a35f7e21cc06002155",
+        "b12e66743a5dbcf540a6f964034890247cb8f4be"
+      ]
     }
   ],
   "sizes": [
     {
       "path": "knowledge/INDEX.md",
       "beforeChars": 22285,
-      "afterChars": 13067,
-      "removedChars": 9218,
+      "afterChars": 11497,
+      "removedChars": 10788,
       "oldBlob": "f2293d13cb0e0673448a016d6a84a42ed16b3ac5",
       "oldCommit": "5c3e9b59757aac783b33e0c9f4b004b0783c0f50"
     },
@@ -81,7 +102,9 @@
     "routes": 8,
     "uniqueClaims": 28,
     "all28": true,
-    "uniquePrimarySources": 20
+    "uniquePrimarySources": 20,
+    "uniqueCanonicalEntries": 28,
+    "crossReferences": 6
   },
   "newDefault": "prompts/tasks/verified-transfer-and-mainline-v5.md"
 }
