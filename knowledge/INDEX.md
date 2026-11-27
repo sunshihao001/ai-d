@@ -6,6 +6,8 @@
 
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[全域问题—专家方法—原件—行动导航V2.0](2026-11-27-problem-method-activation-map.md)**：72路径及8种任务表达，11项定向原文/结构/段落核查，其他目录级；[全域审查](../research/2026-11-27-named-expert-full-domain-audit-v2.md)以R36迁移历史评价，实证57同blob/5异blob/10原树未有。非全量语义审查或独立模型增益。
+
 **[具名专家认知与核心缺陷审查V1.1](../research/2026-11-27-named-expert-methods-and-defect-audit.md)**：按实际问题调用Keeney、Chi、Klein、Perkins/Salomon、Pirolli/Card、Leveson、Khattab/Agrawal、Husain/Shankar、Willison、Norman、Argyris的真实方法；区分角色与方法，实际检查入口及评价假阳性并修订，保留[独立手机入口候选](../prompts/mobile-chat-entry-v0.2.md)。主要断点仍是任务方向到执行及独立增益；非固定专家团队、未部署。
 
 **[知识驱动任务表达与运用断点 V1.0](../research/2026-11-27-knowledge-driven-task-expression-v1.md)**：实际核查V1.3运行、历史网页/当前正本版本差、提示词入口；将知识转译为具体对象、行动、成果与验收，[任务规格候选](../prompts/tasks/knowledge-utilization-audit-v1.md)及网页当前入口已补。历史25章与权限保持；独立模型/跨会话增益待验。

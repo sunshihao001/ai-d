@@ -13,3 +13,7 @@ Ars Contexta重织、OpenWiki版本化主张、SKOS关联、Diátaxis按使用�
 [工作台 V2](../docs/knowledge-workbench/index.html) 与 [设计契约](../docs/knowledge-workbench/design-v2.json) 同源：11个区域、六域/问题筛选、主张/情境/原件、正反向关系、真实工作收据、任务结果、变更状态、历史源及接力。静态无执行API、无部署、无自动GPT连接、无实时HEAD保证；保留历史25章阅读页。生成器与静态结构验收保存。实际浏览器、手机可用性、独立跨会话、完整恢复和模型A/B仍未运行。
 ## 6 剩余工作与接力
 [下一任务](../prompts/tasks/semantic-activation-and-review-v3.md)：从全文件导航进入高价值主张级证据核查，优先版本变化/历史冲突及使用结果关联；选择新的独立可核工作，检验知识组合是否改善真实交付；必要时修候选，分阶段保存。保留未见对照，若无独立宿主标NOT_RUN。当前结论 SEMANTIC_CANDIDATE / FILE_RETRIEVAL_COMPLETE_FIXED_BASELINE / MODEL_AB=NOT_RUN / CROSS_CHAT=NOT_RUN / UPLIFT=UNKNOWN。
+
+
+## 最终回读期间新增并行成果
+最终核对发现整合分支新增两次提交，至 506fe4d4655f2e94aae1c6a292b288287f1bcc35。相较固定72项基线，新增6项文件、修改4项文件；已在审查分支保留上游新增原件及历史提示词网页，并以共同原文为基准合并三份索引/台账，未覆盖任一方新增段落。新增专家全域诊断、P1–P8行动导航、历史证据回放及其时点实证与本轮互补；后者的时点检查明确不证明模型泄漏。72项语义投影及工作台仍标明原固定基线，不能冒充新78项全量校勘。新资产在V3优先校勘并消除重复导航；尚未作逐主张审查或独立效果验证。
