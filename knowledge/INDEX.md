@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**现行工作空间选型条件（用户确认）**：当前以 ChatGPT 对话为主要研究与承接入口；优先验证已授权连接、跨会话调用/保存/回读与人机同源可视化。RAG（检索增强生成）是候选知识检索能力，非完整知识治理或自动学习。见[候选研究更新](../research/2026-11-27-shared-workspace-mature-candidate-selection.md)及[设计正本](../research/2026-11-27-human-ai-shared-knowledge-workspace-design.md)。不固定永久宿主。
+
 **[共享工作空间试用前置验收V0.3](../research/2026-11-27-shared-workspace-trial-v0-3.md)**：固定59文件清单、独立验收脚本，12份真实原件哈希一致及遗漏/改写反例；产品运行受DNS限制，真实导入与恢复待验。
 
 **[人机共享工作空间多轮候选搜索与试用裁决 V0.2](../research/2026-11-27-shared-workspace-mature-candidate-selection.md)**：Inkeep OpenKnowledge、思源、Trilium等具体项目；真实并发缺陷历史及现有测试源码、Git之外本地状态、58文件/7非Markdown及总提示词12条路径核查。优先隔离试用，不选定架构；承接、实际调用及恢复待验。
