@@ -1,0 +1,2015 @@
+{
+  "date": "2026-11-27",
+  "main": "f89a300d154e6c85cbb61d81ca511664926b9725",
+  "review": "98d0c17dee070d6701876a5401308336516c5253",
+  "integration": "be25104d76a0f61135467746812ab93c0044dcca",
+  "scope": "GitHub compare merge-base-relative changed-file inventory; not tree equality, unique content, full-text conflict detection or permission to merge. Fixed starting versions; later parallel changes recorded separately.",
+  "branches": [
+    {
+      "branch": "ai-intelligence",
+      "head": "0db397ebd46b16a086c4312d8219408c51979355",
+      "status": "diverged",
+      "ahead": 31,
+      "behind": 2,
+      "mergeBase": "e23a9e142af5eaf33aa76d60ded7d9c0db7cb15e",
+      "files": [
+        {
+          "path": "ai-intelligence/00-CHARTER.md",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/01-BOUNDARIES.md",
+          "status": "added",
+          "additions": 43,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/02-SPACE-MAP.md",
+          "status": "added",
+          "additions": 95,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/03-RESEARCH-PROTOCOL.md",
+          "status": "added",
+          "additions": 39,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/04-SOURCE-POLICY.md",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/05-EVIDENCE-POLICY.md",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/06-ASSET-LIFECYCLE.md",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/07-PROMOTION-POLICY.md",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/08-POLLUTION-CONTROL.md",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/09-AUTOMATION-READINESS.md",
+          "status": "added",
+          "additions": 36,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/10-EVALUATION.md",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/11-OPEN-QUESTIONS.md",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/12-BULK-INTAKE.md",
+          "status": "added",
+          "additions": 119,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/13-COVERAGE-AND-GAPS.md",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/14-RUN-AND-CHECKPOINTS.md",
+          "status": "added",
+          "additions": 116,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/15-ENTITY-CLAIM-EVIDENCE.md",
+          "status": "added",
+          "additions": 130,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/16-SKILL-EVALUATION.md",
+          "status": "added",
+          "additions": 119,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/ASSET-REGISTRY.md",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/QUEUE.md",
+          "status": "added",
+          "additions": 17,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/README.md",
+          "status": "added",
+          "additions": 159,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "ai-intelligence/RESEARCH-LEDGER.md",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "archive/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "candidates/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "decisions/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "discoveries/README.md",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "evidence/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "experiments/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "research/README.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "sources/README.md",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        }
+      ]
+    },
+    {
+      "branch": "integration/cognitive-assets-20261127",
+      "head": "be25104d76a0f61135467746812ab93c0044dcca",
+      "status": "ahead",
+      "ahead": 35,
+      "behind": 0,
+      "mergeBase": "f89a300d154e6c85cbb61d81ca511664926b9725",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "README.md",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/index.html",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+          "status": "added",
+          "additions": 362,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/workspace-trial/verify_snapshot.py",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+          "status": "added",
+          "additions": 100,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 77,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/cross-layer-project-anchors.md",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/README.md",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/master-v1.0.md",
+          "status": "added",
+          "additions": 746,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/mobile-chat-continuation-v0.1.md",
+          "status": "added",
+          "additions": 14,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/mobile-chat-entry-v0.2.md",
+          "status": "added",
+          "additions": 7,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/stages-2026-11-27.md",
+          "status": "added",
+          "additions": 27,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/historical-evidence-replay-v1.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+          "status": "added",
+          "additions": 67,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "status": "added",
+          "additions": 42,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+          "status": "added",
+          "additions": 51,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "status": "added",
+          "additions": 25,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+          "status": "added",
+          "additions": 26,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "status": "modified",
+          "additions": 137,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+          "status": "added",
+          "additions": 1158,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+          "status": "added",
+          "additions": 611,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/audit.json",
+          "status": "added",
+          "additions": 47,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+          "status": "added",
+          "additions": 137,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+          "status": "added",
+          "additions": 204,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/input.json",
+          "status": "added",
+          "additions": 168,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/results.json",
+          "status": "added",
+          "additions": 443,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+          "status": "added",
+          "additions": 889,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/population.csv",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/solve.py",
+          "status": "added",
+          "additions": 63,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        }
+      ]
+    },
+    {
+      "branch": "proposal/expert-team-skill-intelligence-20261124",
+      "head": "745a981953d1704772fa1c2a18d2dc0cb7dd5350",
+      "status": "ahead",
+      "ahead": 7,
+      "behind": 0,
+      "mergeBase": "f89a300d154e6c85cbb61d81ca511664926b9725",
+      "files": [
+        {
+          "path": ".agents/skills/expert-team-collaboration/SKILL.md",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "README.md",
+          "status": "modified",
+          "additions": 12,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "status": "modified",
+          "additions": 66,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+          "status": "modified",
+          "additions": 31,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        }
+      ]
+    },
+    {
+      "branch": "proposal/goal-planning-knowledge-delivery-20261106",
+      "head": "aba723074d2c1a83fb129bd14473fa571f29ad34",
+      "status": "diverged",
+      "ahead": 39,
+      "behind": 151,
+      "mergeBase": "40a5c83843a2e38fa91202649f7743a0a276825b",
+      "files": [
+        {
+          "path": ".agents/skills/ai-d-cognitive-core/SKILL.md",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "README.md",
+          "status": "modified",
+          "additions": 82,
+          "deletions": 1,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 1,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "status": "modified",
+          "additions": 200,
+          "deletions": 2,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/retrieval-probe-2026-11-06.mjs",
+          "status": "added",
+          "additions": 301,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "evaluation/retrieval-probe-results-2026-11-06.md",
+          "status": "added",
+          "additions": 62,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "evaluation/source-decision-contract.test.mjs",
+          "status": "added",
+          "additions": 97,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "knowledge/COGNITIVE-MAP.md",
+          "status": "added",
+          "additions": 273,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 6,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+          "status": "added",
+          "additions": 115,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "planning/README.md",
+          "status": "added",
+          "additions": 45,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "planning/goal-navigation-v0.1.md",
+          "status": "added",
+          "additions": 206,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "planning/historical-consolidation-v0.1.md",
+          "status": "added",
+          "additions": 74,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "planning/proposal-review-v0.1.md",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "planning/research-to-github-v0.1.md",
+          "status": "added",
+          "additions": 116,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "research/expert-cognition-distillation-positioning-2026-11-06.md",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        }
+      ]
+    },
+    {
+      "branch": "reconcile/external-intelligence-cleanup-2026-11-16",
+      "head": "5ce3ea8b007ed98e7fff55c12f437ef04e0cbc7a",
+      "status": "diverged",
+      "ahead": 6,
+      "behind": 2,
+      "mergeBase": "e23a9e142af5eaf33aa76d60ded7d9c0db7cb15e",
+      "files": [
+        {
+          "path": "README.md",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-16-external-intelligence-layer.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "research/2026-11-16-reconciliation-and-cleanup.md",
+          "status": "added",
+          "additions": 156,
+          "deletions": 0,
+          "overlapsReviewChange": false
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        }
+      ]
+    },
+    {
+      "branch": "review/knowledge-consolidation-20261125",
+      "head": "bf79b9443593cf28bae322cb5baf12bcf05359e3",
+      "status": "ahead",
+      "ahead": 1,
+      "behind": 0,
+      "mergeBase": "f89a300d154e6c85cbb61d81ca511664926b9725",
+      "files": [
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 29,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        }
+      ]
+    },
+    {
+      "branch": "review/knowledge-execution-reorganization-20261127",
+      "head": "98d0c17dee070d6701876a5401308336516c5253",
+      "status": "ahead",
+      "ahead": 57,
+      "behind": 0,
+      "mergeBase": "f89a300d154e6c85cbb61d81ca511664926b9725",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "README.md",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/index.html",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/DESIGN-V2.md",
+          "status": "added",
+          "additions": 109,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/DESIGN-V3.md",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/design-v2.json",
+          "status": "added",
+          "additions": 169,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/design-v3.json",
+          "status": "added",
+          "additions": 169,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/generate-workbench.cjs",
+          "status": "added",
+          "additions": 39,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "docs/knowledge-workbench/index.html",
+          "status": "added",
+          "additions": 26,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+          "status": "added",
+          "additions": 362,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "evaluation/workspace-trial/verify_snapshot.py",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+          "status": "added",
+          "additions": 100,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "status": "modified",
+          "additions": 83,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/catalog-20261127.json",
+          "status": "added",
+          "additions": 1214,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/cross-layer-project-anchors.md",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/knowledge-action-navigation.md",
+          "status": "added",
+          "additions": 89,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/knowledge-action-routes.json",
+          "status": "added",
+          "additions": 173,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/semantic-map-v2.json",
+          "status": "added",
+          "additions": 6238,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "knowledge/semantic-map-v3.json",
+          "status": "added",
+          "additions": 7514,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/README.md",
+          "status": "added",
+          "additions": 25,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/master-v1.0.md",
+          "status": "added",
+          "additions": 746,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/mobile-chat-continuation-v0.1.md",
+          "status": "added",
+          "additions": 14,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/mobile-chat-entry-v0.2.md",
+          "status": "added",
+          "additions": 7,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/stages-2026-11-27.md",
+          "status": "added",
+          "additions": 27,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/dual-outage-service-boundary-v1.md",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/evidence-contract-validation-v1.md",
+          "status": "added",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/full-knowledge-to-action-v2.md",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/historical-evidence-replay-v1.md",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "prompts/tasks/semantic-activation-and-review-v3.md",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+          "status": "added",
+          "additions": 67,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "status": "added",
+          "additions": 42,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+          "status": "added",
+          "additions": 51,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-knowledge-execution-reorganization.md",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "status": "added",
+          "additions": 25,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+          "status": "added",
+          "additions": 26,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-semantic-activation-v2-execution.md",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "status": "modified",
+          "additions": 140,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+          "status": "added",
+          "additions": 1158,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+          "status": "added",
+          "additions": 611,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/audit.json",
+          "status": "added",
+          "additions": 47,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+          "status": "added",
+          "additions": 137,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+          "status": "added",
+          "additions": 204,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/input.json",
+          "status": "added",
+          "additions": 168,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/results.json",
+          "status": "added",
+          "additions": 443,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+          "status": "added",
+          "additions": 889,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/artifact-inventory.json",
+          "status": "added",
+          "additions": 173,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-01.json",
+          "status": "added",
+          "additions": 1577,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-02.json",
+          "status": "added",
+          "additions": 1492,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-03.json",
+          "status": "added",
+          "additions": 1639,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-04.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/knowledge-use-receipts.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-claim-review.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/LICENSE-test-suite.txt",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/README.md",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/public-tests.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/result.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/review-contract.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/validate_reviews.py",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-parallel-manufacturing-delta.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/validate-semantic-map.cjs",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/workbench-v2-static-checks.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/workbench-v3-static-checks.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/population.csv",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/solve.py",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "overlapsReviewChange": true
+        }
+      ]
+    }
+  ],
+  "integrationToReview": {
+    "ahead": 22,
+    "behind": 0,
+    "files": [
+      {
+        "filename": "docs/knowledge-workbench/DESIGN-V2.md",
+        "status": "added",
+        "additions": 109,
+        "deletions": 0,
+        "changes": 109,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/knowledge-workbench/DESIGN-V3.md",
+        "status": "added",
+        "additions": 101,
+        "deletions": 0,
+        "changes": 101,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/knowledge-workbench/design-v2.json",
+        "status": "added",
+        "additions": 169,
+        "deletions": 0,
+        "changes": 169,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/knowledge-workbench/design-v3.json",
+        "status": "added",
+        "additions": 169,
+        "deletions": 0,
+        "changes": 169,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/knowledge-workbench/generate-workbench.cjs",
+        "status": "added",
+        "additions": 39,
+        "deletions": 0,
+        "changes": 39,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/knowledge-workbench/index.html",
+        "status": "added",
+        "additions": 26,
+        "deletions": 0,
+        "changes": 26,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/INDEX.md",
+        "status": "modified",
+        "additions": 6,
+        "deletions": 0,
+        "changes": 6,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/catalog-20261127.json",
+        "status": "added",
+        "additions": 1214,
+        "deletions": 0,
+        "changes": 1214,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/knowledge-action-navigation.md",
+        "status": "added",
+        "additions": 89,
+        "deletions": 0,
+        "changes": 89,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/knowledge-action-routes.json",
+        "status": "added",
+        "additions": 173,
+        "deletions": 0,
+        "changes": 173,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/semantic-map-v2.json",
+        "status": "added",
+        "additions": 6238,
+        "deletions": 0,
+        "changes": 6238,
+        "previous_filename": null
+      },
+      {
+        "filename": "knowledge/semantic-map-v3.json",
+        "status": "added",
+        "additions": 7514,
+        "deletions": 0,
+        "changes": 7514,
+        "previous_filename": null
+      },
+      {
+        "filename": "prompts/README.md",
+        "status": "modified",
+        "additions": 6,
+        "deletions": 0,
+        "changes": 6,
+        "previous_filename": null
+      },
+      {
+        "filename": "prompts/tasks/dual-outage-service-boundary-v1.md",
+        "status": "added",
+        "additions": 5,
+        "deletions": 0,
+        "changes": 5,
+        "previous_filename": null
+      },
+      {
+        "filename": "prompts/tasks/evidence-contract-validation-v1.md",
+        "status": "added",
+        "additions": 4,
+        "deletions": 0,
+        "changes": 4,
+        "previous_filename": null
+      },
+      {
+        "filename": "prompts/tasks/full-knowledge-to-action-v2.md",
+        "status": "added",
+        "additions": 20,
+        "deletions": 0,
+        "changes": 20,
+        "previous_filename": null
+      },
+      {
+        "filename": "prompts/tasks/semantic-activation-and-review-v3.md",
+        "status": "added",
+        "additions": 20,
+        "deletions": 0,
+        "changes": 20,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/2026-11-27-knowledge-execution-reorganization.md",
+        "status": "added",
+        "additions": 10,
+        "deletions": 0,
+        "changes": 10,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/2026-11-27-semantic-activation-v2-execution.md",
+        "status": "added",
+        "additions": 19,
+        "deletions": 0,
+        "changes": 19,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/ACTIVE-RESEARCH-LEDGER.md",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 0,
+        "changes": 3,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/artifact-inventory.json",
+        "status": "added",
+        "additions": 173,
+        "deletions": 0,
+        "changes": 173,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/batch-01.json",
+        "status": "added",
+        "additions": 1577,
+        "deletions": 0,
+        "changes": 1577,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/batch-02.json",
+        "status": "added",
+        "additions": 1492,
+        "deletions": 0,
+        "changes": 1492,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/batch-03.json",
+        "status": "added",
+        "additions": 1639,
+        "deletions": 0,
+        "changes": 1639,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/batch-04.json",
+        "status": "added",
+        "additions": 933,
+        "deletions": 0,
+        "changes": 933,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+        "status": "added",
+        "additions": 21,
+        "deletions": 0,
+        "changes": 21,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json",
+        "status": "added",
+        "additions": 3208,
+        "deletions": 0,
+        "changes": 3208,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/knowledge-use-receipts.json",
+        "status": "added",
+        "additions": 111,
+        "deletions": 0,
+        "changes": 111,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json",
+        "status": "added",
+        "additions": 122,
+        "deletions": 0,
+        "changes": 122,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-claim-review.json",
+        "status": "added",
+        "additions": 214,
+        "deletions": 0,
+        "changes": 214,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/LICENSE-test-suite.txt",
+        "status": "added",
+        "additions": 19,
+        "deletions": 0,
+        "changes": 19,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/README.md",
+        "status": "added",
+        "additions": 2,
+        "deletions": 0,
+        "changes": 2,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/public-tests.json",
+        "status": "added",
+        "additions": 861,
+        "deletions": 0,
+        "changes": 861,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/result.json",
+        "status": "added",
+        "additions": 181,
+        "deletions": 0,
+        "changes": 181,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/review-contract.json",
+        "status": "added",
+        "additions": 113,
+        "deletions": 0,
+        "changes": 113,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-contract/validate_reviews.py",
+        "status": "added",
+        "additions": 46,
+        "deletions": 0,
+        "changes": 46,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/v3-parallel-manufacturing-delta.json",
+        "status": "added",
+        "additions": 255,
+        "deletions": 0,
+        "changes": 255,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/validate-semantic-map.cjs",
+        "status": "added",
+        "additions": 3,
+        "deletions": 0,
+        "changes": 3,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/workbench-v2-static-checks.json",
+        "status": "added",
+        "additions": 18,
+        "deletions": 0,
+        "changes": 18,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/artifacts/semantic-reorganization/workbench-v3-static-checks.json",
+        "status": "added",
+        "additions": 20,
+        "deletions": 0,
+        "changes": 20,
+        "previous_filename": null
+      }
+    ]
+  }
+}
