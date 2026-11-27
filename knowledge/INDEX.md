@@ -1,3 +1,7 @@
+## 2026-11-27｜历史专家认知恢复与主干归并准备（审查候选）
+
+[历史专家认知恢复与主干治理 V1.0](../research/2026-11-27-historical-expert-recovery-and-mainline-audit.md)：恢复16条条件性历史主张、原始固定版本、反例、实际应用及八分支差异。沿既有 P1–P8，不新增专家中心、不激活技能、不合并主干。尚需逐项历史独有资产与实际合并验证；模型增益未知。
+
 ## V3主张与证据实际执行（审查分支）
 - [79项固定语义地图](semantic-map-v3.json)；[实际成果及限制](../research/2026-11-27-semantic-activation-v3-execution.md)；[工作台](../docs/knowledge-workbench/index.html)；[V4完整任务](../prompts/tasks/evidence-grounded-execution-v4.md)。19段落校勘/9候选；最新88项并行增量已保全，尚未全量投影。独立增益与跨会话未验。
 
