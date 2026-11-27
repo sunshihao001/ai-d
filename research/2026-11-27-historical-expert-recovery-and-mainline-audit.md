@@ -65,3 +65,7 @@ PR2的6路径：技能文件为单独新增；其余5项 README、evaluation/fir
 ## 6. 未完成与接力
 已完成：八分支固定HEAD及七项main比较、integration→review比较、四PR元数据、上述历史核心原件定向读取与16条主张归拢。并行历史路径全量逐项获取尝试遇到工具调用上限，不能宣称全量逐文档校勘或合并冲突已解决。未复读所有早期原始对话、私人Library、外部权威著作，未跑旧检索脚本及独立模型测试。MODEL_AB=NOT_RUN / CROSS_CHAT=NOT_RUN / UPLIFT=UNKNOWN。
 下一轮：继续从PR1独有规划/评测与旧ai-intelligence未审正文开始，核对原始blob和当时证据；用实际差异和回归准备可合并候选；完成并经授权统一主干后，才建设专家中心。不要再研究一个新理论体系，不要求手机用户编写提示词。
+
+
+## 7. 写回期间并行增量复核
+本轮起点98d0c17→阶段提交a953be1：GitHub compare显示8个路径变更、0删除；其中本轮新增本报告、原索引和台账的增量链接；并行研究新增V3执行报告、浏览器代表样本结果及脚本、V4事前任务，并更新提示词索引/台账。已回读[并行V3报告](2026-11-27-semantic-activation-v3-execution.md)、[浏览器结果](artifacts/semantic-reorganization/v3-browser-probe-result.json)、[V4任务](../prompts/tasks/evidence-grounded-execution-v4.md)。历史台账403行均按原顺序保留，知识索引原全文为新文本后缀。并行报告记载89标准案例、28 review记录、13变异断言及13静态/17代表浏览器检查；后者只涉及4真实主张和P5路线、注入剪贴板替身，非完整页面/用户设备实测。本轮只是远端回读，未重跑。新V4研究任务保留，不将其替换成专家中心建设；主干归并应协调此并行研究，不把固定79/88项旧投影视为实时全量。main仍f89a300d；PR4仍开放。
