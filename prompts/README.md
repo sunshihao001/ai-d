@@ -1,7 +1,9 @@
 ## 知识执行重整审查候选
-- [V2.0 下一轮深层多阶段任务](tasks/full-knowledge-to-action-v2.md)（未部署）；[工作台](../docs/knowledge-workbench/index.html)；[知识行动导航](../knowledge/knowledge-action-navigation.md)。旧25章完整保留；执行以真实最新分支与授权为准。
+- [V2.0 下一轮深层多阶段任务](tasks/full-knowledge-to-action-v2.md)（任务候选，用户已要求本轮执行，非全局部署）；[工作台](../docs/knowledge-workbench/index.html)；[知识行动导航](../knowledge/knowledge-action-navigation.md)。旧25章完整保留；执行以真实最新分支与授权为准。
 
 # AI-D 提示词候选与人机阅读入口
+
+- [手机端独立任务入口V0.2（候选）](mobile-chat-entry-v0.2.md)：明确仓库、分支、可访问边界及当轮专业产物；V0.1及历史网页知识仍保留。[具名专家方法及核心缺陷审查](../research/2026-11-27-named-expert-methods-and-defect-audit.md)，未独立验证增益。
 
 ## 当前手机端 GPT 工作入口（不覆盖历史候选）
 - [手机端认知接力候选](mobile-chat-continuation-v0.1.md)：当前状态与历史原件分开，未部署为全局规则。

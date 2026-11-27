@@ -3,6 +3,8 @@
 
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[具名专家认知与核心缺陷审查V1.1](../research/2026-11-27-named-expert-methods-and-defect-audit.md)**：按实际问题调用Keeney、Chi、Klein、Perkins/Salomon、Pirolli/Card、Leveson、Khattab/Agrawal、Husain/Shankar、Willison、Norman、Argyris的真实方法；区分角色与方法，实际检查入口及评价假阳性并修订，保留[独立手机入口候选](../prompts/mobile-chat-entry-v0.2.md)。主要断点仍是任务方向到执行及独立增益；非固定专家团队、未部署。
+
 **[知识驱动任务表达与运用断点 V1.0](../research/2026-11-27-knowledge-driven-task-expression-v1.md)**：实际核查V1.3运行、历史网页/当前正本版本差、提示词入口；将知识转译为具体对象、行动、成果与验收，[任务规格候选](../prompts/tasks/knowledge-utilization-audit-v1.md)及网页当前入口已补。历史25章与权限保持；独立模型/跨会话增益待验。
 
 **[手机端GPT深度认知与连续研究V1.0](../research/2026-11-27-mobile-chat-cognitive-continuity-v1.md)**（P1/P2/P4/P5/P6/P7/P8，K4–K9）：仅手机、不要求安装；多轮意图变化研究、有效状态与原件双层承接、原生Chat/Projects/Work候选。实际继承V23.6并执行83情景，找出原14候选下双停运全保障的结构性不可行；[接力候选](../prompts/mobile-chat-continuation-v0.1.md)未部署，跨聊天/独立模型增益待验。
