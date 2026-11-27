@@ -1,0 +1,168 @@
+{
+  "source": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc332.htm",
+  "note": "Published NIST worked example; counts reconstructed from proportions and n=50, not unit-level raw data",
+  "batches": [
+    {
+      "id": 1,
+      "n": 50,
+      "d": 12
+    },
+    {
+      "id": 2,
+      "n": 50,
+      "d": 15
+    },
+    {
+      "id": 3,
+      "n": 50,
+      "d": 8
+    },
+    {
+      "id": 4,
+      "n": 50,
+      "d": 10
+    },
+    {
+      "id": 5,
+      "n": 50,
+      "d": 4
+    },
+    {
+      "id": 6,
+      "n": 50,
+      "d": 7
+    },
+    {
+      "id": 7,
+      "n": 50,
+      "d": 16
+    },
+    {
+      "id": 8,
+      "n": 50,
+      "d": 9
+    },
+    {
+      "id": 9,
+      "n": 50,
+      "d": 14
+    },
+    {
+      "id": 10,
+      "n": 50,
+      "d": 10
+    },
+    {
+      "id": 11,
+      "n": 50,
+      "d": 5
+    },
+    {
+      "id": 12,
+      "n": 50,
+      "d": 6
+    },
+    {
+      "id": 13,
+      "n": 50,
+      "d": 17
+    },
+    {
+      "id": 14,
+      "n": 50,
+      "d": 12
+    },
+    {
+      "id": 15,
+      "n": 50,
+      "d": 22
+    },
+    {
+      "id": 16,
+      "n": 50,
+      "d": 8
+    },
+    {
+      "id": 17,
+      "n": 50,
+      "d": 10
+    },
+    {
+      "id": 18,
+      "n": 50,
+      "d": 5
+    },
+    {
+      "id": 19,
+      "n": 50,
+      "d": 13
+    },
+    {
+      "id": 20,
+      "n": 50,
+      "d": 11
+    },
+    {
+      "id": 21,
+      "n": 50,
+      "d": 20
+    },
+    {
+      "id": 22,
+      "n": 50,
+      "d": 18
+    },
+    {
+      "id": 23,
+      "n": 50,
+      "d": 24
+    },
+    {
+      "id": 24,
+      "n": 50,
+      "d": 15
+    },
+    {
+      "id": 25,
+      "n": 50,
+      "d": 9
+    },
+    {
+      "id": 26,
+      "n": 50,
+      "d": 12
+    },
+    {
+      "id": 27,
+      "n": 50,
+      "d": 7
+    },
+    {
+      "id": 28,
+      "n": 50,
+      "d": 13
+    },
+    {
+      "id": 29,
+      "n": 50,
+      "d": 9
+    },
+    {
+      "id": 30,
+      "n": 50,
+      "d": 6
+    }
+  ],
+  "comparison": {
+    "n": 200,
+    "d": 26,
+    "p0": 0.1,
+    "source": "https://itl.nist.gov/div898/handbook/prc/section2/prc24.htm"
+  },
+  "interval": {
+    "n": 20,
+    "d": 4,
+    "level": 0.9,
+    "source": "https://itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+  }
+}

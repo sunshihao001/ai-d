@@ -1,0 +1,255 @@
+{
+  "previous": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+  "latest": "be25104d76a0f61135467746812ab93c0044dcca",
+  "previousCount": 79,
+  "latestCount": 88,
+  "added": 9,
+  "changed": 6,
+  "assets": [
+    {
+      "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+      "blob": "46ee5de08d105581bf7b9a350ba4fb4945ebff9f",
+      "kind": "added"
+    },
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "blob": "6285ab0ede199e4225e1149673bf5956f72c8711",
+      "kind": "changed"
+    },
+    {
+      "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+      "blob": "13b53e99a5163aa05c6681bb08bccfe14b221afd",
+      "kind": "changed"
+    },
+    {
+      "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+      "blob": "16d25325749cf3f53b0ea3f72d28f890b19847df",
+      "kind": "added"
+    },
+    {
+      "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+      "blob": "fbc9fccb54703d1b393f8959bf7f13cd59767531",
+      "kind": "added"
+    },
+    {
+      "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+      "blob": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+      "kind": "changed"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "blob": "5f409b574656ec00ba44557e29bf007d2c196eea",
+      "kind": "changed"
+    },
+    {
+      "path": "prompts/README.md",
+      "blob": "36ac344fda23862ddad99a9f942d546eec91a434",
+      "kind": "changed"
+    },
+    {
+      "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+      "blob": "864264cdab1e0982cf457d30948b698082dbda78",
+      "kind": "added"
+    },
+    {
+      "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+      "blob": "2b4fd59bfa1e8d168e3af566cd545fc93f021c3f",
+      "kind": "added"
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "blob": "e0b277ab8ac69b1f36b90b96311996338d882d41",
+      "kind": "changed"
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+      "blob": "96ed0385f1e1cceb3570356f60c0b909b56d8e6b",
+      "kind": "added"
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+      "blob": "e0b53aabde2ca0f51d855556c818eecb8e049fc4",
+      "kind": "added"
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/input.json",
+      "blob": "3a09bd620aaa6125624e83f025e96012ad6bdcdd",
+      "kind": "added"
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/results.json",
+      "blob": "9f88e09c1c3bc02a5496b3581a8dd1e1a4a4e5e7",
+      "kind": "added"
+    }
+  ],
+  "scope": "上游并行成果原件保全；定向读取专题报告、12条主张及实际结果摘要；未重跑统计程序或逐项复核全部原始证据。固定79项图谱仍为历史可验证工作快照。",
+  "topicClaims": [
+    {
+      "id": "C01",
+      "claim": "局部行业案例不改变根本目标",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "一、三、七节"
+      },
+      "relatedCandidate": [
+        "K-GOAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C02",
+      "claim": "学习资料不构成现场操作授权",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、四节"
+      },
+      "relatedCandidate": [
+        "K-AUTH"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C03",
+      "claim": "辅助交付、独立技能、人机协同须分别评价",
+      "source": {
+        "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+        "blob": "68d69028dacfc09e94037791828364a65d222bc6",
+        "section": "一、二、四节"
+      },
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C04",
+      "claim": "比较质量须明确分母及统计单位",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、丙"
+      },
+      "relatedCandidate": [
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C05",
+      "claim": "统计异常非原因诊断",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、六节"
+      },
+      "relatedCandidate": [
+        "K-UNKNOWN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C06",
+      "claim": "优先复用现成ERP/QMS",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、三、四节"
+      },
+      "relatedCandidate": [
+        "K-CAP",
+        "K-RUNTIME"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C07",
+      "claim": "前缀不变不证明无未来信息",
+      "source": {
+        "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "blob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+        "section": "适用性、知识激活和反馈"
+      },
+      "relatedCandidate": [
+        "K-DATA",
+        "K-TIME"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C08",
+      "claim": "初始思想可不完整；不擅改目标",
+      "source": {
+        "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+        "blob": "96a613853bc0d2337b64275c6b051790f4df542e",
+        "section": "第8节"
+      },
+      "relatedCandidate": [
+        "K-INTENT",
+        "K-GOAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C09",
+      "claim": "对象规格先于提示词优化",
+      "source": {
+        "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+        "blob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+        "section": "实际对照及末段"
+      },
+      "relatedCandidate": [
+        "K-INTENT",
+        "K-PROMPT",
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C10",
+      "claim": "静态阅读、专业交付、现场实施、模型增益分评",
+      "source": {
+        "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+        "blob": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+        "section": "标题说明、反例和状态"
+      },
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C11",
+      "claim": "历史证据应绑定当时版本，缺文件不代表模型绝对未知",
+      "source": {
+        "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+        "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+        "section": "第3节"
+      },
+      "relatedCandidate": [
+        "K-TIME",
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C12",
+      "claim": "指令改进依据真实失败、真值与回归",
+      "source": {
+        "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+        "blob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+        "section": "持续优化、V1.1/V23.3"
+      },
+      "relatedCandidate": [
+        "K-EVAL",
+        "K-DEFECT"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    }
+  ],
+  "results": "上游记录：30批1500/347，15/23批超限，14断言及SciPy复算；非本会话重跑、真实企业或个人技能验证。"
+}

@@ -1,0 +1,204 @@
+{
+  "base": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+  "claims": [
+    {
+      "id": "C01",
+      "tags": [
+        "P1",
+        "P6"
+      ],
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "一、三、七节"
+      },
+      "claim": "局部行业案例不改变根本目标",
+      "condition": "未确认新的长期方向",
+      "counter": "旧短句推进曾被误判为制造业转型",
+      "action": "完成局部公开质量分析，不改变目标"
+    },
+    {
+      "id": "C02",
+      "tags": [
+        "P5",
+        "P6"
+      ],
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、四节"
+      },
+      "claim": "学习资料不构成现场操作授权",
+      "condition": "现场安全、机器或质量放行",
+      "counter": "会答学习卡不等于胜任",
+      "action": "不做设备教程或放行决定"
+    },
+    {
+      "id": "C03",
+      "tags": [
+        "P1",
+        "P6",
+        "P7"
+      ],
+      "source": {
+        "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+        "blob": "68d69028dacfc09e94037791828364a65d222bc6",
+        "section": "一、二、四节"
+      },
+      "claim": "辅助交付、独立技能、人机协同须分别评价",
+      "condition": "真实学习需移除AI后的迁移评价",
+      "counter": "文本成果不能证明真人技能",
+      "action": "本次验收数值与作品，不声称个人胜任"
+    },
+    {
+      "id": "C04",
+      "tags": [
+        "P5",
+        "P7"
+      ],
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、丙"
+      },
+      "claim": "比较质量须明确分母及统计单位",
+      "condition": "抽样、判定口径相同；缺陷事件与不合格单位分开",
+      "counter": "同20%不同样本量可产生不同统计信号",
+      "action": "加权不合格率、逐批控制限、非法计数拒绝"
+    },
+    {
+      "id": "C05",
+      "tags": [
+        "P2",
+        "P5"
+      ],
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、六节"
+      },
+      "claim": "统计异常非原因诊断",
+      "condition": "需可比工序、抽样及量测证据",
+      "counter": "材料、记录、测量等均可产生变化",
+      "action": "Shewhart定位15/23批；Deming限制因果和处置"
+    },
+    {
+      "id": "C06",
+      "tags": [
+        "P3",
+        "P6"
+      ],
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、三、四节"
+      },
+      "claim": "优先复用现成ERP/QMS",
+      "condition": "有授权与匹配的数据、配置",
+      "counter": "质检单接受率不是工件合格率",
+      "action": "核对ERPNext原生文档，给数据契约不造ERP"
+    },
+    {
+      "id": "C07",
+      "tags": [
+        "P5",
+        "P7",
+        "P8"
+      ],
+      "source": {
+        "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "blob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+        "section": "适用性、知识激活和反馈"
+      },
+      "claim": "前缀不变不证明无未来信息",
+      "condition": "时点决策需独立可用时间",
+      "counter": "R36上游污染0/624差异但624/624可用性违规",
+      "action": "冻结质量基线；实际反例证明后续重拟合掩盖首个异常"
+    },
+    {
+      "id": "C08",
+      "tags": [
+        "P1",
+        "P6",
+        "P8"
+      ],
+      "source": {
+        "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+        "blob": "96a613853bc0d2337b64275c6b051790f4df542e",
+        "section": "第8节"
+      },
+      "claim": "初始思想可不完整；不擅改目标",
+      "condition": "局部试验与重大价值分开",
+      "counter": "历史推进短句误作全局制造业方向",
+      "action": "规格写明试点非用户职业或系统决定"
+    },
+    {
+      "id": "C09",
+      "tags": [
+        "P1",
+        "P5",
+        "P6",
+        "P7"
+      ],
+      "source": {
+        "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+        "blob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+        "section": "实际对照及末段"
+      },
+      "claim": "对象规格先于提示词优化",
+      "condition": "层级与口径可改变答案",
+      "counter": "旧链上案例账户不变而所有者变化",
+      "action": "区分质量单、缺陷事件、实际不合格单位；计算外部真值"
+    },
+    {
+      "id": "C10",
+      "tags": [
+        "P5",
+        "P7"
+      ],
+      "source": {
+        "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+        "blob": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+        "section": "标题说明、反例和状态"
+      },
+      "claim": "静态阅读、专业交付、现场实施、模型增益分评",
+      "condition": "证据范围不同",
+      "counter": "保存文件并不证明行业或人已获益",
+      "action": "真实JS/SciPy复算；其余NOT_RUN"
+    },
+    {
+      "id": "C11",
+      "tags": [
+        "P5",
+        "P7",
+        "P8"
+      ],
+      "source": {
+        "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+        "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+        "section": "第3节"
+      },
+      "claim": "历史证据应绑定当时版本，缺文件不代表模型绝对未知",
+      "condition": "历史回放及后续变更",
+      "counter": "72项有10新路径与5异版本",
+      "action": "冻结事前规格、标明已见参考与合成反例，非留出模型实验"
+    },
+    {
+      "id": "C12",
+      "tags": [
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "source": {
+        "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+        "blob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+        "section": "持续优化、V1.1/V23.3"
+      },
+      "claim": "指令改进依据真实失败、真值与回归",
+      "condition": "存在可核工作与验收",
+      "counter": "更长提示词留出退化；关键词评价假阳性",
+      "action": "事前规格、14项断言、独立计算；不自动部署"
+    }
+  ]
+}

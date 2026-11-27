@@ -50,3 +50,7 @@
 
 ## 本轮实际跨域关系
 P5的R36时点知识→P8事后知识污染→P7历史评价→[真实回放证据](../research/artifacts/expert-audit-v2/temporal-replay.json)。P1目标锚点→P6任务规格及行动→P7成果验证；P4提供原件与版本。P2/P3按证据缺口查原件并由P4保留，P6实际执行，P7/P8区分成果与停止。导航标签不是主张级关系或因果证明。
+
+
+## V3.0｜真实条件性知识激活
+[12条专题主张](2026-11-27-conditional-claims-manufacturing-v3.md)、[制造质检成果](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)、[手机阅读页](../docs/ai-d-prompt/manufacturing-quality-v3.html)。C01/C08→P1/P6目标；C04/C09→P5对象；C07/C11→P5/P8时点；C03/C10/C12→P7交付与增益分评。原72项快照保持。

@@ -6,6 +6,8 @@
 
 # AI-D 提示词候选与人机阅读入口
 
+- [V3.0 制造质检事前专业规格](tasks/manufacturing-quality-evidence-v3.md)；[条件性主张](../knowledge/2026-11-27-conditional-claims-manufacturing-v3.md)及[实际专业作品](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)，按需使用，未部署为全局指令。
+
 - [具名专家V2.0事前任务规格](tasks/expert-knowledge-organization-audit-v2.md)；[历史证据回放候选](tasks/historical-evidence-replay-v1.md)；[八问题入口与任务表达](../knowledge/2026-11-27-problem-method-activation-map.md)及[72项静态导航](../docs/ai-d-prompt/knowledge-map-v2.html)。按需调用，未自动部署。
 
 - [手机端独立任务入口V0.2（候选）](mobile-chat-entry-v0.2.md)：明确仓库、分支、可访问边界及当轮专业产物；V0.1及历史网页知识仍保留。[具名专家方法及核心缺陷审查](../research/2026-11-27-named-expert-methods-and-defect-audit.md)，未独立验证增益。

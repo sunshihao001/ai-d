@@ -3,6 +3,9 @@
 
 # ai-d｜当前研究承接与修订台账
 
+## 2026-11-27｜V3.0 条件性知识与真实专业能力验证
+[研究](2026-11-27-named-expert-conditional-knowledge-v3.md)：事前规格ac1fea0，8原件12主张；[制造质检作品](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)三公开例、30批1500/347、15/23超限、精确p=.100457；14项断言与独立SciPy复算；R36冻结基线反例。下一步不同真实专业任务或可控独立会话对照，继续高价值主张分批深读。现场、真人、独立模型/跨聊天未验。原AGENTS、权限及调度不变。
+
 ## 2026-11-27｜具名专家全域诊断与专业提示词进化 V2.0
 [研究及实证](2026-11-27-named-expert-full-domain-audit-v2.md)：事前规格独立提交ae9e4b6；沿既有P1–P8组织72路径，11项定向原文/结构/段落核查，其余目录级；8种情境表达及[静态导航](../docs/ai-d-prompt/knowledge-map-v2.html)。R36/Fowler/Feast真实版本比对：62→72，57同blob/5异blob/10原树未有，8例符合预期，不证明模型实际泄漏/增益。[回放规格](../prompts/tasks/historical-evidence-replay-v1.md)可复用。下一步优先不同真实陌生专业任务及独立可比验收，不重复元研究。AGENTS、定时任务、权限不变。MODEL_AB=NOT_RUN / CROSS_CHAT=NOT_RUN。
 
