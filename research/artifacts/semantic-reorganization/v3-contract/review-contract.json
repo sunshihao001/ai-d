@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "claim",
+    "state",
+    "scope",
+    "limitation",
+    "action",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^K-[A-Z]+$"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "state": {
+      "enum": [
+        "source_reviewed",
+        "pending"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "limitation": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "action": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "commit",
+          "blob",
+          "start",
+          "end",
+          "summary"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "blob": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "if": {
+    "required": [
+      "state"
+    ],
+    "properties": {
+      "state": {
+        "const": "source_reviewed"
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "evidence": {
+        "minItems": 1
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "evidence": {
+        "maxItems": 0
+      }
+    }
+  }
+}

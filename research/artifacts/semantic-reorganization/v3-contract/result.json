@@ -1,0 +1,181 @@
+{
+  "validator_version": "4.26.0",
+  "dialect": "2020-12",
+  "public_input_fingerprint": "aa59c45e",
+  "review_fingerprint": "8d711586",
+  "public": {
+    "required": {
+      "groups": 5,
+      "cases": 18,
+      "matches": 18,
+      "failures": []
+    },
+    "dependentRequired": {
+      "groups": 4,
+      "cases": 20,
+      "matches": 20,
+      "failures": []
+    },
+    "if-then-else": {
+      "groups": 12,
+      "cases": 30,
+      "matches": 30,
+      "failures": []
+    },
+    "additionalProperties": {
+      "groups": 9,
+      "cases": 21,
+      "matches": 21,
+      "failures": []
+    }
+  },
+  "records": 28,
+  "reviewed": 19,
+  "record_failures": [],
+  "mutations": [
+    {
+      "name": "reviewed valid",
+      "expected": true,
+      "actual": true,
+      "errors": []
+    },
+    {
+      "name": "pending valid without evidence",
+      "expected": true,
+      "actual": true,
+      "errors": []
+    },
+    {
+      "name": "blank claim",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.claim:pattern"
+      ]
+    },
+    {
+      "name": "missing limitation",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$:required"
+      ]
+    },
+    {
+      "name": "null limitation",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.limitation:type"
+      ]
+    },
+    {
+      "name": "reviewed no evidence",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.evidence:minItems"
+      ]
+    },
+    {
+      "name": "pending falsely promoted",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.evidence:minItems"
+      ]
+    },
+    {
+      "name": "pending with asserted reviewed evidence",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.evidence:maxItems"
+      ]
+    },
+    {
+      "name": "invented model success state",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.state:enum",
+        "$.evidence:maxItems"
+      ]
+    },
+    {
+      "name": "unknown field",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$:additionalProperties"
+      ]
+    },
+    {
+      "name": "bad SHA",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.evidence[0].blob:pattern"
+      ]
+    },
+    {
+      "name": "missing source line",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "$.evidence[0]:required"
+      ]
+    },
+    {
+      "name": "inverted range",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "inverted_line_range"
+      ]
+    }
+  ],
+  "old_reference_check": [
+    {
+      "name": "unmodified",
+      "errors": []
+    },
+    {
+      "name": "blank top-level claim",
+      "errors": []
+    },
+    {
+      "name": "reviewed empty evidence",
+      "errors": []
+    },
+    {
+      "name": "false promoted candidate",
+      "errors": []
+    }
+  ],
+  "scope": "Actual local Python jsonschema 4.26.0 execution on connector-transferred inputs; FNV-1a UTF16 canonical JSON transfer checksum (not cryptographic); schema function saved as equivalent JSON file; CLI wrapper changed to external schema and exit code, not independently rerun after packaging. Old checker executed in JS. Contract shape and line order only; no semantic truth or model uplift proof.",
+  "external": {
+    "repo": "json-schema-org/JSON-Schema-Test-Suite",
+    "ref": "e2a68a15cd490750fd6b95e604e4054d7d978d1f",
+    "files": [
+      {
+        "path": "validation/tests/required.json",
+        "blob": "41a390767dbe796cef63324b106223c596db2981"
+      },
+      {
+        "path": "validation/tests/dependentRequired.json",
+        "blob": "5136269d0c07e77d680e6c28a0afeb5cd5641f56"
+      },
+      {
+        "path": "validation/tests/if-then-else.json",
+        "blob": "6f3f9d3d8f8afc154b72635c8fc09664876e19d9"
+      },
+      {
+        "path": "validation/tests/additionalProperties.json",
+        "blob": "8ab69c9602c328c53339b3412d79d6b8744c0a68"
+      }
+    ],
+    "selection": "Latest suite reorganized from draft directories. Filtered compatible unbounded/minimum 3,4,6,7,2019,2020; excluded =3 and <=7 legacy. No case-level compatibility overrides in selected files.",
+    "license": "MIT; license copied alongside normalized input."
+  }
+}
