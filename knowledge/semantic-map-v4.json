@@ -1509,6 +1509,15 @@
           "heading": "制造专题关联原件",
           "locatorPrecision": "document_entry",
           "status": "related_topic_not_independent_support"
+        },
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+          "line": 28,
+          "endLine": 42,
+          "heading": "方法候选对应段落；新旧段落实际相等",
+          "locatorPrecision": "reviewed_passage"
         }
       ],
       "review": {
@@ -1529,16 +1538,27 @@
           },
           {
             "path": "knowledge/2026-11-27-problem-method-activation-map.md",
-            "commit": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
-            "blob": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+            "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+            "blob": "5538ed30746c8c5996bbd640f833b9424f97e68f",
             "start": 28,
             "end": 42,
-            "summary": "方法候选对应段落",
-            "historicalPin": true,
-            "currentBlob": "5538ed30746c8c5996bbd640f833b9424f97e68f"
+            "summary": "方法候选对应段落；新旧段落实际相等"
           }
         ]
-      }
+      },
+      "historicalEvidence": [
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "commit": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+          "blob": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+          "start": 28,
+          "end": 42,
+          "summary": "方法候选对应段落",
+          "historicalPin": true,
+          "currentBlob": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+          "reason": "current and prior exact passage equal; old pin preserved, current review contract updated"
+        }
+      ]
     },
     {
       "id": "K-RUNTIME",
@@ -8075,7 +8095,8 @@
     "uniqueIds": true,
     "edgesValid": true,
     "reviewSync": true,
-    "historicalEvidenceSeparate": true
+    "historicalEvidenceSeparate": true,
+    "verifiedReviewPassages": true
   },
   "previousBaseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
   "routes": [
