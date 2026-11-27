@@ -1,6 +1,6 @@
 {
   "baseline": "1b3ce4e8b4c0c7e21f4eb7a154b5b55689884d95",
-  "status": "review_candidate",
+  "status": "historical_inactive_compatibility_only",
   "routes": [
     {
       "id": "R01",
@@ -14,6 +14,14 @@
         "AGENTS.md",
         "research/2026-11-07-short-intent-goal-context-delegation.md",
         "research/2026-11-27-anchor-activation-goal-change-replay.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P2",
+        "P6",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -27,6 +35,13 @@
         "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
         "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
         "research/2026-11-27-knowledge-driven-task-expression-v1.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P2",
+        "P4",
+        "P6"
       ]
     },
     {
@@ -41,6 +56,13 @@
         "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
         "knowledge/INDEX.md",
         "research/2026-11-27-cognitive-asset-reconciliation.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P4",
+        "P5",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -54,6 +76,13 @@
         "knowledge/foundations/cross-layer-project-anchors.md",
         "research/2026-11-27-anchor-activation-goal-change-replay.md",
         "research/2026-11-27-knowledge-driven-task-expression-v1.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P4",
+        "P6",
+        "P7"
       ]
     },
     {
@@ -68,6 +97,16 @@
         "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
         "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
         "research/2026-11-07-gpt-researcher-context-selection-audit.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -82,6 +121,16 @@
         "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
         "research/2026-11-15-capability-integration-and-hermes-evolution.md",
         "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
       ]
     },
     {
@@ -96,6 +145,15 @@
         "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
         "research/2026-11-27-r36-temporal-audit-recovery.md",
         "AGENTS.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
       ]
     },
     {
@@ -111,6 +169,16 @@
         "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
         "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
         "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -125,6 +193,16 @@
         "evaluation/2026-11-07-two-domain-practice-results.md",
         "knowledge/foundations/cross-layer-project-anchors.md",
         "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P2",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -139,6 +217,15 @@
         "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
         "knowledge/foundations/organization-protocol.md",
         "prompts/README.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
       ]
     },
     {
@@ -153,6 +240,13 @@
         "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
         "research/2026-11-27-shared-workspace-trial-v0-3.md",
         "docs/ai-d-prompt/index.html"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P4",
+        "P6",
+        "P7"
       ]
     },
     {
@@ -167,7 +261,18 @@
         "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
         "research/2026-11-23-information-scouting-value-chain-direction.md",
         "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md"
+      ],
+      "active": false,
+      "currentQuestionReferences": [
+        "P1",
+        "P2",
+        "P3",
+        "P5",
+        "P6",
+        "P7"
       ]
     }
-  ]
+  ],
+  "authority": "knowledge/INDEX.md P1–P8",
+  "scope": "旧R编号与方法原文仅供历史定位；不得作为并行现行任务分派。对应P为实际关联主张所属问题集合，非全量调用要求。"
 }

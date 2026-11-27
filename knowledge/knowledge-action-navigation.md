@@ -1,3 +1,5 @@
+> **历史R01–R12路线已退出默认任务分派。** 当前使用[P1–P8问题入口](INDEX.md)，旧编号供历史定位；[兼容映射](knowledge-action-routes.json)。
+
 # AI-D 知识—行动导航（审查候选 V0.1）
 固定观察基线：1b3ce4e8b4c0c7e21f4eb7a154b5b55689884d95。本文件是既有六域、P1–P8、知识九阶段及跨层锚点的任务型投影，不新增强制十二阶段，不覆盖原有知识正本，不代表运行时自动调用。全量文件目录见 [资产目录](catalog-20261127.json)，现行入口见 [AGENTS](../AGENTS.md)、[知识索引](INDEX.md) 与 [台账](../research/ACTIVE-RESEARCH-LEDGER.md)。
 ## 维护与使用
