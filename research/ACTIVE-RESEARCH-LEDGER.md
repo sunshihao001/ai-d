@@ -403,3 +403,7 @@
 **当前状态**：SOURCE/DESIGN INTEGRATED；POLLUTION DIRECTIONS DEPRECATED；NOT_YET_RUNTIME_VALIDATED。
 
 **下一步**：不再继续写同义的外部知识框架。选一个真实 ai-d / Hermes / Muse 任务，实际执行一次“发现缺口→外部研究→成熟项目/方法→能力提炼→应用→验证→保留/淘汰”，用结果判断该结构是否真的减少成本、重复开发或用户纠错。
+
+
+## 2026-11-27｜历史专家认知恢复与主干治理 V1.0
+已保存[16条历史主张及八分支差异审查](2026-11-27-historical-expert-recovery-and-mainline-audit.md)，固定起点98d0c17。PR1—4仍开放；当前审查分支作为归并候选，历史独有资产逐文档审查及三方合并测试未完成。下一步优先PR1旧认知与评测原件、ai-intelligence剩余原件及同路径版本冲突；准备无损合并、入口统一和回归验证，未授权不合并main、不删分支、不改调度、不提前建设专家中心。独立模型/跨聊天增益未知。
