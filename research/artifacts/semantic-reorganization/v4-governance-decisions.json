@@ -1,0 +1,87 @@
+{
+  "scope": "实际替换三个默认读取入口；未删除原始知识文件、分支或历史；未修改MEME；不声称全库污染清除。旧链接锚点需回归检查，固定历史链接可恢复。",
+  "decisions": [
+    {
+      "old": "旧索引按研究日期逐轮前置，旧下一轮候选并列",
+      "operation": "replace_active_index",
+      "target": "knowledge/INDEX.md",
+      "reason": "入口重复且使最新任务与历史任务竞争；改为P1–P8精准段落入口",
+      "keep": "https://github.com/sunshihao001/ai-d/blob/5c3e9b59757aac783b33e0c9f4b004b0783c0f50/knowledge/INDEX.md"
+    },
+    {
+      "old": "V2/V3等已完成任务仍占当前提示词入口，25章历史候选",
+      "operation": "remove_from_default_entry",
+      "target": "prompts/README.md",
+      "reason": "收敛唯一接力，历史提示词原件仍可审查",
+      "keep": "https://github.com/sunshihao001/ai-d/blob/5c3e9b59757aac783b33e0c9f4b004b0783c0f50/prompts/README.md"
+    },
+    {
+      "old": "多条历史最新接力、旧任务优先级混在默认台账",
+      "operation": "replace_current_state",
+      "target": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "reason": "仅当前有效状态和下一项任务，原台账按固定Git版本访问",
+      "keep": "https://github.com/sunshihao001/ai-d/blob/5c3e9b59757aac783b33e0c9f4b004b0783c0f50/research/ACTIVE-RESEARCH-LEDGER.md"
+    },
+    {
+      "old": "历史B路线/固定八专家/技能绑定/25章自动生效",
+      "operation": "exclude_default_authority",
+      "target": "knowledge/INDEX.md",
+      "reason": "历史方案不等于当前授权；K-DECISION/K-EXPERT/K-AUTH",
+      "keep": "decisions/2026-11-05-goal-options.md"
+    },
+    {
+      "old": "文本相似度、引用或结构通过即知识有效",
+      "operation": "reject_inference",
+      "target": "knowledge/INDEX.md",
+      "reason": "70外部标签及门禁反例",
+      "keep": "research/artifacts/semantic-reorganization/v4-entailment/result.json"
+    },
+    {
+      "old": "执行时长、测试量、模型自评即智能增益",
+      "operation": "reject_inference",
+      "target": "knowledge/INDEX.md",
+      "reason": "K-BUDGET/K-EVAL；独立增益未知",
+      "keep": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md"
+    },
+    {
+      "old": "AI-D与MEME共享业务判断",
+      "operation": "separate_project_scope",
+      "target": "knowledge/INDEX.md",
+      "reason": "共享治理，不共享目标、数据语义、权限、验收；不修改MEME",
+      "keep": "AGENTS.md"
+    }
+  ],
+  "sizes": [
+    {
+      "path": "knowledge/INDEX.md",
+      "beforeChars": 22285,
+      "afterChars": 13067,
+      "removedChars": 9218,
+      "oldBlob": "f2293d13cb0e0673448a016d6a84a42ed16b3ac5",
+      "oldCommit": "5c3e9b59757aac783b33e0c9f4b004b0783c0f50"
+    },
+    {
+      "path": "prompts/README.md",
+      "beforeChars": 2213,
+      "afterChars": 714,
+      "removedChars": 1499,
+      "oldBlob": "01237336875475b712463fa8f6614ad6190e0540",
+      "oldCommit": "5c3e9b59757aac783b33e0c9f4b004b0783c0f50"
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "beforeChars": 33354,
+      "afterChars": 1134,
+      "removedChars": 32220,
+      "oldBlob": "3ed5bc03ac3ca356e84cd95f841c0e8e2dca159e",
+      "oldCommit": "5c3e9b59757aac783b33e0c9f4b004b0783c0f50"
+    }
+  ],
+  "coverage": {
+    "routes": 8,
+    "uniqueClaims": 28,
+    "all28": true,
+    "uniquePrimarySources": 20
+  },
+  "newDefault": "prompts/tasks/verified-transfer-and-mainline-v5.md"
+}
