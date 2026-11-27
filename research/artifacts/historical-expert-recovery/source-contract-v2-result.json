@@ -1,0 +1,43 @@
+{
+  "environment": "Node.js v22.16.0; exact historical original manually transferred to isolated container; git hash-object verified",
+  "originalBlob": "b1313a159b9ba409c5de2a3bb3371a5cd7e72661",
+  "originalTests": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "durationMs": 128.689287
+  },
+  "additionalProbes": [
+    {
+      "name": "valid baseline",
+      "expected": "CANDIDATE_EVIDENCE_MATCH",
+      "actual": "CANDIDATE_EVIDENCE_MATCH",
+      "pass": true
+    },
+    {
+      "name": "after as-of cutoff",
+      "expected": "SEEK_EXTERNAL_PRIMARY_EVIDENCE",
+      "actual": "CANDIDATE_EVIDENCE_MATCH",
+      "pass": false
+    },
+    {
+      "name": "malformed date",
+      "expected": "SEEK_EXTERNAL_PRIMARY_EVIDENCE",
+      "actual": "CANDIDATE_EVIDENCE_MATCH",
+      "pass": false
+    },
+    {
+      "name": "not actual support despite metadata",
+      "expected": "SEEK_EXTERNAL_PRIMARY_EVIDENCE",
+      "actual": "CANDIDATE_EVIDENCE_MATCH",
+      "pass": false
+    },
+    {
+      "name": "different subject",
+      "expected": "SEEK_EXTERNAL_PRIMARY_EVIDENCE",
+      "actual": "SEEK_EXTERNAL_PRIMARY_EVIDENCE",
+      "pass": true
+    }
+  ],
+  "scope": "additional probes test a stricter downstream evidence-admission expectation, not original contract promised behavior. Original candidate is metadata-only; cannot certify semantic support, cutoff or date validity. Probe import path adapted for repo placement, not rerun after path adaptation. Retrieval BM25 and full repo tests not run."
+}

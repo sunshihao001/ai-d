@@ -1,3 +1,7 @@
+## 2026-11-27｜历史原件实际归并 V2.0（候选，非启用）
+
+[归并验收报告](../research/2026-11-27-historical-expert-recovery-mainline-v2.md)：43份历史原件按blob恢复并回读，含[规划草案](../planning/README.md)、[认知总图](COGNITIVE-MAP.md)、[专家认知提取](../research/expert-cognition-distillation-positioning-2026-11-06.md)、[历史归档](../research/archive/README.md)、[检索评测](../evaluation/retrieval-probe-results-2026-11-06.md)。原件的旧规则不自动生效；恢复专家评测段落与来源边界，现行AGENTS不变。来源适配21项确定性测试通过，5项额外探测有3项暴露元数据筛选边界，独立模型增益未知。
+
 ## 2026-11-27｜历史专家认知恢复与主干归并准备（审查候选）
 
 [历史专家认知恢复与主干治理 V1.0](../research/2026-11-27-historical-expert-recovery-and-mainline-audit.md)：恢复16条条件性历史主张、原始固定版本、反例、实际应用及八分支差异。沿既有 P1–P8，不新增专家中心、不激活技能、不合并主干。尚需逐项历史独有资产与实际合并验证；模型增益未知。
