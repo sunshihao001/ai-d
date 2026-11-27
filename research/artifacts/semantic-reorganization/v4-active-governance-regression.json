@@ -1,0 +1,30 @@
+{
+  "scope": "实际固定提交树、三入口、28个精确段落引用和旧版保存检查；待本次提交后再次核新链接。不是全仓锚点审计或模型检索实测。",
+  "head": "7f43786434af3b94a3e870a4f06c8a330e287877",
+  "base": "be25104d76a0f61135467746812ab93c0044dcca",
+  "checks": {
+    "all28Unique": true,
+    "eightRoutes": true,
+    "all28ExactPins": true,
+    "oneCurrentContinuation": true,
+    "oldSourcesPinned": true,
+    "upstreamPreserved": true,
+    "noUnexpectedDeletes": true,
+    "linksExistingOrInThisCommit": true,
+    "sourceReviewMapRetained": true,
+    "workbenchHasCurrentTask": true,
+    "noOtherProjectMutation": true
+  },
+  "relativeLinks": 40,
+  "oldChars": 57852,
+  "newChars": 13345,
+  "reduction": 0.7693251745834198,
+  "duplicateFullEntriesRemoved": 6,
+  "deleted": [
+    "research/artifacts/semantic-reorganization/v4-evidence-lines-a.json",
+    "research/artifacts/semantic-reorganization/v4-evidence-lines-b.json"
+  ],
+  "integratedFiles": 88,
+  "reviewFilesBeforeFinal": 192,
+  "missing": []
+}
