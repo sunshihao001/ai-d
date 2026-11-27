@@ -1,0 +1,510 @@
+{
+  "base": "be25104d76a0f61135467746812ab93c0044dcca",
+  "previous": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+  "delta": [
+    {
+      "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+      "old": null,
+      "new": "46ee5de08d105581bf7b9a350ba4fb4945ebff9f",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "old": "d5f8393579653391d74ca6a81c709a26315a6aac",
+      "new": "6285ab0ede199e4225e1149673bf5956f72c8711",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+      "old": "9f280acb992a9b210621ab953290a772e92d49dd",
+      "new": "13b53e99a5163aa05c6681bb08bccfe14b221afd",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+      "old": null,
+      "new": "16d25325749cf3f53b0ea3f72d28f890b19847df",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+      "old": null,
+      "new": "fbc9fccb54703d1b393f8959bf7f13cd59767531",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+      "old": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+      "new": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "old": "2f42fcda404663e801bfa9dbb060bf208bcbd042",
+      "new": "5f409b574656ec00ba44557e29bf007d2c196eea",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "prompts/README.md",
+      "old": "5d1abc0dd22d1dc427e259b57fa969af9d72756c",
+      "new": "36ac344fda23862ddad99a9f942d546eec91a434",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+      "old": null,
+      "new": "864264cdab1e0982cf457d30948b698082dbda78",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+      "old": null,
+      "new": "2b4fd59bfa1e8d168e3af566cd545fc93f021c3f",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "old": "0dd1f552bd726182c70675106c23fb6cca8abdc6",
+      "new": "e0b277ab8ac69b1f36b90b96311996338d882d41",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+      "old": null,
+      "new": "96ed0385f1e1cceb3570356f60c0b909b56d8e6b",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+      "old": null,
+      "new": "e0b53aabde2ca0f51d855556c818eecb8e049fc4",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/input.json",
+      "old": null,
+      "new": "3a09bd620aaa6125624e83f025e96012ad6bdcdd",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/manufacturing-quality-v3/results.json",
+      "old": null,
+      "new": "9f88e09c1c3bc02a5496b3581a8dd1e1a4a4e5e7",
+      "kind": "added",
+      "read": true
+    }
+  ],
+  "revised": [
+    "K-LEARN",
+    "K-UNKNOWN",
+    "K-SEARCH",
+    "K-CAP",
+    "K-RUNTIME",
+    "K-CONT",
+    "K-REAL",
+    "K-RESILIENCE",
+    "K-EVOLVE"
+  ],
+  "scope": "V3 19已审保留及变更定位复核；V4剩9项定向段落校勘；外部原文仅列明三项核对；不是88文件逐段语义全审。",
+  "manufacturing": [
+    {
+      "id": "C01",
+      "claim": "局部行业案例不改变根本目标",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "一、三、七节"
+      },
+      "relatedCandidate": [
+        "K-GOAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C02",
+      "claim": "学习资料不构成现场操作授权",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、四节"
+      },
+      "relatedCandidate": [
+        "K-AUTH"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C03",
+      "claim": "辅助交付、独立技能、人机协同须分别评价",
+      "source": {
+        "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+        "blob": "68d69028dacfc09e94037791828364a65d222bc6",
+        "section": "一、二、四节"
+      },
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C04",
+      "claim": "比较质量须明确分母及统计单位",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、丙"
+      },
+      "relatedCandidate": [
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C05",
+      "claim": "统计异常非原因诊断",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "四节成果乙、六节"
+      },
+      "relatedCandidate": [
+        "K-UNKNOWN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C06",
+      "claim": "优先复用现成ERP/QMS",
+      "source": {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "blob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "section": "二、三、四节"
+      },
+      "relatedCandidate": [
+        "K-CAP",
+        "K-RUNTIME"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C07",
+      "claim": "前缀不变不证明无未来信息",
+      "source": {
+        "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "blob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+        "section": "适用性、知识激活和反馈"
+      },
+      "relatedCandidate": [
+        "K-DATA",
+        "K-TIME"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C08",
+      "claim": "初始思想可不完整；不擅改目标",
+      "source": {
+        "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+        "blob": "96a613853bc0d2337b64275c6b051790f4df542e",
+        "section": "第8节"
+      },
+      "relatedCandidate": [
+        "K-INTENT",
+        "K-GOAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C09",
+      "claim": "对象规格先于提示词优化",
+      "source": {
+        "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+        "blob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+        "section": "实际对照及末段"
+      },
+      "relatedCandidate": [
+        "K-INTENT",
+        "K-PROMPT",
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C10",
+      "claim": "静态阅读、专业交付、现场实施、模型增益分评",
+      "source": {
+        "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+        "blob": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+        "section": "标题说明、反例和状态"
+      },
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-EVAL"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C11",
+      "claim": "历史证据应绑定当时版本，缺文件不代表模型绝对未知",
+      "source": {
+        "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+        "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+        "section": "第3节"
+      },
+      "relatedCandidate": [
+        "K-TIME",
+        "K-DATA"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    },
+    {
+      "id": "C12",
+      "claim": "指令改进依据真实失败、真值与回归",
+      "source": {
+        "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+        "blob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+        "section": "持续优化、V1.1/V23.3"
+      },
+      "relatedCandidate": [
+        "K-EVAL",
+        "K-DEFECT"
+      ],
+      "relation": "conditional contextualization, not verified equivalence"
+    }
+  ],
+  "historical": [
+    {
+      "id": "H01",
+      "relatedCandidate": [
+        "K-INTENT",
+        "K-EXPERT"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 25,
+      "claim": "专家问题表征基于深层机制而非表面词；仅在领域知识确实相关时借用Chi等方法",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H02",
+      "relatedCandidate": [
+        "K-FACET",
+        "K-UNKNOWN"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 26,
+      "claim": "术语是专业概念入口；名称、对象、定义分离，按ISO704、SKOS、Furnas区分同义、上下位和近似",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H03",
+      "relatedCandidate": [
+        "K-PROV",
+        "K-HOOK"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 27,
+      "claim": "概念语义、研究行动、主张证据、用户目标映射为四种关系，不混级",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H04",
+      "relatedCandidate": [
+        "K-EXPERT",
+        "K-UNKNOWN"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 28,
+      "claim": "专家认知提取需具体事件、可观察线索、判断、替代解释、结果；Klein关键决策法及Hoffman等",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H05",
+      "relatedCandidate": [
+        "K-EXPERT",
+        "K-DATA"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 29,
+      "claim": "Kahneman/Klein：直觉依赖环境规律及有效反馈；条件性知识须带边界",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H06",
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-RECEIPT"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 30,
+      "claim": "保存、检索、适用、实际调用、成果改善是不同事件；知识迁移需检查关系结构",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H07",
+      "relatedCandidate": [
+        "K-SEARCH",
+        "K-EVAL"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 31,
+      "claim": "早期静态检索对照可复用：12留出题字面/扩词/条件路由 Top1=.333/.333/.583，Recall@3=.500/.500/.750，MRR=.549/.531/.718",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H08",
+      "relatedCandidate": [
+        "K-PROV",
+        "K-EVAL"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 32,
+      "claim": "来源→实体→主张→证据→解释→决定须可追溯；证据支持/反驳/限制/背景分别记录",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H09",
+      "relatedCandidate": [
+        "K-CAP",
+        "K-EVAL"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 33,
+      "claim": "技能评价是行为验证而非文本审查；同技能版本、输入、环境、无技能基线、独立判据、失败、回归和撤回",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H10",
+      "relatedCandidate": [
+        "K-EXPERT",
+        "K-AUTH"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 34,
+      "claim": "专家组队依据目标、知识缺口、互补贡献；八槽位只是候选研究入口",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H11",
+      "relatedCandidate": [
+        "K-CAP",
+        "K-RUNTIME"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 35,
+      "claim": "技能候选先查固定版本方法、许可、依赖、权限及适用；自有调试/TDD/审查优先候选",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H12",
+      "relatedCandidate": [
+        "K-AUTH",
+        "K-UI"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 36,
+      "claim": "AI承担日常质量、反证及协调；人确认价值、授权、重大资源与风险",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H13",
+      "relatedCandidate": [
+        "K-POLLUTE",
+        "K-PROV"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 37,
+      "claim": "来源职责不同：理论/标准、代码、运行证据、社交发现等不能多数投票；旧知识可降级保留",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H14",
+      "relatedCandidate": [
+        "K-FACET"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 38,
+      "claim": "六域组织、P1–P8问题、九阶段生命周期、跨层锚点与专业视角是不同维度",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H15",
+      "relatedCandidate": [
+        "K-EXPERT",
+        "K-INTENT",
+        "K-EVOLVE"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 39,
+      "claim": "基尼价值导向、Chi/Klein问题线索、Leveson/Woods反馈资源、Argyris双环、Norman/Hutchins人机协作等为条件性专业方法",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    },
+    {
+      "id": "H16",
+      "relatedCandidate": [
+        "K-LEARN",
+        "K-EVAL",
+        "K-DATA"
+      ],
+      "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+      "commit": "1e5f078b44fd2790e74bb157560273d14248370a",
+      "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+      "line": 40,
+      "claim": "专业结果、真人独立能力、独立模型增益分评；制造质量应用冻结基线与统计对象",
+      "relation": "历史恢复报告条件性关联，非外部原件独立重验"
+    }
+  ],
+  "checks": {
+    "allDocsMapped": true,
+    "sourcePaths": true,
+    "uniqueIds": true,
+    "edgesValid": true,
+    "reviewSync": true,
+    "historicalEvidenceSeparate": true
+  }
+}
