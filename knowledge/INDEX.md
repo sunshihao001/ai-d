@@ -81,5 +81,7 @@
 
 ## 三、专业成果和精确原件
 - [证据结构契约实测](../research/artifacts/semantic-reorganization/v3-contract/result.json)；[真实制造质量作品](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)；[双停运边界](../research/artifacts/semantic-reorganization/dual-outage-service-boundary.json)；[原时点反例](../research/2026-11-27-r36-temporal-audit-recovery.md)。均局部情景或公开资料，不自动外推现实收益。
-- [集中专业知识原件](2026-11-27-professional-knowledge-and-leverage.md) · [八问题专业方法原件](2026-11-27-problem-method-activation-map.md) · [历史专家恢复及归并](../research/2026-11-27-historical-expert-recovery-mainline-v2.md) · [历史原件目录](../research/archive/README.md)。历史16项及制造12项在V4地图关联，不重复晋升。
+- [集中专业知识原件](2026-11-27-professional-knowledge-and-leverage.md) · [八问题专业方法原件](2026-11-27-problem-method-activation-map.md) · [历史专家恢复及归并](../research/2026-11-27-historical-expert-recovery-mainline-v2.md) · [历史原件目录](../research/archive/README.md)。历史27项及制造12项在V4地图条件性关联，不重复晋升。
 - [旧索引完整版本](https://github.com/sunshihao001/ai-d/blob/5c3e9b59757aac783b33e0c9f4b004b0783c0f50/knowledge/INDEX.md)（旧入口和历史章节；不默认加载）。所有研究原件继续保留。若旧链接使用本索引旧章节锚点，按固定版本查原段；不把旧优先级带入当前。
+
+- [主干归并验收](../research/2026-11-27-mainline-acceptance-v3.md)：版本选择、43原件保全、固定候选树和回归证据；不是新的研究任务。
