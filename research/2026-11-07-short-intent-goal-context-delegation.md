@@ -223,3 +223,10 @@
 - [OpenSpec 真实在途 proposal](https://github.com/Fission-AI/OpenSpec/blob/main/openspec/changes/add-global-install-scope/proposal.md) 与 [tasks](https://github.com/Fission-AI/OpenSpec/blob/main/openspec/changes/add-global-install-scope/tasks.md)：前者记 **Why / What Changes**、兼容和迁移理由；后者以未勾选工作项细分设置、适配器、配置、测试。**这是在途变更文件，不等于已实现或测试通过**。
 
 **新的判断**：最重要的“表达接口”其实不是高级语法，而是「用户当前意图 → AI 确定任务入口与状态 → 记录本轮相对上轮的变化 → 真实执行与验收」之间可检查的转换。应分别评测**识别对任务**和**任务实际完成**，不能只因输出一张专业任务计划就计成功。
+
+
+## 2026-11-27｜人的目标也可能尚未形成：意图共同形成与可能性扩张
+用户确认方向：人并非总能正确表达、提出深层路线或充分认识目标；可能只有最初简单想法。继承前述Taylor/Belkin、混合主动交互、错误前提与澄清成本研究。新增区分：意图识别恢复已经存在的意图；问题重构修复表述、前提、目的/手段混淆；意图共同形成帮助在陌生机会中形成尚未确定的目标和偏好；三者不可用同一唯一标准答案评价。
+外部原始研究摘要/出版页面核查： [Keeney 1996, Value-focused thinking](https://www.sciencedirect.com/science/article/pii/0377221796000045) 从价值识别决策机会及创造更好备选，而非仅比较已知方案；[Dorst与Cross 2001, Creativity in the design process](https://research.tue.nl/p/en/research-outputs/creativity-in-the-design-process-co-evolution-of-problem-solution) 基于设计过程研究讨论问题空间与方案空间共同演进；[Slovic 1995, The construction of preference](https://scholarsbank.uoregon.edu/items/8bfbe1ef-a008-470a-a730-625bfc00c192)、[偏好形成概述](https://www.cambridge.org/core/books/abs/the-construction-of-preference/the-construction-of-preference-an-overview/C74C08AB99538A8E234AFEAC23D9B428) 指出已有偏好不足时需要形成偏好、不同引出方法可能产生不同选择。这里只核查出版摘要/介绍，不声称全文复现或AI因果增益。启发：新方案与真实证据能帮助人重新认识问题；AI的呈现及选项框架也可能操纵偏好，必须留反对理由、替代选项、可拒绝/修订机会，不把模型推断当用户确认。
+实际项目示例（基于既有公开项目目标和记录，而非私人聊天原文）：最初“构建AI-D”可能是手段，长期扩大个人智能资本是目标；成熟系统/专业成品能满足需求时，直接使用或组合是竞争路线，不因已有建设投入排除；用户要求参考成熟项目不等于授权选定、安装或改目标。对于“研究时间短”，时长是可观测现象而非根本目的，需追究专业深度、实际劳动、缺口、资源与效果；也不能以长报告作为解决。对“保存知识”，需区分持久化、正确调用、真实利用与实际收益。保留原问题和修订后的候选关系，验证实际工作后再调整。
+候选验收：真实新手短句、错误前提、先指定手段、未形成偏好及明确不可变约束分别测试；对比机械执行、意图识别、问题重构/共同形成；评价原意及约束保真、正确新问题与机会、错误假设、实际成果、用户理解/决策负担、拒绝修订和授权边界。没有唯一答案时由人判断是否认可新增方向，结合独立事实与实际结果，不由模型自评“更懂人”。当前是用户确认协作原则与基于摘要的专业推论，未进行独立盲测，不新增系统或强制长流程。
