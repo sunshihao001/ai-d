@@ -1,3 +1,6 @@
+## 知识执行重整审查候选
+- [V2.0 下一轮深层多阶段任务](tasks/full-knowledge-to-action-v2.md)（未部署）；[工作台](../docs/knowledge-workbench/index.html)；[知识行动导航](../knowledge/knowledge-action-navigation.md)。旧25章完整保留；执行以真实最新分支与授权为准。
+
 # AI-D 提示词候选与人机阅读入口
 
 ## 当前手机端 GPT 工作入口（不覆盖历史候选）

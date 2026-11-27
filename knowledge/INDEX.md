@@ -1,3 +1,6 @@
+## 知识执行重整审查入口（候选，未合并）
+- [全量基线资产清册](catalog-20261127.json) · [按任务选择知识—行动导航](knowledge-action-navigation.md) · [机器可读路线](knowledge-action-routes.json) · [工作台](../docs/knowledge-workbench/index.html) · [下一轮任务](../prompts/tasks/full-knowledge-to-action-v2.md) · [审查记录](../research/2026-11-27-knowledge-execution-reorganization.md)。不替换现行六域/P1–P8及正本；文件引用不代表语义或执行边。
+
 ## 2026-11-27｜现行知识回收与调用导航
 
 **[知识驱动任务表达与运用断点 V1.0](../research/2026-11-27-knowledge-driven-task-expression-v1.md)**：实际核查V1.3运行、历史网页/当前正本版本差、提示词入口；将知识转译为具体对象、行动、成果与验收，[任务规格候选](../prompts/tasks/knowledge-utilization-audit-v1.md)及网页当前入口已补。历史25章与权限保持；独立模型/跨会话增益待验。
