@@ -33,6 +33,7 @@
 触发：知识遗漏、调用、归并或上下文冲突。行动：沿既有问题轴、对象类型和证据状态定位原件；只读取相关知识，区分导航与经验证的语义关系。
 验收：原件与版本可读，明确知识改变什么行动；未读原文不称理解。
 - **K-FACET 多轴知识组织**：六域、P1–P8、K1–K9及跨层锚点是不同观察轴；按需复用原分类并整合入口，不新增分类；边界：标签非语义证据或执行顺序。[2026-11-27-named-expert-full-domain-audit-v2.md L4–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L4-L5)
+- **K-FACET 的颗粒度调用（关联P2）**：研究停留宏观、浓缩丢失条件或索引只到文档时，向上查目标/原理、向下查机制/具体操作与验收、横向查依赖；依据决策差异决定拆分或归并。正本：[组织规范3B](foundations/organization-protocol.md#3b-研究与知识颗粒度控制2026-11-27用户已确认需求方法效果待验证)。这是恢复的条件性方法，不新增独立知识编号；尚无独立模型增益验证。
 - **K-PROV 主张与证据独立**：来源、具体主张支持、适用性和实际验证须分开；按需核原文、版本、支持或反证关系；边界：同源转述不能算独立证据。[organization-protocol.md L13–34](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L13-L34)
 - **K-HOOK 认知钩子与跨层追溯**：沿实际依赖分析变更直接影响、保持项及反向验收；按需复查受影响原件和判断，保留不变项；边界：词面相近不构成强制技术依赖。[cross-layer-project-anchors.md L77–93](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/cross-layer-project-anchors.md#L77-L93)
 - **K-CONT 跨会话状态与知识保全**：长期目标/授权、阶段有效状态、原始资产应分层保存；按实际HEAD恢复并回读；按需从短入口查最新原件与状态，重大变化保留旧版本、实际证据、未完事项及下步；边界：保存和同会话恢复不证明独立新会话可接续；缺权限/源则标未知。[2026-11-27-mobile-chat-cognitive-continuity-v1.md L20–22](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-mobile-chat-cognitive-continuity-v1.md#L20-L22)
