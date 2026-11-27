@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[现行人机目标与成熟实践对齐](../research/2026-11-27-whole-goal-alignment-and-mature-practice.md)**（P1/P2/P6/P7/P8）：人的初始想法可不完整或错误，AI承担问题形成、专业探索和执行；优先成熟成品真实案例，减少人工规划、纠偏和阅读负担，保留必要学习与决定权。现行总目标见[README](../README.md)，按需调用[短句意图研究](../research/2026-11-07-short-intent-goal-context-delegation.md)及[专业正本](2026-11-27-professional-knowledge-and-leverage.md)。
+
 **[高阶提示词V1.1：主动缺陷发现与反馈验证](../research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md)**：关联问题表征、专业条件/反例、独立验证、反馈驱动与回归（P1/P2/P5/P7/P8）；原表复算及真实基准程序逻辑执行，独立模型增益待验。
 
 **[深度认知生产与执行预算专项 V1.0](../research/2026-11-27-deep-cognitive-production-and-execution-budget.md)**：关联既有11-07深度/停止研究；旧版R38运行审计、真实ASReview表格复算、AgentTime及原生长程宿主对照、候选提示词V1.2（未生效）。预算停止≠目标达成；无发现≠不存在；优先实际专业劳动及独立验收，增益待验证。
