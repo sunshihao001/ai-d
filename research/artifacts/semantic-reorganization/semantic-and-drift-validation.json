@@ -1,0 +1,122 @@
+{
+  "sourceBaseline": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "previousBaseline": "1b3ce4e8b4c0c7e21f4eb7a154b5b55689884d95",
+  "reconciled": "e13322d464dd538642686b5a210da8fbfeccd858",
+  "delta": [
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "old": "514d7f9781a7a381afbd1b81d6d4874b0516a2dd",
+      "latest": "207c7d2ea79ecf870a89f1a1a05b70a47cae7fa9",
+      "reconciled": "207c7d2ea79ecf870a89f1a1a05b70a47cae7fa9",
+      "kind": "changed",
+      "result": "latest_blob_preserved"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "old": "bb986c5c27492974458a19f9aab397c4ecfc5eb9",
+      "latest": "ebf09f03c7b26772caa67637a0bd45165ace077f",
+      "reconciled": "801ad4002a4fae93727f0c912fa6deb880f8103c",
+      "kind": "changed",
+      "result": "merged_requires_content_review"
+    },
+    {
+      "path": "prompts/README.md",
+      "old": "45c98a83695963d1073d4a9926fb4e61a6b2d975",
+      "latest": "91dda238666b4769c222160ebaab2fdc56de5800",
+      "reconciled": "8297e2daabc589541c730e88b7385e3820f36727",
+      "kind": "changed",
+      "result": "merged_requires_content_review"
+    },
+    {
+      "path": "prompts/mobile-chat-entry-v0.2.md",
+      "old": null,
+      "latest": "5b3fc9f0192a298fdcc94b40658b0e6d422ed3f6",
+      "reconciled": "5b3fc9f0192a298fdcc94b40658b0e6d422ed3f6",
+      "kind": "added",
+      "result": "latest_blob_preserved"
+    },
+    {
+      "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+      "old": null,
+      "latest": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+      "reconciled": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+      "kind": "added",
+      "result": "latest_blob_preserved"
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "old": "a15af9dc1829bdf1f041735488ab3610a480873b",
+      "latest": "34f56b89b3f381192b0e083043a64a464979f98d",
+      "reconciled": "34f56b89b3f381192b0e083043a64a464979f98d",
+      "kind": "changed",
+      "result": "latest_blob_preserved"
+    },
+    {
+      "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+      "old": null,
+      "latest": "159926f99951258d76109a170a78f48f43f4ab75",
+      "reconciled": "159926f99951258d76109a170a78f48f43f4ab75",
+      "kind": "added",
+      "result": "latest_blob_preserved"
+    }
+  ],
+  "baseChecks": {
+    "old69": true,
+    "new72": true,
+    "changed7": true,
+    "threeNew": true,
+    "noLatestMissing": true,
+    "noUnexpectedChanges": true,
+    "sixReviewFiles": true
+  },
+  "semanticTests": [
+    {
+      "name": "actual semantic snapshot",
+      "expected": null,
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "changed source blob",
+      "expected": "stale_source",
+      "actual": [
+        "stale_source"
+      ],
+      "pass": true
+    },
+    {
+      "name": "missing original",
+      "expected": "missing_source",
+      "actual": [
+        "missing_source"
+      ],
+      "pass": true
+    },
+    {
+      "name": "dangling knowledge edge",
+      "expected": "dangling_relation",
+      "actual": [
+        "dangling_relation"
+      ],
+      "pass": true
+    },
+    {
+      "name": "duplicate claim identity",
+      "expected": "duplicate_id",
+      "actual": [
+        "duplicate_id"
+      ],
+      "pass": true
+    },
+    {
+      "name": "history decision omitted",
+      "expected": "unmapped_document",
+      "actual": [
+        "dangling_relation",
+        "unmapped_document"
+      ],
+      "pass": true
+    }
+  ],
+  "limits": "Git blob metadata and referential validation, not claim truth, causality, external source validity, model A/B or browser testing."
+}

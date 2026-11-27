@@ -10,12 +10,10 @@
     "relativeExistingEdges": 308,
     "nonMd": 13,
     "shaMatches": 72,
-    "linkedMarkdown": 58,
-    "unmappedMarkdown": [
-      "decisions/2026-11-05-goal-options.md"
-    ],
-    "semanticCards": 26,
-    "typedRelations": 30,
+    "linkedMarkdown": 59,
+    "unmappedMarkdown": [],
+    "semanticCards": 27,
+    "typedRelations": 32,
     "historicalTargetedSources": 7
   },
   "cards": [
@@ -1504,6 +1502,37 @@
           "locatorPrecision": "section_heading"
         }
       ]
+    },
+    {
+      "id": "K-DECISION",
+      "title": "历史决策的适用边界与复查",
+      "domain": "验证与进化",
+      "questions": [
+        "P1",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "routes": [
+        "R01",
+        "R09",
+        "R10"
+      ],
+      "status": "历史决策，当前默认权威已撤销",
+      "claim": "2026-11-05 A/B/C/D四条路线中B首选仅是历史条件性判断；当前根本目标与AGENTS优先，路线作为竞争候选保留。",
+      "trigger": "发现旧决策与现行目标不一致、重新选型",
+      "action": "核查决策时点、原条件及用户确认；区分保留历史、撤销默认、重新评估与真正取代。",
+      "limit": "不得把旧的B路线、Skill或Agent平台默认部署；不删除历史选择依据。",
+      "sources": [
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "blob": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+          "commit": "7f536867a19669be4675aa946353d8ef479b43a5",
+          "line": 1,
+          "heading": "ai-d 的四类目标：多视角方案比较与当前裁决",
+          "locatorPrecision": "document_entry"
+        }
+      ]
     }
   ],
   "edges": [
@@ -1716,6 +1745,20 @@
       "to": "K-PROV",
       "why": "新证据需重查相应主张而非覆盖全库",
       "semantics": "analyst_proposed_relation; not inferred from links or validated causal edge"
+    },
+    {
+      "from": "K-GOAL",
+      "type": "constrains",
+      "to": "K-DECISION",
+      "why": "现行根本目标决定历史路线是否仍适用；不得由历史手段替代目标",
+      "semantics": "analyst_proposed_relation; not inferred causal edge"
+    },
+    {
+      "from": "K-DECISION",
+      "type": "triggers_review",
+      "to": "K-CAP",
+      "why": "旧选择的成立条件变化时比较成熟能力与替代路线",
+      "semantics": "analyst_proposed_relation; not inferred causal edge"
     }
   ],
   "inventory": [
@@ -1990,7 +2033,9 @@
           "title": "最应防止的四种旧错误"
         }
       ],
-      "claimIds": [],
+      "claimIds": [
+        "K-DECISION"
+      ],
       "scope": "章节提取与主张候选映射，非逐段证据审计"
     },
     {
@@ -6186,7 +6231,8 @@
     "sourcePaths": true,
     "uniqueIds": true,
     "edgesValid": true,
-    "allDocsMapped": false,
-    "locatorBounds": true
+    "allDocsMapped": true,
+    "locatorBounds": true,
+    "validationCases": true
   }
 }
