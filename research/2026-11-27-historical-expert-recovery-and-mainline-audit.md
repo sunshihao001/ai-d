@@ -52,7 +52,7 @@ PR #1 草稿开放、mergeable=false；#2 草稿开放、mergeable=true；#3 非
 - 跨项目入口：[.agents/skills/ai-d-cognitive-core/SKILL.md](https://github.com/sunshihao001/ai-d/blob/aba723074d2c1a83fb129bd14473fa571f29ad34/.agents/skills/ai-d-cognitive-core/SKILL.md)原件已读；七并行能力不替代消费者目标，固定旧分支入口需在主干收敛后改；不安装、不传播私有资料。历史外部生态、夜间Library RUN档案仅摘要恢复，具体原件未读全。
 
 ## 4. 归并准备：重叠与独有资产
-PR2的6路径：技能文件为单独新增；其余5项 README、evaluation/first-cross-domain-tests.md、knowledge/INDEX.md、cross-disciplinary-foundations.md、research/2026-11-15-from-idea-to-open-adaptive-system.md 需按段落核实。前4亦出现在当前审查分支相对main差异中；系统设计文件未列于该差异。PR1的16路径包括10项单独新增（认知内核、检索脚本/结果、契约测试、认知总图、概念导航、4份规划之外另有规划README与专家研究；准确新增数=12，修改4），旧分支冲突需实际合并验证。PR1改动的README、goals、evaluation、INDEX四项与审查分支重叠。ai-intelligence的29路径均是历史独立命名空间或历史目录说明，须逐条选择、避免大规模复活。reconcile的6路径含4项与审查分支差异同路径（README、INDEX、organization-protocol、台账），2项外部智能文件/清理报告需按内容恢复。consolidation的2路径均重叠。上述为路径比较，不是三方文本冲突检测。
+PR2的6路径：技能文件为单独新增；其余5项 README、evaluation/first-cross-domain-tests.md、knowledge/INDEX.md、cross-disciplinary-foundations.md、research/2026-11-15-from-idea-to-open-adaptive-system.md 需按段落核实。前4亦出现在当前审查分支相对main差异中；系统设计文件未列于该差异。PR1的16路径包括12项单独新增（认知内核、检索脚本/结果、契约测试、认知总图、概念导航、4份规划、规划README与专家研究）及4项修改，旧分支冲突需实际合并验证。PR1改动的README、goals、evaluation、INDEX四项与审查分支重叠。ai-intelligence的29路径均是历史独立命名空间或历史目录说明，须逐条选择、避免大规模复活。reconcile的6路径含4项与审查分支差异同路径（README、INDEX、organization-protocol、台账），2项外部智能文件/清理报告需按内容恢复。consolidation的2路径均重叠。上述为路径比较，不是三方文本冲突检测。
 本轮把已核实的独有知识以H01–H16+固定原件方式归位；原件仍在旧分支，不声称全量迁移。下一阶段需复核其余历史独有路径、检查同路径实际blob、审查旧评测脚本/案例和所有原始资料是否可获得；不得用当前文档覆盖旧时点结果。
 
 ## 5. 个人主干治理候选（待实施）
