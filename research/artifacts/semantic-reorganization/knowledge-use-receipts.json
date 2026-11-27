@@ -1,0 +1,69 @@
+{
+  "baseline": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "reviewParent": "41d146435e17d68069a6e88961ce4105ad072e31",
+  "scope": "实际工作记录；单AI选择性方法调用，未启动独立专家/模型组；不把用到方法的事后说明当成独立因果证明。",
+  "receipts": [
+    {
+      "id": "USE-01",
+      "task": "合并并行知识更新",
+      "knowledge": [
+        "K-CONT",
+        "K-HOOK",
+        "K-PROV",
+        "K-DECISION"
+      ],
+      "condition": "最新整合分支领先1提交，PR #4审查分支分叉；两份索引均发生编辑",
+      "action": "核对父提交与树；以最新整合树为基底保留六个审查新增文件，合并两份导航而非覆盖；建立双父提交 e13322d",
+      "evidence": [
+        "https://github.com/sunshihao001/ai-d/commit/e13322d464dd538642686b5a210da8fbfeccd858",
+        "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json"
+      ],
+      "result": "7处新增/变更全部有处置；72项最新资产无遗漏；仅两导航blob需人工语义核对",
+      "status": "EXECUTED_GIT_VERIFIED",
+      "limit": "不自动合并PR至整合分支；新一轮HEAD可能再变化"
+    },
+    {
+      "id": "USE-02",
+      "task": "知识语义映射与失效复查",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-POLLUTE",
+        "K-EVAL",
+        "K-DECISION"
+      ],
+      "condition": "全目录文件链接无法表达主张和行动，遗漏一份历史决策",
+      "action": "四批正文提取、非Markdown原件获取、27主张候选、32类型边；首次检查发现漏映射旧决策，增补历史权威撤销节点，保留旧文件；注入版本变更/缺源/悬空边/重复ID/遗漏历史等反例",
+      "evidence": [
+        "knowledge/semantic-map-v2.json",
+        "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json"
+      ],
+      "result": "59份Markdown均有主张候选关联；6个验证用例符合预期",
+      "status": "EXECUTED_REFERENCE_CHECK",
+      "limit": "不是全部846节逐条主张或外部来源真值验证；关系是可纠正的综合判断"
+    },
+    {
+      "id": "USE-03",
+      "task": "双停运配送网络的最小服务边界",
+      "knowledge": [
+        "K-GOAL",
+        "K-INTENT",
+        "K-EXPERT",
+        "K-CAP",
+        "K-DATA",
+        "K-RESILIENCE",
+        "K-EVAL"
+      ],
+      "condition": "此前模型证明原1100英里即使增加原候选也无法全保障；本次改变服务距离，保持原数据、需求、容量及候选集",
+      "action": "执行前提交任务规格6bda317；使用第三近点几何必要下界及最大流逐对停运求解；验证前一有限阈值失败与最小阈值可行、容量距离守恒",
+      "evidence": [
+        "prompts/tasks/dual-outage-service-boundary-v1.md",
+        "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+        "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json"
+      ],
+      "result": "1100英里90/91；1169.888022英里90/91；1178.798919英里91/91；7项断言通过；第三近中心的必要下界达到并经最大流确认充分",
+      "status": "EXECUTED_SCENARIO_SOLVER",
+      "limit": "自选情景工作、14点全部开放、无成本或停运概率优化、未作真实企业验证、MODEL_AB=NOT_RUN"
+    }
+  ]
+}

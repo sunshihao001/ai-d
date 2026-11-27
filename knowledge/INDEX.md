@@ -1,3 +1,6 @@
+## V2 语义重整与知识实际调用（审查分支，非全局部署）
+- [72资产固定基线、27主张候选及32语义关系](semantic-map-v2.json)；[实作与限制](../research/2026-11-27-semantic-activation-v2-execution.md)；[工作台设计](../docs/knowledge-workbench/DESIGN-V2.md)；[实际知识使用收据](../research/artifacts/semantic-reorganization/knowledge-use-receipts.json)；[后续V3专业任务](../prompts/tasks/semantic-activation-and-review-v3.md)。旧69清册为历史；新投影不替换原件或现行治理。MODEL_AB=NOT_RUN。
+
 ## 知识执行重整审查入口（候选，未合并）
 - [全量基线资产清册](catalog-20261127.json) · [按任务选择知识—行动导航](knowledge-action-navigation.md) · [机器可读路线](knowledge-action-routes.json) · [工作台](../docs/knowledge-workbench/index.html) · [下一轮任务](../prompts/tasks/full-knowledge-to-action-v2.md) · [审查记录](../research/2026-11-27-knowledge-execution-reorganization.md)。不替换现行六域/P1–P8及正本；文件引用不代表语义或执行边。
 

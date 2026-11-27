@@ -1,3 +1,6 @@
+## V2实际任务与V3候选接力
+- [V2实际成果与限制](../research/2026-11-27-semantic-activation-v2-execution.md)，[事前专业任务](tasks/dual-outage-service-boundary-v1.md)，[V3主张级校勘及独立运行任务](tasks/semantic-activation-and-review-v3.md)（下一轮候选，不自动部署）。现行AGENTS、历史25章及手机V0.2保留。
+
 ## 知识执行重整审查候选
 - [V2.0 下一轮深层多阶段任务](tasks/full-knowledge-to-action-v2.md)（任务候选，用户已要求本轮执行，非全局部署）；[工作台](../docs/knowledge-workbench/index.html)；[知识行动导航](../knowledge/knowledge-action-navigation.md)。旧25章完整保留；执行以真实最新分支与授权为准。
 
