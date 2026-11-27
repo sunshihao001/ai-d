@@ -1,0 +1,9 @@
+Data: 105 rows x 6 assets; 2018-01-01 to 2019-12-30
+trailing_4_mean: 0/630 changed; NO_CHANGE
+past_return: 0/630 changed; NO_CHANGE
+next_return: 624/630 changed; DETECTED
+centered_5_mean: 606/630 changed; DETECTED
+whole_sample_mean: 624/630 changed; DETECTED
+upstream_mislabeled_next_close: 0/624 changed; availability violations=624/624
+All 6 designed assertions passed. Not a blind model comparison.
+Local compute elapsed (including data load): 0.381 s
