@@ -1,0 +1,20 @@
+design,failed,unmet_tons,annualized_transport_musd
+base,None,0,27.90192685656649
+base,California,0,48.81043559326259
+base,Colorado,0,31.427225574581815
+base,Florida,0,33.1938513915782
+base,Georgia,0,34.24434231511371
+base,Illinois,0,41.972147056976986
+base,New Jersey,4137.631169307861,51.925496783680195
+base,Texas,0,41.95941933342232
+base,Washington,0,33.286143167739326
+resilient,None,0,25.053342739020955
+resilient,California,0,45.96185147571706
+resilient,Colorado,0,28.578641457036273
+resilient,Florida,0,30.345267274032672
+resilient,Georgia,0,30.89743965567199
+resilient,Illinois,0,30.692162424050306
+resilient,New Jersey,0,38.26235639733994
+resilient,Ohio,0,27.90192685656649
+resilient,Texas,0,39.110835215876776
+resilient,Washington,0,30.43755905019379
