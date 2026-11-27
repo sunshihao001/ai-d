@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[知识承接、转化与持续打磨：竞争性承接方式](../research/2026-11-27-knowledge-transfer-transformation-and-evolution.md)**（P1/P2/P4/P5/P6/P7/P8，K4–K9）：总提示词候选而非唯一方式；动态上下文、关联记忆、推理经验、技能/回放优化、程序化及训练的多轮外部证据，AFTER五框架原表复算和SkillOpt门禁四构造案例，实际使用既有硬约束及回归知识；下一步真实未见任务对照。
+
 **[目标变更的实际锚点激活与知识互联复盘](../research/2026-11-27-anchor-activation-goal-change-replay.md)**：以39cab2f及最近自动研究为真实输入，回查历史决策、旧研究优先级、执行/验收与调度；复用EvoSkills问题—方法多对多关系与既有跨层追溯，找出未落实的知识调用证据、历史成品重复研究及未落库、执行预算候选与同名配置混淆；修复实际入口并保留反证及不变约束。P1/P2/P4/P6/P7/P8，不能替代独立运行验证。
 
 **[现行人机目标与成熟实践对齐](../research/2026-11-27-whole-goal-alignment-and-mature-practice.md)**（P1/P2/P6/P7/P8）：人的初始想法可不完整或错误，AI承担问题形成、专业探索和执行；优先成熟成品真实案例，减少人工规划、纠偏和阅读负担，保留必要学习与决定权。现行总目标见[README](../README.md)，按需调用[短句意图研究](../research/2026-11-07-short-intent-goal-context-delegation.md)及[专业正本](2026-11-27-professional-knowledge-and-leverage.md)。

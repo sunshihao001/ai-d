@@ -94,3 +94,7 @@
 
 ### 2026-11-27｜既有知识的实际利用：EvoSkills问题—方法关联与目标变更
 恢复最新小时研究（11:41:35.803Z–11:42:07.759Z，V1.2更新之前）自述的挑战—洞见关联；已查固定版本[research-ideation](https://github.com/EvoScientist/EvoSkills/blob/85ad685d1df5ed1d7fe641564d04bb8a3dec8f28/skills/research-ideation/SKILL.md)及[关联树原方法](https://github.com/EvoScientist/EvoSkills/blob/85ad685d1df5ed1d7fe641564d04bb8a3dec8f28/skills/research-ideation/references/literature-tree.md)。该生态在V18和本文件已有记录；本轮新增的是实际将其多对多问题/方法关系映射到AI-D自身目标变更、历史知识回收和验收，用以定位有知识却无执行证据的断点，见[真实变更复盘](../research/2026-11-27-anchor-activation-goal-change-replay.md)。不照搬固定论文/角色/竞赛数量，不以关联稀少认定世界尚无解。原自动结果未提交，本次只补经核实的新主张及实际操作，不复制报告、不宣称运行完整技能。结合跨层锚点的关系类型、V23.3评价反例、V23.4现有证据、V23.6新约束与旧成果回归、执行预算专项的停止语义：知识的利用以改变当前判断/操作及验证为证据；无可观察改变不等于模型内部未参考，独立增益仍需对照。
+
+
+### 2026-11-27｜知识承接与转化重心：总提示词只是候选
+用户确认已有大量知识，当前优先理解、关联、转化、运用、产生新理解和持续打磨，不固定总提示词为唯一方法。沿用K4–K9，关键缺口仍回K1–K3。多路径原始研究及固定源码实际复算见[承接方式竞争研究](../research/2026-11-27-knowledge-transfer-transformation-and-evolution.md)：ACE演进上下文、HippoRAG 2关联检索、ReasoningBank推理经验、SkillEvolBench原始轨迹反证、AFTER多样经验迁移、SkillOpt/SkillOpt-Sleep验证式优化、可执行程序及模型蒸馏为不同候选。真实案例与抽象技能保留竞争，按知识性质和任务适配；用已有硬约束/回归知识审查SkillOpt标量门禁，构造例证明平均分可能掩盖关键回归，非实际工具事故。下一步在同一未见专业任务以原生、现行入口、候选总指令、按需经验/知识与实际技能形成适当对照，不先建立新记忆/技能平台。独立增益待验。
