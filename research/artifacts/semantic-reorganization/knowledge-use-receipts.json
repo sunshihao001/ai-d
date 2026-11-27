@@ -105,6 +105,45 @@
       "result": "89/89标准用例、28/28真实记录、13/13正反例符合预期",
       "status": "EXECUTED_STANDARD_CONFORMANCE",
       "limit": "结构不证明主张真值、全部标准或独立模型增益"
+    },
+    {
+      "id": "USE-06",
+      "task": "外部证据蕴含诊断",
+      "knowledge": [
+        "K-PROV",
+        "K-SEARCH",
+        "K-EVAL"
+      ],
+      "condition": "相关性不能代表支持",
+      "action": "事前冻结、执行70外部标签，分别比较无条件、50%、80%阈值",
+      "evidence": [
+        "prompts/tasks/entailment-evidence-gate-v1.md",
+        "research/artifacts/semantic-reorganization/v4-entailment/result.json"
+      ],
+      "result": "错误支持40/29/6；80%阈值漏26正例",
+      "status": "EXECUTED_EXTERNAL_LABEL_DIAGNOSTIC",
+      "limit": "二分类公开标签，非模型A/B或科学事实核验"
+    },
+    {
+      "id": "USE-07",
+      "task": "主张证据及实际治理",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-POLLUTE",
+        "K-CONT",
+        "K-EVOLVE"
+      ],
+      "condition": "旧入口重复、九主张待审、相似度与证据状态混淆",
+      "action": "9主张定向审查，50活动段落定位，20门禁断言；重写三个默认入口，唯一28主入口，删除2无损归并中间文件",
+      "evidence": [
+        "knowledge/INDEX.md",
+        "research/artifacts/semantic-reorganization/v4-governance-decisions.json",
+        "research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json"
+      ],
+      "result": "旧任务退出默认，八问题定位，唯一接力，历史可回读；合并29记录逐对象相等",
+      "status": "EXECUTED_GOVERNANCE",
+      "limit": "没有认知效果对照；尚未修改其他项目及主干"
     }
   ],
   "v3Baseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35"

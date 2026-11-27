@@ -1,0 +1,24 @@
+{
+  "tests": {
+    "cards": true,
+    "assets": true,
+    "uniqueIds": true,
+    "anchors": true,
+    "views": true,
+    "routes": true,
+    "reviewed": true,
+    "receipts": true,
+    "deterministic": true,
+    "history": true,
+    "governance": true,
+    "noRemoteScripts": true,
+    "lineRanges": true,
+    "jsSyntax": true
+  },
+  "rollbackV3Exact": true,
+  "missingSourceRejected": true,
+  "sourceCommitV3": "b7f0a0ebf7664e4b2ebff498506bac5cf4479551",
+  "sourceV4": "a51e87ea3216f1a3a55e67108d2e978b12bcf407",
+  "htmlChars": 432839,
+  "scope": "真实完整源数据和生成程序在隔离内存文件系统执行及旧版逐字符回滚，不是全仓clone、实际浏览器、用户设备或独立会话。容器DNS失败。"
+}

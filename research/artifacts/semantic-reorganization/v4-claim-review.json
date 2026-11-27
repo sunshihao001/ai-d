@@ -506,5 +506,566 @@
     "edgesValid": true,
     "reviewSync": true,
     "historicalEvidenceSeparate": true
-  }
+  },
+  "reviewSnapshot": {
+    "commit": "a51e87ea3216f1a3a55e67108d2e978b12bcf407",
+    "files": 189,
+    "additional": [
+      {
+        "path": "docs/knowledge-workbench/DESIGN-V2.md",
+        "blob": "157e43e4c35beb0730ec6b05b41f72e6a4385058",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "docs/knowledge-workbench/DESIGN-V3.md",
+        "blob": "b1ba8055d28ece1d39d63330e2335fc10295501a",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v2.json",
+        "blob": "e0bb8b652bea31bfd671a0d6bf4acc9e4c539ebf",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v3.json",
+        "blob": "30ed4491a16023a2fe495d2a68e8e0bb09585c85",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "docs/knowledge-workbench/generate-workbench.cjs",
+        "blob": "c42f6136bc56b54d27ce57122c6482477a9e854b",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "docs/knowledge-workbench/index.html",
+        "blob": "a1160afedb57e2f548c0c19c7ff4acfaa7aee6a3",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "evaluation/retrieval-probe-2026-11-06.mjs",
+        "blob": "cd859e2b328c55157a9d847c464a3a8ad357d949",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "evaluation/retrieval-probe-results-2026-11-06.md",
+        "blob": "224e839bd5bcd6352b9d6d636309b81d742d5c89",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "evaluation/source-decision-contract.test.mjs",
+        "blob": "b1313a159b9ba409c5de2a3bb3371a5cd7e72661",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/COGNITIVE-MAP.md",
+        "blob": "46e06c4691ac74d12fc1237e39555dfd72b0f6da",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/catalog-20261127.json",
+        "blob": "5b29976c82d1035504e464f171519a054885fb8c",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+        "blob": "a63e788213310628a22c3d06cbf846a19a9ff681",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/knowledge-action-navigation.md",
+        "blob": "4d6fd81bd8cd5c78eca3982994851acf117e7e3e",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/knowledge-action-routes.json",
+        "blob": "30da516d0a6483216f817351fbff9d276b89973e",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/semantic-map-v2.json",
+        "blob": "269050d9ae6a5571b41bac28f0a8e7cc4c1749ac",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/semantic-map-v3.json",
+        "blob": "4bef46ee474fd5ab0785ba2bfb534ce4f786332c",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "knowledge/semantic-map-v4.json",
+        "blob": "3c03fd39ff9ba25663fb1effc8e5938091779482",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "planning/README.md",
+        "blob": "5b860e35928fc82907a66eea9ef72818e47ec31b",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "planning/goal-navigation-v0.1.md",
+        "blob": "9065701d2f96857df2662fec1cc48a3e86edf402",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "planning/historical-consolidation-v0.1.md",
+        "blob": "ddb439cf5e685ebe1dd38b4ddcdb6d2ba43e93c8",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "planning/proposal-review-v0.1.md",
+        "blob": "ce6924c94ab9bcc8bd461e5dcb6e479b29898426",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "planning/research-to-github-v0.1.md",
+        "blob": "f7cfbc70194473dcbe6b1b3b6782433406b6ae71",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "prompts/tasks/dual-outage-service-boundary-v1.md",
+        "blob": "0ac61ea88b4c0c5ac083769e5196c19f44028fd8",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "prompts/tasks/entailment-evidence-gate-v1.md",
+        "blob": "63e03e6dd64496ebb2a8bc3b8ee17fd4872c16f5",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "prompts/tasks/evidence-contract-validation-v1.md",
+        "blob": "3029006c95041f96a96aae98282fb309973cab74",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "prompts/tasks/evidence-grounded-execution-v4.md",
+        "blob": "34d974d7322d6a56ffee72dea81eb2d8f8358553",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "prompts/tasks/full-knowledge-to-action-v2.md",
+        "blob": "ad2009d9dcddb1f4c6be94c04ff1f2a5728268b6",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "prompts/tasks/semantic-activation-and-review-v3.md",
+        "blob": "8a6c9024f0526e107e54584613d6651aad964897",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-16-reconciliation-and-cleanup.md",
+        "blob": "b57a83095341a137b221fb5c63f67da80f67769f",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+        "blob": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-27-historical-expert-recovery-mainline-v2.md",
+        "blob": "f24d0f376158d6a215de18b033565377f471ac93",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-27-knowledge-execution-reorganization.md",
+        "blob": "89bdc4d1f86b423655435d0151c36720715d80f3",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-27-semantic-activation-v2-execution.md",
+        "blob": "97e7bc852282283da3bb3109487cf3a3be6373d1",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/2026-11-27-semantic-activation-v3-execution.md",
+        "blob": "477db25893647eb2599bd9ce3e5fcf80e8b431de",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/archive/README.md",
+        "blob": "b2633e554d917af522982611924eb30493c9ab39",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/00-CHARTER.md",
+        "blob": "4eebb09622e8f779f809cf2005bd58236627f9f2",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/01-BOUNDARIES.md",
+        "blob": "91549a274c229fca7172b538d4ef58c8ca14a3b5",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/02-SPACE-MAP.md",
+        "blob": "e6cad4c819d47e7be7fe03a24b7c61a29b7b3a08",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/03-RESEARCH-PROTOCOL.md",
+        "blob": "a81894940316eda84a30666f70bf06591a6139ad",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/04-SOURCE-POLICY.md",
+        "blob": "3e7ac61e85ddeda9e921b9a84ab7d03cd097c34f",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/05-EVIDENCE-POLICY.md",
+        "blob": "18172edd56dcfd2c8240838ddc11952e84ead0e8",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/06-ASSET-LIFECYCLE.md",
+        "blob": "75ca62b9f7e3b1140e5e1a129fec7c94f8f3889e",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/07-PROMOTION-POLICY.md",
+        "blob": "48df9449ac853abfb11605e21fa4d15d0e8aaa4b",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/08-POLLUTION-CONTROL.md",
+        "blob": "7da175fc00fa089aadcfde4c77ccf77abc6dbd41",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/09-AUTOMATION-READINESS.md",
+        "blob": "8048ae11b9e241dc3658d1fc77b8fa220aca1e04",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/10-EVALUATION.md",
+        "blob": "29962fc91ede59390498d1047e2c546d26f8ebe7",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/11-OPEN-QUESTIONS.md",
+        "blob": "d25618c13a2544bcf4a9826f942c70424d10cd5d",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/12-BULK-INTAKE.md",
+        "blob": "325250387437cb9417c6db588a3abaa63ac1550a",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/13-COVERAGE-AND-GAPS.md",
+        "blob": "ce12be29e47ed9966f56ec9b3dfa62e49ef412ef",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/14-RUN-AND-CHECKPOINTS.md",
+        "blob": "c81a8e985918b33445745c93b99d37a4b882ef95",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/15-ENTITY-CLAIM-EVIDENCE.md",
+        "blob": "00d8f0d2b805fc32eec612ed3e60cf8c48d893bb",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/16-SKILL-EVALUATION.md",
+        "blob": "cbdf907d40343516d5d338239d2faa47a5b5d027",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/ASSET-REGISTRY.md",
+        "blob": "7ee478a23e54b2f55dca5cb8fbad7d0c9b8a64a6",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/QUEUE.md",
+        "blob": "d78e7c8ee43d2e5ff6034e306afe43c24c30b245",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/README.md",
+        "blob": "334653abbdffc757baec2b762b35a5ddc9236ee4",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/RESEARCH-LEDGER.md",
+        "blob": "7db5b28bf8ea85b8f1e203d728f921e97d4857f6",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/archive/README.md",
+        "blob": "5ae38482bedb3ad783ebcd7ed9f39f05a729dfb2",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/candidates/README.md",
+        "blob": "e6e08c55d4576bd76a29e2991f8ac00dc86044be",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/decisions/README.md",
+        "blob": "a0b89aa8699c6cb602958cdcdcdcd821ecf4cd1b",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/discoveries/README.md",
+        "blob": "7d6421bed6c7b1b9a20447e33acf48caf94d2cd0",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/evidence/README.md",
+        "blob": "f9b3eb12198f3b2a638f084ef4563e4d5a319ae8",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/experiments/README.md",
+        "blob": "fcd2bb7a244dd66dfe5644832220180231cb70f1",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/research/README.md",
+        "blob": "77445507fd34a1f08f63fa38bbb48694a68a4845",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/sources/README.md",
+        "blob": "afce25ab539f02eb05c7aacda133e38908e07476",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/expert-skills/ai-d-cognitive-core-original.md",
+        "blob": "bbb0291d60953bfea24d899526a23c2569a605ef",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/archive/expert-skills/expert-team-collaboration-original.md",
+        "blob": "6d08dc723f9d9b106dbfc5851d214f576f310e34",
+        "kind": "历史/候选"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/branch-delta-20261127.json",
+        "blob": "a38e764ced05d6cad89d68adee5439d98022a284",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/pr1-pr2-line-overlap-v2.json",
+        "blob": "1f34863041eca4253d8010473ac97805d5df7129",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/source-contract-v2-probe.mjs",
+        "blob": "98b270a413e636ae3cecfc284405951cb0ab95ce",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/source-contract-v2-result.json",
+        "blob": "ac83a9c90a8c096be7f36d67c7c9202263a745f9",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/artifact-inventory.json",
+        "blob": "c5b4716177b6ae2c00fdf22afd0ac50f2f8bfe70",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-01.json",
+        "blob": "8dda8e16b7b9452e665d02b5d803e348e92c7d6e",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-02.json",
+        "blob": "012f5fc35e4555d37634194527701dcfaf3256ba",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-03.json",
+        "blob": "fea115c7af6badce5ed59e5553bc388faff2d95f",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-04.json",
+        "blob": "b9337755c116a7edc50f0e24c077f5033168aaaf",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+        "blob": "a99c11733610721fe93d3505cec486d0772c6d0a",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json",
+        "blob": "7cea63617f3e60280c520c66aef96964e3e75b6f",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/knowledge-use-receipts.json",
+        "blob": "9097517cf7214e709ec3d4248ef0f97886219a47",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json",
+        "blob": "c58097e754321ca03f6245b8dd6a4b7a236ebefc",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-browser-probe-result.json",
+        "blob": "df7a8ec260073e2030bddf7904fbe8a8c5dc13a9",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-browser-probe.py",
+        "blob": "ede4ca3a5a583091d7551dff169c9e16fffc9b43",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-claim-review.json",
+        "blob": "9bb45c4322db3d444b140d2a0431b72bdcf55521",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/LICENSE-test-suite.txt",
+        "blob": "c28adbadd9114a30a302fef37c3d14f490645c1c",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/README.md",
+        "blob": "e0e403be89eb4182c0c701f26f2d3691d1d4db18",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/public-tests.json",
+        "blob": "305b2a567f45ff74d3fab4f79be08c7e49652c65",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/result.json",
+        "blob": "5eb07228004cb3bae74743a7c01aebfbf0108be4",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/review-contract.json",
+        "blob": "7b65a4850bb6d9aeb81e25ed5ae0e2d83df55c1c",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/validate_reviews.py",
+        "blob": "8b168121de94fee72da3cca7475d963824a59c67",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-parallel-manufacturing-delta.json",
+        "blob": "25a360fd86be443e59f7d6dd4d848b7bf0e2570c",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-claim-review.json",
+        "blob": "5473c13f4d49bb64f26ef99affeccf7e90bedd05",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-entailment/entailment-diagnostic.cjs",
+        "blob": "88514f9c6760b05d3701c9a5365a6f394b8fa966",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-entailment/result.json",
+        "blob": "79413cfe270f16b26b61db366d506014beb83d5f",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-lines-verified.json",
+        "blob": "2ed3d3362cde30661e2592ea827ebdabedd58bbe",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json",
+        "blob": "8b905c15abbfae608bcc1c29fbb46f52a42d66d1",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard.cjs",
+        "blob": "afbf0e466b9e8a1738a3d6b739b4f02acb4e2b34",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-governance-decisions.json",
+        "blob": "cd024f5555599fa304ddbc43af10be4b2a85ebdc",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-nine-claim-review.json",
+        "blob": "abb80da8e30258caafc10b212693606e56c0e9cd",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/validate-semantic-map.cjs",
+        "blob": "d87818b230d80f144912eaca9a669b8d689e5b08",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/workbench-v2-static-checks.json",
+        "blob": "17a62d80cffd30439ab68bfdedd56f53a16e66d9",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/workbench-v3-static-checks.json",
+        "blob": "30a55d7864ade1e9153af7bd2546e16346168a09",
+        "kind": "审查成果/原件"
+      },
+      {
+        "path": "research/expert-cognition-distillation-positioning-2026-11-06.md",
+        "blob": "1b89b2a2ef75a09cfd26c331b48c124ea14af78b",
+        "kind": "审查成果/原件"
+      }
+    ]
+  },
+  "governance": [
+    {
+      "operation": "replace_active_index",
+      "target": "knowledge/INDEX.md",
+      "reason": "入口重复且使最新任务与历史任务竞争；改为P1–P8精准段落入口"
+    },
+    {
+      "operation": "remove_from_default_entry",
+      "target": "prompts/README.md",
+      "reason": "收敛唯一接力，历史提示词原件仍可审查"
+    },
+    {
+      "operation": "replace_current_state",
+      "target": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "reason": "仅当前有效状态和下一项任务，原台账按固定Git版本访问"
+    },
+    {
+      "operation": "exclude_default_authority",
+      "target": "knowledge/INDEX.md",
+      "reason": "历史方案不等于当前授权；K-DECISION/K-EXPERT/K-AUTH"
+    },
+    {
+      "operation": "reject_inference",
+      "target": "knowledge/INDEX.md",
+      "reason": "70外部标签及门禁反例"
+    },
+    {
+      "operation": "reject_inference",
+      "target": "knowledge/INDEX.md",
+      "reason": "K-BUDGET/K-EVAL；独立增益未知"
+    },
+    {
+      "operation": "separate_project_scope",
+      "target": "knowledge/INDEX.md",
+      "reason": "共享治理，不共享目标、数据语义、权限、验收；不修改MEME"
+    },
+    {
+      "operation": "deduplicate_canonical_entry",
+      "target": "knowledge/INDEX.md",
+      "reason": "重复完整主张收敛为唯一首入口，其它问题只交叉调用。"
+    },
+    {
+      "operation": "delete_redundant_generated_intermediates",
+      "target": [
+        "research/artifacts/semantic-reorganization/v4-evidence-lines-a.json",
+        "research/artifacts/semantic-reorganization/v4-evidence-lines-b.json"
+      ],
+      "reason": "29个版本核验记录已逐对象无损归并进最终30记录；移除冗余中间结果，非删除原始证据。"
+    }
+  ]
 }
