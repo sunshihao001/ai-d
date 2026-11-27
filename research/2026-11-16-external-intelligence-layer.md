@@ -153,3 +153,12 @@ GPT 可以承担独立审查、竞争解释和设计复核，不应成为唯一�
 | [GBrain](https://github.com/garrytan/gbrain)、LifeOS、Trilium、Aider、RAPTOR、OpenRefine、SWE-agent、DSPy、GEPA | 历史研究/恢复候选；本轮未重新核实原始实现，不把旧摘要冒充本轮证据。继续时优先恢复既有固定版本与实证，不重复宽泛搜索；原始用户发送URL与AI推荐归属仍不完整。 |
 
 **当前采用动作**：组织规范新增4A具体维护契约；现有K-PROV/K-HOOK/K-DEFECT/K-CAP增加精准定位，不创建同义主张编号；执行入口合并重复保存表述并指向正本。实质问题是既有颗粒度修复已完成而后续仍可能因新证据或浓缩造成旧主张失效/遗漏；固定语义投影不得冒充实时知识。下一次独立真实任务测试应覆盖受影响主张漏改、无影响主张误改、实现失败误作根本失败三个反例。独立模型增益、全量历史链接归属、原项目部署均未完成。
+
+## 14. 专业提示词分类、组合与反馈优化（2026-11-28）
+本轮固定起点 92f4151186a3c5cfb36bfca4e7444e22482df5de。实际读取五份外部文件；以下 blob 为内容标识、非提交 SHA；链接指向原项目当前路径。根据用户纠偏，在既有 P1–P8 中恢复专业任务方法，不恢复747行总指令的默认权威，不新增知识本体。
+- [GPT Researcher 提示词源码](https://github.com/assafelovic/gpt-researcher/blob/main/gpt_researcher/prompts.py) blob 666a04bec1551078cb271ad4af066481b4e0eda8，904行，L40–122、213–418、518–596：工具选择、查询、筛选、报告、摘要等按操作分开。采用任务职责及输入输出规格；不照搬其默认角色及报告格式。
+- [Deep Agents 研究指令](https://github.com/langchain-ai/deepagents-quickstarts/blob/main/deep_research/research_agent/prompts.py) blob 588bec0a5efe5b15dc10f5d4047e38e283ce9fac，173行，L67–103、138–173：协调与调查职责分离，独立问题才并行，明确预算与停止。采用条件分工；不照搬五次搜索限制，不假称运行子智能体。
+- [EvoSkills 论文审查](https://github.com/EvoScientist/EvoSkills/blob/main/skills/paper-review/SKILL.md) blob 5cc9984ffedede4bf1aa05055c479bc4616f38ff，288行，L33–56、158–161：先无清单反证，再专业检查，再机械核验。迁移为重大证据/成果审查方法，非所有问答强制三遍；不把论文领域判据强套他域。
+- [Anthropic skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md) blob 65b3a402dbd09b8e83f9d637c6b553875189085c，486行，L52–90、169–234：触发描述、按需正文、参考资源，旧版与候选对照、客观断言及定性反馈。采用适用/不适用条件、渐进加载、保留基线；当前聊天不能宣称安装该技能或自动触发。
+- [DSPy GEPA 深入机制](https://github.com/stanfordnlp/dspy/blob/main/docs/docs/diving-deeper/gepa-in-depth.md) blob 0a14743ce868e632a502392e91363cbb04160ea7，143行，L5–53、87–88：具体失败反馈、候选程序、验证集、组件级修订与成本。采用定向修订及留出回归，不复制其自动优化器、预算或宣称增益。历史V23.3实际反例仍有效：长提示词可能退化，先审评价真值与工具证据可见性。
+实际产物：[专业提示词模块](../prompts/professional-task-modules.md)，保持现有知识正本、短用户入口和V5接力；具体任务选择主模块及必要辅助模块，用户不承担分类。未运行外部项目及独立模型对照，真实增益UNKNOWN。
