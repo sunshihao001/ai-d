@@ -1,0 +1,3208 @@
+{
+  "sourceCommit": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "sourceBlob": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+  "taskCommit": "6bda317eb76d25a9e8263ef9b36820510dcca3b5",
+  "scope": "Self-selected scenario analysis; fixed synthetic service model, not real company data or travel guarantee; all 14 centers open, no cost optimization.",
+  "population": 329260619,
+  "centers": 14,
+  "zones": 49,
+  "lowerBound": 1178.7989192334503,
+  "topGeometricBounds": [
+    {
+      "zone": "Washington",
+      "pop": 7705281,
+      "tons": 23401.769162075223,
+      "third": [
+        {
+          "name": "Washington",
+          "distance": 0
+        },
+        {
+          "name": "California",
+          "distance": 991.6584537169913
+        },
+        {
+          "name": "Colorado",
+          "distance": 1178.7989192334503
+        }
+      ]
+    },
+    {
+      "zone": "Oregon",
+      "pop": 4237256,
+      "tons": 12869.003322866254,
+      "third": [
+        {
+          "name": "Washington",
+          "distance": 220.54365467331638
+        },
+        {
+          "name": "California",
+          "distance": 794.7906047846152
+        },
+        {
+          "name": "Colorado",
+          "distance": 1151.1346303898833
+        }
+      ]
+    },
+    {
+      "zone": "Montana",
+      "pop": 1084225,
+      "tons": 3292.9082235613487,
+      "third": [
+        {
+          "name": "Washington",
+          "distance": 584.2006450768406
+        },
+        {
+          "name": "Colorado",
+          "distance": 704.1639924227421
+        },
+        {
+          "name": "California",
+          "distance": 1059.0923999279908
+        }
+      ]
+    },
+    {
+      "zone": "California",
+      "pop": 39538223,
+      "tons": 120081.84616818691,
+      "third": [
+        {
+          "name": "California",
+          "distance": 0
+        },
+        {
+          "name": "Arizona",
+          "distance": 539.7564814297084
+        },
+        {
+          "name": "Colorado",
+          "distance": 988.5962896621021
+        }
+      ]
+    },
+    {
+      "zone": "Wyoming",
+      "pop": 576851,
+      "tons": 1751.9586817031404,
+      "third": [
+        {
+          "name": "Colorado",
+          "distance": 285.07969202323704
+        },
+        {
+          "name": "Arizona",
+          "distance": 836.183340822669
+        },
+        {
+          "name": "Washington",
+          "distance": 938.7299842638968
+        }
+      ]
+    }
+  ],
+  "thresholdCount": 582,
+  "original": {
+    "limit": 1100,
+    "passing": 90,
+    "scenarios": [
+      {
+        "failed": [
+          "Arizona",
+          "California"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet": 36270.77248494129,
+        "unmetZones": [
+          {
+            "zone": "Oregon",
+            "tons": 12869.003322866254
+          },
+          {
+            "zone": "Washington",
+            "tons": 23401.769162075223
+          }
+        ],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 1.1641532182693481e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1099.7488645059755,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1069.6321289180867,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.0372681319713593e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1092.6266301879755,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Texas",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1099.7488645059755,
+        "conservation": 2.3283064365386963e-10
+      }
+    ],
+    "worst": {
+      "failed": [
+        "California",
+        "Washington"
+      ],
+      "unmet": 36270.77248494129,
+      "unmetZones": [
+        {
+          "zone": "Oregon",
+          "tons": 12869.003322866254
+        },
+        {
+          "zone": "Washington",
+          "tons": 23401.769162075223
+        }
+      ],
+      "maxCapacity": 300000.0000000001,
+      "maxArc": 1099.7488645059755,
+      "conservation": 2.3283064365386963e-10
+    },
+    "maxConservation": 3.4924596548080444e-10,
+    "maxCapacity": 300000.00000000035,
+    "maxArc": 1099.7488645059755
+  },
+  "previous": {
+    "limit": 1169.8880220640488,
+    "passing": 90,
+    "scenarios": [
+      {
+        "failed": [
+          "Arizona",
+          "California"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1155.7449608872935,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1154.8410749482503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet": 23401.769162074896,
+        "unmetZones": [
+          {
+            "zone": "Washington",
+            "tons": 23401.769162075223
+          }
+        ],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 1.1641532182693481e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Texas",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      }
+    ],
+    "worst": {
+      "failed": [
+        "California",
+        "Washington"
+      ],
+      "unmet": 23401.769162074896,
+      "unmetZones": [
+        {
+          "zone": "Washington",
+          "tons": 23401.769162075223
+        }
+      ],
+      "maxCapacity": 300000.0000000001,
+      "maxArc": 1166.3635306558504,
+      "conservation": 2.9103830456733704e-10
+    },
+    "maxConservation": 3.4924596548080444e-10,
+    "maxCapacity": 300000.00000000035,
+    "maxArc": 1166.3635306558504
+  },
+  "exact": {
+    "limit": 1178.7989192334503,
+    "passing": 91,
+    "scenarios": [
+      {
+        "failed": [
+          "Arizona",
+          "California"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1155.7449608872935,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1154.8410749482503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Arizona",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1155.7449608872935,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Colorado"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1178.7989192334503,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1178.7989192334503,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Florida"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000023,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.3283064365386963e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Florida",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.00000000035,
+        "maxArc": 1166.3635306558504,
+        "conservation": 3.4924596548080444e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Illinois"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 1.1641532182693481e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.6193447411060333e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Missouri"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "New Jersey"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Missouri",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "North Carolina"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Ohio"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "North Carolina",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Pennsylvania"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Ohio",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Tennessee"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Pennsylvania",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Texas"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Tennessee",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      },
+      {
+        "failed": [
+          "Texas",
+          "Washington"
+        ],
+        "unmet": 0,
+        "unmetZones": [],
+        "maxCapacity": 300000.0000000001,
+        "maxArc": 1166.3635306558504,
+        "conservation": 2.9103830456733704e-10
+      }
+    ],
+    "worst": {
+      "failed": [
+        "Texas",
+        "Washington"
+      ],
+      "unmet": 0,
+      "unmetZones": [],
+      "maxCapacity": 300000.0000000001,
+      "maxArc": 1166.3635306558504,
+      "conservation": 2.9103830456733704e-10
+    },
+    "maxConservation": 3.4924596548080444e-10,
+    "maxCapacity": 300000.00000000035,
+    "maxArc": 1178.7989192334503
+  },
+  "tests": {
+    "oldFails": true,
+    "previousFails": true,
+    "allPairsPass": true,
+    "conservation": true,
+    "capacity": true,
+    "distance": true,
+    "geometricLowerBound": true
+  }
+}
