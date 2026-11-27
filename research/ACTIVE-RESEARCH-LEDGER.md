@@ -1,5 +1,8 @@
 # ai-d｜当前研究承接与修订台账
 
+## 2026-11-27｜共享工作空间试用前置验收 V0.3
+[真实样本、阻塞与验收资产](2026-11-27-shared-workspace-trial-v0-3.md)：稳定版文档核实；隔离环境DNS阻止安装，固定59项清单与12项原件哈希检查、3种异常反例；保存可复用验收脚本。下一步在有网络的隔离宿主实际运行，不将前置验收冒充产品试用；保留其他成熟对照与真实专业任务。PRODUCT_RUN=BLOCKED / RESTORE=NOT_RUN。
+
 ## 2026-11-27｜人机共享工作空间多轮搜索 V0.2
 [候选、固定源码、清单与试用条件](2026-11-27-shared-workspace-mature-candidate-selection.md)：三轮搜索后优先验证Inkeep OpenKnowledge（稳定版v0.89.17），思源、Trilium为成熟对照；保留Quartz/OpenWiki/GBrain及其他治理参照。核查Inkeep真实已关闭并发问题、当前测试源码及影子仓库/本地状态边界；实际盘点58文件/51 Markdown/7非Markdown、总指令第05章12条文本路径全部存在。下一步隔离试用现成产品、验证知识/附件与关系保真、实际AI任务调用、并发/回退/恢复与用户负担，不迁移主库或预设组合。MODEL_AB=NOT_RUN / RESTORE=NOT_RUN。
 

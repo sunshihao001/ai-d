@@ -1,0 +1,362 @@
+{
+  "repository": "sunshihao001/ai-d",
+  "commit": "c2028cb8c5820a7b5de1378c838645fab3d3433e",
+  "tree": "010ab5a2e314ef07915658313a838af377246562",
+  "scope": "tracked files in fixed tree; no untracked conversations, .git state, or product-local data",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "bytes": 4549,
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "sha": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+      "bytes": 40093,
+      "mode": "100644"
+    },
+    {
+      "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+      "sha": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+      "bytes": 14195,
+      "mode": "100644"
+    },
+    {
+      "path": "decisions/2026-11-05-goal-options.md",
+      "sha": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+      "bytes": 18032,
+      "mode": "100644"
+    },
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "sha": "3fbf817f335c8926c42a4b0c41c9ace9118a46c2",
+      "bytes": 138286,
+      "mode": "100644"
+    },
+    {
+      "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+      "sha": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+      "bytes": 9117,
+      "mode": "100644"
+    },
+    {
+      "path": "evaluation/first-cross-domain-tests.md",
+      "sha": "5440d4fa737ec228e0def2c097cd03db0e93344a",
+      "bytes": 56213,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+      "sha": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+      "bytes": 14434,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+      "sha": "46bd35ec18bff3b94a439222286cb9145512c96f",
+      "bytes": 30693,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "sha": "c3d2f8ecad8028d4ed4b2e2422e92603c19f5fdf",
+      "bytes": 36957,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+      "sha": "51cce1f5362a540b586b8b08627dbac976d70db3",
+      "bytes": 11318,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/foundations/cross-layer-project-anchors.md",
+      "sha": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "bytes": 64211,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+      "sha": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+      "bytes": 12503,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/foundations/organization-protocol.md",
+      "sha": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+      "bytes": 17800,
+      "mode": "100644"
+    },
+    {
+      "path": "knowledge/source-register-2026-11-05.md",
+      "sha": "571b90068357e33c5198280935cfa2df51d20e8c",
+      "bytes": 4975,
+      "mode": "100644"
+    },
+    {
+      "path": "prompts/README.md",
+      "sha": "cc0ba8485aaf8e33dcaf4193abdcfdc2f7eeb868",
+      "bytes": 1054,
+      "mode": "100644"
+    },
+    {
+      "path": "prompts/master-v1.0.md",
+      "sha": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+      "bytes": 36591,
+      "mode": "100644"
+    },
+    {
+      "path": "prompts/stages-2026-11-27.md",
+      "sha": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+      "bytes": 2551,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+      "sha": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+      "bytes": 11049,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+      "sha": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+      "bytes": 25051,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+      "sha": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+      "bytes": 9936,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+      "sha": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+      "bytes": 5667,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+      "sha": "68d69028dacfc09e94037791828364a65d222bc6",
+      "bytes": 7584,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+      "sha": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+      "bytes": 52060,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+      "sha": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+      "bytes": 23314,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+      "sha": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+      "bytes": 33346,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+      "sha": "96a613853bc0d2337b64275c6b051790f4df542e",
+      "bytes": 37012,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+      "sha": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+      "bytes": 12478,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+      "sha": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+      "bytes": 26920,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+      "sha": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+      "bytes": 41121,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+      "sha": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+      "bytes": 26238,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+      "sha": "bd8a4c06c835d5fffdf693fcfa322ac346fc8248",
+      "bytes": 21229,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+      "sha": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+      "bytes": 18477,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-16-external-intelligence-layer.md",
+      "sha": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+      "bytes": 8192,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+      "sha": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+      "bytes": 6405,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+      "sha": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+      "bytes": 7982,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+      "sha": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+      "bytes": 12640,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+      "sha": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+      "bytes": 10671,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+      "sha": "201017441e3ea6fefb006c07b55be42e22cbb5d8",
+      "bytes": 13420,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+      "sha": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+      "bytes": 11545,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+      "sha": "6a5c4adea9b16dd0985033085210f23de0546e52",
+      "bytes": 5641,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+      "sha": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+      "bytes": 9910,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+      "sha": "f523c36fc83dab158e919ede0b50813ca35ec854",
+      "bytes": 4722,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+      "sha": "f28902e9ac77fdc0abe47cff62f5e855941bd405",
+      "bytes": 11142,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+      "sha": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+      "bytes": 6866,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+      "sha": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "bytes": 8048,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+      "sha": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+      "bytes": 11752,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+      "sha": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+      "bytes": 10292,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+      "sha": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+      "bytes": 8488,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+      "sha": "db7c8500052078abcb088af945ac3b467a60ce05",
+      "bytes": 7694,
+      "mode": "100644"
+    },
+    {
+      "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+      "sha": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+      "bytes": 5330,
+      "mode": "100644"
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "sha": "9a0986c3acc3999e4951cf2c71a923eaa1e41150",
+      "bytes": 65316,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+      "sha": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+      "bytes": 2279,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+      "sha": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+      "bytes": 455,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+      "sha": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+      "bytes": 455,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/population.csv",
+      "sha": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+      "bytes": 2107,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+      "sha": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+      "bytes": 761,
+      "mode": "100644"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/solve.py",
+      "sha": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+      "bytes": 4972,
+      "mode": "100644"
+    },
+    {
+      "path": "research/workflow-components-and-boundaries.md",
+      "sha": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+      "bytes": 9699,
+      "mode": "100644"
+    }
+  ]
+}
