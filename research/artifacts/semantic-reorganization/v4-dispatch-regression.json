@@ -1,0 +1,18 @@
+{
+  "head": "54a087817eb41819a34181396aaedc76bde7c54e",
+  "scope": "真实固定Git原件执行生成器、静态调度输出检查；非模型、完整浏览器或交易实测",
+  "checks": {
+    "priorDefect": true,
+    "scopedDispatch": true,
+    "continuationFromLedger": true,
+    "routesScoped": true,
+    "preciseEvidence": true,
+    "scopeBoundary": true,
+    "snapshotSync": true,
+    "deterministic": true,
+    "syntax": true,
+    "oldMobileNotCurrent": true
+  },
+  "exactRanges": 50,
+  "routeCount": 8
+}

@@ -151,12 +151,12 @@
     "objects": "Source(path,commit,blob,line,heading,locatorPrecision); Claim(id,status,domain,questions,claim,trigger,action,limit,sources); Edge(from,type,to,why); Receipt(task,knowledge,condition,action,evidence,result,status,limit); Inventory(path,sha,sectionCount,claimIds)",
     "identity": "稳定ID与文件路径分离；Git SHA固定来源；主张ID不因UI重排改变；来源或条件变更标复查而非自动删除/证伪",
     "validation": "50活动证据段落、11结构和9适用门禁；70外部蕴含样本反证相似度晋升；不自动判真。",
-    "sync": "固定79项整合快照；非实时同步；GPT重新核实际整合及PR #4 HEAD。",
+    "sync": "固定88项整合快照；非实时同步；任务入口先核实际整合及PR #4 HEAD，已批准主干切换后核实际权威入口。",
     "permissions": "静态只读，无网络API、账户、密钥、Git写入、自动GPT调用；复制文本由人手动发送或在GPT中直接继续；公开仓库仅公开专业材料",
     "recovery": "固定Git源在隔离的内存文件系统完整再生成；实际浏览器和完整仓库恢复另验。",
     "performance": "原件链接与展开阅读，默认避免正文全文加载；快照JSON只保留章节和候选主张；无外部字体/脚本/服务",
     "accessibility": "语义标题、导航、label、状态文本、键盘焦点、可折叠、窄屏单列、空态及复制失败提示；实际手机/屏幕阅读器尚未实测",
-    "operation": "读取→选情境→查原件→形成任务→授权内执行→证据→复核→写回；UI仅辅助查阅，不是独立执行端"
+    "operation": "具体任务与整项目接力分开；知识与问题按钮只调用适用知识，继续AI-D才解析当前台账；行动、验收、原位修订。"
   },
   "gates": [
     "当前状态/历史版本区分",
