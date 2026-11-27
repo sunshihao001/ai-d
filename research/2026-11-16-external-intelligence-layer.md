@@ -175,3 +175,14 @@ GPT 可以承担独立审查、竞争解释和设计复核，不应成为唯一�
 - ReasoningBank、SkillOpt、本轮未读到原始实现，不作本次证据。五类机制共六份源码已读取，未安装或运行外部优化器。
 ### 事前冻结的验收
 以固定基线的实际README、生成器和HTML为输入；保持原固定知识快照、所有route对象、卡片、具体任务/整项目接力的不同权限与范围。验收：两个复制入口均显式指向现行专业模块；八条route均使用具体任务入口并保留原P编号、情境、专家、行动、验收、来源；整项目接力只从台账继续；固定快照不冒充实时；界面有新版模块链接和历史V4标签；旧历史入口不重新生效。比较原实际复制指令与增强指令的结构契约，逐对象核对，不做词数评分。检查缺模块引用、旧分支覆盖、错误整项目启动、复制路线遗漏等反例。真实独立模型四路对照、盲评、成本与专业成果增益另验（NOT_RUN），不以字符串测试代替。实际修复需回读Git、核差异并恢复V5真实专业任务。
+
+
+## 16. 多颗粒度检索实测与成熟机制适用裁决（2026-11-28）
+整体研究V3，起点 a4c7649b6f5d9ee8a7cba62bb278c96ac901fd5a。目标：复用已有检索成果，验证细粒度定位是否能降低读取负担且保持必要知识召回。使用P2/P3/P4/P5/P6/P7；沿既有K-SEARCH/K-FACET定位原件，不新建检索服务。
+- [Aider repo map](https://github.com/Aider-AI/aider/blob/main/aider/repomap.py)，blob 541bba6ef4a5385b8cf032201ec6e3f3e32a6ea6，L89–153、365–540：符号关系图、任务相关权重、排序与上下文预算；本轮只吸收相关性与预算分责，未运行其图排序或移植源码。
+- [RAPTOR tree retriever](https://github.com/parthsarthi03/raptor/blob/master/raptor/tree_retriever.py)，blob d7501cfe15ba8d24a4010cd9fd4230c652b48f59，L146–195、197–231：不同层节点检索、阈值/排名选择及预算；本轮为标题分段的轻量实验，不是RAPTOR聚类、摘要树或嵌入检索实测。
+- [ranx RRF](https://github.com/AmenRa/ranx/blob/master/ranx/fusion/rrf.py)，blob 8e30365acba9db7b5b71808d9d68ac0c250700e1，L18–47：倒数排名融合；本轮独立实现公开公式，两路等权、k=60，未安装ranx。OpenRefine尝试的源码路径404，未核到实现，不作为证据。
+- [事前冻结的可运行脚本](../evaluation/retrieval-multiscale-v3.mjs)（e18e7ea689e8554dde7fe0185029bdcbad8c44e0）复用历史16问、16文档和标注（语料cd51f614fc9e7672c8fcf750ddc1f8dec59f4cdd），实际读取全部原件；执行函数与冻结代码逐字一致。[逐题结果](../evaluation/retrieval-multiscale-v3-results.json)（0cffe8f43f0acc5e324267435b48a6243e2f1474）保留输入blob、155段、五方法全部结果；三旧方法的27个分组指标与存档一致。12历史测试题Recall@3：全文.500，扩词.500，条件路由.750，分段.583，融合.625；平均取回字符数分别17661、19847、19542、1615、1803。分段以标题/约1600字符软界线处理整行，标题重复加入上下文，字符数不是token、实际成本或完整证据覆盖；长单行可能超过界线。
+- **裁决**：不替换旧条件性路由。分段/融合可作辅助候选或局部定位，不能独自裁定适用性。H01、H02、H08相较旧路由退化；H03/H06所有五种方法前3未命中原标注相关文档。H04、H05、H10均保留全部标注文档。当前研究者已知旧题与标签，无独立盲评、无段落金标准、无模型A/B；结果仅适用于冻结语料和方法，不能外推到现行全部知识或RAPTOR完整实现。
+- **实际原件恢复**：对H03（研究不停、无可演示成果）直接从现行P3/K-STOP与P2选取[规划验收L50–52](https://github.com/sunshihao001/ai-d/blob/a4c7649b6f5d9ee8a7cba62bb278c96ac901fd5a/planning/proposal-review-v0.1.md#L50-L52)与[组织规范L59](https://github.com/sunshihao001/ai-d/blob/a4c7649b6f5d9ee8a7cba62bb278c96ac901fd5a/knowledge/foundations/organization-protocol.md#L59)：目标关系、竞争路线、风险、边际信息价值、实际验收具备时转向可逆交付；证据不足标未知及复开。对H06（资料共享库但不知何时调用）从P4/K-FACET/K-PROV恢复[组织规范L42–48](https://github.com/sunshihao001/ai-d/blob/a4c7649b6f5d9ee8a7cba62bb278c96ac901fd5a/knowledge/foundations/organization-protocol.md#L42-L48)与[跨学科基础L5–25](https://github.com/sunshihao001/ai-d/blob/a4c7649b6f5d9ee8a7cba62bb278c96ac901fd5a/knowledge/foundations/cross-disciplinary-foundations.md#L5-L25)：按任务/条件定位原件、主张与反例，不以共享库文件数代表使用。两题为已知标签人工专业导航复核，不是新模型盲测；查到相关文件不等于完整任务正确。
+- **实际修订**：组织规范3B增加分段候选与上下文展开的操作边界，索引K-SEARCH补实际结果与定位，K-STOP补明确行动依据，P3加入先按职责和现行知识定位、再细粒度展开的条件；不把算法装入默认执行，不用旧题继续调参。下一项真实专业工作应使用非本轮作者题目/独立判据或现有行业成品，检验从找文档到专业行动的真实迁移。完整生成器、浏览器、独立模型仍未验。
