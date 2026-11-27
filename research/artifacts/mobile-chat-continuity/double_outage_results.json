@@ -1,0 +1,889 @@
+{
+  "source_commit": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+  "source_path": "research/artifacts/v23.6-network-resilience/population.csv",
+  "source_blob": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+  "scope": "scenario feasibility only, not probabilities or cost optimization",
+  "population": 329260619,
+  "zones": 49,
+  "candidates": 14,
+  "base": {
+    "normal": {
+      "failed": [],
+      "unmet_tons": 0,
+      "unserved_zones": [],
+      "unreachable_zones": []
+    },
+    "single": [
+      {
+        "failed": [
+          "California"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      }
+    ],
+    "pair": [
+      {
+        "failed": [
+          "California",
+          "Colorado"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "California",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet_tons": 36270.772485,
+        "unserved_zones": [
+          "Oregon",
+          "Washington"
+        ],
+        "unreachable_zones": [
+          "Oregon",
+          "Washington"
+        ]
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Illinois"
+        ],
+        "unmet_tons": 19697.430017,
+        "unserved_zones": [
+          "Minnesota",
+          "North Dakota"
+        ],
+        "unreachable_zones": [
+          "Minnesota",
+          "North Dakota"
+        ]
+      },
+      {
+        "failed": [
+          "Colorado",
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet_tons": 65413.796115,
+        "unserved_zones": [
+          "Florida"
+        ],
+        "unreachable_zones": [
+          "Florida"
+        ]
+      },
+      {
+        "failed": [
+          "Florida",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Florida",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "New Jersey"
+        ],
+        "unmet_tons": 10274.429448,
+        "unserved_zones": [
+          "Maine",
+          "New Hampshire",
+          "Vermont"
+        ],
+        "unreachable_zones": [
+          "Maine",
+          "New Hampshire",
+          "Vermont"
+        ]
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Texas"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Washington"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Texas",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      }
+    ],
+    "summary": {
+      "single_pass": 7,
+      "single_total": 8,
+      "pair_pass": 18,
+      "pair_total": 28,
+      "worst_single": {
+        "failed": [
+          "New Jersey"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      "worst_pair": {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet_tons": 65413.796115,
+        "unserved_zones": [
+          "Florida"
+        ],
+        "unreachable_zones": [
+          "Florida"
+        ]
+      }
+    }
+  },
+  "resilient": {
+    "normal": {
+      "failed": [],
+      "unmet_tons": 0,
+      "unserved_zones": [],
+      "unreachable_zones": []
+    },
+    "single": [
+      {
+        "failed": [
+          "California"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      }
+    ],
+    "pair": [
+      {
+        "failed": [
+          "California",
+          "Colorado"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet_tons": 36270.772485,
+        "unserved_zones": [
+          "Oregon",
+          "Washington"
+        ],
+        "unreachable_zones": [
+          "Oregon",
+          "Washington"
+        ]
+      },
+      {
+        "failed": [
+          "California",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Florida"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Illinois"
+        ],
+        "unmet_tons": 2366.192478,
+        "unserved_zones": [
+          "North Dakota"
+        ],
+        "unreachable_zones": [
+          "North Dakota"
+        ]
+      },
+      {
+        "failed": [
+          "Colorado",
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Colorado",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Georgia"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Florida",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Illinois"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Georgia",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "New Jersey"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Illinois",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Texas"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "New Jersey",
+          "Ohio"
+        ],
+        "unmet_tons": 4137.631169,
+        "unserved_zones": [
+          "Maine"
+        ],
+        "unreachable_zones": [
+          "Maine"
+        ]
+      },
+      {
+        "failed": [
+          "Texas",
+          "Washington"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Texas",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      {
+        "failed": [
+          "Washington",
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      }
+    ],
+    "summary": {
+      "single_pass": 9,
+      "single_total": 9,
+      "pair_pass": 33,
+      "pair_total": 36,
+      "worst_single": {
+        "failed": [
+          "Ohio"
+        ],
+        "unmet_tons": 0,
+        "unserved_zones": [],
+        "unreachable_zones": []
+      },
+      "worst_pair": {
+        "failed": [
+          "California",
+          "Washington"
+        ],
+        "unmet_tons": 36270.772485,
+        "unserved_zones": [
+          "Oregon",
+          "Washington"
+        ],
+        "unreachable_zones": [
+          "Oregon",
+          "Washington"
+        ]
+      }
+    }
+  },
+  "structural": [
+    {
+      "zone": "Oregon",
+      "candidates": [
+        "California",
+        "Washington"
+      ],
+      "demand": 12869.003323
+    },
+    {
+      "zone": "Washington",
+      "candidates": [
+        "California",
+        "Washington"
+      ],
+      "demand": 23401.769162
+    }
+  ]
+}
