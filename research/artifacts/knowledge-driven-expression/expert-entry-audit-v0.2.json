@@ -1,0 +1,137 @@
+{
+  "base": "1b3ce4e8b4c0c7e21f4eb7a154b5b55689884d95",
+  "treeCount": 69,
+  "oldBootstrap": "以AI-D最新整合分支的README、AGENTS.md、knowledge/INDEX.md和research/ACTIVE-RESEARCH-LEDGER.md为入口，按需读取与当前问题有关的知识正本和原始成果；将我的初始思想深化为专业问题、选择适用认知并形成具体任务表达，直接完成授权范围内可验收的工作，保存新认识、证据及接力状态。不要让我重新编写或复制专业提示词；若无法访问项目或工具，明确限制。我的初始思想：",
+  "newBootstrap": "在当前ChatGPT对话中协助我研究AI-D。通过已授权的GitHub连接读取仓库 sunshihao001/ai-d、当前整合分支 integration/cognitive-assets-20261127 的实际HEAD；若项目存在经批准的新基线，以实际可核版本为准。读取 README.md、AGENTS.md、knowledge/INDEX.md、research/ACTIVE-RESEARCH-LEDGER.md。按当前问题选择知识原件、历史案例及有具体来源的专家方法，不默认加载全部知识或扮演专家。把我的想法转成具体任务：对象、适用条件、专业行动、可验收成果与证据。复杂任务先确定本轮可完成的一项有价值交付，再直接执行；若缺少权限、资料或资源，记录实际阻塞与未完成，不用计划冒充结果。重要知识要改变具体判断、操作或验收。保存新认识、实际成果、引用及接力状态并回读；不改根本目标或扩大权限。不要求我复制专业提示词或安装软件。若连接不可用，明确无法访问的资料并在可行范围内继续。我的初始思想：",
+  "sourcePaths": [
+    {
+      "path": "README.md",
+      "exists": true
+    },
+    {
+      "path": "AGENTS.md",
+      "exists": true
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "exists": true
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "exists": true
+    }
+  ],
+  "initialTest": {
+    "cases": 7,
+    "matched": 6,
+    "falsePositive": "删去连接失效专用句后，普通权限文字仍命中宽泛正则",
+    "correction": "仅核查明确连接失败处置文字契约，不将其视为语义能力验证"
+  },
+  "revisedTests": [
+    {
+      "name": "正例：候选入口",
+      "expected": true,
+      "actual": true,
+      "checks": {
+        "repo": true,
+        "branch": true,
+        "requiredPaths": true,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    },
+    {
+      "name": "缺仓库",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": false,
+        "branch": true,
+        "requiredPaths": true,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    },
+    {
+      "name": "缺分支",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": true,
+        "branch": false,
+        "requiredPaths": true,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    },
+    {
+      "name": "缺索引",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": true,
+        "branch": true,
+        "requiredPaths": false,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    },
+    {
+      "name": "错误入口文件",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": true,
+        "branch": true,
+        "requiredPaths": false,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    },
+    {
+      "name": "缺连接失效处置",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": true,
+        "branch": true,
+        "requiredPaths": true,
+        "explicitConnectionFallback": false
+      },
+      "pass": true
+    },
+    {
+      "name": "旧网页入口",
+      "expected": false,
+      "actual": false,
+      "checks": {
+        "repo": false,
+        "branch": false,
+        "requiredPaths": false,
+        "explicitConnectionFallback": false
+      },
+      "pass": true
+    },
+    {
+      "name": "无关的角色名称变化",
+      "expected": true,
+      "actual": true,
+      "checks": {
+        "repo": true,
+        "branch": true,
+        "requiredPaths": true,
+        "explicitConnectionFallback": true
+      },
+      "pass": true
+    }
+  ],
+  "scope": "static wording and existing paths; no model performance or independent chat",
+  "pageChecks": {
+    "eightCases": true,
+    "historicalContent": true,
+    "historicalLinks": true,
+    "newCopyMatches": true,
+    "newLinks": true,
+    "noNewNetwork": true
+  }
+}

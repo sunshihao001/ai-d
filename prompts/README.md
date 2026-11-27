@@ -1,5 +1,7 @@
 # AI-D 提示词候选与人机阅读入口
 
+- [手机端独立任务入口V0.2（候选）](mobile-chat-entry-v0.2.md)：明确仓库、分支、可访问边界及当轮专业产物；V0.1及历史网页知识仍保留。[具名专家方法及核心缺陷审查](../research/2026-11-27-named-expert-methods-and-defect-audit.md)，未独立验证增益。
+
 ## 当前手机端 GPT 工作入口（不覆盖历史候选）
 - [手机端认知接力候选](mobile-chat-continuation-v0.1.md)：当前状态与历史原件分开，未部署为全局规则。
 - [知识运用诊断任务规格](tasks/knowledge-utilization-audit-v1.md)：根据已有知识生成并实际执行的本轮专业任务，可复用候选，非总指令。
