@@ -3005,5 +3005,24 @@
     ],
     "oldMobileUnchanged": true,
     "initialCandidateNotPublished": "9d2473524e5f08838dc989fb20bc1d1eb6f9db16"
+  },
+  "remoteReadbackAndTreeRecovery": {
+    "testedCommit": "227272911f51e3e3a89607a7658e0ebe83366218",
+    "repositoryTreeFiles": 198,
+    "detachedTree": "847fba1b487a1b78fc31927ea99bc3cbecbed317",
+    "detachedTreeFiles": 198,
+    "pathsAndBlobsExact": 198,
+    "removed": 0,
+    "scope": "actual remote Git object tree rebuild with no base tree, existing blobs referenced; not independent clone, local files/worktree or executable environment restore",
+    "readbackRendererExact": true,
+    "htmlChars": 424330,
+    "guardErrors": [],
+    "activeClaims": 28,
+    "historicalClaims": 27,
+    "currentPromptModes": 2,
+    "ledgerLink": true,
+    "mainAhead": 92,
+    "mainBehind": 0,
+    "mainUnchanged": true
   }
 }
