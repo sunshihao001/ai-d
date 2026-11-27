@@ -1,3 +1,7 @@
+## 2026-11-27｜现行知识回收与调用导航
+以既有六域、P1–P8、K1–K9、跨层锚点和11月25日收敛为基线；不另建框架。新增 [专业知识、外部智能与杠杆](2026-11-27-professional-knowledge-and-leverage.md) 为 V10–V23 等历史专业内核的集中归位入口，覆盖专业问题表征、粒度与机制、工作流、专业任务、质量及真实增益。原研究及证据见 [回收记录](../research/2026-11-27-cognitive-asset-reconciliation.md)，旧正本不删除。
+当前目标以 [README](../README.md) 为准；[锚点与钩子](foundations/cross-layer-project-anchors.md) 用于情境触发、适用性与偏移/回归审查，[组织规范](foundations/organization-protocol.md) 用于按增量保存；[AGENTS.md](../AGENTS.md) 是短执行入口，[台账](../research/ACTIVE-RESEARCH-LEDGER.md) 保存下一步及未验证状态。不要重复研究所有既有成品，按问题导航。运行时自动召回、独立增益、效率倍率仍未验证。
+
 ## 2026-11-25｜全局知识收敛与现行入口（审查分支候选）
 
 **定位与边界**：沿用 README 的人类能力增强目标；专业能力发现、理解、判断、吸收、组织、协同、应用及验证是核心机制，不是整个项目的排他定义。“信息揽客”是待验证的具体产品入口；Hermes 是运行环境候选；专家视角是按问题调取的专业责任，不等于固定 Agent 数量。本次不新增架构、目录、P9、K10 或强制步骤。
