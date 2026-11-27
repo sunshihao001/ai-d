@@ -137,3 +137,19 @@ GPT 可以承担独立审查、竞争解释和设计复核，不应成为唯一�
 ## 历史来源限制恢复（2026-11-16原记录）
 
 > **本轮来源边界**：用户提供的 X 帖子目前未能由可用浏览上下文直接读取，因此这里不把该帖子的具体观点写成已验证知识。本文件提炼的是与现有 ai-d 研究及可核查外部方向一致的设计层认识；待取得帖子正文/截图后，再把它作为独立 Source 进行 Claim/Evidence 级比较，不覆盖现有结论。
+
+## 13. 成熟项目原始机制审查与实际吸收
+
+2026-11-27。基线 PR #4 开始研究时 227272911f51e3e3a89607a7658e0ebe83366218；并行分支持续更新，写入前重新读取现行文件。以下为原始项目机制登记，不把 README 声称当实测；源码/技能读取以文件 blob SHA 定位（不是提交 SHA），当前链接可变。只提炼方法，不复制外部代码或技能全文、不安装运行时；实际采用见[组织规范4A](../knowledge/foundations/organization-protocol.md#4a-知识变更协调与失败经验复用)。
+
+| 项目及精确来源 | 实际机制、适用条件与裁决 |
+|---|---|
+| [Ars Contexta reweave](https://github.com/agenticnotetaking/arscontexta/blob/main/skill-sources/reweave/SKILL.md) blob 373b418da37e2ebb3512fb391ce88959537d3acb，L20–69、95–105；[remember](https://github.com/agenticnotetaking/arscontexta/blob/main/skill-sources/remember/SKILL.md) blob 8529cc56d0c2835ec05786afabd279f97d224127，L30–88 | 从新认识反查旧正本，按深度决定连接/细化/拆分/挑战；重复纠偏先检查现有方法记录。采用反向修订与原位去重；不移植其自动钩子、固定阈值或把每条纠偏直接升为永久规则。 |
+| [OpenWiki 主张类型](https://github.com/langchain-ai/openwiki/blob/main/src/claims/core/types.ts) blob 2a27aa7799eedf09407368690ce98f23a13fd439，L1–105；[更新测试](https://github.com/langchain-ai/openwiki/blob/main/test/generation/page-jobs.test.ts) blob 51192c7bbfe3bce8f9bff7dd1aa1cc7f693cb058，L273起；[协调文档](https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md) | 保留无影响主张、显式处置过时主张、版本证据、稳定ID、批量校验。采用有差异才改、证据变化须复核。其代码仓库证据版本不等于专业事实真值；未运行原项目测试，不声称具备原子事务。 |
+| [BMad Method 上下文维护](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/existing-codebases/set-and-maintain-project-context.md) | 官方操作文档核查：指令只保留无法廉价重获的约束、实际错误、跨模块规则；维护时核路径与已有配置，审查以不膨胀为目标。采用常驻指令准入，不引入软件开发固定角色。其原始技能实现本轮未定位。 |
+| [EvoSkills evo-memory](https://github.com/EvoScientist/EvoSkills/blob/main/skills/evo-memory/SKILL.md) blob ff9625920233c3f60725c5105d397a09ae7d24f1，L29–105；[research-ideation](https://github.com/EvoScientist/EvoSkills/blob/main/skills/research-ideation/SKILL.md) blob fbf5035a657e7833e5800258548088a51201d4bd，L37–93 | 区分方向经验与执行策略；失败区分实现与根本机制；新研究先查既有相关成功/失败。采用经验分类及复开条件，原位复用现有台账和证据，不新建两套记忆库，不固定取前2条或30–50篇论文。 |
+| [Hermes session_search 源码](https://github.com/NousResearch/hermes-agent/blob/main/tools/session_search_tool.py) blob 2d1ada7c5d103cb4d7fbb9543d50b6fbc2ebb13e，L5–8、128–145、276–278 | 发现、定位、上下文展开与会话压缩血缘分离。采用先发现再读可访问原件的原则；ChatGPT 当前连接无法据此获得 Hermes 的 SQLite 会话库或自动会话捕获。 |
+| [Memento-Skills](https://github.com/Memento-Teams/Memento-Skills) | 项目说明支持失败归因、隔离修订、测试及回滚；与现有回归治理一致，先复用，不新增系统。此轮仅官方文档证据，内部实现/实跑未审。 |
+| [GBrain](https://github.com/garrytan/gbrain)、LifeOS、Trilium、Aider、RAPTOR、OpenRefine、SWE-agent、DSPy、GEPA | 历史研究/恢复候选；本轮未重新核实原始实现，不把旧摘要冒充本轮证据。继续时优先恢复既有固定版本与实证，不重复宽泛搜索；原始用户发送URL与AI推荐归属仍不完整。 |
+
+**当前采用动作**：组织规范新增4A具体维护契约；现有K-PROV/K-HOOK/K-DEFECT/K-CAP增加精准定位，不创建同义主张编号；执行入口合并重复保存表述并指向正本。实质问题是既有颗粒度修复已完成而后续仍可能因新证据或浓缩造成旧主张失效/遗漏；固定语义投影不得冒充实时知识。下一次独立真实任务测试应覆盖受影响主张漏改、无影响主张误改、实现失败误作根本失败三个反例。独立模型增益、全量历史链接归属、原项目部署均未完成。
