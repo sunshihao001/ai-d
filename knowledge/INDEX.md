@@ -52,6 +52,7 @@
 触发：实际行动、工具调用、学习或协作。行动：确定本轮能完成的一项实际交付，调用已有成果与授权工具执行；受阻明确状态，不把专业选择交回用户。
 验收：实际产物、工具结果或真实阻塞，不只给下轮计划。
 - **K-RUNTIME 运行环境与认知责任分离**：认知方法、运行时、行业任务是不同职责；文档和动态指令不保证运行能力；按需核当前宿主真实权限、工具、输入输出及日志；优先成熟原生能力；边界：Hermes非唯一宿主；定时触发不等于持续思考，旧版本不能证明今日可用。[workflow-components-and-boundaries.md L4–31](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/workflow-components-and-boundaries.md#L4-L31)
+- **提示词实际调用**：复杂任务按[专业提示词模块](../prompts/professional-task-modules.md)选择既有P1–P8主模块及必要辅助模块，包含适用/不适用、专业动作、原件、否决门槛及组合示范；[外部机制来源](../research/2026-11-16-external-intelligence-layer.md#14-专业提示词分类组合与反馈优化2026-11-28)。不新增知识分类或默认全量提示词；独立增益待验。
 - **K-PROMPT 提示词与知识承接的关系**：提示词是知识向任务规格转换的候选接口；按需条件选择原件、规格、实际产物及验收；边界：更多规则或更长提示词不保证增益。[2026-11-27-knowledge-driven-task-expression-v1.md L4–7](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-knowledge-driven-task-expression-v1.md#L4-L7)
 - K-CAP：参见 P2 的唯一主入口；仅在本问题需要时交叉调用。
 - **K-LEARN 人机认知增强与真实学习**：AI辅助任务表现、独立技能及协作净效益不能相互替代；长期现实收益另验；按需代办、协作、教学按当前目标区分；评价辅助结果与移除AI后的迁移；边界：短期数学实验不证明普遍能力退化；人机组合并非必然胜过最强单方。[2026-11-07-human-ai-delegation-performance-learning.md L24–39](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-human-ai-delegation-performance-learning.md#L24-L39)
