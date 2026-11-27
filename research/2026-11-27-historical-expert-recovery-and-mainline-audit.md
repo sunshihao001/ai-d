@@ -69,3 +69,7 @@ PR2的6路径：技能文件为单独新增；其余5项 README、evaluation/fir
 
 ## 7. 写回期间并行增量复核
 本轮起点98d0c17→阶段提交a953be1：GitHub compare显示8个路径变更、0删除；其中本轮新增本报告、原索引和台账的增量链接；并行研究新增V3执行报告、浏览器代表样本结果及脚本、V4事前任务，并更新提示词索引/台账。已回读[并行V3报告](2026-11-27-semantic-activation-v3-execution.md)、[浏览器结果](artifacts/semantic-reorganization/v3-browser-probe-result.json)、[V4任务](../prompts/tasks/evidence-grounded-execution-v4.md)。历史台账403行均按原顺序保留，知识索引原全文为新文本后缀。并行报告记载89标准案例、28 review记录、13变异断言及13静态/17代表浏览器检查；后者只涉及4真实主张和P5路线、注入剪贴板替身，非完整页面/用户设备实测。本轮只是远端回读，未重跑。新V4研究任务保留，不将其替换成专家中心建设；主干归并应协调此并行研究，不把固定79/88项旧投影视为实时全量。main仍f89a300d；PR4仍开放。
+
+
+## 8. 固定差异证据清单
+[机器可读分支差异](artifacts/historical-expert-recovery/branch-delta-20261127.json)保存七项main比较与integration→review的实际返回路径、计数及共同祖先。相对review起点104条变更路径：历史ai-intelligence 29不重叠；专家分支4重叠/2不重叠；目标规划4/12；外部智能清理4/2；知识收敛2/0；整合67/0。这里“不重叠”只表示未列入review相对main变更清单，不能推断路径必然不存在、内容独有或合并无冲突。下一步按此逐项核定当前blob与原始历史内容，不直接批量合并。
