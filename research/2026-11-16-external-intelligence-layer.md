@@ -162,3 +162,16 @@ GPT 可以承担独立审查、竞争解释和设计复核，不应成为唯一�
 - [Anthropic skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md) blob 65b3a402dbd09b8e83f9d637c6b553875189085c，486行，L52–90、169–234：触发描述、按需正文、参考资源，旧版与候选对照、客观断言及定性反馈。采用适用/不适用条件、渐进加载、保留基线；当前聊天不能宣称安装该技能或自动触发。
 - [DSPy GEPA 深入机制](https://github.com/stanfordnlp/dspy/blob/main/docs/docs/diving-deeper/gepa-in-depth.md) blob 0a14743ce868e632a502392e91363cbb04160ea7，143行，L5–53、87–88：具体失败反馈、候选程序、验证集、组件级修订与成本。采用定向修订及留出回归，不复制其自动优化器、预算或宣称增益。历史V23.3实际反例仍有效：长提示词可能退化，先审评价真值与工具证据可见性。
 实际产物：[专业提示词模块](../prompts/professional-task-modules.md)，保持现有知识正本、短用户入口和V5接力；具体任务选择主模块及必要辅助模块，用户不承担分类。未运行外部项目及独立模型对照，真实增益UNKNOWN。
+
+
+## 15. 高阶提示词工程 V2｜原始机制与实际任务验收
+2026-11-28，固定基线 5fd7e285b2fb2aca99742ca9ab86394819cfc8a3。先保留V1原件、八问题分类、目标、授权、现行接力。任务：把高级提示词转成手机工作台实际复制的任务，避免只有导航说明而没有明确执行指令。实际基线：工作台HTML内嵌entry/taskEntry及8条route均未显式引用prompts/professional-task-modules.md；生成器从README抽取两个引用块，而V1模块说明位于引用块之外。此为接口缺口，不证明过去所有模型都漏载。原HTML可在固定基线回查。
+### 源码依据与采用裁决
+- [DSPy Signature](https://github.com/stanfordnlp/dspy/blob/main/dspy/signatures/signature.py) blob 8d23ffc555d24687a69d574f4787a93170e7af8a，L138–278：输入输出字段和可替换指令分离。采用任务对象、输入、产物与质量门槛契约，不强制每次JSON。
+- [MIPROv2](https://github.com/stanfordnlp/dspy/blob/main/dspy/teleprompt/mipro_optimizer_v2.py) blob 3a47ebbcaf6e25b5e0752b787084eda31a0c8ef3，L175–260：训练/验证数据、示范候选、任务/数据感知指令候选、评估器。采用独立选择示范与指令的思路，不照搬自动优化预算；没有模型调用则不宣称联合优化。
+- [DSPy GEPA](https://github.com/stanfordnlp/dspy/blob/main/dspy/teleprompt/gepa/gepa.py) blob 3440fab7af6e92d503c5e3e9ecd6fee782c1917a，L32–89、132–152；[候选选择源码](https://github.com/gepa-ai/gepa/blob/main/src/gepa/strategies/candidate_selector.py) blob b983ea02cdf1d393583fcd893137a08e11145505，L11–83：模块级反馈、候选谱系、分样本/目标表现，不把总分等同无回归。采用具体失败反馈及硬条件优先的竞争裁决，不声称执行优化器。
+- [ACE curator](https://github.com/ace-agent/ace/blob/main/ace/core/curator.py) blob fcadcfbce1c9190bda7caa24d8250baa93902320，L119–166、169–234：先提议变更、校验及记录差异，再应用；并行提议可从同一快照归并。采用局部指令修订、保留不受影响内容；不采用未经审查的自动删除。
+- [OPRO](https://github.com/google-deepmind/opro/blob/main/opro/optimization/optimize_instructions.py) blob 4cf3effd82b01ca8dace80c3c589cd982486daa1，804行；核查优化/评分模型分别配置及meta-prompt参数，另有README区分训练测试。候选文字搜索作为备选，当前优先专业对象与接口修复，避免重复V23.3已证评价盲区。
+- ReasoningBank、SkillOpt、本轮未读到原始实现，不作本次证据。五类机制共六份源码已读取，未安装或运行外部优化器。
+### 事前冻结的验收
+以固定基线的实际README、生成器和HTML为输入；保持原固定知识快照、所有route对象、卡片、具体任务/整项目接力的不同权限与范围。验收：两个复制入口均显式指向现行专业模块；八条route均使用具体任务入口并保留原P编号、情境、专家、行动、验收、来源；整项目接力只从台账继续；固定快照不冒充实时；界面有新版模块链接和历史V4标签；旧历史入口不重新生效。比较原实际复制指令与增强指令的结构契约，逐对象核对，不做词数评分。检查缺模块引用、旧分支覆盖、错误整项目启动、复制路线遗漏等反例。真实独立模型四路对照、盲评、成本与专业成果增益另验（NOT_RUN），不以字符串测试代替。实际修复需回读Git、核差异并恢复V5真实专业任务。
