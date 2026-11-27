@@ -1,0 +1,176 @@
+{
+  "base": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+  "previous": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "delta": [
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "old": "207c7d2ea79ecf870a89f1a1a05b70a47cae7fa9",
+      "new": "d5f8393579653391d74ca6a81c709a26315a6aac",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+      "old": null,
+      "new": "9f280acb992a9b210621ab953290a772e92d49dd",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+      "old": null,
+      "new": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "old": "ebf09f03c7b26772caa67637a0bd45165ace077f",
+      "new": "2f42fcda404663e801bfa9dbb060bf208bcbd042",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "prompts/README.md",
+      "old": "91dda238666b4769c222160ebaab2fdc56de5800",
+      "new": "5d1abc0dd22d1dc427e259b57fa969af9d72756c",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+      "old": null,
+      "new": "154138abe07401f18ee9a502206f90b10536e71d",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "prompts/tasks/historical-evidence-replay-v1.md",
+      "old": null,
+      "new": "a8b737192790be5ce9568d123b7a78c149d9f955",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+      "old": null,
+      "new": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "old": "34f56b89b3f381192b0e083043a64a464979f98d",
+      "new": "0dd1f552bd726182c70675106c23fb6cca8abdc6",
+      "kind": "changed",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+      "old": null,
+      "new": "52f0248af83b31ffd8817c50d459d1c3c84cda8e",
+      "kind": "added",
+      "read": true
+    },
+    {
+      "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+      "old": null,
+      "new": "bc2355ea85bc36111c614d7bc2d0685b23c068d0",
+      "kind": "added",
+      "read": true
+    }
+  ],
+  "temporal": {
+    "reportedRef": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+    "prior": 62,
+    "latest": 79,
+    "same": 57,
+    "changed": 5,
+    "new": 17,
+    "limit": "本轮实际树比较；非实际读取或泄漏"
+  },
+  "relationRevisions": [
+    {
+      "from": "K-INTENT",
+      "to": "K-EXPERT",
+      "old": "requires",
+      "new": "contextualizes",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-INTENT",
+      "to": "K-UNKNOWN",
+      "old": "requires",
+      "new": "contextualizes",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-UNKNOWN",
+      "to": "K-SEARCH",
+      "old": "requires",
+      "new": "contextualizes",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-PROV",
+      "to": "K-EVAL",
+      "old": "requires",
+      "new": "constrains",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-PROMPT",
+      "to": "K-INTENT",
+      "old": "implements",
+      "new": "constrains",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-RECEIPT",
+      "to": "K-EVAL",
+      "old": "verified_by",
+      "new": "constrains",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    },
+    {
+      "from": "K-RESILIENCE",
+      "to": "K-EVAL",
+      "old": "verified_by",
+      "new": "constrains",
+      "reason": "条件性方法或验收原则非必要依赖、具体实现或实际测试证据"
+    }
+  ],
+  "reviewed": [
+    "K-GOAL",
+    "K-AUTH",
+    "K-INTENT",
+    "K-FACET",
+    "K-PROV",
+    "K-HOOK",
+    "K-STOP",
+    "K-TRIANG",
+    "K-POLLUTE",
+    "K-EXPERT",
+    "K-PROMPT",
+    "K-DEFECT",
+    "K-RECEIPT",
+    "K-BUDGET",
+    "K-UI",
+    "K-DATA",
+    "K-EVAL",
+    "K-DECISION",
+    "K-TIME"
+  ],
+  "pending": [
+    "K-LEARN",
+    "K-UNKNOWN",
+    "K-SEARCH",
+    "K-CAP",
+    "K-RUNTIME",
+    "K-CONT",
+    "K-REAL",
+    "K-RESILIENCE",
+    "K-EVOLVE"
+  ],
+  "scope": "19个主张定向查原段落；其余9个候选；外部原始依据仅Chi/Fowler/SKOS本轮复核，不假称全部外链复核。"
+}
