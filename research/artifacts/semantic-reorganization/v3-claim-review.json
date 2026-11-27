@@ -172,5 +172,43 @@
     "K-RESILIENCE",
     "K-EVOLVE"
   ],
-  "scope": "19个主张定向查原段落；其余9个候选；外部原始依据仅Chi/Fowler/SKOS本轮复核，不假称全部外链复核。"
+  "scope": "19个主张定向查原段落；其余9个候选；外部原始依据仅Chi/Fowler/SKOS本轮复核，不假称全部外链复核。",
+  "relationDirectionCorrections": [
+    {
+      "old": [
+        "K-PROMPT",
+        "constrains",
+        "K-INTENT"
+      ],
+      "new": [
+        "K-INTENT",
+        "constrains",
+        "K-PROMPT"
+      ]
+    },
+    {
+      "old": [
+        "K-RECEIPT",
+        "constrains",
+        "K-EVAL"
+      ],
+      "new": [
+        "K-EVAL",
+        "constrains",
+        "K-RECEIPT"
+      ]
+    },
+    {
+      "old": [
+        "K-RESILIENCE",
+        "constrains",
+        "K-EVAL"
+      ],
+      "new": [
+        "K-EVAL",
+        "constrains",
+        "K-RESILIENCE"
+      ]
+    }
+  ]
 }

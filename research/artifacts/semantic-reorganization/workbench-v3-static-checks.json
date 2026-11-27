@@ -1,0 +1,20 @@
+{
+  "baseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+  "tests": {
+    "cards": true,
+    "assets": true,
+    "uniqueIds": true,
+    "anchorTargets": true,
+    "elevenViews": true,
+    "eightRoutes": true,
+    "reviewed": true,
+    "pending": true,
+    "receipts": true,
+    "deterministic": true,
+    "noRemoteScripts": true,
+    "lineRanges": true,
+    "jsSyntax": true
+  },
+  "htmlChars": 372153,
+  "scope": "Actual full static generation/identifier checks, syntax; full browser not run."
+}

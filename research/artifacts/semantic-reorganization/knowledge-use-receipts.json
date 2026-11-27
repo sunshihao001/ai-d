@@ -64,6 +64,48 @@
       "result": "1100英里90/91；1169.888022英里90/91；1178.798919英里91/91；7项断言通过；第三近中心的必要下界达到并经最大流确认充分",
       "status": "EXECUTED_SCENARIO_SOLVER",
       "limit": "自选情景工作、14点全部开放、无成本或停运概率优化、未作真实企业验证、MODEL_AB=NOT_RUN"
+    },
+    {
+      "id": "USE-04",
+      "task": "主张校勘与时间证据",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-HOOK",
+        "K-TIME",
+        "K-EVAL"
+      ],
+      "condition": "72→79并行增量及候选边类型不精确",
+      "action": "读取11处变更、定向核19主张、修正7条边类型及3条方向；真实比较62→79",
+      "evidence": [
+        "knowledge/semantic-map-v3.json",
+        "research/artifacts/semantic-reorganization/v3-claim-review.json"
+      ],
+      "result": "19/28定向校勘，9候选；57同blob、5异blob、17新增",
+      "status": "EXECUTED_SCOPED_SOURCE_REVIEW",
+      "limit": "未复核全部外链、主张或关系现实效应；非模型实际读取"
+    },
+    {
+      "id": "USE-05",
+      "task": "专业软件质量工程：证据契约",
+      "knowledge": [
+        "K-INTENT",
+        "K-DEFECT",
+        "K-EVAL",
+        "K-PROV",
+        "K-RECEIPT"
+      ],
+      "condition": "旧引用检查不验空主张、无审查证据或错误升级",
+      "action": "事前冻结规格，运行成熟jsonschema 4.26.0及独立标准测试；保留旧引用检查",
+      "evidence": [
+        "prompts/tasks/evidence-contract-validation-v1.md",
+        "research/artifacts/semantic-reorganization/v3-contract/result.json",
+        "research/artifacts/semantic-reorganization/v3-contract/review-contract.json"
+      ],
+      "result": "89/89标准用例、28/28真实记录、13/13正反例符合预期",
+      "status": "EXECUTED_STANDARD_CONFORMANCE",
+      "limit": "结构不证明主张真值、全部标准或独立模型增益"
     }
-  ]
+  ],
+  "v3Baseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35"
 }
