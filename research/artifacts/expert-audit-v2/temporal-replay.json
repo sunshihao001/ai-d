@@ -1,0 +1,611 @@
+{
+  "scope": "实际报告所声明的Git快照比较；提交时间非实际发布/读取时间，缺路径非模型绝对未知。",
+  "run": {
+    "id": "3f44ee8e-03b8-832f-96bb-e1738f2f40f2",
+    "start": "2026-11-27T12:40:10.614199Z",
+    "end": "2026-11-27T12:40:58.852468Z",
+    "reportedRef": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba"
+  },
+  "snapshots": [
+    {
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "committerTime": "2026-11-27T12:38:39Z",
+      "count": 62,
+      "afterRun": false,
+      "absent": [],
+      "changed": []
+    },
+    {
+      "ref": "0d56779010ede87972a79ed9b62d47ce1391d189",
+      "committerTime": "2026-11-27T12:56:41Z",
+      "count": 66,
+      "afterRun": true,
+      "absent": [
+        "prompts/mobile-chat-continuation-v0.1.md",
+        "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+        "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+        "research/artifacts/mobile-chat-continuity/double_outage_results.json"
+      ],
+      "changed": [
+        "knowledge/INDEX.md",
+        "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+        "research/ACTIVE-RESEARCH-LEDGER.md"
+      ]
+    },
+    {
+      "ref": "1b3ce4e8b4c0c7e21f4eb7a154b5b55689884d95",
+      "committerTime": "2026-11-27T13:09:48Z",
+      "count": 69,
+      "afterRun": true,
+      "absent": [
+        "prompts/mobile-chat-continuation-v0.1.md",
+        "prompts/tasks/knowledge-utilization-audit-v1.md",
+        "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+        "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+        "research/artifacts/knowledge-driven-expression/audit.json",
+        "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+        "research/artifacts/mobile-chat-continuity/double_outage_results.json"
+      ],
+      "changed": [
+        "docs/ai-d-prompt/index.html",
+        "knowledge/INDEX.md",
+        "prompts/README.md",
+        "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+        "research/ACTIVE-RESEARCH-LEDGER.md"
+      ]
+    },
+    {
+      "ref": "7f536867a19669be4675aa946353d8ef479b43a5",
+      "committerTime": "2026-11-27T13:15:56Z",
+      "count": 72,
+      "afterRun": true,
+      "absent": [
+        "prompts/mobile-chat-continuation-v0.1.md",
+        "prompts/mobile-chat-entry-v0.2.md",
+        "prompts/tasks/knowledge-utilization-audit-v1.md",
+        "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+        "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+        "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+        "research/artifacts/knowledge-driven-expression/audit.json",
+        "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+        "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+        "research/artifacts/mobile-chat-continuity/double_outage_results.json"
+      ],
+      "changed": [
+        "docs/ai-d-prompt/index.html",
+        "knowledge/INDEX.md",
+        "prompts/README.md",
+        "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+        "research/ACTIVE-RESEARCH-LEDGER.md"
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "path": "AGENTS.md",
+      "oldBlob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "newBlob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "README.md",
+      "oldBlob": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+      "newBlob": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+      "oldBlob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+      "newBlob": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "decisions/2026-11-05-goal-options.md",
+      "oldBlob": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+      "newBlob": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "oldBlob": "3fbf817f335c8926c42a4b0c41c9ace9118a46c2",
+      "newBlob": "207c7d2ea79ecf870a89f1a1a05b70a47cae7fa9",
+      "state": "different_blob"
+    },
+    {
+      "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+      "oldBlob": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+      "newBlob": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "evaluation/first-cross-domain-tests.md",
+      "oldBlob": "5440d4fa737ec228e0def2c097cd03db0e93344a",
+      "newBlob": "5440d4fa737ec228e0def2c097cd03db0e93344a",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+      "oldBlob": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+      "newBlob": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "evaluation/workspace-trial/verify_snapshot.py",
+      "oldBlob": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+      "newBlob": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+      "oldBlob": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+      "newBlob": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+      "oldBlob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+      "newBlob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "oldBlob": "204f8afd3d9f077ac03cd491854459fc85c66992",
+      "newBlob": "ebf09f03c7b26772caa67637a0bd45165ace077f",
+      "state": "different_blob"
+    },
+    {
+      "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+      "oldBlob": "51cce1f5362a540b586b8b08627dbac976d70db3",
+      "newBlob": "51cce1f5362a540b586b8b08627dbac976d70db3",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/foundations/cross-layer-project-anchors.md",
+      "oldBlob": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "newBlob": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+      "oldBlob": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+      "newBlob": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/foundations/organization-protocol.md",
+      "oldBlob": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+      "newBlob": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "knowledge/source-register-2026-11-05.md",
+      "oldBlob": "571b90068357e33c5198280935cfa2df51d20e8c",
+      "newBlob": "571b90068357e33c5198280935cfa2df51d20e8c",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "prompts/README.md",
+      "oldBlob": "cc0ba8485aaf8e33dcaf4193abdcfdc2f7eeb868",
+      "newBlob": "91dda238666b4769c222160ebaab2fdc56de5800",
+      "state": "different_blob"
+    },
+    {
+      "path": "prompts/master-v1.0.md",
+      "oldBlob": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+      "newBlob": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "prompts/mobile-chat-continuation-v0.1.md",
+      "oldBlob": null,
+      "newBlob": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "prompts/mobile-chat-entry-v0.2.md",
+      "oldBlob": null,
+      "newBlob": "5b3fc9f0192a298fdcc94b40658b0e6d422ed3f6",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "prompts/stages-2026-11-27.md",
+      "oldBlob": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+      "newBlob": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+      "oldBlob": null,
+      "newBlob": "7c483c2131da1d539f37678862261c65a2164755",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+      "oldBlob": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+      "newBlob": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+      "oldBlob": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+      "newBlob": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+      "oldBlob": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+      "newBlob": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+      "oldBlob": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+      "newBlob": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+      "oldBlob": "68d69028dacfc09e94037791828364a65d222bc6",
+      "newBlob": "68d69028dacfc09e94037791828364a65d222bc6",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+      "oldBlob": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+      "newBlob": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+      "oldBlob": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+      "newBlob": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+      "oldBlob": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+      "newBlob": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+      "oldBlob": "96a613853bc0d2337b64275c6b051790f4df542e",
+      "newBlob": "96a613853bc0d2337b64275c6b051790f4df542e",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+      "oldBlob": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+      "newBlob": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+      "oldBlob": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+      "newBlob": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+      "oldBlob": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+      "newBlob": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+      "oldBlob": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+      "newBlob": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+      "oldBlob": "bd8a4c06c835d5fffdf693fcfa322ac346fc8248",
+      "newBlob": "bd8a4c06c835d5fffdf693fcfa322ac346fc8248",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+      "oldBlob": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+      "newBlob": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-16-external-intelligence-layer.md",
+      "oldBlob": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+      "newBlob": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+      "oldBlob": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+      "newBlob": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+      "oldBlob": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+      "newBlob": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+      "oldBlob": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+      "newBlob": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+      "oldBlob": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+      "newBlob": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+      "oldBlob": "2a60dd4c92d8b192cdea77981d9d697019e599c4",
+      "newBlob": "c71e6d38dedb5b20df9a30dea8957cb6940bd46a",
+      "state": "different_blob"
+    },
+    {
+      "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+      "oldBlob": null,
+      "newBlob": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+      "oldBlob": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+      "newBlob": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+      "oldBlob": null,
+      "newBlob": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+      "oldBlob": null,
+      "newBlob": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+      "oldBlob": "6a5c4adea9b16dd0985033085210f23de0546e52",
+      "newBlob": "6a5c4adea9b16dd0985033085210f23de0546e52",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+      "oldBlob": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+      "newBlob": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+      "oldBlob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+      "newBlob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+      "oldBlob": "077610998814fdde6f363a31344f2d129f527e52",
+      "newBlob": "077610998814fdde6f363a31344f2d129f527e52",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+      "oldBlob": "e3d74f72ec53119f2e6d7660daba98beaacfcd27",
+      "newBlob": "e3d74f72ec53119f2e6d7660daba98beaacfcd27",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+      "oldBlob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+      "newBlob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+      "oldBlob": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "newBlob": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+      "oldBlob": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+      "newBlob": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+      "oldBlob": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+      "newBlob": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+      "oldBlob": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+      "newBlob": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+      "oldBlob": "db7c8500052078abcb088af945ac3b467a60ce05",
+      "newBlob": "db7c8500052078abcb088af945ac3b467a60ce05",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+      "oldBlob": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+      "newBlob": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "oldBlob": "aeb7b2f47d4b9265a331635c2cefd175d0fc2101",
+      "newBlob": "34f56b89b3f381192b0e083043a64a464979f98d",
+      "state": "different_blob"
+    },
+    {
+      "path": "research/artifacts/knowledge-driven-expression/audit.json",
+      "oldBlob": null,
+      "newBlob": "d3ef8154a6837cc9b74950679aa643af0b4a8c66",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+      "oldBlob": null,
+      "newBlob": "159926f99951258d76109a170a78f48f43f4ab75",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+      "oldBlob": null,
+      "newBlob": "1d323f6a1c64df18cdee43cc80336e814743cb66",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+      "oldBlob": null,
+      "newBlob": "0ecffb49d023db6da5721e8074b13e803615b24e",
+      "state": "absent_from_reported_snapshot"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+      "oldBlob": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+      "newBlob": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+      "oldBlob": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+      "newBlob": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+      "oldBlob": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+      "newBlob": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/population.csv",
+      "oldBlob": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+      "newBlob": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+      "oldBlob": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+      "newBlob": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/solve.py",
+      "oldBlob": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+      "newBlob": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+      "state": "matches_reported_blob"
+    },
+    {
+      "path": "research/workflow-components-and-boundaries.md",
+      "oldBlob": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+      "newBlob": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+      "state": "matches_reported_blob"
+    }
+  ],
+  "cases": [
+    {
+      "name": "旧索引",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "knowledge/INDEX.md",
+      "blob": "204f8afd3d9f077ac03cd491854459fc85c66992",
+      "want": "matches_reported_blob",
+      "actual": "matches_reported_blob",
+      "pass": true
+    },
+    {
+      "name": "新索引同路径",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "knowledge/INDEX.md",
+      "blob": "ebf09f03c7b26772caa67637a0bd45165ace077f",
+      "want": "different_blob",
+      "actual": "different_blob",
+      "pass": true
+    },
+    {
+      "name": "后续手机研究",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+      "blob": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+      "want": "absent_from_reported_snapshot",
+      "actual": "absent_from_reported_snapshot",
+      "pass": true
+    },
+    {
+      "name": "未知引用",
+      "ref": null,
+      "path": "AGENTS.md",
+      "blob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "want": "reported_snapshot_unbound",
+      "actual": "reported_snapshot_unbound",
+      "pass": true
+    },
+    {
+      "name": "未变AGENTS",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "AGENTS.md",
+      "blob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "want": "matches_reported_blob",
+      "actual": "matches_reported_blob",
+      "pass": true
+    },
+    {
+      "name": "缺指纹",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "AGENTS.md",
+      "blob": null,
+      "want": "blob_unknown",
+      "actual": "blob_unknown",
+      "pass": true
+    },
+    {
+      "name": "当前引用冒充原引用",
+      "ref": "7f536867a19669be4675aa946353d8ef479b43a5",
+      "path": "AGENTS.md",
+      "blob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "want": "reported_snapshot_unbound",
+      "actual": "reported_snapshot_unbound",
+      "pass": true
+    },
+    {
+      "name": "新台账同路径",
+      "ref": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+      "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+      "blob": "34f56b89b3f381192b0e083043a64a464979f98d",
+      "want": "different_blob",
+      "actual": "different_blob",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "same": 57,
+    "changed": 5,
+    "absent": 10,
+    "total": 72
+  },
+  "checks": {
+    "all72": true,
+    "allTags": true,
+    "allRouteSources": true,
+    "actualCompare": true,
+    "eightCases": true,
+    "dateOnlyCounterexample": true,
+    "oldArchive": true,
+    "oldFixedLinks": true,
+    "pageDataExact": true,
+    "pageLink": true,
+    "noModelNetwork": true,
+    "routeCountCrossCheck": true
+  }
+}
