@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[高阶提示词V1.1：主动缺陷发现与反馈验证](../research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md)**：关联问题表征、专业条件/反例、独立验证、反馈驱动与回归（P1/P2/P5/P7/P8）；原表复算及真实基准程序逻辑执行，独立模型增益待验。
+
 **[深度认知生产与执行预算专项 V1.0](../research/2026-11-27-deep-cognitive-production-and-execution-budget.md)**：关联既有11-07深度/停止研究；旧版R38运行审计、真实ASReview表格复算、AgentTime及原生长程宿主对照、候选提示词V1.2（未生效）。预算停止≠目标达成；无发现≠不存在；优先实际专业劳动及独立验收，增益待验证。
 以既有六域、P1–P8、K1–K9、跨层锚点和11月25日收敛为基线；不另建框架。新增 [专业知识、外部智能与杠杆](2026-11-27-professional-knowledge-and-leverage.md) 为 V10–V23 等历史专业内核的集中归位入口，覆盖专业问题表征、粒度与机制、工作流、专业任务、质量及真实增益。原研究及证据见 [回收记录](../research/2026-11-27-cognitive-asset-reconciliation.md)，旧正本不删除。
 当前目标以 [README](../README.md) 为准；[锚点与钩子](foundations/cross-layer-project-anchors.md) 用于情境触发、适用性与偏移/回归审查，[组织规范](foundations/organization-protocol.md) 用于按增量保存；[AGENTS.md](../AGENTS.md) 是短执行入口，[台账](../research/ACTIVE-RESEARCH-LEDGER.md) 保存下一步及未验证状态。不要重复研究所有既有成品，按问题导航。运行时自动召回、独立增益、效率倍率仍未验证。
