@@ -1,0 +1,47 @@
+{
+  "baseline": "0d56779010ede87972a79ed9b62d47ce1391d189",
+  "archive_source": "41e43a97ce524077880b7ae2751c37adcdf9d7d3",
+  "archive_tree_files": 53,
+  "current_tree_files": 66,
+  "archive_fixed_links": 11,
+  "changed_link_targets": [
+    "knowledge/INDEX.md",
+    "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+    "research/ACTIVE-RESEARCH-LEDGER.md"
+  ],
+  "original_chapters": 25,
+  "original_embedded_text_equal": true,
+  "prompt_readme_mobile_link_before": false,
+  "archive_mobile_link_before": false,
+  "original_current_source_distinction": "historical only; current entry missing",
+  "automation": {
+    "version": "V1.3",
+    "read_baseline": "d2619ec1b2f63c6f91e9d9e620cb1f3cc722b1ba",
+    "started_at": "2026-11-27T12:40:10.614199Z",
+    "completed_at": "2026-11-27T12:40:58.852468Z",
+    "elapsed_seconds": 48.238269,
+    "reported_state_recovery": true,
+    "reported_new_professional_experiment": false,
+    "reported_git_write": false,
+    "causal_reason": "unknown"
+  },
+  "local_link_audit": {
+    "prompt_readme": 5,
+    "index": 51,
+    "agents": 7,
+    "ledger": 36,
+    "missing": 0,
+    "scope": "unique relative .md target paths per inspected source; not anchors or semantic correctness"
+  },
+  "bootstrap": "以AI-D最新整合分支的README、AGENTS.md、knowledge/INDEX.md和research/ACTIVE-RESEARCH-LEDGER.md为入口，按需读取与当前问题有关的知识正本和原始成果；将我的初始思想深化为专业问题、选择适用认知并形成具体任务表达，直接完成授权范围内可验收的工作，保存新认识、证据及接力状态。不要让我重新编写或复制专业提示词；若无法访问项目或工具，明确限制。我的初始思想：",
+  "static_checks": {
+    "embedded25": true,
+    "historicalLinksPreserved": true,
+    "uniqueIds": true,
+    "allAnchors": true,
+    "copyTextExact": true,
+    "hasCandidateStatus": true,
+    "noNetworkCode": true,
+    "liveTargets": true
+  }
+}

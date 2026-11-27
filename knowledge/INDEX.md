@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[知识驱动任务表达与运用断点 V1.0](../research/2026-11-27-knowledge-driven-task-expression-v1.md)**：实际核查V1.3运行、历史网页/当前正本版本差、提示词入口；将知识转译为具体对象、行动、成果与验收，[任务规格候选](../prompts/tasks/knowledge-utilization-audit-v1.md)及网页当前入口已补。历史25章与权限保持；独立模型/跨会话增益待验。
+
 **[手机端GPT深度认知与连续研究V1.0](../research/2026-11-27-mobile-chat-cognitive-continuity-v1.md)**（P1/P2/P4/P5/P6/P7/P8，K4–K9）：仅手机、不要求安装；多轮意图变化研究、有效状态与原件双层承接、原生Chat/Projects/Work候选。实际继承V23.6并执行83情景，找出原14候选下双停运全保障的结构性不可行；[接力候选](../prompts/mobile-chat-continuation-v0.1.md)未部署，跨聊天/独立模型增益待验。
 
 **现行工作空间选型条件（用户确认）**：当前以 ChatGPT 对话为主要研究与承接入口；优先验证已授权连接、跨会话调用/保存/回读与人机同源可视化。RAG（检索增强生成）是候选知识检索能力，非完整知识治理或自动学习。见[候选研究更新](../research/2026-11-27-shared-workspace-mature-candidate-selection.md)及[设计正本](../research/2026-11-27-human-ai-shared-knowledge-workspace-design.md)。不固定永久宿主。

@@ -1,5 +1,10 @@
 # AI-D 提示词候选与人机阅读入口
 
+## 当前手机端 GPT 工作入口（不覆盖历史候选）
+- [手机端认知接力候选](mobile-chat-continuation-v0.1.md)：当前状态与历史原件分开，未部署为全局规则。
+- [知识运用诊断任务规格](tasks/knowledge-utilization-audit-v1.md)：根据已有知识生成并实际执行的本轮专业任务，可复用候选，非总指令。
+- [实际审查与验证](../research/2026-11-27-knowledge-driven-task-expression-v1.md)；[阅读页当前入口](../docs/ai-d-prompt/index.html#current-entry)。最新任务以实际分支的AGENTS、知识索引及研究台账为准，历史版本保留。网页仅阅读、复制和导航，不自动连接GPT。
+
 - [V1.0 25章候选全文](master-v1.0.md)：归档状态，未生效；第24章首次启用仍需明确批准。
 - [阶段记录](stages-2026-11-27.md)：已有研究、归档、未来验证及版本保留。
 - [独立静态网页](../docs/ai-d-prompt/index.html)：将候选全文、章节导航、锚点和钩子、阶段状态汇集供人浏览。下载 HTML 后用浏览器打开，无需安装、联网或启动服务；外部资料链接需联网。未部署公网网站。
