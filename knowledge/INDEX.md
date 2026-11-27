@@ -1,5 +1,7 @@
 ## 2026-11-27｜现行知识回收与调用导航
 
+**[目标变更的实际锚点激活与知识互联复盘](../research/2026-11-27-anchor-activation-goal-change-replay.md)**：以39cab2f及最近自动研究为真实输入，回查历史决策、旧研究优先级、执行/验收与调度；复用EvoSkills问题—方法多对多关系与既有跨层追溯，找出未落实的知识调用证据、历史成品重复研究及未落库、执行预算候选与同名配置混淆；修复实际入口并保留反证及不变约束。P1/P2/P4/P6/P7/P8，不能替代独立运行验证。
+
 **[现行人机目标与成熟实践对齐](../research/2026-11-27-whole-goal-alignment-and-mature-practice.md)**（P1/P2/P6/P7/P8）：人的初始想法可不完整或错误，AI承担问题形成、专业探索和执行；优先成熟成品真实案例，减少人工规划、纠偏和阅读负担，保留必要学习与决定权。现行总目标见[README](../README.md)，按需调用[短句意图研究](../research/2026-11-07-short-intent-goal-context-delegation.md)及[专业正本](2026-11-27-professional-knowledge-and-leverage.md)。
 
 **[高阶提示词V1.1：主动缺陷发现与反馈验证](../research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md)**：关联问题表征、专业条件/反例、独立验证、反馈驱动与回归（P1/P2/P5/P7/P8）；原表复算及真实基准程序逻辑执行，独立模型增益待验。
