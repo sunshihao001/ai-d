@@ -1,6 +1,6 @@
 # ai-d｜帮助人理解问题、选择办法并把事情做成
 
-**当前定位（2026-11-28，审查候选）：** 研究并实际利用强模型已经具备、但个人尚未充分发现和使用的智能，扩大个人能够理解、判断、学习、创造和完成的事情，形成长期智能资本。AI-D 是服务这个目标的个人研究与知识资产，不预设需要建设独立智能体系统。量级效率跃迁仍是待证愿景。
+**当前定位（2026-11-28，审查候选）：** 研究并实际利用强模型已经具备、但个人尚未充分发现和使用的智能，扩大个人能够理解、判断、学习、创造和完成的事情，形成长期智能资本。AI-D 是服务这个目标的个人研究与知识资产，不预设需要建设独立智能体系统。量级效率跃迁（例如一天取得通常一个月的有效产出）仍是待证愿景。
 
 ## 真正研究什么
 [专业知识正本](knowledge/2026-11-27-professional-knowledge-and-leverage.md#强模型时代个人能力扩张与智能利用)集中承载现行认识与来源：
@@ -17,7 +17,7 @@
 ## 知识与项目入口
 - [轻量执行入口](AGENTS.md) · [自然语言任务入口](prompts/README.md)
 - [专业知识与智能杠杆](knowledge/2026-11-27-professional-knowledge-and-leverage.md) · [按问题检索](knowledge/INDEX.md) · [原始来源](knowledge/source-register-2026-11-05.md)
-- [外部智能吸收与一线实践](research/2026-11-16-external-intelligence-layer.md) · [当前进度](research/ACTIVE-RESEARCH-LEDGER.md) · [真实评测](evaluation/first-cross-domain-tests.md)
+- [外部智能吸收与一线实践](research/2026-11-16-external-intelligence-layer.md) · [当前进度](research/ACTIVE-RESEARCH-LEDGER.md) · [真实评测](evaluation/first-cross-domain-tests.md) · [历史个人能力与机会实证综合](research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md)
 - [工作台](docs/knowledge-workbench/index.html)是固定知识投影，不是GPT运行环境；[流程架构](planning/process-architecture.json)、[规划](planning/README.md)、[跨层锚点](knowledge/foundations/cross-layer-project-anchors.md)只在实际工程或特定认知问题中作为参考。
 - 历史目标、旧运行时/专家团队方案、信息揽客候选应用与原研究链接：[减负前完整README](https://github.com/sunshihao001/ai-d/blob/744920e1de84fb6a78f1285d1876a05ab177427c/README.md)；历史方法原件均保留，旧规则不自动生效。历史案例及结论的证据等级不因本次改写变化。
 
