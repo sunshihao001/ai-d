@@ -28,3 +28,18 @@
 
 ## 新文献后续怎么写入
 新增来源只有在与当前目标/知识/行动判断有明确关联时才登记。必须说明：支持的主张、研究方法/证据等级、局限、潜在反证、对哪个实际任务或决定产生影响。若只是技术流行名称，保留搜索线索，不提升为专业知识结论。
+
+## 2026-11-28｜强模型利用与一线实践
+本批检索并读取原文/公开讨论可见内容；来源按性质分开，非独立本地复现。访问受限的X全回复链仍待进一步核查，不把转述当已核原帖。
+| 来源 | 类型与可用内容 | 局限与归位 |
+|---|---|---|
+| [OpenAI: AI for self empowerment](https://openai.com/index/ai-for-self-empowerment/)；[能力积压](https://openai.com/index/how-countries-can-end-the-capability-overhang/) | 官方使用研究与观点；能力与利用的落差 | 使用行为不等于任务收益；K-GOAL |
+| [Anthropic: reflect with Claude](https://www.anthropic.com/news/reflect-with-claude) | 官方框架：委托、表达、鉴别、责任 | 能力发展框架，非本项目实验；K-PROMPT/K-LEARN |
+| [Ethan Mollick: The Overhang](https://www.oneusefulthing.org/p/the-overhang) | 学者实践观点；模型利用与人的优势 | 非因果效果；K-GOAL/K-UNKNOWN |
+| [Felix Rieseberg: How to be more ambitious](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) | 工程实践；目标高度、专业深度、速度与广度 | 作者经验，依赖现实工具条件；K-EXPERT/K-CAP |
+| [Geoffrey Litt: Understanding is the new bottleneck](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html)；[HN评论](https://news.ycombinator.com/item?id=49290299) | 原作者示范、社区异议；理解工具与低层技术债 | 评论为自述，图示不能替代实测；K-LEARN/K-POLLUTE |
+| [Vaccaro等，2024，人机组合元分析](https://www.nature.com/articles/s41562-024-02024-1) | 同行评审；人机组合与最佳单方比较 | 任务异质、非当前GPT专门测试；K-LEARN/K-EVAL |
+| [Microsoft: Lost in Conversation](https://www.microsoft.com/en-us/research/publication/llms-get-lost-in-multi-turn-conversation/) | 模拟多轮任务；早期假设与不可靠性 | 非当前产品实测；K-CONT/K-INTENT |
+| [Simon Willison: LLMs for code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/) | 原作者工作方法与代码示范 | 个人技术经验不可直接外推；K-CAP/K-EXPERT |
+| [Reddit：如何重访思想](https://www.reddit.com/r/ChatGPT/comments/1refk84/if_you_think_in_chatgpt_now_how_do_you_revisit/) | 讨论及回复；摘要重用、保存与重访区别 | 自述，压缩会丢失细节；K-CONT |
+| [Reddit：AI作为思考伙伴](https://www.reddit.com/r/AIAssisted/comments/1strqd6/using_ai_more_as_a_thinking_partner_than_a/) | 讨论及回复；反驳、共同思考、幻觉异议 | 自述，不能证明认知机制；K-LEARN/K-UNKNOWN |
