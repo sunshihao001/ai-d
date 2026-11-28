@@ -144,6 +144,31 @@
       "result": "旧任务退出默认，八问题定位，唯一接力，历史可回读；合并29记录逐对象相等",
       "status": "EXECUTED_GOVERNANCE",
       "limit": "没有认知效果对照；尚未修改其他项目及主干"
+    },
+    {
+      "id": "USE-08",
+      "task": "MEME单币持仓证据向执行集群调查的交接",
+      "knowledge": [
+        "K-GOAL",
+        "K-DATA",
+        "K-PROV",
+        "K-FACET",
+        "K-HOOK",
+        "K-CAP",
+        "K-EVAL",
+        "K-RECEIPT"
+      ],
+      "condition": "用户指定MEME验证V3；源端身份、分母及消费端错误/缺失处理",
+      "action": "读取Blix目标、安全、源函数与消费模块；核PR23同blob；隔离实际旧函数复现4缺陷，原位修源端及消费端，扩展既有测试；发布独立草案PR27",
+      "evidence": [
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/docs/project/mint-evidence-acceptance-20261128.json",
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/server/holders.js",
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/server/intelligence/mint-facts.mjs",
+        "https://github.com/sunshihao001/grok/pull/27"
+      ],
+      "result": "同一3000万枚构造持仓因5亿/10亿分母得6%/3%；错Mint拒绝、旧身份缺失及分母缺失标未知、空行隔离，11直接断言+9旧/新测试体通过，6文件远端回读一致。",
+      "status": "EXECUTED_OFFLINE_SOURCE_FUNCTION",
+      "limit": "同会话领域代码与构造夹具，不是完整Node CI、主网、独立模型或经济收益；源端自报不等于链上核实。PR27未合并。"
     }
   ],
   "v3Baseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35"

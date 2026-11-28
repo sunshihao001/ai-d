@@ -48,6 +48,7 @@
 触发：数据、证据与适用条件不确定。行动：固定实际任务、源版本、事实时点与获知时点；比较同路径异版本、后续补充、真实读取与未知。
 验收：可复核原始证据及反例，不把现在知道的内容当过去已知。
 - **K-DATA 源级数据语义与真实可用性**：截断不变不能发现上游已错误标时的输入；核实际可用时点；按需分离事件、实际可用、决策、处理和事后标签时间；边界：R36构造反例不证明供应商违规。[2026-11-27-r36-temporal-audit-recovery.md L5–16](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-r36-temporal-audit-recovery.md#L5-L16)
+- **K-DATA 与 K-PROV 的源端对象/口径协同（V3实际案例）**：当上游证据交给下游判断时，区分请求绑定、响应自报对象和独立核实；数量的分母、计量口径及假设必须从真正产生该数字的上游传递，不能由消费者补猜；未知、无效与真实零值分离。按需拒绝显式错绑，保留旧响应的未知状态，核受影响下游与反例。依据：[MEME源端与消费端实际隔离验收](https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/docs/project/mint-evidence-acceptance-20261128.json)（构造夹具、非现场真值；领域阈值不迁移为通用规则）。
 - **K-TIME 历史证据与知识可见时点**：历史快照存在、提交、实际发布与读取时间不同；按需固定历史证据版本与截止时间，区分事后解释；边界：快照缺失不能证明模型不知道；版本差异不是模型泄漏率。[2026-11-27-named-expert-full-domain-audit-v2.md L12–21](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L12-L21)
 - K-PROV：参见 P4 的唯一主入口；仅在本问题需要时交叉调用。
 - **K-EVAL 验证层级与证据门槛**：结构、来源、实际执行、独立模型对照和实际效果各有证据门槛；按需关键条件单独验收，保留正常与失败例；边界：模型自评或关键词命中不是独立真值。[2026-11-27-v23-3-verified-solutions-and-prompt-regression.md L8–10](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md#L8-L10)
