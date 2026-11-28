@@ -4,6 +4,8 @@
 - [当前台账与唯一接力](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
 - 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。按[组织规范](foundations/organization-protocol.md)治理。
 
+- [整体流程与承接关系](../planning/process-architecture.json)：按真实交付对象查流程及上下游，P1–P8仍是知识入口；不恢复历史R路线默认权威，不另设知识分类。
+
 ## 一、按“实际要解决什么问题”导航
 ### P1｜目标与问题形成
 触发：方向含糊、目标变更或错误前提。行动：区分确认目标与手段、错误前提及不变边界，从真实事件和专业机制重构问题；重大取舍留给用户。

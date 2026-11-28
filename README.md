@@ -4,6 +4,8 @@
 >
 > **长期子目标（用户补充）：持续优化提示词工程与专业问题表达能力。** 从普通自然语言恢复真实意图、专业问题表征、领域知识和判断条件，形成 AI 能理解、执行、验收的指令；在实际使用中修订。提示词工程是智能杠杆的一部分，不替代根本目标，不以长度、术语或模板数量衡量进步。
 
+> 当前整体流程入口：[端到端流程架构](planning/process-architecture.json) · [分层及运行说明](planning/README.md)；这是既有知识与行动的关系投影，不是新运行时。
+
 > 当前执行入口：[AGENTS.md](AGENTS.md)；[现行知识索引](knowledge/INDEX.md)；[专业知识与智能杠杆](knowledge/2026-11-27-professional-knowledge-and-leverage.md)；[跨层锚点与认知钩子](knowledge/foundations/cross-layer-project-anchors.md)；[研究台账与下一步](research/ACTIVE-RESEARCH-LEDGER.md)。历史有效成果按需激活、动态偏移/回归检查、增量回写，实际价值优先于报告数量。本次为知识治理修订，非运行时部署或独立模型增益证明。
 
 > **2026-11-15｜从思想进入系统工程：** [从“思想”到“复杂全域系统” V1.0](research/2026-11-15-from-idea-to-open-adaptive-system.md) 对最近几轮“普通人、不普通的 AI、不会就学习优秀知识、能力整合、Hermes Runtime”的认识做了进一步收束：**能力整合不是 ai-d 的全部，而是一个更大开放式系统中的核心机制之一。** 实际项目同时涉及人的目标、问题形成、知识学习、证据、能力发现/选择/组合、领域专业化、Runtime、执行、验证、经验学习、权限与人类授权。思想可以很简单——“我不懂，就让 AI 去学习并组织已有能力帮我把事情做成；做错就修正”——实现却是复杂的跨领域系统工程。当前不预设完整架构，优先让真实任务暴露缺口，再决定哪些需要程序化。**状态：DESIGN_SYNTHESIS / CURRENT HYPOTHESIS / NOT_IMPLEMENTED_AS_A_WHOLE。**
