@@ -1,8 +1,8 @@
 # AI-D｜当前知识调用入口（V4审查候选）
-以[根本目标](../README.md)和[现行权限与执行规则](../AGENTS.md)为准。这里是当前知识入口，不是研究日志，不自动加载历史。选择问题→取适用主张的具体原文→实际改变判断/操作/验收→按结果修订；简单问题直接做。优先成熟成品及真实价值，不把工具、UI、专家团队、提示词、任何领域项目变成目的。
+以[根本目标](../README.md)和[现行权限与执行规则](../AGENTS.md)为准。这里是当前知识入口，不是研究日志，不自动加载历史。仅当当前问题确需外部认知资源时查相关条目；无需逐项遍历、登记调用或先完成索引映射。自主选择来源和方法，允许不用任何条目。优先成熟成品及真实价值，不把工具、UI、专家团队、提示词、任何领域项目变成目的。
 - 当前固定整合基线：be25104d76a0f61135467746812ab93c0044dcca，88项资产/67份Markdown；[28个定向校勘主张和34关系](semantic-map-v4.json)。校勘不是全面外部真值。审查分支另有历史档案及执行产物，不混作已采用知识。
 - [当前台账与唯一接力](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
-- 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。按[组织规范](foundations/organization-protocol.md)治理。
+- 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。组织规范仅用于实际知识库维护，不是普通思考约束；各导航均为参考。
 
 - [整体流程与承接关系](../planning/process-architecture.json)：按真实交付对象查流程及上下游，P1–P8仍是知识入口；V2覆盖28张现行语义卡，七项遗漏按条件归位，领域知识不自动触发；交接绑定真实任务、对象、版本和证据；不恢复历史R路线默认权威，不另设知识分类。
 
