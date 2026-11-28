@@ -1,16 +1,16 @@
 # AI-D｜当前知识调用入口（V4审查候选）
 以[根本目标](../README.md)和[现行权限与执行规则](../AGENTS.md)为准。这里是当前知识入口，不是研究日志，不自动加载历史。仅当当前问题确需外部认知资源时查相关条目；无需逐项遍历、登记调用或先完成索引映射。自主选择来源和方法，允许不用任何条目。优先成熟成品及真实价值，不把工具、UI、专家团队、提示词、任何领域项目变成目的。
 - 当前固定整合基线：be25104d76a0f61135467746812ab93c0044dcca，88项资产/67份Markdown；[28个定向校勘主张和34关系](semantic-map-v4.json)。校勘不是全面外部真值。审查分支另有历史档案及执行产物，不混作已采用知识。
-- [当前台账与唯一接力](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
+- [当前台账（仅项目接力）](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
 - 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。组织规范仅用于实际知识库维护，不是普通思考约束；各导航均为参考。
 
-- [整体流程与承接关系](../planning/process-architecture.json)：按真实交付对象查流程及上下游，P1–P8仍是知识入口；V2覆盖28张现行语义卡，七项遗漏按条件归位，领域知识不自动触发；交接绑定真实任务、对象、版本和证据；不恢复历史R路线默认权威，不另设知识分类。
+- [整体流程与承接关系](../planning/process-architecture.json)：按真实交付对象查流程及上下游，P1–P8仍是知识入口；V2固定快照覆盖28张语义卡，七项遗漏按条件归位，领域知识不自动触发；交接绑定真实任务、对象、版本和证据；不恢复历史R路线默认权威，不另设知识分类。
 
 ## 一、按“实际要解决什么问题”导航
 ### P1｜目标与问题形成
 触发：方向含糊、目标变更或错误前提。行动：区分确认目标与手段、错误前提及不变边界，从真实事件和专业机制重构问题；重大取舍留给用户。
 验收：可检验目标、问题对象、保持项、必要条件、具体成果。
-- **K-GOAL 根本目标与智能资本**：效率倍率是待验证目标；实际专业与现实能力优先；按需真实价值选任务，不以系统建设为目的；边界：不能用文件数量或UI证明价值。[README.md L1–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/README.md#L1-L5)
+- **K-GOAL 根本目标与智能资本**：缩小能力利用落差，扩大人实际能理解、判断、创造和完成的事情；优先强模型原生能力。效率倍率待验，不以系统或文件数量证明增益。[现行专业知识](./2026-11-27-professional-knowledge-and-leverage.md#强模型时代个人能力扩张与智能利用) · [目标](../README.md)。
 - **K-INTENT 意图形成与专业问题表征**：区分意图、事实、适用性及授权不确定；按机制表征问题；按需形成对象、关键条件、竞争解释与验收；边界：人类物理专家研究不能证明LLM扮演专家有效。[2026-11-07-short-intent-goal-context-delegation.md L17–34](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-short-intent-goal-context-delegation.md#L17-L34)
 - **K-AUTH 授权与主动性边界**：常规专业决定由AI承担；重大价值、资源、不可逆行动仍需人授权；按需核实当前权限；边界：历史计划不构成当前授权。[README.md L3–3](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/README.md#L3-L3)
 - **K-REAL 现实价值及信息价值链**：信息揽客是具体入口，价值取决于信息是否改变判断、机会或行动，而不是收集量；按需从实际目标和约束筛选可行动事项，核真实成果、成本及价值获取；边界：候选应用不等于整个AI-D；没有现场或收入证据，不宣称实际收益。[2026-11-23-information-scouting-value-chain-direction.md L25–44](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-23-information-scouting-value-chain-direction.md#L25-L44)
@@ -18,7 +18,7 @@
 ### P2｜研究与调查
 触发：专业问题、未知机制或真实领域成果。行动：查可改变当前判断的原始证据、竞争机制、反例和已有成果；按实际资源选择有价值的纵深研究。
 验收：新增解释、证据、反例或真实成果；不凭时长判定深度。
-- **K-EXPERT 具名专家方法而非角色**：具名专家是专业方法来源，按问题动态选取；按需调用具体问题表征、双时间、真实错误分析等方法；边界：多人名或同模型多个视角不等于独立验证。[2026-11-27-named-expert-full-domain-audit-v2.md L3–9](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L3-L9)
+- **K-EXPERT 具名专家方法而非角色**：按真实专业问题借用专家采用的工具、原始数据、专业方法、真实成品和判断标准；深度不等于角色或流程数量。多人名及同模型多视角不等于独立验证。[现行专业知识](./2026-11-27-professional-knowledge-and-leverage.md#强模型时代个人能力扩张与智能利用) · [历史专家来源](../research/2026-11-27-named-expert-full-domain-audit-v2.md)。
 - **K-UNKNOWN 未知发现与机制桥接**：竞争解释、隐藏变量、机制结构与反证有助于发现关键未知；相似词不是机制相同；按需选择最可能改变决策的未知，明确映射条件，发现候选与确认分离；边界：不是每次七步；诊断示范不是运行实证，类比可能失效。[2026-11-07-problem-driven-unknown-discovery.md L34–46](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-problem-driven-unknown-discovery.md#L34-L46)
 - **K-CAP 外部成熟能力吸收与组合**：区分外部概念、方法、模式、可调用能力和证据；按对象、许可、条件及真实验收复用成熟劳动；按需先还原成品工作链与责任，选择直接借用或组合，按边界验证；边界：流行度、作者自述、读取技能均不等于已安装或可执行；不能以工具路线覆盖目标。[2026-11-16-external-intelligence-layer.md L17–40](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-16-external-intelligence-layer.md#L17-L40)
 - **K-TRIANG 理论互证与阶段性认可**：理论互证允许有条件初步认可，不等于实际部署或因果成立；按需明确阶段结论、反例及实测需要；边界：关键高后果不确定不能用理论自洽抵消。[2026-11-07-theoretical-triangulation-provisional-acceptance.md L10–21](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-theoretical-triangulation-provisional-acceptance.md#L10-L21)
@@ -39,7 +39,7 @@
 - **K-FACET 的颗粒度调用（关联P2）**：研究停留宏观、浓缩丢失条件或索引只到文档时，向上查目标/原理、向下查机制/具体操作与验收、横向查依赖；依据决策差异决定拆分或归并。正本：[组织规范3B](foundations/organization-protocol.md#3b-研究与知识颗粒度控制)。这是恢复的条件性方法，不新增独立知识编号；尚无独立模型增益验证。
 - **K-PROV 主张与证据独立**：来源、具体主张支持、适用性和实际验证须分开；按需核原文、版本、支持或反证关系；边界：同源转述不能算独立证据。[organization-protocol.md L13–34](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L13-L34)
 - **主张变更、失败经验与指令准入（K-PROV/K-HOOK/K-DEFECT）**：新证据或纠偏触发反向复查；无影响主张不改，证据变化必须裁决；区分实现阻塞与根本失败；按真实错误维护常驻指令。[正本4A](foundations/organization-protocol.md#4a-知识变更协调与失败经验复用) · [原始项目机制与证据](../research/2026-11-16-external-intelligence-layer.md#13-成熟项目原始机制审查与实际吸收)。固定V4投影仍为历史快照，现行增量以本索引和正本为准。
-- **K-HOOK 的实际提示词调用**：总锚点由README保持，当前子锚点由最新用户意图及台账确定；复杂任务按[提示词第0/0A节](../prompts/professional-task-modules.md)连接情境、具体知识对象、认知部件、操作和验收，动态双向追溯与回归；不另建知识本体，不把模块选择当作已调用。
+- **K-HOOK 的实际提示词调用**：只有当真实知识遗漏、项目变更、依赖断裂或复杂产物交接需要诊断时，参考[专业方法0/0A](../prompts/professional-task-modules.md)与跨层锚点；不是复杂任务启动门槛，普通探索允许完全不用。
 - **K-HOOK 认知钩子与跨层追溯**：沿实际依赖分析变更直接影响、保持项及反向验收；按需复查受影响原件和判断，保留不变项；边界：词面相近不构成强制技术依赖。[cross-layer-project-anchors.md L77–93](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/cross-layer-project-anchors.md#L77-L93)
 - **K-CONT 跨会话状态与知识保全**：长期目标/授权、阶段有效状态、原始资产应分层保存；按实际HEAD恢复并回读；按需从短入口查最新原件与状态，重大变化保留旧版本、实际证据、未完事项及下步；边界：保存和同会话恢复不证明独立新会话可接续；缺权限/源则标未知。[2026-11-27-mobile-chat-cognitive-continuity-v1.md L20–22](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-mobile-chat-cognitive-continuity-v1.md#L20-L22)
 - **K-UI 同源人机工作台**：工作台是同源认知投影，不是GPT执行环境；按需统一八问题路由及语义主张入口，标明快照；边界：复制文字不等于模型运行。[2026-11-27-named-expert-full-domain-audit-v2.md L22–25](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L22-L25)
@@ -58,10 +58,10 @@
 验收：实际产物、工具结果或真实阻塞，不只给下轮计划。
 - **K-RUNTIME 运行环境与认知责任分离**：认知方法、运行时、行业任务是不同职责；文档和动态指令不保证运行能力；按需核当前宿主真实权限、工具、输入输出及日志；优先成熟原生能力；边界：Hermes非唯一宿主；定时触发不等于持续思考，旧版本不能证明今日可用。[workflow-components-and-boundaries.md L4–31](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/workflow-components-and-boundaries.md#L4-L31)
 - **提示词实际调用**：复杂任务按[专业提示词模块](../prompts/professional-task-modules.md)选择既有P1–P8主模块及必要辅助模块，包含适用/不适用、专业动作、原件、否决门槛及组合示范；[外部机制来源](../research/2026-11-16-external-intelligence-layer.md#14-专业提示词分类组合与反馈优化2026-11-28)。不新增知识分类或默认全量提示词；独立增益待验。
-- **K-PROMPT 提示词与知识承接的关系**：提示词是知识向任务规格转换的候选接口；按需条件选择原件、规格、实际产物及验收；边界：更多规则或更长提示词不保证增益。[2026-11-27-knowledge-driven-task-expression-v1.md L4–7](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-knowledge-driven-task-expression-v1.md#L4-L7)
+- **K-PROMPT 提示词与知识承接的关系**：智能驾驭重在意图表达、委托选择、成果鉴别与责任；专业提示词按模型和任务需要使用，不管理每一步思考。旧复杂指令仅作可选方法。[现行专业知识](./2026-11-27-professional-knowledge-and-leverage.md#强模型时代个人能力扩张与智能利用) · [历史问题表达](../research/2026-11-27-knowledge-driven-task-expression-v1.md)。
 - K-CAP：参见 P2 的唯一主入口；仅在本问题需要时交叉调用。
-- **K-LEARN 人机认知增强与真实学习**：AI辅助任务表现、独立技能及协作净效益不能相互替代；长期现实收益另验；按需代办、协作、教学按当前目标区分；评价辅助结果与移除AI后的迁移；边界：短期数学实验不证明普遍能力退化；人机组合并非必然胜过最强单方。[2026-11-07-human-ai-delegation-performance-learning.md L24–39](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-human-ai-delegation-performance-learning.md#L24-L39)
-- **K-RECEIPT 知识实际使用的行动收据**：实际使用必须改变对象、判断、行动或验收并留下证据；按需记录情境、实际动作、产物与限制；边界：方向正确无新增交付不能算专业劳动完成。[AGENTS.md L5–9](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/AGENTS.md#L5-L9) [现行专业模块0/0A及1A](../prompts/professional-task-modules.md)；[历史执行条款15章](https://github.com/sunshihao001/ai-d/blob/9755c6f769f7ac8b64ada2359817045ec1e2e845/prompts/master-v1.0.md#L458-L485)、[知识利用19章](https://github.com/sunshihao001/ai-d/blob/9755c6f769f7ac8b64ada2359817045ec1e2e845/prompts/master-v1.0.md#L570-L594)为原方法，不恢复旧总指令默认权威。
+- **K-LEARN 人机认知增强与真实学习**：辅助产出、个人独立理解/胜任、现实收益分别验证；人机组合未必优于最佳单方。需要学习才安排独立迁移检验；注意理解瓶颈与认知债务。[现行专业知识](./2026-11-27-professional-knowledge-and-leverage.md#强模型时代个人能力扩张与智能利用) · [历史研究](../research/2026-11-07-human-ai-delegation-performance-learning.md)。
+- **K-RECEIPT 知识实际使用证据**：只有实际改变判断、行动、理解或成果才可称利用；重要专业成果按需要保留可核证据和限制，不要求每轮对话生成行动收据。参见[执行入口](../AGENTS.md)及[既有专业案例](../research/2026-11-27-knowledge-driven-task-expression-v1.md)。
 
 ### P7｜验收、修订与经验
 触发：成果验收、回归或真实增益。行动：从真实失败提取规格缺陷，检查评价器，保留旧版本及留出证据；能独立对照时比较相同输入与资源。
