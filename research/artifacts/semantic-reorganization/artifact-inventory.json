@@ -1,0 +1,173 @@
+{
+  "ref": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "scope": "Read text and identify type/schema; no assertion of rerunning scripts or browser.",
+  "docs": [
+    {
+      "path": "docs/ai-d-prompt/index.html",
+      "sha": "207c7d2ea79ecf870a89f1a1a05b70a47cae7fa9",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "title": "AI-D｜认知承接与提示词档案 V1.0",
+        "bytes": 141983
+      }
+    },
+    {
+      "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+      "sha": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "keys": [
+          "repository",
+          "commit",
+          "tree",
+          "scope",
+          "files"
+        ],
+        "arrayLength": null
+      }
+    },
+    {
+      "path": "evaluation/workspace-trial/verify_snapshot.py",
+      "sha": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "#!/usr/bin/env python3\n\"\"\"Read-only check of an exported AI-D snapshot against a fixed Git blob manifest.\"\"\"\nimport argparse, hashlib, json, os, re\nfrom pathlib import Path\n\ndef check(root, manifest):\n    root = Path(root).resolve(strict=True)\n    if not root.is_dir():\n        raise ValueError(\"root must be a directory\")\n    result = {\"expected\": len(manifest[\"files\"]), \"matched\": 0, \"missing\": [], \"changed\": [], \"unsafe\": [], \"errors\": []}\n    seen = set()\n    for entry in manifest[\"files\"]:\n        rel = entry[\"path\"]\n        parts = rel.split(\"/\")\n        if (not rel or rel in seen or any(p in (\"\", \".\", \"..\") for p in parts)\n                or \"\\\\\" in rel or \":\" in rel or not re.fullmatch(r\"[0-9a-f]{40}\", entry[\"sha\"])):\n            result[\"unsafe\"].append(rel)\n            continue\n        seen.add(rel)\n        p = root\n        try:\n            for component in parts:\n                p = p / component\n                if p.is_symlink():\n                    raise ValueError(\"symlink in expected path\")\n            if not p.exists():\n                result[\"missing\"].append(rel)\n                continue\n            if not p.is_file() or not p.resolve().is_relative_to(root):\n        "
+      }
+    },
+    {
+      "path": "research/artifacts/knowledge-driven-expression/audit.json",
+      "sha": "d3ef8154a6837cc9b74950679aa643af0b4a8c66",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "keys": [
+          "baseline",
+          "archive_source",
+          "archive_tree_files",
+          "current_tree_files",
+          "archive_fixed_links",
+          "changed_link_targets",
+          "original_chapters",
+          "original_embedded_text_equal",
+          "prompt_readme_mobile_link_before",
+          "archive_mobile_link_before",
+          "original_current_source_distinction",
+          "automation",
+          "local_link_audit",
+          "bootstrap",
+          "static_checks"
+        ],
+        "arrayLength": null
+      }
+    },
+    {
+      "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+      "sha": "159926f99951258d76109a170a78f48f43f4ab75",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "keys": [
+          "base",
+          "treeCount",
+          "oldBootstrap",
+          "newBootstrap",
+          "sourcePaths",
+          "initialTest",
+          "revisedTests",
+          "scope",
+          "pageChecks"
+        ],
+        "arrayLength": null
+      }
+    },
+    {
+      "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+      "sha": "1d323f6a1c64df18cdee43cc80336e814743cb66",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "// Reusable independent max-flow calculation; inherited V23.6 input and constraints.\nfunction analyze(csv){\nconst D=csv.trim().split(\"\\n\").slice(1).map(x=>{const [id,name,pop,lat,lon]=x.split(\",\");return {id,name,pop:+pop,lat:+lat,lon:+lon}});\nconst C=D.filter(x=>\"06 53 04 08 48 29 17 39 47 13 37 12 42 34\".split(\" \").includes(x.id));\nconst pop=D.reduce((s,x)=>s+x.pop,0),dem=D.map(d=>d.pop/pop*1e6),rad=x=>x*Math.PI/180;\nconst distance=(a,b)=>1.2*2*3958.7561*Math.asin(Math.sqrt(Math.sin(rad(b.lat-a.lat)/2)**2+Math.cos(rad(a.lat))*Math.cos(rad(b.lat))*Math.sin(rad(b.lon-a.lon)/2)**2));\nconst M=C.map(c=>D.map(d=>distance(c,d)));\nconst base=[\"California\",\"Colorado\",\"Florida\",\"Georgia\",\"Illinois\",\"New Jersey\",\"Texas\",\"Washington\"],rob=[...base,\"Ohio\"];\nconst EPS=1e-6;\nfunction solve(open,failed){const n=2+C.length+D.length,S=n-2,T=n-1,G=Array.from({length:n},()=>[]);function edge(a,b,cap){const f={to:b,cap,rev:G[b].length},rev={to:a,cap:0,rev:G[a].length};G[a].push(f);G[b].push(rev);return f}for(let i=0;i<C.length;i++){if(!open.includes(C[i].name)||failed.includes(C[i].name))continue;edge(S,i,300000);for(let j=0;j<D.length;j++)if(M[i][j]<=1100)edge(i,C.length+j,dem[j]);}const sinkEdges=D"
+      }
+    },
+    {
+      "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+      "sha": "0ecffb49d023db6da5721e8074b13e803615b24e",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "keys": [
+          "source_commit",
+          "source_path",
+          "source_blob",
+          "scope",
+          "population",
+          "zones",
+          "candidates",
+          "base",
+          "resilient",
+          "structural"
+        ],
+        "arrayLength": null
+      }
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+      "sha": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "\"\"\"AI-D R36: offline diagnostic, not a trading strategy or full backtest.\nRequires pandas, numpy, plotly. Run: python aid_r36_temporal_audit.py\nMethod adapted from Freqtrade's full-vs-truncated-history comparison; no Freqtrade code copied.\nData: plotly.express.data.stocks(), 2018–2019 normalized stock closing series.\n\"\"\"\nimport time\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\n\ndef prefix_check(fn, x):\n    full = fn(x)\n    differences = 0\n    for n in range(1, len(x)+1):\n        prefix = fn(x.iloc[:n])\n        differences += int((~np.isclose(full.iloc[n-1], prefix.iloc[-1], equal_nan=True, rtol=1e-9, atol=1e-12)).sum())\n    return differences, x.size\n\ndef main():\n    t0 = time.perf_counter()\n    df = px.data.stocks()\n    x = df.drop(columns='date').astype(float)\n    cases = {\n        'trailing_4_mean': (lambda p: p.rolling(4).mean(), False),\n        'past_return': (lambda p: p.pct_change(), False),\n        'next_return': (lambda p: p.shift(-1)/p-1, True),\n        'centered_5_mean': (lambda p: p.rolling(5, center=True).mean(), True),\n        'whole_sample_mean': (lambda p: p/p.mean(), True),\n    }\n    print(f'Data: {len(x)} rows x {x.shape[1]} assets; {df.date."
+      }
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+      "sha": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "Data: 105 rows x 6 assets; 2018-01-01 to 2019-12-30\ntrailing_4_mean: 0/630 changed; NO_CHANGE\npast_return: 0/630 changed; NO_CHANGE\nnext_return: 624/630 changed; DETECTED\ncentered_5_mean: 606/630 changed; DETECTED\nwhole_sample_mean: 624/630 changed; DETECTED\nupstream_mislabeled_next_close: 0/624 changed; availability violations=624/624\nAll 6 designed assertions passed. Not a blind model comparison.\nLocal compute elapsed (including data load): 0.264 s\n"
+      }
+    },
+    {
+      "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+      "sha": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "Data: 105 rows x 6 assets; 2018-01-01 to 2019-12-30\ntrailing_4_mean: 0/630 changed; NO_CHANGE\npast_return: 0/630 changed; NO_CHANGE\nnext_return: 624/630 changed; DETECTED\ncentered_5_mean: 606/630 changed; DETECTED\nwhole_sample_mean: 624/630 changed; DETECTED\nupstream_mislabeled_next_close: 0/624 changed; availability violations=624/624\nAll 6 designed assertions passed. Not a blind model comparison.\nLocal compute elapsed (including data load): 0.381 s\n"
+      }
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/population.csv",
+      "sha": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "header": "STATEFP,STNAME,POPULATION,LATITUDE,LONGITUDE",
+        "lines": 49
+      }
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+      "sha": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "header": "design,failed,unmet_tons,annualized_transport_musd",
+        "lines": 19
+      }
+    },
+    {
+      "path": "research/artifacts/v23.6-network-resilience/solve.py",
+      "sha": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+      "blob_match": true,
+      "status": "text_retrieved",
+      "details": {
+        "excerpt": "from pathlib import Path\nimport numpy as np, pandas as pd, scipy, json, time\nfrom scipy.optimize import milp, linprog, Bounds, LinearConstraint\nfrom scipy.sparse import coo_matrix\nP=Path(__file__).parent\nD=pd.read_csv(P/'population.csv',dtype={'STATEFP':str}); C=D[D.STATEFP.isin('06 53 04 08 48 29 17 39 47 13 37 12 42 34'.split())].reset_index(drop=True)\nn,m=len(D),len(C); names=C.STNAME.tolist(); zones=D.STNAME.tolist(); demand=1000*D.POPULATION.to_numpy()/D.POPULATION.sum() # thousand tons/year\nlat=np.radians(D.LATITUDE.to_numpy()); lon=np.radians(D.LONGITUDE.to_numpy()); a=np.radians(C.LATITUDE.to_numpy())[:,None]; b=np.radians(C.LONGITUDE.to_numpy())[:,None]\ndist=1.2*2*3958.7561*np.arcsin(np.sqrt(np.sin((lat-a)/2)**2+np.cos(a)*np.cos(lat)*np.sin((lon-b)/2)**2))\n# units: kt/year, millions of USD/year; x can be split among facilities\nrate=.1654; cap=300.; fixed=3.; cutoff=1100.; unit=dist*rate/1000\n\ndef design(robust=False):\n    scenarios=[-1]+(list(range(m)) if robust else [])\n    # 14 binary location choices plus one recourse flow per allowed arc/scenario\n    ix={}; c=[fixed]*m; upper=[1.]*m\n    for s in scenarios:\n      for i in range(m):\n        for j in range(n):\n          i"
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "baseline": "34a8b5c46cda31f3017eef201cc9d96170173b98",
+  "inventory": 201,
+  "checks": [
+    {
+      "name": "actual map interfaces",
+      "pass": true
+    },
+    {
+      "name": "missing handoff",
+      "pass": true
+    },
+    {
+      "name": "missing canonical source",
+      "pass": true
+    },
+    {
+      "name": "missing knowledge object",
+      "pass": true
+    },
+    {
+      "name": "broken order",
+      "pass": true
+    },
+    {
+      "name": "missing acceptance",
+      "pass": true
+    },
+    {
+      "name": "wrong completion",
+      "pass": true
+    },
+    {
+      "name": "duplicate node",
+      "pass": true
+    },
+    {
+      "name": "historical real input replay count",
+      "pass": true
+    },
+    {
+      "name": "historical real input replay signals",
+      "pass": true
+    }
+  ],
+  "replay": {
+    "n": 1500,
+    "d": 347,
+    "center": 0.23133333333333334,
+    "signals": [
+      15,
+      23
+    ],
+    "scope": "published worked example; no causal, specification, field or independent model claim"
+  },
+  "errors": [],
+  "projectionChecks": [
+    {
+      "name": "原生成器重建原HTML逐字符一致",
+      "pass": true
+    },
+    {
+      "name": "新版重复生成一致",
+      "pass": true
+    },
+    {
+      "name": "现有全部章节保留",
+      "pass": true
+    },
+    {
+      "name": "12节点四路径实际显示",
+      "pass": true
+    },
+    {
+      "name": "不改固定语义/历史原件及原始程序",
+      "pass": true
+    },
+    {
+      "name": "旧复制入口和证据卡保留",
+      "pass": true
+    },
+    {
+      "name": "唯一默认接力保留且更新子目标",
+      "pass": true
+    }
+  ],
+  "flowReceipts": [
+    {
+      "flow": "F3",
+      "scope": "本轮真实仓库操作（非独立模型）",
+      "goal": "保留目标，解决已有分类与真实产物承接缺口",
+      "order": "固定PR4实际HEAD及树，查既有入口",
+      "evidence": [
+        "AGENTS.md",
+        "knowledge/INDEX.md",
+        "planning/README.md",
+        "prompts/professional-task-modules.md",
+        "research/ACTIVE-RESEARCH-LEDGER.md",
+        "docs/knowledge-workbench/generate-workbench.cjs"
+      ],
+      "knowledge": [
+        "P1/P4/P5/P6/P7/P8：保持目标、原件、退役R、条件关系与验证证据"
+      ],
+      "plan": "一个关系正本+已有入口+原生成器；否决新知识目录/新运行时/恢复R默认",
+      "output": [
+        "planning/process-architecture.json",
+        "evaluation/process-architecture-contract.cjs",
+        "planning/README.md",
+        "AGENTS.md",
+        "README.md",
+        "knowledge/INDEX.md",
+        "prompts/professional-task-modules.md",
+        "research/ACTIVE-RESEARCH-LEDGER.md",
+        "docs/knowledge-workbench/design-v4.json",
+        "docs/knowledge-workbench/generate-workbench.cjs",
+        "docs/knowledge-workbench/index.html"
+      ],
+      "acceptance": "以上实跑接口、复算及生成器检查；远端提交和读回需在实际返回后另验",
+      "feedback": "下一次选陌生真实任务验证产物接力，不再做分类研究"
+    },
+    {
+      "flow": "F1",
+      "scope": "历史公开制造质量案例复算，不是新的现场任务",
+      "input": "research/artifacts/manufacturing-quality-v3/input.json",
+      "output": {
+        "n": 1500,
+        "d": 347,
+        "center": 0.23133333333333334,
+        "signals": [
+          15,
+          23
+        ],
+        "scope": "published worked example; no causal, specification, field or independent model claim"
+      },
+      "acceptance": "与历史固定结果计数、信号一致；不证明规格合格、根因或个人胜任"
+    }
+  ],
+  "limits": [
+    "未逐篇校勘201原件或全分支重审",
+    "未运行真实浏览器、独立模型/会话或现场业务",
+    "无外部增益证据",
+    "不改main、旧历史和调度"
+  ]
+}

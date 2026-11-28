@@ -1,0 +1,168 @@
+{
+  "sourceBaseline": "be25104d76a0f61135467746812ab93c0044dcca",
+  "scope": "actual JS guard checks; declared assessment values are manually constructed regression inputs, not independent semantic labels. No automatic fact promotion.",
+  "pinnedFileChecks": 30,
+  "reviewPassages": 50,
+  "allOriginalChecks": true,
+  "historicalPassage": {
+    "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+    "old": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+    "current": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+    "range": [
+      28,
+      42
+    ],
+    "equal": true
+  },
+  "structural": [
+    {
+      "name": "clean",
+      "expected": true,
+      "actual": true,
+      "errors": [],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "card claim differs from review",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:review_content_mismatch"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "empty scope",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:missing_review_evidence_or_scope"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "unproven review promotion",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:unknown_review_state"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "reviewed without evidence",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:missing_review_evidence_or_scope"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "wrong version",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:historical_evidence_not_current",
+        "K-GOAL:evidence_pin_or_range",
+        "K-GOAL:review_passage_not_visible"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "wrong evidence blob",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:evidence_pin_or_range",
+        "K-GOAL:review_passage_not_visible"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "out of bounds",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:evidence_pin_or_range",
+        "K-GOAL:review_passage_not_visible"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "inverted range",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:evidence_pin_or_range",
+        "K-GOAL:review_passage_not_visible"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "missing visible locator",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:review_passage_not_visible"
+      ],
+      "oldReferencePassed": true
+    },
+    {
+      "name": "pending with evidence",
+      "expected": false,
+      "actual": false,
+      "errors": [
+        "K-GOAL:pending_asserts_reviewed_evidence"
+      ],
+      "oldReferencePassed": true
+    }
+  ],
+  "applicability": [
+    {
+      "name": "scoped support",
+      "expected": "CANDIDATE_FOR_SCOPED_USE_NOT_VERIFIED_TRUTH",
+      "actual": "CANDIDATE_FOR_SCOPED_USE_NOT_VERIFIED_TRUTH"
+    },
+    {
+      "name": "opposing evidence",
+      "expected": "HOLD_CONTRADICTION",
+      "actual": "HOLD_CONTRADICTION"
+    },
+    {
+      "name": "insufficient evidence",
+      "expected": "HOLD_INSUFFICIENT",
+      "actual": "HOLD_INSUFFICIENT"
+    },
+    {
+      "name": "background only",
+      "expected": "HOLD_INSUFFICIENT",
+      "actual": "HOLD_INSUFFICIENT"
+    },
+    {
+      "name": "scope mismatch",
+      "expected": "HOLD_SCOPE_VERSION_TIME",
+      "actual": "HOLD_SCOPE_VERSION_TIME"
+    },
+    {
+      "name": "historical stale",
+      "expected": "HOLD_SCOPE_VERSION_TIME",
+      "actual": "HOLD_SCOPE_VERSION_TIME"
+    },
+    {
+      "name": "unknown actual availability",
+      "expected": "HOLD_SCOPE_VERSION_TIME",
+      "actual": "HOLD_SCOPE_VERSION_TIME"
+    },
+    {
+      "name": "unattributed judgment",
+      "expected": "HOLD_NO_ASSESSMENT_PROVENANCE",
+      "actual": "HOLD_NO_ASSESSMENT_PROVENANCE"
+    },
+    {
+      "name": "similarity only",
+      "expected": "HOLD_INSUFFICIENT",
+      "actual": "HOLD_INSUFFICIENT"
+    }
+  ]
+}

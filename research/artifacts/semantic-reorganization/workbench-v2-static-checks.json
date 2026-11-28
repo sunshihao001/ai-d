@@ -1,0 +1,18 @@
+{
+  "baseline": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "sourceCommit": "b72d48640aab9bfd8d9b5c4a4b86551a87d97a14",
+  "tests": {
+    "cards": true,
+    "assets": true,
+    "uniqueIds": true,
+    "allAnchorTargets": true,
+    "elevenViews": true,
+    "receiptData": true,
+    "embeddedData": true,
+    "deterministicRender": true,
+    "noRemoteScripts": true,
+    "escapeCheck": true
+  },
+  "htmlChars": 342590,
+  "limits": "Actual deterministic generation and static DOM identifier/data checks in JS; no real browser, clipboard, mobile, keyboard or assistive technology run. Generator CLI not separately executed."
+}

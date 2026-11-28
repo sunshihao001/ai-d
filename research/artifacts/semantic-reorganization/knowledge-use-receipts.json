@@ -1,0 +1,175 @@
+{
+  "baseline": "7f536867a19669be4675aa946353d8ef479b43a5",
+  "reviewParent": "41d146435e17d68069a6e88961ce4105ad072e31",
+  "scope": "实际工作记录；单AI选择性方法调用，未启动独立专家/模型组；不把用到方法的事后说明当成独立因果证明。",
+  "receipts": [
+    {
+      "id": "USE-01",
+      "task": "合并并行知识更新",
+      "knowledge": [
+        "K-CONT",
+        "K-HOOK",
+        "K-PROV",
+        "K-DECISION"
+      ],
+      "condition": "最新整合分支领先1提交，PR #4审查分支分叉；两份索引均发生编辑",
+      "action": "核对父提交与树；以最新整合树为基底保留六个审查新增文件，合并两份导航而非覆盖；建立双父提交 e13322d",
+      "evidence": [
+        "https://github.com/sunshihao001/ai-d/commit/e13322d464dd538642686b5a210da8fbfeccd858",
+        "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json"
+      ],
+      "result": "7处新增/变更全部有处置；72项最新资产无遗漏；仅两导航blob需人工语义核对",
+      "status": "EXECUTED_GIT_VERIFIED",
+      "limit": "不自动合并PR至整合分支；新一轮HEAD可能再变化"
+    },
+    {
+      "id": "USE-02",
+      "task": "知识语义映射与失效复查",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-POLLUTE",
+        "K-EVAL",
+        "K-DECISION"
+      ],
+      "condition": "全目录文件链接无法表达主张和行动，遗漏一份历史决策",
+      "action": "四批正文提取、非Markdown原件获取、27主张候选、32类型边；首次检查发现漏映射旧决策，增补历史权威撤销节点，保留旧文件；注入版本变更/缺源/悬空边/重复ID/遗漏历史等反例",
+      "evidence": [
+        "knowledge/semantic-map-v2.json",
+        "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json"
+      ],
+      "result": "59份Markdown均有主张候选关联；6个验证用例符合预期",
+      "status": "EXECUTED_REFERENCE_CHECK",
+      "limit": "不是全部846节逐条主张或外部来源真值验证；关系是可纠正的综合判断"
+    },
+    {
+      "id": "USE-03",
+      "task": "双停运配送网络的最小服务边界",
+      "knowledge": [
+        "K-GOAL",
+        "K-INTENT",
+        "K-EXPERT",
+        "K-CAP",
+        "K-DATA",
+        "K-RESILIENCE",
+        "K-EVAL"
+      ],
+      "condition": "此前模型证明原1100英里即使增加原候选也无法全保障；本次改变服务距离，保持原数据、需求、容量及候选集",
+      "action": "执行前提交任务规格6bda317；使用第三近点几何必要下界及最大流逐对停运求解；验证前一有限阈值失败与最小阈值可行、容量距离守恒",
+      "evidence": [
+        "prompts/tasks/dual-outage-service-boundary-v1.md",
+        "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+        "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json"
+      ],
+      "result": "1100英里90/91；1169.888022英里90/91；1178.798919英里91/91；7项断言通过；第三近中心的必要下界达到并经最大流确认充分",
+      "status": "EXECUTED_SCENARIO_SOLVER",
+      "limit": "自选情景工作、14点全部开放、无成本或停运概率优化、未作真实企业验证、MODEL_AB=NOT_RUN"
+    },
+    {
+      "id": "USE-04",
+      "task": "主张校勘与时间证据",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-HOOK",
+        "K-TIME",
+        "K-EVAL"
+      ],
+      "condition": "72→79并行增量及候选边类型不精确",
+      "action": "读取11处变更、定向核19主张、修正7条边类型及3条方向；真实比较62→79",
+      "evidence": [
+        "knowledge/semantic-map-v3.json",
+        "research/artifacts/semantic-reorganization/v3-claim-review.json"
+      ],
+      "result": "19/28定向校勘，9候选；57同blob、5异blob、17新增",
+      "status": "EXECUTED_SCOPED_SOURCE_REVIEW",
+      "limit": "未复核全部外链、主张或关系现实效应；非模型实际读取"
+    },
+    {
+      "id": "USE-05",
+      "task": "专业软件质量工程：证据契约",
+      "knowledge": [
+        "K-INTENT",
+        "K-DEFECT",
+        "K-EVAL",
+        "K-PROV",
+        "K-RECEIPT"
+      ],
+      "condition": "旧引用检查不验空主张、无审查证据或错误升级",
+      "action": "事前冻结规格，运行成熟jsonschema 4.26.0及独立标准测试；保留旧引用检查",
+      "evidence": [
+        "prompts/tasks/evidence-contract-validation-v1.md",
+        "research/artifacts/semantic-reorganization/v3-contract/result.json",
+        "research/artifacts/semantic-reorganization/v3-contract/review-contract.json"
+      ],
+      "result": "89/89标准用例、28/28真实记录、13/13正反例符合预期",
+      "status": "EXECUTED_STANDARD_CONFORMANCE",
+      "limit": "结构不证明主张真值、全部标准或独立模型增益"
+    },
+    {
+      "id": "USE-06",
+      "task": "外部证据蕴含诊断",
+      "knowledge": [
+        "K-PROV",
+        "K-SEARCH",
+        "K-EVAL"
+      ],
+      "condition": "相关性不能代表支持",
+      "action": "事前冻结、执行70外部标签，分别比较无条件、50%、80%阈值",
+      "evidence": [
+        "prompts/tasks/entailment-evidence-gate-v1.md",
+        "research/artifacts/semantic-reorganization/v4-entailment/result.json"
+      ],
+      "result": "错误支持40/29/6；80%阈值漏26正例",
+      "status": "EXECUTED_EXTERNAL_LABEL_DIAGNOSTIC",
+      "limit": "二分类公开标签，非模型A/B或科学事实核验"
+    },
+    {
+      "id": "USE-07",
+      "task": "主张证据及实际治理",
+      "knowledge": [
+        "K-FACET",
+        "K-PROV",
+        "K-POLLUTE",
+        "K-CONT",
+        "K-EVOLVE"
+      ],
+      "condition": "旧入口重复、九主张待审、相似度与证据状态混淆",
+      "action": "9主张定向审查，50活动段落定位，20门禁断言；重写三个默认入口，唯一28主入口，删除2无损归并中间文件",
+      "evidence": [
+        "knowledge/INDEX.md",
+        "research/artifacts/semantic-reorganization/v4-governance-decisions.json",
+        "research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json"
+      ],
+      "result": "旧任务退出默认，八问题定位，唯一接力，历史可回读；合并29记录逐对象相等",
+      "status": "EXECUTED_GOVERNANCE",
+      "limit": "没有认知效果对照；尚未修改其他项目及主干"
+    },
+    {
+      "id": "USE-08",
+      "task": "MEME单币持仓证据向执行集群调查的交接",
+      "knowledge": [
+        "K-GOAL",
+        "K-DATA",
+        "K-PROV",
+        "K-FACET",
+        "K-HOOK",
+        "K-CAP",
+        "K-EVAL",
+        "K-RECEIPT"
+      ],
+      "condition": "用户指定MEME验证V3；源端身份、分母及消费端错误/缺失处理",
+      "action": "读取Blix目标、安全、源函数与消费模块；核PR23同blob；隔离实际旧函数复现4缺陷，原位修源端及消费端，扩展既有测试；发布独立草案PR27",
+      "evidence": [
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/docs/project/mint-evidence-acceptance-20261128.json",
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/server/holders.js",
+        "https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/server/intelligence/mint-facts.mjs",
+        "https://github.com/sunshihao001/grok/pull/27"
+      ],
+      "result": "同一3000万枚构造持仓因5亿/10亿分母得6%/3%；错Mint拒绝、旧身份缺失及分母缺失标未知、空行隔离，11直接断言+9旧/新测试体通过，6文件远端回读一致。",
+      "status": "EXECUTED_OFFLINE_SOURCE_FUNCTION",
+      "limit": "同会话领域代码与构造夹具，不是完整Node CI、主网、独立模型或经济收益；源端自报不等于链上核实。PR27未合并。"
+    }
+  ],
+  "v3Baseline": "506fe4d4655f2e94aae1c6a292b288287f1bcc35"
+}

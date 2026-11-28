@@ -1,0 +1,2245 @@
+{
+  "snapshot": "cd51f614fc9e7672c8fcf750ddc1f8dec59f4cdd",
+  "docs": 16,
+  "sections": 155,
+  "stats": {
+    "dev": {
+      "n": 4,
+      "methods": {
+        "lexical": {
+          "top1": 0.25,
+          "recall3": 0.25,
+          "mrr": 0.396,
+          "avgContextChars": 15669
+        },
+        "expanded": {
+          "top1": 0.25,
+          "recall3": 0.25,
+          "mrr": 0.39,
+          "avgContextChars": 18745
+        },
+        "conditional": {
+          "top1": 0.25,
+          "recall3": 0.5,
+          "mrr": 0.479,
+          "avgContextChars": 18196
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0.5,
+          "mrr": 0.342,
+          "avgContextChars": 2118
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0.375,
+          "mrr": 0.321,
+          "avgContextChars": 2085
+        }
+      }
+    },
+    "holdout": {
+      "n": 12,
+      "methods": {
+        "lexical": {
+          "top1": 0.333,
+          "recall3": 0.5,
+          "mrr": 0.549,
+          "avgContextChars": 17661
+        },
+        "expanded": {
+          "top1": 0.333,
+          "recall3": 0.5,
+          "mrr": 0.531,
+          "avgContextChars": 19847
+        },
+        "conditional": {
+          "top1": 0.583,
+          "recall3": 0.75,
+          "mrr": 0.718,
+          "avgContextChars": 19542
+        },
+        "section": {
+          "top1": 0.417,
+          "recall3": 0.583,
+          "mrr": 0.614,
+          "avgContextChars": 1615
+        },
+        "fusion": {
+          "top1": 0.417,
+          "recall3": 0.625,
+          "mrr": 0.609,
+          "avgContextChars": 1803
+        }
+      }
+    },
+    "all": {
+      "n": 16,
+      "methods": {
+        "lexical": {
+          "top1": 0.313,
+          "recall3": 0.438,
+          "mrr": 0.511,
+          "avgContextChars": 17163
+        },
+        "expanded": {
+          "top1": 0.313,
+          "recall3": 0.438,
+          "mrr": 0.496,
+          "avgContextChars": 19572
+        },
+        "conditional": {
+          "top1": 0.5,
+          "recall3": 0.688,
+          "mrr": 0.658,
+          "avgContextChars": 19205
+        },
+        "section": {
+          "top1": 0.313,
+          "recall3": 0.563,
+          "mrr": 0.546,
+          "avgContextChars": 1741
+        },
+        "fusion": {
+          "top1": 0.313,
+          "recall3": 0.563,
+          "mrr": 0.537,
+          "avgContextChars": 1874
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "D01",
+      "split": "dev",
+      "query": "搜到一批专家资料，每个概念应该放哪？怎样避免同义词重复建目录？",
+      "gold": [
+        "knowledge/foundations/organization-protocol.md",
+        "knowledge/INDEX.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.16666666666666666,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 11.474
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.628
+            },
+            {
+              "path": "planning/README.md",
+              "score": 9.499
+            }
+          ],
+          "contextChars": 22555
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 23.667
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 21.024
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 15.102
+            }
+          ],
+          "contextChars": 23413
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 23.667
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 21.024
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 16.433
+            }
+          ],
+          "contextChars": 23071
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 13.58,
+              "start": 170,
+              "end": 186,
+              "heading": "## 7. 对既有 ai-d 结构的审查：同义重复、局部重叠与可保留冲突"
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 12.021,
+              "start": 42,
+              "end": 57,
+              "heading": "## 4. 后续如何完成真正的“全量”而不重新碎片化"
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 11.964,
+              "start": 43,
+              "end": 55,
+              "heading": "## 3. 单个专业词、组合词和上下探索为何可能改变问题？"
+            }
+          ],
+          "contextChars": 2582
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032787,
+              "start": 170,
+              "end": 186,
+              "heading": "## 7. 对既有 ai-d 结构的审查：同义重复、局部重叠与可保留冲突"
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 0.032002,
+              "start": 43,
+              "end": 55,
+              "heading": "## 3. 单个专业词、组合词和上下探索为何可能改变问题？"
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 0.031754,
+              "start": 42,
+              "end": 57,
+              "heading": "## 4. 后续如何完成真正的“全量”而不重新碎片化"
+            }
+          ],
+          "contextChars": 2582
+        }
+      }
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "query": "方案不停讨论，怎么决定已经规划充分可以开始小范围实践？",
+      "gold": [
+        "planning/proposal-review-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 6.296
+            },
+            {
+              "path": "planning/README.md",
+              "score": 5.947
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 5.777
+            }
+          ],
+          "contextChars": 7956
+        },
+        "expanded": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 9.228
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 8.369
+            },
+            {
+              "path": "planning/README.md",
+              "score": 6.434
+            }
+          ],
+          "contextChars": 7956
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 11.428
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 8.369
+            },
+            {
+              "path": "planning/README.md",
+              "score": 6.434
+            }
+          ],
+          "contextChars": 7956
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "planning/README.md",
+              "score": 8.952,
+              "start": 1,
+              "end": 4,
+              "heading": "# 规划与交付草案入口｜ai-d"
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 8.746,
+              "start": 6,
+              "end": 15,
+              "heading": "## 1. 目标是会演化的，不是只在开始时“识别一次”"
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 8.239,
+              "start": 38,
+              "end": 49,
+              "heading": "## 四、第三次收束：B 的可落地形式"
+            }
+          ],
+          "contextChars": 839
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "planning/README.md",
+              "score": 0.032522,
+              "start": 1,
+              "end": 4,
+              "heading": "# 规划与交付草案入口｜ai-d"
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 0.032266,
+              "start": 38,
+              "end": 49,
+              "heading": "## 四、第三次收束：B 的可落地形式"
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 0.032002,
+              "start": 6,
+              "end": 15,
+              "heading": "## 1. 目标是会演化的，不是只在开始时“识别一次”"
+            }
+          ],
+          "contextChars": 839
+        }
+      }
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "query": "一篇专家文章讲得不错，可以直接变成项目必须遵守的规则吗？",
+      "gold": [
+        "knowledge/foundations/organization-protocol.md",
+        "planning/research-to-github-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 19.738
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.377
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 5.275
+            }
+          ],
+          "contextChars": 21386
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 20.572
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 11.2
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 9.149
+            }
+          ],
+          "contextChars": 21386
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 20.572
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 11.2
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 9.149
+            }
+          ],
+          "contextChars": 21386
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 30.406,
+              "start": 44,
+              "end": 55,
+              "heading": "### 本轮实际检索输出及知识适用性复核"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 11.65,
+              "start": 170,
+              "end": 186,
+              "heading": "## 7. 对既有 ai-d 结构的审查：同义重复、局部重叠与可保留冲突"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 10.163,
+              "start": 17,
+              "end": 29,
+              "heading": "### 什么内容值得上传？"
+            }
+          ],
+          "contextChars": 2678
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 0.032787,
+              "start": 44,
+              "end": 55,
+              "heading": "### 本轮实际检索输出及知识适用性复核"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032258,
+              "start": 170,
+              "end": 186,
+              "heading": "## 7. 对既有 ai-d 结构的审查：同义重复、局部重叠与可保留冲突"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 0.031498,
+              "start": 17,
+              "end": 29,
+              "heading": "### 什么内容值得上传？"
+            }
+          ],
+          "contextChars": 2678
+        }
+      }
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "query": "用户改了最终目标，为什么助手还按以前的做法继续？",
+      "gold": [
+        "planning/goal-navigation-v0.1.md",
+        "planning/historical-consolidation-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.16666666666666666,
+          "top": [
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 4.36
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 3.293
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 3.069
+            }
+          ],
+          "contextChars": 10780
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.1111111111111111,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.249
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 6.406
+            },
+            {
+              "path": "README.md",
+              "score": 6.174
+            }
+          ],
+          "contextChars": 22224
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.249
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 6.406
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 6.212
+            }
+          ],
+          "contextChars": 20370
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.938,
+              "start": 207,
+              "end": 230,
+              "heading": "## 10. 首轮历史知识逐主张裁决（15项）"
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 7.864,
+              "start": 16,
+              "end": 27,
+              "heading": "## 2. 五层目标，只在相关时显示"
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 7.52,
+              "start": 36,
+              "end": 40,
+              "heading": "## 2026-11-06｜静态检索诊断：为什么字面相似不足以选对知识"
+            }
+          ],
+          "contextChars": 2373
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032018,
+              "start": 207,
+              "end": 230,
+              "heading": "## 10. 首轮历史知识逐主张裁决（15项）"
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 0.032002,
+              "start": 36,
+              "end": 40,
+              "heading": "## 2026-11-06｜静态检索诊断：为什么字面相似不足以选对知识"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 0.031545,
+              "start": 98,
+              "end": 111,
+              "heading": "## 6. 一个真实的纠偏例子"
+            }
+          ],
+          "contextChars": 2242
+        }
+      }
+    },
+    {
+      "id": "H01",
+      "split": "holdout",
+      "query": "工厂安全培训资料有新版本，几个旧文件互相矛盾，应该怎样管理可用知识？",
+      "gold": [
+        "knowledge/foundations/organization-protocol.md",
+        "planning/historical-consolidation-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 8.267
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 7.797
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 7.748
+            }
+          ],
+          "contextChars": 19519
+        },
+        "expanded": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 13.574
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.408
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 11.425
+            }
+          ],
+          "contextChars": 19519
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 15.774
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.408
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 11.425
+            }
+          ],
+          "contextChars": 19519
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 16.07,
+              "start": 68,
+              "end": 75,
+              "heading": "## 6. 汇总：目标应该怎样重新定义？"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 13.978,
+              "start": 156,
+              "end": 169,
+              "heading": "### 6.5 一个具体问题的判断变化（诊断演示）"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 10.432,
+              "start": 30,
+              "end": 44,
+              "heading": "## 3. 沿用现有结构，不另建“知识行政系统”"
+            }
+          ],
+          "contextChars": 1951
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032522,
+              "start": 156,
+              "end": 169,
+              "heading": "### 6.5 一个具体问题的判断变化（诊断演示）"
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 0.031545,
+              "start": 68,
+              "end": 75,
+              "heading": "## 6. 汇总：目标应该怎样重新定义？"
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 0.031498,
+              "start": 30,
+              "end": 41,
+              "heading": "## 3. 第一批疑似重复、冲突与失效项（禁止不加核查地删库）"
+            }
+          ],
+          "contextChars": 1927
+        }
+      }
+    },
+    {
+      "id": "H02",
+      "split": "holdout",
+      "query": "我看到家电维修的一套经验，想用到医疗器械维护上，怎样知道能不能直接照搬？",
+      "gold": [
+        "knowledge/COGNITIVE-MAP.md",
+        "knowledge/foundations/expert-concept-navigation-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 11.179
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 7.893
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.498
+            }
+          ],
+          "contextChars": 23129
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 13.49
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.969
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 9.724
+            }
+          ],
+          "contextChars": 23129
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 15.169
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 13.49
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.855
+            }
+          ],
+          "contextChars": 25537
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 12.183,
+              "start": 5,
+              "end": 15,
+              "heading": "## 一、知识管理与组织学习：不是“文件越多越好”"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 11.416,
+              "start": 130,
+              "end": 139,
+              "heading": "### 6.2 案例经验怎样合理复用：不能因为有相似案例就直接套方案"
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 9.59,
+              "start": 16,
+              "end": 28,
+              "heading": "## 2. 第一轮：目标、主动性与人机协作"
+            }
+          ],
+          "contextChars": 2389
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 0.032522,
+              "start": 5,
+              "end": 15,
+              "heading": "## 一、知识管理与组织学习：不是“文件越多越好”"
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 0.032266,
+              "start": 16,
+              "end": 28,
+              "heading": "## 2. 第一轮：目标、主动性与人机协作"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032002,
+              "start": 130,
+              "end": 139,
+              "heading": "### 6.2 案例经验怎样合理复用：不能因为有相似案例就直接套方案"
+            }
+          ],
+          "contextChars": 2389
+        }
+      }
+    },
+    {
+      "id": "H03",
+      "split": "holdout",
+      "query": "团队一直在调查新市场、分析更多方案，却迟迟没有可演示成果，如何及时停止研究？",
+      "gold": [
+        "planning/proposal-review-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.16666666666666666,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 11.464
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 9.444
+            },
+            {
+              "path": "README.md",
+              "score": 9.414
+            }
+          ],
+          "contextChars": 10432
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 14.898
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.244
+            },
+            {
+              "path": "README.md",
+              "score": 13.81
+            }
+          ],
+          "contextChars": 21558
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 14.898
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.244
+            },
+            {
+              "path": "README.md",
+              "score": 13.81
+            }
+          ],
+          "contextChars": 21558
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.14285714285714285,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 14.998,
+              "start": 19,
+              "end": 27,
+              "heading": "## 主要观察指标"
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 13.841,
+              "start": 71,
+              "end": 81,
+              "heading": "## 5. 如何判断目标漂移、合理演化与必要的停止"
+            },
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 11.752,
+              "start": 8,
+              "end": 21,
+              "heading": "## 一、按“实际要解决什么问题”导航"
+            }
+          ],
+          "contextChars": 1129
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.16666666666666666,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 0.032787,
+              "start": 19,
+              "end": 27,
+              "heading": "## 主要观察指标"
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 0.032258,
+              "start": 71,
+              "end": 81,
+              "heading": "## 5. 如何判断目标漂移、合理演化与必要的停止"
+            },
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 0.031258,
+              "start": 8,
+              "end": 21,
+              "heading": "## 一、按“实际要解决什么问题”导航"
+            }
+          ],
+          "contextChars": 1129
+        }
+      }
+    },
+    {
+      "id": "H04",
+      "split": "holdout",
+      "query": "开源项目的主页说功能齐全，但代码和运行日志可能不同，应该信哪个证据？",
+      "gold": [
+        "knowledge/COGNITIVE-MAP.md",
+        "research/workflow-components-and-boundaries.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 10.641
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 9.448
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 8.345
+            }
+          ],
+          "contextChars": 22260
+        },
+        "expanded": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.169
+            },
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 12.135
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 10.386
+            }
+          ],
+          "contextChars": 22260
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 16.569
+            },
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 14.335
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 10.386
+            }
+          ],
+          "contextChars": 22260
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 14.879,
+              "start": 76,
+              "end": 80,
+              "heading": "## 7. 全局与局部区分"
+            },
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 14.157,
+              "start": 4,
+              "end": 10,
+              "heading": "## 一、避免三个不同层次混淆"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 13.874,
+              "start": 200,
+              "end": 206,
+              "heading": "## 9. 本轮方案比较：知识应该怎样在 GitHub 中长期建设？"
+            }
+          ],
+          "contextChars": 955
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 0.032522,
+              "start": 76,
+              "end": 80,
+              "heading": "## 7. 全局与局部区分"
+            },
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 0.032522,
+              "start": 4,
+              "end": 10,
+              "heading": "## 一、避免三个不同层次混淆"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.031746,
+              "start": 200,
+              "end": 206,
+              "heading": "## 9. 本轮方案比较：知识应该怎样在 GitHub 中长期建设？"
+            }
+          ],
+          "contextChars": 955
+        }
+      }
+    },
+    {
+      "id": "H05",
+      "split": "holdout",
+      "query": "我不知道行业里专家用什么专业说法，如何沿着一个普通词找到相邻领域的知识？",
+      "gold": [
+        "knowledge/foundations/expert-concept-navigation-v0.1.md",
+        "knowledge/COGNITIVE-MAP.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.845
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 9.819
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 7.357
+            }
+          ],
+          "contextChars": 23794
+        },
+        "expanded": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 27.37
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 22.464
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 14.922
+            }
+          ],
+          "contextChars": 23794
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 29.57
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 24.664
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 14.922
+            }
+          ],
+          "contextChars": 23794
+        },
+        "section": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 17.926,
+              "start": 5,
+              "end": 13,
+              "heading": "## 0. 研究对象不是“词频”，而是专业认识如何形成与使用"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 15.022,
+              "start": 69,
+              "end": 83,
+              "heading": "## 4. 八种跨行业“专业知识入口”，与当前问题的实际联系"
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 13.196,
+              "start": 70,
+              "end": 78,
+              "heading": "## 8. 下一次应如何证明管理方式更好？"
+            }
+          ],
+          "contextChars": 1755
+        },
+        "fusion": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 0.032787,
+              "start": 5,
+              "end": 13,
+              "heading": "## 0. 研究对象不是“词频”，而是专业认识如何形成与使用"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032258,
+              "start": 69,
+              "end": 83,
+              "heading": "## 4. 八种跨行业“专业知识入口”，与当前问题的实际联系"
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 0.031258,
+              "start": 70,
+              "end": 78,
+              "heading": "## 8. 下一次应如何证明管理方式更好？"
+            }
+          ],
+          "contextChars": 1755
+        }
+      }
+    },
+    {
+      "id": "H06",
+      "split": "holdout",
+      "query": "一个部门每周把同行文章放入共享库，但没人知道什么时候该用哪项结论，如何整理？",
+      "gold": [
+        "knowledge/foundations/organization-protocol.md",
+        "knowledge/foundations/cross-disciplinary-foundations.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.14285714285714285,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 9.919
+            },
+            {
+              "path": "knowledge/source-register-2026-11-05.md",
+              "score": 8.49
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 8.474
+            }
+          ],
+          "contextChars": 11760
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.885
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 13.453
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 10.515
+            }
+          ],
+          "contextChars": 21289
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.885
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 13.453
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 10.515
+            }
+          ],
+          "contextChars": 21289
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.14285714285714285,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.27,
+              "start": 69,
+              "end": 83,
+              "heading": "## 4. 八种跨行业“专业知识入口”，与当前问题的实际联系"
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 12.217,
+              "start": 44,
+              "end": 55,
+              "heading": "### 本轮实际检索输出及知识适用性复核"
+            },
+            {
+              "path": "research/workflow-components-and-boundaries.md",
+              "score": 12.101,
+              "start": 54,
+              "end": 61,
+              "heading": "## 五、什么时候需要新增程序？"
+            }
+          ],
+          "contextChars": 2611
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.14285714285714285,
+          "top": [
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 0.032522,
+              "start": 44,
+              "end": 55,
+              "heading": "### 本轮实际检索输出及知识适用性复核"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032018,
+              "start": 69,
+              "end": 83,
+              "heading": "## 4. 八种跨行业“专业知识入口”，与当前问题的实际联系"
+            },
+            {
+              "path": "knowledge/source-register-2026-11-05.md",
+              "score": 0.031514,
+              "start": 1,
+              "end": 16,
+              "heading": "# 2026-11-05 原始来源登记：人机协调与工作流认知研究"
+            }
+          ],
+          "contextChars": 3877
+        }
+      }
+    },
+    {
+      "id": "H07",
+      "split": "holdout",
+      "query": "助手说已经做完研究，可代码仓库没有新的提交；如何检查是否真正交付？",
+      "gold": [
+        "planning/research-to-github-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "planning/README.md",
+              "score": 7.454
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 7.059
+            },
+            {
+              "path": "README.md",
+              "score": 6.919
+            }
+          ],
+          "contextChars": 9810
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "planning/README.md",
+              "score": 18.884
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 18.824
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 16.457
+            }
+          ],
+          "contextChars": 9541
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 21.024
+            },
+            {
+              "path": "planning/README.md",
+              "score": 18.884
+            },
+            {
+              "path": "planning/proposal-review-v0.1.md",
+              "score": 16.457
+            }
+          ],
+          "contextChars": 9541
+        },
+        "section": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 14.262,
+              "start": 112,
+              "end": 117,
+              "heading": "## 7. 完成定义与非目标"
+            },
+            {
+              "path": "planning/README.md",
+              "score": 13.621,
+              "start": 32,
+              "end": 46,
+              "heading": "## 首轮情景走查与文件检查（2026-11-06）"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 13.513,
+              "start": 102,
+              "end": 112,
+              "heading": "## 6. 知识真正参与决策：增加一项可检查的适用性问答"
+            }
+          ],
+          "contextChars": 1449
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "planning/README.md",
+              "score": 0.032522,
+              "start": 32,
+              "end": 46,
+              "heading": "## 首轮情景走查与文件检查（2026-11-06）"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 0.032018,
+              "start": 112,
+              "end": 117,
+              "heading": "## 7. 完成定义与非目标"
+            },
+            {
+              "path": "README.md",
+              "score": 0.031498,
+              "start": 96,
+              "end": 105,
+              "heading": "## 七、当前状态与下一步"
+            }
+          ],
+          "contextChars": 1413
+        }
+      }
+    },
+    {
+      "id": "H08",
+      "split": "holdout",
+      "query": "新项目中我说继续上一次讨论，但上次的目标已被我撤销，系统该怎么理解这句话？",
+      "gold": [
+        "planning/goal-navigation-v0.1.md",
+        "planning/historical-consolidation-v0.1.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 6.876
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 6.831
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 6.414
+            }
+          ],
+          "contextChars": 12003
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 11.213
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.47
+            },
+            {
+              "path": "README.md",
+              "score": 10.318
+            }
+          ],
+          "contextChars": 16265
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 12.488
+            },
+            {
+              "path": "planning/historical-consolidation-v0.1.md",
+              "score": 12.232
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 11.213
+            }
+          ],
+          "contextChars": 10859
+        },
+        "section": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 10.204,
+              "start": 6,
+              "end": 15,
+              "heading": "## 1. 目标是会演化的，不是只在开始时“识别一次”"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 9.875,
+              "start": 200,
+              "end": 206,
+              "heading": "## 9. 本轮方案比较：知识应该怎样在 GitHub 中长期建设？"
+            },
+            {
+              "path": "README.md",
+              "score": 8.479,
+              "start": 21,
+              "end": 30,
+              "heading": "## 一、为什么建立这个仓库？"
+            }
+          ],
+          "contextChars": 1118
+        },
+        "fusion": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 0.032522,
+              "start": 6,
+              "end": 15,
+              "heading": "## 1. 目标是会演化的，不是只在开始时“识别一次”"
+            },
+            {
+              "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+              "score": 0.031498,
+              "start": 68,
+              "end": 75,
+              "heading": "## 6. 汇总：目标应该怎样重新定义？"
+            },
+            {
+              "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+              "score": 0.031319,
+              "start": 5,
+              "end": 15,
+              "heading": "## 一、知识管理与组织学习：不是“文件越多越好”"
+            }
+          ],
+          "contextChars": 1814
+        }
+      }
+    },
+    {
+      "id": "H09",
+      "split": "holdout",
+      "query": "知识库改版后回答更长了，到底有没有让问题解决得更好，如何做对照检查？",
+      "gold": [
+        "evaluation/first-cross-domain-tests.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.2,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 8.859
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 7.066
+            },
+            {
+              "path": "planning/goal-navigation-v0.1.md",
+              "score": 6.589
+            }
+          ],
+          "contextChars": 22875
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.14285714285714285,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 9.579
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 8.423
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 7.174
+            }
+          ],
+          "contextChars": 23071
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 9.579
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 8.423
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 8.4
+            }
+          ],
+          "contextChars": 23794
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.827,
+              "start": 90,
+              "end": 101,
+              "heading": "## 7. 反证、质量和真实试验"
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 10.342,
+              "start": 28,
+              "end": 35,
+              "heading": "## 完成条件与暂停线"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 10.238,
+              "start": 102,
+              "end": 112,
+              "heading": "## 6. 知识真正参与决策：增加一项可检查的适用性问答"
+            }
+          ],
+          "contextChars": 961
+        },
+        "fusion": {
+          "top1": 0,
+          "recall3": 1,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 0.032787,
+              "start": 90,
+              "end": 101,
+              "heading": "## 7. 反证、质量和真实试验"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032002,
+              "start": 102,
+              "end": 112,
+              "heading": "## 6. 知识真正参与决策：增加一项可检查的适用性问答"
+            },
+            {
+              "path": "evaluation/first-cross-domain-tests.md",
+              "score": 0.031514,
+              "start": 28,
+              "end": 35,
+              "heading": "## 完成条件与暂停线"
+            }
+          ],
+          "contextChars": 961
+        }
+      }
+    },
+    {
+      "id": "H10",
+      "split": "holdout",
+      "query": "我们应先做可查询的理论库还是直接搭建多智能体工作平台，有什么路线取舍？",
+      "gold": [
+        "decisions/2026-11-05-goal-options.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "decisions/2026-11-05-goal-options.md",
+              "score": 13.009
+            },
+            {
+              "path": "README.md",
+              "score": 10.438
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 10.158
+            }
+          ],
+          "contextChars": 12582
+        },
+        "expanded": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "decisions/2026-11-05-goal-options.md",
+              "score": 15.717
+            },
+            {
+              "path": "README.md",
+              "score": 12.718
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 11.808
+            }
+          ],
+          "contextChars": 12582
+        },
+        "conditional": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "decisions/2026-11-05-goal-options.md",
+              "score": 17.917
+            },
+            {
+              "path": "README.md",
+              "score": 12.718
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 11.808
+            }
+          ],
+          "contextChars": 12582
+        },
+        "section": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "decisions/2026-11-05-goal-options.md",
+              "score": 14.976,
+              "start": 25,
+              "end": 31,
+              "heading": "## D｜人机协调操作系统 / 自主 Agent 平台"
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 13.986,
+              "start": 66,
+              "end": 80,
+              "heading": "## 5. 专业搜索不是固定查询，问题本身会在研究中演化"
+            },
+            {
+              "path": "README.md",
+              "score": 12.681,
+              "start": 75,
+              "end": 85,
+              "heading": "## 五、未来可能怎样演化？（候选，不是预定路线）"
+            }
+          ],
+          "contextChars": 1478
+        },
+        "fusion": {
+          "top1": 1,
+          "recall3": 1,
+          "rr": 1,
+          "top": [
+            {
+              "path": "decisions/2026-11-05-goal-options.md",
+              "score": 0.032787,
+              "start": 25,
+              "end": 31,
+              "heading": "## D｜人机协调操作系统 / 自主 Agent 平台"
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 0.032002,
+              "start": 66,
+              "end": 80,
+              "heading": "## 5. 专业搜索不是固定查询，问题本身会在研究中演化"
+            },
+            {
+              "path": "README.md",
+              "score": 0.032002,
+              "start": 75,
+              "end": 85,
+              "heading": "## 五、未来可能怎样演化？（候选，不是预定路线）"
+            }
+          ],
+          "contextChars": 1478
+        }
+      }
+    },
+    {
+      "id": "H11",
+      "split": "holdout",
+      "query": "发布新版本之后旧的操作建议已经不适用了，怎样避免历史内容继续干扰判断？",
+      "gold": [
+        "planning/historical-consolidation-v0.1.md",
+        "knowledge/foundations/organization-protocol.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 9.254
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 8.855
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 8.482
+            }
+          ],
+          "contextChars": 23071
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0,
+          "rr": 0.25,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.938
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 12.524
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 11.608
+            }
+          ],
+          "contextChars": 24460
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.938
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 13.576
+            },
+            {
+              "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+              "score": 12.524
+            }
+          ],
+          "contextChars": 23071
+        },
+        "section": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 16.337,
+              "start": 56,
+              "end": 84,
+              "heading": "## 4. 每次实际上传的操作与核查"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.536,
+              "start": 84,
+              "end": 98,
+              "heading": "## 5. 关键词“单独/组合/上下/左右/反向”怎样形成真正不同的研究路径？"
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 11.544,
+              "start": 34,
+              "end": 41,
+              "heading": "## 4. 知识何时加入、修订或停用？"
+            }
+          ],
+          "contextChars": 2388
+        },
+        "fusion": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 0.032266,
+              "start": 34,
+              "end": 41,
+              "heading": "## 4. 知识何时加入、修订或停用？"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.032258,
+              "start": 84,
+              "end": 98,
+              "heading": "## 5. 关键词“单独/组合/上下/左右/反向”怎样形成真正不同的研究路径？"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 0.032018,
+              "start": 56,
+              "end": 84,
+              "heading": "## 4. 每次实际上传的操作与核查"
+            }
+          ],
+          "contextChars": 2388
+        }
+      }
+    },
+    {
+      "id": "H12",
+      "split": "holdout",
+      "query": "几篇研究文章结论互相冲突，如何找到原始来源并区分哪条主张有支持？",
+      "gold": [
+        "knowledge/source-register-2026-11-05.md",
+        "knowledge/foundations/organization-protocol.md"
+      ],
+      "metrics": {
+        "lexical": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.5,
+          "top": [
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 9.673
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 6.04
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 5.071
+            }
+          ],
+          "contextChars": 20698
+        },
+        "expanded": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 13.085
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 12.513
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 10.41
+            }
+          ],
+          "contextChars": 20698
+        },
+        "conditional": {
+          "top1": 0,
+          "recall3": 0.5,
+          "rr": 0.3333333333333333,
+          "top": [
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 14.713
+            },
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 13.085
+            },
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 12.61
+            }
+          ],
+          "contextChars": 20698
+        },
+        "section": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 14.225,
+              "start": 70,
+              "end": 78,
+              "heading": "## 8. 下一次应如何证明管理方式更好？"
+            },
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 14.044,
+              "start": 8,
+              "end": 21,
+              "heading": "## 一、按“实际要解决什么问题”导航"
+            },
+            {
+              "path": "planning/research-to-github-v0.1.md",
+              "score": 12.504,
+              "start": 45,
+              "end": 55,
+              "heading": "### 文档排版与写作方式"
+            }
+          ],
+          "contextChars": 1199
+        },
+        "fusion": {
+          "top1": 1,
+          "recall3": 0.5,
+          "rr": 1,
+          "top": [
+            {
+              "path": "knowledge/foundations/organization-protocol.md",
+              "score": 0.032522,
+              "start": 70,
+              "end": 78,
+              "heading": "## 8. 下一次应如何证明管理方式更好？"
+            },
+            {
+              "path": "knowledge/INDEX.md",
+              "score": 0.032522,
+              "start": 8,
+              "end": 21,
+              "heading": "## 一、按“实际要解决什么问题”导航"
+            },
+            {
+              "path": "knowledge/COGNITIVE-MAP.md",
+              "score": 0.031498,
+              "start": 113,
+              "end": 129,
+              "heading": "### 6.1 选择知识前先判断问题结构：从专家研究到可适用的决策"
+            }
+          ],
+          "contextChars": 1550
+        }
+      }
+    }
+  ],
+  "frozenSpec": "e18e7ea689e8554dde7fe0185029bdcbad8c44e0",
+  "sourceBlob": "cd859e2b328c55157a9d847c464a3a8ad357d949",
+  "inputBlobs": [
+    {
+      "path": "README.md",
+      "blob": "2f38f5c045f857a5b4ffac458e6022d29a3f3d79"
+    },
+    {
+      "path": "decisions/2026-11-05-goal-options.md",
+      "blob": "0f5275e0d392f1fa07488e8aefdb1b8c8633cd67"
+    },
+    {
+      "path": "evaluation/first-cross-domain-tests.md",
+      "blob": "32e13b12f2cc6a3d27c2a1eb4c1ef2372f322eb7"
+    },
+    {
+      "path": "knowledge/COGNITIVE-MAP.md",
+      "blob": "8d498e4e872415162e0d14f03e1f312727210e80"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "blob": "a63b082b46fcbed5129e92c575e924bfaa440019"
+    },
+    {
+      "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+      "blob": "0b767c23df7caac6b280a8850cf856b7a401f2be"
+    },
+    {
+      "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+      "blob": "a63e788213310628a22c3d06cbf846a19a9ff681"
+    },
+    {
+      "path": "knowledge/foundations/organization-protocol.md",
+      "blob": "1be2134e7c200dee6f61256b0bb1f243590640af"
+    },
+    {
+      "path": "knowledge/source-register-2026-11-05.md",
+      "blob": "571b90068357e33c5198280935cfa2df51d20e8c"
+    },
+    {
+      "path": "planning/README.md",
+      "blob": "5b860e35928fc82907a66eea9ef72818e47ec31b"
+    },
+    {
+      "path": "planning/goal-navigation-v0.1.md",
+      "blob": "7adf1a8c10409e1ac5c1be5b1f5d365c9051dff5"
+    },
+    {
+      "path": "planning/historical-consolidation-v0.1.md",
+      "blob": "ddb439cf5e685ebe1dd38b4ddcdb6d2ba43e93c8"
+    },
+    {
+      "path": "planning/proposal-review-v0.1.md",
+      "blob": "ce6924c94ab9bcc8bd461e5dcb6e479b29898426"
+    },
+    {
+      "path": "planning/research-to-github-v0.1.md",
+      "blob": "f7cfbc70194473dcbe6b1b3b6782433406b6ae71"
+    },
+    {
+      "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+      "blob": "c9663e73cdcd7dcc41225db51ba89221d92dedc0"
+    },
+    {
+      "path": "research/workflow-components-and-boundaries.md",
+      "blob": "cd5a69898c1fcba81a6e02906dd82604cdf68396"
+    }
+  ],
+  "modelAB": "NOT_RUN",
+  "independentLabels": false,
+  "passageGold": false,
+  "archivalMetricsMatch": true
+}

@@ -1,0 +1,861 @@
+[
+  [
+    "required",
+    [
+      [
+        {
+          "properties": {
+            "foo": {},
+            "bar": {}
+          },
+          "required": [
+            "foo"
+          ]
+        },
+        [
+          [
+            {
+              "foo": 1
+            },
+            true
+          ],
+          [
+            {
+              "bar": 1
+            },
+            false
+          ],
+          [
+            [],
+            true
+          ],
+          [
+            "",
+            true
+          ],
+          [
+            12,
+            true
+          ],
+          [
+            null,
+            true
+          ],
+          [
+            true,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "properties": {
+            "foo": {}
+          }
+        },
+        [
+          [
+            {},
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "properties": {
+            "foo": {}
+          },
+          "required": []
+        },
+        [
+          [
+            {},
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "required": [
+            "foo\nbar",
+            "foo\"bar",
+            "foo\\bar",
+            "foo\rbar",
+            "foo\tbar",
+            "foo\fbar"
+          ]
+        },
+        [
+          [
+            {
+              "foo\nbar": 1,
+              "foo\"bar": 1,
+              "foo\\bar": 1,
+              "foo\rbar": 1,
+              "foo\tbar": 1,
+              "foo\fbar": 1
+            },
+            true
+          ],
+          [
+            {
+              "foo\nbar": "1",
+              "foo\"bar": "1"
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "required": [
+            "__proto__",
+            "toString",
+            "constructor"
+          ]
+        },
+        [
+          [
+            [],
+            true
+          ],
+          [
+            12,
+            true
+          ],
+          [
+            {},
+            false
+          ],
+          [
+            {
+              "__proto__": "foo"
+            },
+            false
+          ],
+          [
+            {
+              "toString": {
+                "length": 37
+              }
+            },
+            false
+          ],
+          [
+            {
+              "constructor": {
+                "length": 37
+              }
+            },
+            false
+          ],
+          [
+            {
+              "__proto__": 12,
+              "toString": {
+                "length": "foo"
+              },
+              "constructor": 37
+            },
+            true
+          ]
+        ]
+      ]
+    ]
+  ],
+  [
+    "dependentRequired",
+    [
+      [
+        {
+          "dependentRequired": {
+            "bar": [
+              "foo"
+            ]
+          }
+        },
+        [
+          [
+            {},
+            true
+          ],
+          [
+            {
+              "foo": 1
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2
+            },
+            true
+          ],
+          [
+            {
+              "bar": 2
+            },
+            false
+          ],
+          [
+            [
+              "bar"
+            ],
+            true
+          ],
+          [
+            "foobar",
+            true
+          ],
+          [
+            12,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "dependentRequired": {
+            "bar": []
+          }
+        },
+        [
+          [
+            {},
+            true
+          ],
+          [
+            {
+              "bar": 2
+            },
+            true
+          ],
+          [
+            1,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "dependentRequired": {
+            "quux": [
+              "foo",
+              "bar"
+            ]
+          }
+        },
+        [
+          [
+            {},
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2,
+              "quux": 3
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "quux": 2
+            },
+            false
+          ],
+          [
+            {
+              "bar": 1,
+              "quux": 2
+            },
+            false
+          ],
+          [
+            {
+              "quux": 1
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "dependentRequired": {
+            "foo\nbar": [
+              "foo\rbar"
+            ],
+            "foo\"bar": [
+              "foo'bar"
+            ]
+          }
+        },
+        [
+          [
+            {
+              "foo\nbar": 1,
+              "foo\rbar": 2
+            },
+            true
+          ],
+          [
+            {
+              "foo'bar": 1,
+              "foo\"bar": 2
+            },
+            true
+          ],
+          [
+            {
+              "foo\nbar": 1,
+              "foo": 2
+            },
+            false
+          ],
+          [
+            {
+              "foo\"bar": 2
+            },
+            false
+          ]
+        ]
+      ]
+    ]
+  ],
+  [
+    "if-then-else",
+    [
+      [
+        {
+          "if": {
+            "const": 0
+          }
+        },
+        [
+          [
+            0,
+            true
+          ],
+          [
+            "hello",
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "then": {
+            "const": 0
+          }
+        },
+        [
+          [
+            0,
+            true
+          ],
+          [
+            "hello",
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "else": {
+            "const": 0
+          }
+        },
+        [
+          [
+            0,
+            true
+          ],
+          [
+            "hello",
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "if": {
+            "exclusiveMaximum": 0
+          },
+          "then": {
+            "minimum": -10
+          }
+        },
+        [
+          [
+            -1,
+            true
+          ],
+          [
+            -100,
+            false
+          ],
+          [
+            3,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "if": {
+            "exclusiveMaximum": 0
+          },
+          "else": {
+            "multipleOf": 2
+          }
+        },
+        [
+          [
+            -1,
+            true
+          ],
+          [
+            4,
+            true
+          ],
+          [
+            3,
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "if": {
+            "exclusiveMaximum": 0
+          },
+          "then": {
+            "minimum": -10
+          },
+          "else": {
+            "multipleOf": 2
+          }
+        },
+        [
+          [
+            -1,
+            true
+          ],
+          [
+            -100,
+            false
+          ],
+          [
+            4,
+            true
+          ],
+          [
+            3,
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "allOf": [
+            {
+              "if": {
+                "exclusiveMaximum": 0
+              }
+            },
+            {
+              "then": {
+                "minimum": -10
+              }
+            },
+            {
+              "else": {
+                "multipleOf": 2
+              }
+            }
+          ]
+        },
+        [
+          [
+            -100,
+            true
+          ],
+          [
+            3,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "if": true,
+          "then": {
+            "const": "then"
+          },
+          "else": {
+            "const": "else"
+          }
+        },
+        [
+          [
+            "then",
+            true
+          ],
+          [
+            "else",
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "if": false,
+          "then": {
+            "const": "then"
+          },
+          "else": {
+            "const": "else"
+          }
+        },
+        [
+          [
+            "then",
+            false
+          ],
+          [
+            "else",
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "then": {
+            "const": "yes"
+          },
+          "else": {
+            "const": "other"
+          },
+          "if": {
+            "maxLength": 4
+          }
+        },
+        [
+          [
+            "yes",
+            true
+          ],
+          [
+            "other",
+            true
+          ],
+          [
+            "no",
+            false
+          ],
+          [
+            "invalid",
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "if": {
+            "const": 1
+          },
+          "then": false
+        },
+        [
+          [
+            1,
+            false
+          ],
+          [
+            2,
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "if": {
+            "const": 1
+          },
+          "else": false
+        },
+        [
+          [
+            1,
+            true
+          ],
+          [
+            2,
+            false
+          ]
+        ]
+      ]
+    ]
+  ],
+  [
+    "additionalProperties",
+    [
+      [
+        {
+          "properties": {
+            "foo": {},
+            "bar": {}
+          },
+          "patternProperties": {
+            "^v": {}
+          },
+          "additionalProperties": false
+        },
+        [
+          [
+            {
+              "foo": 1
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2,
+              "quux": "boom"
+            },
+            false
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            true
+          ],
+          [
+            "foobarbaz",
+            true
+          ],
+          [
+            12,
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "vroom": 2
+            },
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "patternProperties": {
+            "^á": {}
+          },
+          "additionalProperties": false
+        },
+        [
+          [
+            {
+              "ármányos": 2
+            },
+            true
+          ],
+          [
+            {
+              "élmény": 2
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "properties": {
+            "foo": {},
+            "bar": {}
+          },
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        [
+          [
+            {
+              "foo": 1
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2,
+              "quux": true
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1,
+              "bar": 2,
+              "quux": 12
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        [
+          [
+            {
+              "foo": true
+            },
+            true
+          ],
+          [
+            {
+              "foo": 1
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "properties": {
+            "foo": {},
+            "bar": {}
+          }
+        },
+        [
+          [
+            {
+              "foo": 1,
+              "bar": 2,
+              "quux": true
+            },
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "allOf": [
+            {
+              "properties": {
+                "foo": {}
+              }
+            }
+          ],
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        [
+          [
+            {
+              "foo": 1,
+              "bar": true
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "additionalProperties": {
+            "type": "null"
+          }
+        },
+        [
+          [
+            {
+              "foo": null
+            },
+            true
+          ]
+        ]
+      ],
+      [
+        {
+          "propertyNames": {
+            "maxLength": 5
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        [
+          [
+            {
+              "apple": 4
+            },
+            true
+          ],
+          [
+            {
+              "fig": 2,
+              "pear": "available"
+            },
+            false
+          ]
+        ]
+      ],
+      [
+        {
+          "properties": {
+            "foo2": {}
+          },
+          "dependentSchemas": {
+            "foo": {},
+            "foo2": {
+              "properties": {
+                "bar": {}
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        [
+          [
+            {
+              "foo": ""
+            },
+            false
+          ],
+          [
+            {
+              "bar": ""
+            },
+            false
+          ],
+          [
+            {
+              "foo2": "",
+              "bar": ""
+            },
+            false
+          ]
+        ]
+      ]
+    ]
+  ]
+]

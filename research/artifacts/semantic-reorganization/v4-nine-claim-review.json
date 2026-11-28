@@ -1,0 +1,234 @@
+{
+  "baseline": "be25104d76a0f61135467746812ab93c0044dcca",
+  "scope": "9个V3待校勘对象定向读段；外部源只复核列明三项。非全库逐字或逐条语义真值。",
+  "records": [
+    {
+      "id": "K-LEARN",
+      "claim": "AI辅助任务表现、独立技能及协作净效益不能相互替代；长期现实收益另验。",
+      "action": "代办、协作、教学按当前目标区分；评价辅助结果与移除AI后的迁移。",
+      "limitation": "短期数学实验不证明普遍能力退化；人机组合并非必然胜过最强单方。",
+      "scope": "理论/外部实验；局部适用；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "68d69028dacfc09e94037791828364a65d222bc6",
+          "start": 24,
+          "end": 39,
+          "summary": "辅助学习脱钩、协调成本与任务依赖"
+        },
+        {
+          "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+          "start": 16,
+          "end": 23,
+          "summary": "历史理论边界"
+        }
+      ],
+      "external": [
+        [
+          "Bastani等",
+          "https://doi.org/10.1073/pnas.2422633122",
+          "高中数学随机试验区分辅助练习与独立考试"
+        ],
+        [
+          "Vaccaro等",
+          "https://doi.org/10.1038/s41562-024-02024-1",
+          "106项实验综合，人机组合平均不胜最强单方"
+        ]
+      ]
+    },
+    {
+      "id": "K-UNKNOWN",
+      "claim": "竞争解释、隐藏变量、机制结构与反证有助于发现关键未知；相似词不是机制相同。",
+      "action": "选择最可能改变决策的未知，明确映射条件，发现候选与确认分离。",
+      "limitation": "不是每次七步；诊断示范不是运行实证，类比可能失效。",
+      "scope": "候选发现方法；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+          "start": 34,
+          "end": 46,
+          "summary": "七种按需探查及适用范围"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-SEARCH",
+      "claim": "筛选相关性、成本、事实正确率与开放报告偏好各异；漏掉陌生机制是待检验解释。",
+      "action": "按任务比较检索与探索范围，保留可能改变判断的弱线索，独立验收未知发现。",
+      "limitation": "8道开放题、同家族模型评审不证明未知机制发现率；不能推导全部全文注入。",
+      "scope": "局部外部实验及待证机制；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+          "start": 38,
+          "end": 68,
+          "summary": "开放报告偏好、20事实题及不能过度解读"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-CAP",
+      "claim": "区分外部概念、方法、模式、可调用能力和证据；按对象、许可、条件及真实验收复用成熟劳动。",
+      "action": "先还原成品工作链与责任，选择直接借用或组合，按边界验证。",
+      "limitation": "流行度、作者自述、读取技能均不等于已安装或可执行；不能以工具路线覆盖目标。",
+      "scope": "治理与设计候选；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-16-external-intelligence-layer.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+          "start": 17,
+          "end": 40,
+          "summary": "来源职责与知识类型"
+        },
+        {
+          "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+          "start": 50,
+          "end": 60,
+          "summary": "成熟项目可吸收部分和边界"
+        }
+      ],
+      "external": [
+        [
+          "Inspect AI",
+          "https://inspect.aisi.org.uk/tasks",
+          "数据、求解和评分分离；文档不是部署证明"
+        ]
+      ]
+    },
+    {
+      "id": "K-RUNTIME",
+      "claim": "认知方法、运行时、行业任务是不同职责；文档和动态指令不保证运行能力。",
+      "action": "核当前宿主真实权限、工具、输入输出及日志；优先成熟原生能力。",
+      "limitation": "Hermes非唯一宿主；定时触发不等于持续思考，旧版本不能证明今日可用。",
+      "scope": "历史设计与现行治理；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/workflow-components-and-boundaries.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+          "start": 4,
+          "end": 31,
+          "summary": "三层职责及候选部件"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-CONT",
+      "claim": "长期目标/授权、阶段有效状态、原始资产应分层保存；按实际HEAD恢复并回读。",
+      "action": "从短入口查最新原件与状态，重大变化保留旧版本、实际证据、未完事项及下步。",
+      "limitation": "保存和同会话恢复不证明独立新会话可接续；缺权限/源则标未知。",
+      "scope": "治理与未验证接力候选；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+          "start": 20,
+          "end": 22,
+          "summary": "三类资产及独立对照未运行"
+        },
+        {
+          "path": "prompts/mobile-chat-continuation-v0.1.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+          "start": 7,
+          "end": 14,
+          "summary": "候选入口及职责"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-REAL",
+      "claim": "信息揽客是具体入口，价值取决于信息是否改变判断、机会或行动，而不是收集量。",
+      "action": "从实际目标和约束筛选可行动事项，核真实成果、成本及价值获取。",
+      "limitation": "候选应用不等于整个AI-D；没有现场或收入证据，不宣称实际收益。",
+      "scope": "候选价值链；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+          "start": 25,
+          "end": 44,
+          "summary": "信息入口及价值阈值"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-RESILIENCE",
+      "claim": "固定选址跨情景共享，故障后流量可重分配；在固定服务距离下总容量不能补救局部不可达。",
+      "action": "保持原对象、容量与距离，逐情景检查需求守恒、容量与可达性。",
+      "limitation": "仅原公开数据和情景设定；未估计真实故障概率、企业成本或效益。",
+      "scope": "既有真实离线计算；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "db7c8500052078abcb088af945ac3b467a60ce05",
+          "start": 11,
+          "end": 25,
+          "summary": "MILP模型、19情景与Maine不可达"
+        },
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+          "start": 11,
+          "end": 19,
+          "summary": "双停运83情景和空间可达必要条件"
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "K-EVOLVE",
+      "claim": "按新证据、反例、适用边界及真实影响原位修订；保留历史、失败和可复用产物。",
+      "action": "追溯具体失败位置、记录撤销条件、更新相关正本与验收，非重构全架构。",
+      "limitation": "候选不自动生效，无增益背景知识不默认激活；安全授权不能当噪音删除。",
+      "scope": "治理原则；V4定向仓库段落，非普遍真值或独立增益。",
+      "state": "source_reviewed",
+      "evidence": [
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+          "start": 42,
+          "end": 61,
+          "summary": "加入/修订/停用规则"
+        },
+        {
+          "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+          "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+          "blob": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+          "start": 33,
+          "end": 38,
+          "summary": "反馈路径及局部停止"
+        }
+      ],
+      "external": []
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "chromium": "144.0.7559.96",
+  "scope": "representative 4 actual claim records and one P5 route; exact committed client/CSS fingerprint verified separately; no full page or actual user device. HTTP loopback blocked by administrator; set_content used. Clipboard success and failure injected; OS clipboard not tested.",
+  "clientFNV1aUTF16": "f4978cbc",
+  "cssFNV1aUTF16": "d31fd8d8",
+  "uiCommit": "b7f0a0ebf7664e4b2ebff498506bac5cf4479551",
+  "tests": [
+    {
+      "name": "phone viewport no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "initial cards",
+      "pass": true
+    },
+    {
+      "name": "Chinese search",
+      "pass": true
+    },
+    {
+      "name": "empty result",
+      "pass": true
+    },
+    {
+      "name": "domain filter",
+      "pass": true
+    },
+    {
+      "name": "review state filter",
+      "pass": true
+    },
+    {
+      "name": "hidden target revealed",
+      "pass": true
+    },
+    {
+      "name": "P5 route sets filter and method",
+      "pass": true
+    },
+    {
+      "name": "clipboard success branch with test double",
+      "pass": true
+    },
+    {
+      "name": "claim copy includes condition, scope, source",
+      "pass": true
+    },
+    {
+      "name": "case insensitive asset search",
+      "pass": true
+    },
+    {
+      "name": "asset empty result",
+      "pass": true
+    },
+    {
+      "name": "source link version anchored",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true
+    },
+    {
+      "name": "clipboard failure fallback",
+      "pass": true
+    },
+    {
+      "name": "keyboard focus skip link",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    }
+  ]
+}

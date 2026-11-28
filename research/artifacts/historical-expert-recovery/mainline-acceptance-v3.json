@@ -1,0 +1,3028 @@
+{
+  "scope": "Frozen pre-repair tree and actual isolated renderer/guard regression; no full browser/model/clone test",
+  "main": "f89a300d154e6c85cbb61d81ca511664926b9725",
+  "integration": "be25104d76a0f61135467746812ab93c0044dcca",
+  "candidate": "91aaf80554e245b8763793da6ec43847c22bc212",
+  "trees": [
+    {
+      "commit": "91aaf80554e245b8763793da6ec43847c22bc212",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+          "mode": "100644",
+          "size": 4549
+        },
+        {
+          "path": "README.md",
+          "sha": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+          "mode": "100644",
+          "size": 40093
+        },
+        {
+          "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+          "sha": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+          "mode": "100644",
+          "size": 14195
+        },
+        {
+          "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+          "sha": "46ee5de08d105581bf7b9a350ba4fb4945ebff9f",
+          "mode": "100644",
+          "size": 3993
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "sha": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+          "mode": "100644",
+          "size": 18032
+        },
+        {
+          "path": "docs/ai-d-prompt/index.html",
+          "sha": "6285ab0ede199e4225e1149673bf5956f72c8711",
+          "mode": "100644",
+          "size": 142621
+        },
+        {
+          "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+          "sha": "13b53e99a5163aa05c6681bb08bccfe14b221afd",
+          "mode": "100644",
+          "size": 42531
+        },
+        {
+          "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+          "sha": "16d25325749cf3f53b0ea3f72d28f890b19847df",
+          "mode": "100644",
+          "size": 15519
+        },
+        {
+          "path": "docs/knowledge-workbench/DESIGN-V2.md",
+          "sha": "157e43e4c35beb0730ec6b05b41f72e6a4385058",
+          "mode": "100644",
+          "size": 7821
+        },
+        {
+          "path": "docs/knowledge-workbench/DESIGN-V3.md",
+          "sha": "b1ba8055d28ece1d39d63330e2335fc10295501a",
+          "mode": "100644",
+          "size": 6567
+        },
+        {
+          "path": "docs/knowledge-workbench/DESIGN-V4.md",
+          "sha": "c67fa247ef1c18249f215a32b955af991a6a8387",
+          "mode": "100644",
+          "size": 4805
+        },
+        {
+          "path": "docs/knowledge-workbench/design-v2.json",
+          "sha": "e0bb8b652bea31bfd671a0d6bf4acc9e4c539ebf",
+          "mode": "100644",
+          "size": 9318
+        },
+        {
+          "path": "docs/knowledge-workbench/design-v3.json",
+          "sha": "30ed4491a16023a2fe495d2a68e8e0bb09585c85",
+          "mode": "100644",
+          "size": 9216
+        },
+        {
+          "path": "docs/knowledge-workbench/design-v4.json",
+          "sha": "c9ab5952f704812dfc4e76fbe8420cf406b0bdbe",
+          "mode": "100644",
+          "size": 9156
+        },
+        {
+          "path": "docs/knowledge-workbench/generate-workbench.cjs",
+          "sha": "28754ec91682d6a4871477ef59491d5525e9cd80",
+          "mode": "100644",
+          "size": 16105
+        },
+        {
+          "path": "docs/knowledge-workbench/index.html",
+          "sha": "e0f9eae539e2babef3e1b6a072356555443a0ab8",
+          "mode": "100644",
+          "size": 548345
+        },
+        {
+          "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+          "sha": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+          "mode": "100644",
+          "size": 9117
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "sha": "ced7335091a96b8f33305d5a82cd5592b51946af",
+          "mode": "100644",
+          "size": 83081
+        },
+        {
+          "path": "evaluation/retrieval-probe-2026-11-06.mjs",
+          "sha": "cd859e2b328c55157a9d847c464a3a8ad357d949",
+          "mode": "100644",
+          "size": 10753
+        },
+        {
+          "path": "evaluation/retrieval-probe-results-2026-11-06.md",
+          "sha": "224e839bd5bcd6352b9d6d636309b81d742d5c89",
+          "mode": "100644",
+          "size": 6967
+        },
+        {
+          "path": "evaluation/source-decision-contract.test.mjs",
+          "sha": "b1313a159b9ba409c5de2a3bb3371a5cd7e72661",
+          "mode": "100644",
+          "size": 7917
+        },
+        {
+          "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+          "sha": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+          "mode": "100644",
+          "size": 11354
+        },
+        {
+          "path": "evaluation/workspace-trial/verify_snapshot.py",
+          "sha": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+          "mode": "100644",
+          "size": 2471
+        },
+        {
+          "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+          "sha": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+          "mode": "100644",
+          "size": 14434
+        },
+        {
+          "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+          "sha": "fbc9fccb54703d1b393f8959bf7f13cd59767531",
+          "mode": "100644",
+          "size": 7520
+        },
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "sha": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+          "mode": "100644",
+          "size": 17021
+        },
+        {
+          "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+          "sha": "46bd35ec18bff3b94a439222286cb9145512c96f",
+          "mode": "100644",
+          "size": 30693
+        },
+        {
+          "path": "knowledge/COGNITIVE-MAP.md",
+          "sha": "46e06c4691ac74d12fc1237e39555dfd72b0f6da",
+          "mode": "100644",
+          "size": 30124
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "sha": "0ec426d27c784105cf42aff502e8b40411822475",
+          "mode": "100644",
+          "size": 19848
+        },
+        {
+          "path": "knowledge/catalog-20261127.json",
+          "sha": "5b29976c82d1035504e464f171519a054885fb8c",
+          "mode": "100644",
+          "size": 54682
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "sha": "aa3f5d2ff7c18c544e6f38958d5aa7ff4e124b78",
+          "mode": "100644",
+          "size": 23358
+        },
+        {
+          "path": "knowledge/foundations/cross-layer-project-anchors.md",
+          "sha": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+          "mode": "100644",
+          "size": 64211
+        },
+        {
+          "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+          "sha": "a63e788213310628a22c3d06cbf846a19a9ff681",
+          "mode": "100644",
+          "size": 13198
+        },
+        {
+          "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+          "sha": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+          "mode": "100644",
+          "size": 12503
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "sha": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+          "mode": "100644",
+          "size": 17800
+        },
+        {
+          "path": "knowledge/knowledge-action-navigation.md",
+          "sha": "4d6fd81bd8cd5c78eca3982994851acf117e7e3e",
+          "mode": "100644",
+          "size": 11336
+        },
+        {
+          "path": "knowledge/knowledge-action-routes.json",
+          "sha": "30da516d0a6483216f817351fbff9d276b89973e",
+          "mode": "100644",
+          "size": 8283
+        },
+        {
+          "path": "knowledge/semantic-map-v2.json",
+          "sha": "269050d9ae6a5571b41bac28f0a8e7cc4c1749ac",
+          "mode": "100644",
+          "size": 206133
+        },
+        {
+          "path": "knowledge/semantic-map-v3.json",
+          "sha": "4bef46ee474fd5ab0785ba2bfb534ce4f786332c",
+          "mode": "100644",
+          "size": 266012
+        },
+        {
+          "path": "knowledge/semantic-map-v4.json",
+          "sha": "3c03fd39ff9ba25663fb1effc8e5938091779482",
+          "mode": "100644",
+          "size": 308135
+        },
+        {
+          "path": "knowledge/source-register-2026-11-05.md",
+          "sha": "571b90068357e33c5198280935cfa2df51d20e8c",
+          "mode": "100644",
+          "size": 4975
+        },
+        {
+          "path": "planning/README.md",
+          "sha": "5b860e35928fc82907a66eea9ef72818e47ec31b",
+          "mode": "100644",
+          "size": 4745
+        },
+        {
+          "path": "planning/goal-navigation-v0.1.md",
+          "sha": "9065701d2f96857df2662fec1cc48a3e86edf402",
+          "mode": "100644",
+          "size": 19710
+        },
+        {
+          "path": "planning/historical-consolidation-v0.1.md",
+          "sha": "ddb439cf5e685ebe1dd38b4ddcdb6d2ba43e93c8",
+          "mode": "100644",
+          "size": 7378
+        },
+        {
+          "path": "planning/proposal-review-v0.1.md",
+          "sha": "ce6924c94ab9bcc8bd461e5dcb6e479b29898426",
+          "mode": "100644",
+          "size": 7492
+        },
+        {
+          "path": "planning/research-to-github-v0.1.md",
+          "sha": "f7cfbc70194473dcbe6b1b3b6782433406b6ae71",
+          "mode": "100644",
+          "size": 9447
+        },
+        {
+          "path": "prompts/README.md",
+          "sha": "63b8712a54e407863853abf58db9e10553744cdc",
+          "mode": "100644",
+          "size": 1123
+        },
+        {
+          "path": "prompts/master-v1.0.md",
+          "sha": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+          "mode": "100644",
+          "size": 36591
+        },
+        {
+          "path": "prompts/mobile-chat-continuation-v0.1.md",
+          "sha": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+          "mode": "100644",
+          "size": 2432
+        },
+        {
+          "path": "prompts/mobile-chat-entry-v0.2.md",
+          "sha": "5b3fc9f0192a298fdcc94b40658b0e6d422ed3f6",
+          "mode": "100644",
+          "size": 1370
+        },
+        {
+          "path": "prompts/stages-2026-11-27.md",
+          "sha": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+          "mode": "100644",
+          "size": 2551
+        },
+        {
+          "path": "prompts/tasks/dual-outage-service-boundary-v1.md",
+          "sha": "0ac61ea88b4c0c5ac083769e5196c19f44028fd8",
+          "mode": "100644",
+          "size": 1886
+        },
+        {
+          "path": "prompts/tasks/entailment-evidence-gate-v1.md",
+          "sha": "63e03e6dd64496ebb2a8bc3b8ee17fd4872c16f5",
+          "mode": "100644",
+          "size": 2333
+        },
+        {
+          "path": "prompts/tasks/evidence-contract-validation-v1.md",
+          "sha": "3029006c95041f96a96aae98282fb309973cab74",
+          "mode": "100644",
+          "size": 1738
+        },
+        {
+          "path": "prompts/tasks/evidence-grounded-execution-v4.md",
+          "sha": "34d974d7322d6a56ffee72dea81eb2d8f8358553",
+          "mode": "100644",
+          "size": 4863
+        },
+        {
+          "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+          "sha": "154138abe07401f18ee9a502206f90b10536e71d",
+          "mode": "100644",
+          "size": 2423
+        },
+        {
+          "path": "prompts/tasks/full-knowledge-to-action-v2.md",
+          "sha": "ad2009d9dcddb1f4c6be94c04ff1f2a5728268b6",
+          "mode": "100644",
+          "size": 6311
+        },
+        {
+          "path": "prompts/tasks/historical-evidence-replay-v1.md",
+          "sha": "a8b737192790be5ce9568d123b7a78c149d9f955",
+          "mode": "100644",
+          "size": 976
+        },
+        {
+          "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+          "sha": "7c483c2131da1d539f37678862261c65a2164755",
+          "mode": "100644",
+          "size": 2965
+        },
+        {
+          "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+          "sha": "864264cdab1e0982cf457d30948b698082dbda78",
+          "mode": "100644",
+          "size": 2102
+        },
+        {
+          "path": "prompts/tasks/semantic-activation-and-review-v3.md",
+          "sha": "8a6c9024f0526e107e54584613d6651aad964897",
+          "mode": "100644",
+          "size": 5752
+        },
+        {
+          "path": "prompts/tasks/verified-transfer-and-mainline-v5.md",
+          "sha": "3b6411b08fac57468aff5c60257d5d7c670ca3f5",
+          "mode": "100644",
+          "size": 3890
+        },
+        {
+          "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+          "sha": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+          "mode": "100644",
+          "size": 11049
+        },
+        {
+          "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+          "sha": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+          "mode": "100644",
+          "size": 25051
+        },
+        {
+          "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+          "sha": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+          "mode": "100644",
+          "size": 9936
+        },
+        {
+          "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+          "sha": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+          "mode": "100644",
+          "size": 5667
+        },
+        {
+          "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "sha": "68d69028dacfc09e94037791828364a65d222bc6",
+          "mode": "100644",
+          "size": 7584
+        },
+        {
+          "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+          "sha": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+          "mode": "100644",
+          "size": 52060
+        },
+        {
+          "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+          "sha": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+          "mode": "100644",
+          "size": 23314
+        },
+        {
+          "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+          "sha": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+          "mode": "100644",
+          "size": 33346
+        },
+        {
+          "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+          "sha": "96a613853bc0d2337b64275c6b051790f4df542e",
+          "mode": "100644",
+          "size": 37012
+        },
+        {
+          "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+          "sha": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+          "mode": "100644",
+          "size": 12478
+        },
+        {
+          "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+          "sha": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+          "mode": "100644",
+          "size": 26920
+        },
+        {
+          "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+          "sha": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+          "mode": "100644",
+          "size": 41121
+        },
+        {
+          "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+          "sha": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+          "mode": "100644",
+          "size": 26238
+        },
+        {
+          "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+          "sha": "e4d29fafc96c7aa3056547860b682ec4ef080278",
+          "mode": "100644",
+          "size": 28404
+        },
+        {
+          "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+          "sha": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+          "mode": "100644",
+          "size": 18477
+        },
+        {
+          "path": "research/2026-11-16-external-intelligence-layer.md",
+          "sha": "d7970fda09b4568d6f677822431d8a02dbe4d2fb",
+          "mode": "100644",
+          "size": 8631
+        },
+        {
+          "path": "research/2026-11-16-reconciliation-and-cleanup.md",
+          "sha": "b57a83095341a137b221fb5c63f67da80f67769f",
+          "mode": "100644",
+          "size": 6369
+        },
+        {
+          "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+          "sha": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+          "mode": "100644",
+          "size": 6405
+        },
+        {
+          "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+          "sha": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+          "mode": "100644",
+          "size": 7982
+        },
+        {
+          "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+          "sha": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+          "mode": "100644",
+          "size": 12640
+        },
+        {
+          "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "sha": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+          "mode": "100644",
+          "size": 10671
+        },
+        {
+          "path": "research/2026-11-27-evidence-grounded-v4-execution.md",
+          "sha": "587c5dcd62f898e3457c0233320eb3babf2fd4f3",
+          "mode": "100644",
+          "size": 4068
+        },
+        {
+          "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+          "sha": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+          "mode": "100644",
+          "size": 19498
+        },
+        {
+          "path": "research/2026-11-27-historical-expert-recovery-mainline-v2.md",
+          "sha": "f24d0f376158d6a215de18b033565377f471ac93",
+          "mode": "100644",
+          "size": 10304
+        },
+        {
+          "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+          "sha": "c71e6d38dedb5b20df9a30dea8957cb6940bd46a",
+          "mode": "100644",
+          "size": 14914
+        },
+        {
+          "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+          "sha": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+          "mode": "100644",
+          "size": 6225
+        },
+        {
+          "path": "research/2026-11-27-knowledge-execution-reorganization.md",
+          "sha": "89bdc4d1f86b423655435d0151c36720715d80f3",
+          "mode": "100644",
+          "size": 2064
+        },
+        {
+          "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+          "sha": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+          "mode": "100644",
+          "size": 11545
+        },
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "sha": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+          "mode": "100644",
+          "size": 10076
+        },
+        {
+          "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+          "sha": "2b4fd59bfa1e8d168e3af566cd545fc93f021c3f",
+          "mode": "100644",
+          "size": 4299
+        },
+        {
+          "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "sha": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+          "mode": "100644",
+          "size": 6917
+        },
+        {
+          "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+          "sha": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+          "mode": "100644",
+          "size": 10947
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+          "sha": "6a5c4adea9b16dd0985033085210f23de0546e52",
+          "mode": "100644",
+          "size": 5641
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+          "sha": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+          "mode": "100644",
+          "size": 9910
+        },
+        {
+          "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "sha": "f523c36fc83dab158e919ede0b50813ca35ec854",
+          "mode": "100644",
+          "size": 4722
+        },
+        {
+          "path": "research/2026-11-27-semantic-activation-v2-execution.md",
+          "sha": "97e7bc852282283da3bb3109487cf3a3be6373d1",
+          "mode": "100644",
+          "size": 5351
+        },
+        {
+          "path": "research/2026-11-27-semantic-activation-v3-execution.md",
+          "sha": "477db25893647eb2599bd9ce3e5fcf80e8b431de",
+          "mode": "100644",
+          "size": 5024
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+          "sha": "077610998814fdde6f363a31344f2d129f527e52",
+          "mode": "100644",
+          "size": 12674
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+          "sha": "e3d74f72ec53119f2e6d7660daba98beaacfcd27",
+          "mode": "100644",
+          "size": 5007
+        },
+        {
+          "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+          "sha": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+          "mode": "100644",
+          "size": 6866
+        },
+        {
+          "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+          "sha": "9aa2344d782c08fec3a73909664787aca29b14dd",
+          "mode": "100644",
+          "size": 8048
+        },
+        {
+          "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+          "sha": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+          "mode": "100644",
+          "size": 11752
+        },
+        {
+          "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+          "sha": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+          "mode": "100644",
+          "size": 10292
+        },
+        {
+          "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+          "sha": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+          "mode": "100644",
+          "size": 8488
+        },
+        {
+          "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "sha": "db7c8500052078abcb088af945ac3b467a60ce05",
+          "mode": "100644",
+          "size": 7694
+        },
+        {
+          "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+          "sha": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+          "mode": "100644",
+          "size": 5330
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "sha": "a65aef634d9eedf47500aefcc7c113207c5fdf90",
+          "mode": "100644",
+          "size": 1988
+        },
+        {
+          "path": "research/archive/README.md",
+          "sha": "b2633e554d917af522982611924eb30493c9ab39",
+          "mode": "100644",
+          "size": 721
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/00-CHARTER.md",
+          "sha": "4eebb09622e8f779f809cf2005bd58236627f9f2",
+          "mode": "100644",
+          "size": 1328
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/01-BOUNDARIES.md",
+          "sha": "91549a274c229fca7172b538d4ef58c8ca14a3b5",
+          "mode": "100644",
+          "size": 828
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/02-SPACE-MAP.md",
+          "sha": "e6cad4c819d47e7be7fe03a24b7c61a29b7b3a08",
+          "mode": "100644",
+          "size": 3083
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/03-RESEARCH-PROTOCOL.md",
+          "sha": "a81894940316eda84a30666f70bf06591a6139ad",
+          "mode": "100644",
+          "size": 1160
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/04-SOURCE-POLICY.md",
+          "sha": "3e7ac61e85ddeda9e921b9a84ab7d03cd097c34f",
+          "mode": "100644",
+          "size": 1003
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/05-EVIDENCE-POLICY.md",
+          "sha": "18172edd56dcfd2c8240838ddc11952e84ead0e8",
+          "mode": "100644",
+          "size": 805
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/06-ASSET-LIFECYCLE.md",
+          "sha": "75ca62b9f7e3b1140e5e1a129fec7c94f8f3889e",
+          "mode": "100644",
+          "size": 613
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/07-PROMOTION-POLICY.md",
+          "sha": "48df9449ac853abfb11605e21fa4d15d0e8aaa4b",
+          "mode": "100644",
+          "size": 688
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/08-POLLUTION-CONTROL.md",
+          "sha": "7da175fc00fa089aadcfde4c77ccf77abc6dbd41",
+          "mode": "100644",
+          "size": 976
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/09-AUTOMATION-READINESS.md",
+          "sha": "8048ae11b9e241dc3658d1fc77b8fa220aca1e04",
+          "mode": "100644",
+          "size": 832
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/10-EVALUATION.md",
+          "sha": "29962fc91ede59390498d1047e2c546d26f8ebe7",
+          "mode": "100644",
+          "size": 820
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/11-OPEN-QUESTIONS.md",
+          "sha": "d25618c13a2544bcf4a9826f942c70424d10cd5d",
+          "mode": "100644",
+          "size": 825
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/12-BULK-INTAKE.md",
+          "sha": "325250387437cb9417c6db588a3abaa63ac1550a",
+          "mode": "100644",
+          "size": 2872
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/13-COVERAGE-AND-GAPS.md",
+          "sha": "ce12be29e47ed9966f56ec9b3dfa62e49ef412ef",
+          "mode": "100644",
+          "size": 1929
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/14-RUN-AND-CHECKPOINTS.md",
+          "sha": "c81a8e985918b33445745c93b99d37a4b882ef95",
+          "mode": "100644",
+          "size": 2349
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/15-ENTITY-CLAIM-EVIDENCE.md",
+          "sha": "00d8f0d2b805fc32eec612ed3e60cf8c48d893bb",
+          "mode": "100644",
+          "size": 2695
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/16-SKILL-EVALUATION.md",
+          "sha": "cbdf907d40343516d5d338239d2faa47a5b5d027",
+          "mode": "100644",
+          "size": 2585
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/ASSET-REGISTRY.md",
+          "sha": "7ee478a23e54b2f55dca5cb8fbad7d0c9b8a64a6",
+          "mode": "100644",
+          "size": 833
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/QUEUE.md",
+          "sha": "d78e7c8ee43d2e5ff6034e306afe43c24c30b245",
+          "mode": "100644",
+          "size": 774
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/README.md",
+          "sha": "334653abbdffc757baec2b762b35a5ddc9236ee4",
+          "mode": "100644",
+          "size": 6455
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/RESEARCH-LEDGER.md",
+          "sha": "7db5b28bf8ea85b8f1e203d728f921e97d4857f6",
+          "mode": "100644",
+          "size": 1173
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/archive/README.md",
+          "sha": "5ae38482bedb3ad783ebcd7ed9f39f05a729dfb2",
+          "mode": "100644",
+          "size": 146
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/candidates/README.md",
+          "sha": "e6e08c55d4576bd76a29e2991f8ac00dc86044be",
+          "mode": "100644",
+          "size": 123
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/decisions/README.md",
+          "sha": "a0b89aa8699c6cb602958cdcdcdcd821ecf4cd1b",
+          "mode": "100644",
+          "size": 129
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/discoveries/README.md",
+          "sha": "7d6421bed6c7b1b9a20447e33acf48caf94d2cd0",
+          "mode": "100644",
+          "size": 170
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/evidence/README.md",
+          "sha": "f9b3eb12198f3b2a638f084ef4563e4d5a319ae8",
+          "mode": "100644",
+          "size": 119
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/experiments/README.md",
+          "sha": "fcd2bb7a244dd66dfe5644832220180231cb70f1",
+          "mode": "100644",
+          "size": 143
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/research/README.md",
+          "sha": "77445507fd34a1f08f63fa38bbb48694a68a4845",
+          "mode": "100644",
+          "size": 150
+        },
+        {
+          "path": "research/archive/ai-intelligence-0db397e/sources/README.md",
+          "sha": "afce25ab539f02eb05c7aacda133e38908e07476",
+          "mode": "100644",
+          "size": 229
+        },
+        {
+          "path": "research/archive/expert-skills/ai-d-cognitive-core-original.md",
+          "sha": "bbb0291d60953bfea24d899526a23c2569a605ef",
+          "mode": "100644",
+          "size": 8476
+        },
+        {
+          "path": "research/archive/expert-skills/expert-team-collaboration-original.md",
+          "sha": "6d08dc723f9d9b106dbfc5851d214f576f310e34",
+          "mode": "100644",
+          "size": 3372
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+          "sha": "52f0248af83b31ffd8817c50d459d1c3c84cda8e",
+          "mode": "100644",
+          "size": 43908
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+          "sha": "bc2355ea85bc36111c614d7bc2d0685b23c068d0",
+          "mode": "100644",
+          "size": 23436
+        },
+        {
+          "path": "research/artifacts/historical-expert-recovery/branch-delta-20261127.json",
+          "sha": "a38e764ced05d6cad89d68adee5439d98022a284",
+          "mode": "100644",
+          "size": 60660
+        },
+        {
+          "path": "research/artifacts/historical-expert-recovery/pr1-pr2-line-overlap-v2.json",
+          "sha": "1f34863041eca4253d8010473ac97805d5df7129",
+          "mode": "100644",
+          "size": 74255
+        },
+        {
+          "path": "research/artifacts/historical-expert-recovery/source-contract-v2-probe.mjs",
+          "sha": "98b270a413e636ae3cecfc284405951cb0ab95ce",
+          "mode": "100644",
+          "size": 1090
+        },
+        {
+          "path": "research/artifacts/historical-expert-recovery/source-contract-v2-result.json",
+          "sha": "ac83a9c90a8c096be7f36d67c7c9202263a745f9",
+          "mode": "100644",
+          "size": 1514
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/audit.json",
+          "sha": "d3ef8154a6837cc9b74950679aa643af0b4a8c66",
+          "mode": "100644",
+          "size": 1997
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+          "sha": "159926f99951258d76109a170a78f48f43f4ab75",
+          "mode": "100644",
+          "size": 4608
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+          "sha": "96ed0385f1e1cceb3570356f60c0b909b56d8e6b",
+          "mode": "100644",
+          "size": 3409
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+          "sha": "e0b53aabde2ca0f51d855556c818eecb8e049fc4",
+          "mode": "100644",
+          "size": 6811
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/input.json",
+          "sha": "3a09bd620aaa6125624e83f025e96012ad6bdcdd",
+          "mode": "100644",
+          "size": 2219
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/results.json",
+          "sha": "9f88e09c1c3bc02a5496b3581a8dd1e1a4a4e5e7",
+          "mode": "100644",
+          "size": 9451
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+          "sha": "1d323f6a1c64df18cdee43cc80336e814743cb66",
+          "mode": "100644",
+          "size": 3085
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+          "sha": "0ecffb49d023db6da5721e8074b13e803615b24e",
+          "mode": "100644",
+          "size": 17437
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+          "sha": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+          "mode": "100644",
+          "size": 2279
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+          "sha": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+          "mode": "100644",
+          "size": 455
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+          "sha": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+          "mode": "100644",
+          "size": 455
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/artifact-inventory.json",
+          "sha": "c5b4716177b6ae2c00fdf22afd0ac50f2f8bfe70",
+          "mode": "100644",
+          "size": 10734
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-01.json",
+          "sha": "8dda8e16b7b9452e665d02b5d803e348e92c7d6e",
+          "mode": "100644",
+          "size": 99220
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-02.json",
+          "sha": "012f5fc35e4555d37634194527701dcfaf3256ba",
+          "mode": "100644",
+          "size": 92145
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-03.json",
+          "sha": "fea115c7af6badce5ed59e5553bc388faff2d95f",
+          "mode": "100644",
+          "size": 80765
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/batch-04.json",
+          "sha": "b9337755c116a7edc50f0e24c077f5033168aaaf",
+          "mode": "100644",
+          "size": 61088
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+          "sha": "a99c11733610721fe93d3505cec486d0772c6d0a",
+          "mode": "100644",
+          "size": 4103
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json",
+          "sha": "7cea63617f3e60280c520c66aef96964e3e75b6f",
+          "mode": "100644",
+          "size": 77105
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/knowledge-use-receipts.json",
+          "sha": "bb708ce89698cf8719e57541eedfdb11f31821c9",
+          "mode": "100644",
+          "size": 6705
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json",
+          "sha": "c58097e754321ca03f6245b8dd6a4b7a236ebefc",
+          "mode": "100644",
+          "size": 3622
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-browser-probe-result.json",
+          "sha": "df7a8ec260073e2030bddf7904fbe8a8c5dc13a9",
+          "mode": "100644",
+          "size": 1728
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-browser-probe.py",
+          "sha": "ede4ca3a5a583091d7551dff169c9e16fffc9b43",
+          "mode": "100644",
+          "size": 4339
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-claim-review.json",
+          "sha": "9bb45c4322db3d444b140d2a0431b72bdcf55521",
+          "mode": "100644",
+          "size": 5371
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/LICENSE-test-suite.txt",
+          "sha": "c28adbadd9114a30a302fef37c3d14f490645c1c",
+          "mode": "100644",
+          "size": 1057
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/README.md",
+          "sha": "e0e403be89eb4182c0c701f26f2d3691d1d4db18",
+          "mode": "100644",
+          "size": 1033
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/public-tests.json",
+          "sha": "305b2a567f45ff74d3fab4f79be08c7e49652c65",
+          "mode": "100644",
+          "size": 13574
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/result.json",
+          "sha": "5eb07228004cb3bae74743a7c01aebfbf0108be4",
+          "mode": "100644",
+          "size": 4308
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/review-contract.json",
+          "sha": "7b65a4850bb6d9aeb81e25ed5ae0e2d83df55c1c",
+          "mode": "100644",
+          "size": 2061
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-contract/validate_reviews.py",
+          "sha": "8b168121de94fee72da3cca7475d963824a59c67",
+          "mode": "100644",
+          "size": 3407
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v3-parallel-manufacturing-delta.json",
+          "sha": "25a360fd86be443e59f7d6dd4d848b7bf0e2570c",
+          "mode": "100644",
+          "size": 8375
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-active-governance-regression.json",
+          "sha": "23f2edc83c2a4aebf777bd2d5b466f8c1a436e0a",
+          "mode": "100644",
+          "size": 1053
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-claim-review.json",
+          "sha": "4099557c0c525cae353a526273685dc6efcadbca",
+          "mode": "100644",
+          "size": 39432
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-entailment/entailment-diagnostic.cjs",
+          "sha": "88514f9c6760b05d3701c9a5365a6f394b8fa966",
+          "mode": "100644",
+          "size": 1766
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-entailment/result.json",
+          "sha": "79413cfe270f16b26b61db366d506014beb83d5f",
+          "mode": "100644",
+          "size": 14365
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-evidence-lines-verified.json",
+          "sha": "2ed3d3362cde30661e2592ea827ebdabedd58bbe",
+          "mode": "100644",
+          "size": 17381
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json",
+          "sha": "8b905c15abbfae608bcc1c29fbb46f52a42d66d1",
+          "mode": "100644",
+          "size": 4243
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard.cjs",
+          "sha": "afbf0e466b9e8a1738a3d6b739b4f02acb4e2b34",
+          "mode": "100644",
+          "size": 2486
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-governance-decisions.json",
+          "sha": "cd024f5555599fa304ddbc43af10be4b2a85ebdc",
+          "mode": "100644",
+          "size": 4591
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-nine-claim-review.json",
+          "sha": "abb80da8e30258caafc10b212693606e56c0e9cd",
+          "mode": "100644",
+          "size": 10539
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/v4-workbench-recovery.json",
+          "sha": "16aadabd3d18c49fa68508f7b02bb431239d58ba",
+          "mode": "100644",
+          "size": 735
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/validate-semantic-map.cjs",
+          "sha": "d87818b230d80f144912eaca9a669b8d689e5b08",
+          "mode": "100644",
+          "size": 819
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/workbench-v2-static-checks.json",
+          "sha": "17a62d80cffd30439ab68bfdedd56f53a16e66d9",
+          "mode": "100644",
+          "size": 623
+        },
+        {
+          "path": "research/artifacts/semantic-reorganization/workbench-v3-static-checks.json",
+          "sha": "30a55d7864ade1e9153af7bd2546e16346168a09",
+          "mode": "100644",
+          "size": 500
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/population.csv",
+          "sha": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+          "mode": "100644",
+          "size": 2107
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+          "sha": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+          "mode": "100644",
+          "size": 761
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/solve.py",
+          "sha": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+          "mode": "100644",
+          "size": 4972
+        },
+        {
+          "path": "research/expert-cognition-distillation-positioning-2026-11-06.md",
+          "sha": "1b89b2a2ef75a09cfd26c331b48c124ea14af78b",
+          "mode": "100644",
+          "size": 7602
+        },
+        {
+          "path": "research/workflow-components-and-boundaries.md",
+          "sha": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+          "mode": "100644",
+          "size": 9699
+        }
+      ]
+    },
+    {
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+          "mode": "100644",
+          "size": 4549
+        },
+        {
+          "path": "README.md",
+          "sha": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+          "mode": "100644",
+          "size": 40093
+        },
+        {
+          "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+          "sha": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+          "mode": "100644",
+          "size": 14195
+        },
+        {
+          "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+          "sha": "46ee5de08d105581bf7b9a350ba4fb4945ebff9f",
+          "mode": "100644",
+          "size": 3993
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "sha": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+          "mode": "100644",
+          "size": 18032
+        },
+        {
+          "path": "docs/ai-d-prompt/index.html",
+          "sha": "6285ab0ede199e4225e1149673bf5956f72c8711",
+          "mode": "100644",
+          "size": 142621
+        },
+        {
+          "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+          "sha": "13b53e99a5163aa05c6681bb08bccfe14b221afd",
+          "mode": "100644",
+          "size": 42531
+        },
+        {
+          "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+          "sha": "16d25325749cf3f53b0ea3f72d28f890b19847df",
+          "mode": "100644",
+          "size": 15519
+        },
+        {
+          "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+          "sha": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+          "mode": "100644",
+          "size": 9117
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "sha": "5440d4fa737ec228e0def2c097cd03db0e93344a",
+          "mode": "100644",
+          "size": 56213
+        },
+        {
+          "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+          "sha": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+          "mode": "100644",
+          "size": 11354
+        },
+        {
+          "path": "evaluation/workspace-trial/verify_snapshot.py",
+          "sha": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+          "mode": "100644",
+          "size": 2471
+        },
+        {
+          "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+          "sha": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+          "mode": "100644",
+          "size": 14434
+        },
+        {
+          "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+          "sha": "fbc9fccb54703d1b393f8959bf7f13cd59767531",
+          "mode": "100644",
+          "size": 7520
+        },
+        {
+          "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+          "sha": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+          "mode": "100644",
+          "size": 17021
+        },
+        {
+          "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+          "sha": "46bd35ec18bff3b94a439222286cb9145512c96f",
+          "mode": "100644",
+          "size": 30693
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "sha": "5f409b574656ec00ba44557e29bf007d2c196eea",
+          "mode": "100644",
+          "size": 39961
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "sha": "51cce1f5362a540b586b8b08627dbac976d70db3",
+          "mode": "100644",
+          "size": 11318
+        },
+        {
+          "path": "knowledge/foundations/cross-layer-project-anchors.md",
+          "sha": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+          "mode": "100644",
+          "size": 64211
+        },
+        {
+          "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+          "sha": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+          "mode": "100644",
+          "size": 12503
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "sha": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+          "mode": "100644",
+          "size": 17800
+        },
+        {
+          "path": "knowledge/source-register-2026-11-05.md",
+          "sha": "571b90068357e33c5198280935cfa2df51d20e8c",
+          "mode": "100644",
+          "size": 4975
+        },
+        {
+          "path": "prompts/README.md",
+          "sha": "36ac344fda23862ddad99a9f942d546eec91a434",
+          "mode": "100644",
+          "size": 2701
+        },
+        {
+          "path": "prompts/master-v1.0.md",
+          "sha": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+          "mode": "100644",
+          "size": 36591
+        },
+        {
+          "path": "prompts/mobile-chat-continuation-v0.1.md",
+          "sha": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+          "mode": "100644",
+          "size": 2432
+        },
+        {
+          "path": "prompts/mobile-chat-entry-v0.2.md",
+          "sha": "5b3fc9f0192a298fdcc94b40658b0e6d422ed3f6",
+          "mode": "100644",
+          "size": 1370
+        },
+        {
+          "path": "prompts/stages-2026-11-27.md",
+          "sha": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+          "mode": "100644",
+          "size": 2551
+        },
+        {
+          "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+          "sha": "154138abe07401f18ee9a502206f90b10536e71d",
+          "mode": "100644",
+          "size": 2423
+        },
+        {
+          "path": "prompts/tasks/historical-evidence-replay-v1.md",
+          "sha": "a8b737192790be5ce9568d123b7a78c149d9f955",
+          "mode": "100644",
+          "size": 976
+        },
+        {
+          "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+          "sha": "7c483c2131da1d539f37678862261c65a2164755",
+          "mode": "100644",
+          "size": 2965
+        },
+        {
+          "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+          "sha": "864264cdab1e0982cf457d30948b698082dbda78",
+          "mode": "100644",
+          "size": 2102
+        },
+        {
+          "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+          "sha": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+          "mode": "100644",
+          "size": 11049
+        },
+        {
+          "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+          "sha": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+          "mode": "100644",
+          "size": 25051
+        },
+        {
+          "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+          "sha": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+          "mode": "100644",
+          "size": 9936
+        },
+        {
+          "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+          "sha": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+          "mode": "100644",
+          "size": 5667
+        },
+        {
+          "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "sha": "68d69028dacfc09e94037791828364a65d222bc6",
+          "mode": "100644",
+          "size": 7584
+        },
+        {
+          "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+          "sha": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+          "mode": "100644",
+          "size": 52060
+        },
+        {
+          "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+          "sha": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+          "mode": "100644",
+          "size": 23314
+        },
+        {
+          "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+          "sha": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+          "mode": "100644",
+          "size": 33346
+        },
+        {
+          "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+          "sha": "96a613853bc0d2337b64275c6b051790f4df542e",
+          "mode": "100644",
+          "size": 37012
+        },
+        {
+          "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+          "sha": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+          "mode": "100644",
+          "size": 12478
+        },
+        {
+          "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+          "sha": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+          "mode": "100644",
+          "size": 26920
+        },
+        {
+          "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+          "sha": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+          "mode": "100644",
+          "size": 41121
+        },
+        {
+          "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+          "sha": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+          "mode": "100644",
+          "size": 26238
+        },
+        {
+          "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+          "sha": "bd8a4c06c835d5fffdf693fcfa322ac346fc8248",
+          "mode": "100644",
+          "size": 21229
+        },
+        {
+          "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+          "sha": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+          "mode": "100644",
+          "size": 18477
+        },
+        {
+          "path": "research/2026-11-16-external-intelligence-layer.md",
+          "sha": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+          "mode": "100644",
+          "size": 8192
+        },
+        {
+          "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+          "sha": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+          "mode": "100644",
+          "size": 6405
+        },
+        {
+          "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+          "sha": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+          "mode": "100644",
+          "size": 7982
+        },
+        {
+          "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+          "sha": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+          "mode": "100644",
+          "size": 12640
+        },
+        {
+          "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "sha": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+          "mode": "100644",
+          "size": 10671
+        },
+        {
+          "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+          "sha": "c71e6d38dedb5b20df9a30dea8957cb6940bd46a",
+          "mode": "100644",
+          "size": 14914
+        },
+        {
+          "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+          "sha": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+          "mode": "100644",
+          "size": 6225
+        },
+        {
+          "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+          "sha": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+          "mode": "100644",
+          "size": 11545
+        },
+        {
+          "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+          "sha": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+          "mode": "100644",
+          "size": 10076
+        },
+        {
+          "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+          "sha": "2b4fd59bfa1e8d168e3af566cd545fc93f021c3f",
+          "mode": "100644",
+          "size": 4299
+        },
+        {
+          "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "sha": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+          "mode": "100644",
+          "size": 6917
+        },
+        {
+          "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+          "sha": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+          "mode": "100644",
+          "size": 10947
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+          "sha": "6a5c4adea9b16dd0985033085210f23de0546e52",
+          "mode": "100644",
+          "size": 5641
+        },
+        {
+          "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+          "sha": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+          "mode": "100644",
+          "size": 9910
+        },
+        {
+          "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "sha": "f523c36fc83dab158e919ede0b50813ca35ec854",
+          "mode": "100644",
+          "size": 4722
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+          "sha": "077610998814fdde6f363a31344f2d129f527e52",
+          "mode": "100644",
+          "size": 12674
+        },
+        {
+          "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+          "sha": "e3d74f72ec53119f2e6d7660daba98beaacfcd27",
+          "mode": "100644",
+          "size": 5007
+        },
+        {
+          "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+          "sha": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+          "mode": "100644",
+          "size": 6866
+        },
+        {
+          "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+          "sha": "9aa2344d782c08fec3a73909664787aca29b14dd",
+          "mode": "100644",
+          "size": 8048
+        },
+        {
+          "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+          "sha": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+          "mode": "100644",
+          "size": 11752
+        },
+        {
+          "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+          "sha": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+          "mode": "100644",
+          "size": 10292
+        },
+        {
+          "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+          "sha": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+          "mode": "100644",
+          "size": 8488
+        },
+        {
+          "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "sha": "db7c8500052078abcb088af945ac3b467a60ce05",
+          "mode": "100644",
+          "size": 7694
+        },
+        {
+          "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+          "sha": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+          "mode": "100644",
+          "size": 5330
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "sha": "e0b277ab8ac69b1f36b90b96311996338d882d41",
+          "mode": "100644",
+          "size": 69908
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+          "sha": "52f0248af83b31ffd8817c50d459d1c3c84cda8e",
+          "mode": "100644",
+          "size": 43908
+        },
+        {
+          "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+          "sha": "bc2355ea85bc36111c614d7bc2d0685b23c068d0",
+          "mode": "100644",
+          "size": 23436
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/audit.json",
+          "sha": "d3ef8154a6837cc9b74950679aa643af0b4a8c66",
+          "mode": "100644",
+          "size": 1997
+        },
+        {
+          "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+          "sha": "159926f99951258d76109a170a78f48f43f4ab75",
+          "mode": "100644",
+          "size": 4608
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+          "sha": "96ed0385f1e1cceb3570356f60c0b909b56d8e6b",
+          "mode": "100644",
+          "size": 3409
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+          "sha": "e0b53aabde2ca0f51d855556c818eecb8e049fc4",
+          "mode": "100644",
+          "size": 6811
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/input.json",
+          "sha": "3a09bd620aaa6125624e83f025e96012ad6bdcdd",
+          "mode": "100644",
+          "size": 2219
+        },
+        {
+          "path": "research/artifacts/manufacturing-quality-v3/results.json",
+          "sha": "9f88e09c1c3bc02a5496b3581a8dd1e1a4a4e5e7",
+          "mode": "100644",
+          "size": 9451
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+          "sha": "1d323f6a1c64df18cdee43cc80336e814743cb66",
+          "mode": "100644",
+          "size": 3085
+        },
+        {
+          "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+          "sha": "0ecffb49d023db6da5721e8074b13e803615b24e",
+          "mode": "100644",
+          "size": 17437
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+          "sha": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+          "mode": "100644",
+          "size": 2279
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+          "sha": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+          "mode": "100644",
+          "size": 455
+        },
+        {
+          "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+          "sha": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+          "mode": "100644",
+          "size": 455
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/population.csv",
+          "sha": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+          "mode": "100644",
+          "size": 2107
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+          "sha": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+          "mode": "100644",
+          "size": 761
+        },
+        {
+          "path": "research/artifacts/v23.6-network-resilience/solve.py",
+          "sha": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+          "mode": "100644",
+          "size": 4972
+        },
+        {
+          "path": "research/workflow-components-and-boundaries.md",
+          "sha": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+          "mode": "100644",
+          "size": 9699
+        }
+      ]
+    },
+    {
+      "commit": "f89a300d154e6c85cbb61d81ca511664926b9725",
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "d074aa966757b22584374d277209e090ba70d74b",
+          "mode": "100644",
+          "size": 37324
+        },
+        {
+          "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+          "sha": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+          "mode": "100644",
+          "size": 14195
+        },
+        {
+          "path": "decisions/2026-11-05-goal-options.md",
+          "sha": "0497bc9d0f381303b52d88c8b5cf776e71f36d38",
+          "mode": "100644",
+          "size": 17529
+        },
+        {
+          "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+          "sha": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+          "mode": "100644",
+          "size": 9117
+        },
+        {
+          "path": "evaluation/first-cross-domain-tests.md",
+          "sha": "57837a304bf9e185aec2b5ad489ce5613a29cacc",
+          "mode": "100644",
+          "size": 54330
+        },
+        {
+          "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+          "sha": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+          "mode": "100644",
+          "size": 14434
+        },
+        {
+          "path": "knowledge/INDEX.md",
+          "sha": "dd40dd73a7761692c4f67be69c0ee740644ce7a4",
+          "mode": "100644",
+          "size": 25516
+        },
+        {
+          "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+          "sha": "73156fad49b5c567665d66aef10ee36e02709c51",
+          "mode": "100644",
+          "size": 10464
+        },
+        {
+          "path": "knowledge/foundations/cross-layer-project-anchors.md",
+          "sha": "4e4c292e92ed2eb9bd78d32e88d517654116788e",
+          "mode": "100644",
+          "size": 56341
+        },
+        {
+          "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+          "sha": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+          "mode": "100644",
+          "size": 12503
+        },
+        {
+          "path": "knowledge/foundations/organization-protocol.md",
+          "sha": "86bcd5bbb0c3d9d1bd85924c969ea26c649947fb",
+          "mode": "100644",
+          "size": 14243
+        },
+        {
+          "path": "knowledge/source-register-2026-11-05.md",
+          "sha": "571b90068357e33c5198280935cfa2df51d20e8c",
+          "mode": "100644",
+          "size": 4975
+        },
+        {
+          "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+          "sha": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+          "mode": "100644",
+          "size": 11049
+        },
+        {
+          "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+          "sha": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+          "mode": "100644",
+          "size": 25051
+        },
+        {
+          "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+          "sha": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+          "mode": "100644",
+          "size": 9936
+        },
+        {
+          "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+          "sha": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+          "mode": "100644",
+          "size": 5667
+        },
+        {
+          "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "sha": "68d69028dacfc09e94037791828364a65d222bc6",
+          "mode": "100644",
+          "size": 7584
+        },
+        {
+          "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+          "sha": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+          "mode": "100644",
+          "size": 52060
+        },
+        {
+          "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+          "sha": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+          "mode": "100644",
+          "size": 23314
+        },
+        {
+          "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+          "sha": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+          "mode": "100644",
+          "size": 33346
+        },
+        {
+          "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+          "sha": "008db0a642296fbfd3729f0346aec0dff67baf2f",
+          "mode": "100644",
+          "size": 34003
+        },
+        {
+          "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+          "sha": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+          "mode": "100644",
+          "size": 12478
+        },
+        {
+          "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+          "sha": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+          "mode": "100644",
+          "size": 26920
+        },
+        {
+          "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+          "sha": "fcf59393716b49841bdadc2157e0e88da23309f7",
+          "mode": "100644",
+          "size": 40423
+        },
+        {
+          "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+          "sha": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+          "mode": "100644",
+          "size": 26238
+        },
+        {
+          "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+          "sha": "bd8a4c06c835d5fffdf693fcfa322ac346fc8248",
+          "mode": "100644",
+          "size": 21229
+        },
+        {
+          "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+          "sha": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+          "mode": "100644",
+          "size": 18477
+        },
+        {
+          "path": "research/2026-11-16-external-intelligence-layer.md",
+          "sha": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+          "mode": "100644",
+          "size": 8192
+        },
+        {
+          "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+          "sha": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+          "mode": "100644",
+          "size": 6405
+        },
+        {
+          "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+          "sha": "999b333e6e3835e916be3d6d71daef33a230509e",
+          "mode": "100644",
+          "size": 37979
+        },
+        {
+          "path": "research/workflow-components-and-boundaries.md",
+          "sha": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+          "mode": "100644",
+          "size": 9699
+        }
+      ]
+    }
+  ],
+  "treeComparison": {
+    "main": {
+      "same": 19,
+      "modified": 12,
+      "removed": 0
+    },
+    "integration": {
+      "same": 81,
+      "modified": 7,
+      "removed": 0
+    },
+    "historicalExact": 43,
+    "priorV2": {
+      "same": 181,
+      "modified": 7,
+      "removed": 2,
+      "added": 7
+    }
+  },
+  "redundantIntermediate": {
+    "oldRows": 29,
+    "finalRows": 30,
+    "exact": 29
+  },
+  "linkScope": {
+    "documents": 16,
+    "relativeLinks": 149,
+    "missingPaths": 0,
+    "scope": "selected documents; not all anchors/external links"
+  },
+  "pins": {
+    "commitTrees": 7,
+    "blobReferences": 234,
+    "matching": 234,
+    "historyPaths": 7,
+    "missing": 0
+  },
+  "guard": {
+    "mapErrors": 0,
+    "additionalCases": 6,
+    "passed": 6,
+    "scope": "actual read source executed as isolated function; declared assessments only"
+  },
+  "projection": {
+    "checks": {
+      "oldExact": true,
+      "newDeterministic": true,
+      "activeCardsUnchanged": true,
+      "edgesUnchanged": true,
+      "inventoryUnchanged": true,
+      "historical27": true,
+      "allHistoryEndpoints": true,
+      "snapshot195": true,
+      "routeCount8": true,
+      "routeEntryAll": true,
+      "entryUpdated": true,
+      "uniqueHtmlIds": true,
+      "allInternalAnchors": true,
+      "reportLinks": true,
+      "noRemoteScript": true,
+      "clientSyntax": true,
+      "historyUI": true
+    },
+    "oldChars": 432839,
+    "newChars": 440953
+  },
+  "automation": {
+    "readOnly": true,
+    "enabledAiDTasks": 2,
+    "legacyRefs": [
+      "integration/cognitive-assets-20261127",
+      "PR #3",
+      "PR #4"
+    ],
+    "changed": false
+  },
+  "limits": [
+    "FULL_BROWSER_NOT_RUN",
+    "FULL_CLONE_NOT_RUN",
+    "FULL_REPO_RUNTIME_NOT_RUN",
+    "MODEL_AB_NOT_RUN",
+    "CROSS_CHAT_NOT_RUN"
+  ],
+  "notAuthorized": [
+    "merge main",
+    "delete historical branches",
+    "change automations",
+    "install skills"
+  ],
+  "finalCandidatePreparation": {
+    "parent": "37715ca45bf1e827e5f4d0d8b121e1c372ef71a8",
+    "filesBeforeAcceptance": 196,
+    "tree": [
+      {
+        "path": "AGENTS.md",
+        "sha": "e250b702dc4f1b66d235aa8e23cee97dc563484e",
+        "mode": "100644"
+      },
+      {
+        "path": "README.md",
+        "sha": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+        "mode": "100644"
+      },
+      {
+        "path": "cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md",
+        "sha": "0f9cf39a2a9c02024b4011382a0f9dbccc5f0d14",
+        "mode": "100644"
+      },
+      {
+        "path": "cases/2026-11-27-manufacturing-quality-evidence-v3.md",
+        "sha": "46ee5de08d105581bf7b9a350ba4fb4945ebff9f",
+        "mode": "100644"
+      },
+      {
+        "path": "decisions/2026-11-05-goal-options.md",
+        "sha": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/ai-d-prompt/index.html",
+        "sha": "6285ab0ede199e4225e1149673bf5956f72c8711",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/ai-d-prompt/knowledge-map-v2.html",
+        "sha": "13b53e99a5163aa05c6681bb08bccfe14b221afd",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/ai-d-prompt/manufacturing-quality-v3.html",
+        "sha": "16d25325749cf3f53b0ea3f72d28f890b19847df",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/DESIGN-V2.md",
+        "sha": "157e43e4c35beb0730ec6b05b41f72e6a4385058",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/DESIGN-V3.md",
+        "sha": "b1ba8055d28ece1d39d63330e2335fc10295501a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/DESIGN-V4.md",
+        "sha": "c67fa247ef1c18249f215a32b955af991a6a8387",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v2.json",
+        "sha": "e0bb8b652bea31bfd671a0d6bf4acc9e4c539ebf",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v3.json",
+        "sha": "30ed4491a16023a2fe495d2a68e8e0bb09585c85",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v4.json",
+        "sha": "7c615a56dcb1fdc691e75f02ae89a3b83628e7f1",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/generate-workbench.cjs",
+        "sha": "cbfb388be3bce5291274878174e450f8a8f793b6",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/knowledge-workbench/index.html",
+        "sha": "ed728a73ef1a6e8dffaaad1f527b62cc33432108",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/2026-11-07-two-domain-practice-results.md",
+        "sha": "5c8e8f276183fd4b7e293c6ba0eb01886a41a93b",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/first-cross-domain-tests.md",
+        "sha": "ced7335091a96b8f33305d5a82cd5592b51946af",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/retrieval-probe-2026-11-06.mjs",
+        "sha": "cd859e2b328c55157a9d847c464a3a8ad357d949",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/retrieval-probe-results-2026-11-06.md",
+        "sha": "224e839bd5bcd6352b9d6d636309b81d742d5c89",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/source-decision-contract.test.mjs",
+        "sha": "b1313a159b9ba409c5de2a3bb3371a5cd7e72661",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/workspace-trial/manifest-c2028cb.json",
+        "sha": "639ebed10803baa7993a97bbb2a61bc4c2f89e96",
+        "mode": "100644"
+      },
+      {
+        "path": "evaluation/workspace-trial/verify_snapshot.py",
+        "sha": "b02c816f38bca574e1eaa843f6eefc62d74ccc51",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/2026-11-07-whole-project-research-integration.md",
+        "sha": "e9ab662f6f0d921ccdecc0109717ba6ecd7d22f8",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/2026-11-27-conditional-claims-manufacturing-v3.md",
+        "sha": "fbc9fccb54703d1b393f8959bf7f13cd59767531",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+        "sha": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+        "sha": "46bd35ec18bff3b94a439222286cb9145512c96f",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/COGNITIVE-MAP.md",
+        "sha": "46e06c4691ac74d12fc1237e39555dfd72b0f6da",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/INDEX.md",
+        "sha": "e1940a9ab34cc071cdab4184a78f73449d849795",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/catalog-20261127.json",
+        "sha": "5b29976c82d1035504e464f171519a054885fb8c",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/foundations/cross-disciplinary-foundations.md",
+        "sha": "aa3f5d2ff7c18c544e6f38958d5aa7ff4e124b78",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/foundations/cross-layer-project-anchors.md",
+        "sha": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/foundations/expert-concept-navigation-v0.1.md",
+        "sha": "a63e788213310628a22c3d06cbf846a19a9ff681",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+        "sha": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/foundations/organization-protocol.md",
+        "sha": "5b5ca1dfcf857e866654c03b1c1ae54282bed902",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/knowledge-action-navigation.md",
+        "sha": "de548999827874ebc93fb9bbabd72b3feb9c8e3b",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/knowledge-action-routes.json",
+        "sha": "a8fa569472b19a9c78d2418c2745a2d3816211b8",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/semantic-map-v2.json",
+        "sha": "269050d9ae6a5571b41bac28f0a8e7cc4c1749ac",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/semantic-map-v3.json",
+        "sha": "4bef46ee474fd5ab0785ba2bfb534ce4f786332c",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/semantic-map-v4.json",
+        "sha": "3c03fd39ff9ba25663fb1effc8e5938091779482",
+        "mode": "100644"
+      },
+      {
+        "path": "knowledge/source-register-2026-11-05.md",
+        "sha": "571b90068357e33c5198280935cfa2df51d20e8c",
+        "mode": "100644"
+      },
+      {
+        "path": "planning/README.md",
+        "sha": "5b860e35928fc82907a66eea9ef72818e47ec31b",
+        "mode": "100644"
+      },
+      {
+        "path": "planning/goal-navigation-v0.1.md",
+        "sha": "9065701d2f96857df2662fec1cc48a3e86edf402",
+        "mode": "100644"
+      },
+      {
+        "path": "planning/historical-consolidation-v0.1.md",
+        "sha": "ddb439cf5e685ebe1dd38b4ddcdb6d2ba43e93c8",
+        "mode": "100644"
+      },
+      {
+        "path": "planning/proposal-review-v0.1.md",
+        "sha": "ce6924c94ab9bcc8bd461e5dcb6e479b29898426",
+        "mode": "100644"
+      },
+      {
+        "path": "planning/research-to-github-v0.1.md",
+        "sha": "f7cfbc70194473dcbe6b1b3b6782433406b6ae71",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/README.md",
+        "sha": "2603b125d2fd3ad603dfdd810d3070c49db24261",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/master-v1.0.md",
+        "sha": "b85c22d5cdcf67af78ef3089c6a20b8f73f1b99d",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/mobile-chat-continuation-v0.1.md",
+        "sha": "5aa702ba9a93b044f3209096d6aa43536f1dbe05",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/mobile-chat-entry-v0.2.md",
+        "sha": "075cee77e4b5c4f74023a5f496c3c2a548af18d4",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/stages-2026-11-27.md",
+        "sha": "937bf2064115d9d9c4576bcdf5e0ca23c6d45ec8",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/dual-outage-service-boundary-v1.md",
+        "sha": "0ac61ea88b4c0c5ac083769e5196c19f44028fd8",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/entailment-evidence-gate-v1.md",
+        "sha": "63e03e6dd64496ebb2a8bc3b8ee17fd4872c16f5",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/evidence-contract-validation-v1.md",
+        "sha": "3029006c95041f96a96aae98282fb309973cab74",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/evidence-grounded-execution-v4.md",
+        "sha": "34d974d7322d6a56ffee72dea81eb2d8f8358553",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/expert-knowledge-organization-audit-v2.md",
+        "sha": "154138abe07401f18ee9a502206f90b10536e71d",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/full-knowledge-to-action-v2.md",
+        "sha": "ad2009d9dcddb1f4c6be94c04ff1f2a5728268b6",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/historical-evidence-replay-v1.md",
+        "sha": "a8b737192790be5ce9568d123b7a78c149d9f955",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/knowledge-utilization-audit-v1.md",
+        "sha": "7c483c2131da1d539f37678862261c65a2164755",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/manufacturing-quality-evidence-v3.md",
+        "sha": "864264cdab1e0982cf457d30948b698082dbda78",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/semantic-activation-and-review-v3.md",
+        "sha": "8a6c9024f0526e107e54584613d6651aad964897",
+        "mode": "100644"
+      },
+      {
+        "path": "prompts/tasks/verified-transfer-and-mainline-v5.md",
+        "sha": "0f8cdf9d6208ee2d9bb15d4b0b4b404eb75a4752",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-05-ai-coordination-reverse-inference.md",
+        "sha": "c9663e73cdcd7dcc41225db51ba89221d92dedc0",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md",
+        "sha": "fda0c6dc7641e28397c7d34539c5fded299d20f2",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+        "sha": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+        "sha": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+        "sha": "68d69028dacfc09e94037791828364a65d222bc6",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-independent-whole-project-direction-audit.md",
+        "sha": "250add5da4f6ed005c9fb9081293d0cf446edecc",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-open-source-research-depth-scope-stop-audit.md",
+        "sha": "c541a4447e362ec7835d45fd429e7a26f016d34b",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+        "sha": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+        "sha": "96a613853bc0d2337b64275c6b051790f4df542e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+        "sha": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md",
+        "sha": "14bcf2a9cc6c62d9a1e3b82273fa408b3f3a87bd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-07-whole-system-benchmarks-before-component-exploration.md",
+        "sha": "5e6dbfa3122a7e533a5f24fd9f14deec69f6f452",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-15-capability-integration-and-hermes-evolution.md",
+        "sha": "832e8d83623e843de6a30b00d45ab3e4e7750b57",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-15-from-idea-to-open-adaptive-system.md",
+        "sha": "e4d29fafc96c7aa3056547860b682ec4ef080278",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-15-hermes-deep-capability-ledger.md",
+        "sha": "f983748ea0f95aa9cd6ccb26e382705fbd5d0b68",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-16-external-intelligence-layer.md",
+        "sha": "d7970fda09b4568d6f677822431d8a02dbe4d2fb",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-16-reconciliation-and-cleanup.md",
+        "sha": "b57a83095341a137b221fb5c63f67da80f67769f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+        "sha": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-anchor-activation-goal-change-replay.md",
+        "sha": "831cb1c3f2e345abbcbcadd40380d798aa7e4143",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-cognitive-asset-reconciliation.md",
+        "sha": "9cda08e65e2e0ec9ec53cfd46b6499a0f13dcc99",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+        "sha": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-evidence-grounded-v4-execution.md",
+        "sha": "587c5dcd62f898e3457c0233320eb3babf2fd4f3",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-historical-expert-recovery-and-mainline-audit.md",
+        "sha": "e39609e8650ece4343d7c9dcdb2d6c89b68748c1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-historical-expert-recovery-mainline-v2.md",
+        "sha": "f24d0f376158d6a215de18b033565377f471ac93",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-human-ai-shared-knowledge-workspace-design.md",
+        "sha": "c71e6d38dedb5b20df9a30dea8957cb6940bd46a",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+        "sha": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-knowledge-execution-reorganization.md",
+        "sha": "89bdc4d1f86b423655435d0151c36720715d80f3",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+        "sha": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+        "sha": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-named-expert-conditional-knowledge-v3.md",
+        "sha": "2b4fd59bfa1e8d168e3af566cd545fc93f021c3f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+        "sha": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-named-expert-methods-and-defect-audit.md",
+        "sha": "23faaf556f36b27af32591d2bd08f151f262f8d8",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-prompt-engineering-and-cognitive-continuity.md",
+        "sha": "6a5c4adea9b16dd0985033085210f23de0546e52",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md",
+        "sha": "b3d7655819c1c105fcd2c5253b7e6f5946148e3e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "sha": "f523c36fc83dab158e919ede0b50813ca35ec854",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-semantic-activation-v2-execution.md",
+        "sha": "97e7bc852282283da3bb3109487cf3a3be6373d1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-semantic-activation-v3-execution.md",
+        "sha": "477db25893647eb2599bd9ce3e5fcf80e8b431de",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-shared-workspace-mature-candidate-selection.md",
+        "sha": "077610998814fdde6f363a31344f2d129f527e52",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-shared-workspace-trial-v0-3.md",
+        "sha": "e3d74f72ec53119f2e6d7660daba98beaacfcd27",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+        "sha": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+        "sha": "9aa2344d782c08fec3a73909664787aca29b14dd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md",
+        "sha": "879cefc8e0d40b3d99d34c7d4f79fd447da60013",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-4b-dune-curated-capability-reuse.md",
+        "sha": "a886a8bfec3b07f8c5208ae2a77059d61bcfc949",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md",
+        "sha": "844a08e7431e4feeac3e52902c06fde97b467ebd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+        "sha": "db7c8500052078abcb088af945ac3b467a60ce05",
+        "mode": "100644"
+      },
+      {
+        "path": "research/2026-11-27-whole-goal-alignment-and-mature-practice.md",
+        "sha": "d84de216d5339a11bb4a58400ff0adca8bb746e0",
+        "mode": "100644"
+      },
+      {
+        "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+        "sha": "04144faf75ac30f5906890a4d0d699ae2c685c5a",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/README.md",
+        "sha": "b2633e554d917af522982611924eb30493c9ab39",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/00-CHARTER.md",
+        "sha": "4eebb09622e8f779f809cf2005bd58236627f9f2",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/01-BOUNDARIES.md",
+        "sha": "91549a274c229fca7172b538d4ef58c8ca14a3b5",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/02-SPACE-MAP.md",
+        "sha": "e6cad4c819d47e7be7fe03a24b7c61a29b7b3a08",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/03-RESEARCH-PROTOCOL.md",
+        "sha": "a81894940316eda84a30666f70bf06591a6139ad",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/04-SOURCE-POLICY.md",
+        "sha": "3e7ac61e85ddeda9e921b9a84ab7d03cd097c34f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/05-EVIDENCE-POLICY.md",
+        "sha": "18172edd56dcfd2c8240838ddc11952e84ead0e8",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/06-ASSET-LIFECYCLE.md",
+        "sha": "75ca62b9f7e3b1140e5e1a129fec7c94f8f3889e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/07-PROMOTION-POLICY.md",
+        "sha": "48df9449ac853abfb11605e21fa4d15d0e8aaa4b",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/08-POLLUTION-CONTROL.md",
+        "sha": "7da175fc00fa089aadcfde4c77ccf77abc6dbd41",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/09-AUTOMATION-READINESS.md",
+        "sha": "8048ae11b9e241dc3658d1fc77b8fa220aca1e04",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/10-EVALUATION.md",
+        "sha": "29962fc91ede59390498d1047e2c546d26f8ebe7",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/11-OPEN-QUESTIONS.md",
+        "sha": "d25618c13a2544bcf4a9826f942c70424d10cd5d",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/12-BULK-INTAKE.md",
+        "sha": "325250387437cb9417c6db588a3abaa63ac1550a",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/13-COVERAGE-AND-GAPS.md",
+        "sha": "ce12be29e47ed9966f56ec9b3dfa62e49ef412ef",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/14-RUN-AND-CHECKPOINTS.md",
+        "sha": "c81a8e985918b33445745c93b99d37a4b882ef95",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/15-ENTITY-CLAIM-EVIDENCE.md",
+        "sha": "00d8f0d2b805fc32eec612ed3e60cf8c48d893bb",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/16-SKILL-EVALUATION.md",
+        "sha": "cbdf907d40343516d5d338239d2faa47a5b5d027",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/ASSET-REGISTRY.md",
+        "sha": "7ee478a23e54b2f55dca5cb8fbad7d0c9b8a64a6",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/QUEUE.md",
+        "sha": "d78e7c8ee43d2e5ff6034e306afe43c24c30b245",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/README.md",
+        "sha": "334653abbdffc757baec2b762b35a5ddc9236ee4",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/ai-intelligence/RESEARCH-LEDGER.md",
+        "sha": "7db5b28bf8ea85b8f1e203d728f921e97d4857f6",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/archive/README.md",
+        "sha": "5ae38482bedb3ad783ebcd7ed9f39f05a729dfb2",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/candidates/README.md",
+        "sha": "e6e08c55d4576bd76a29e2991f8ac00dc86044be",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/decisions/README.md",
+        "sha": "a0b89aa8699c6cb602958cdcdcdcd821ecf4cd1b",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/discoveries/README.md",
+        "sha": "7d6421bed6c7b1b9a20447e33acf48caf94d2cd0",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/evidence/README.md",
+        "sha": "f9b3eb12198f3b2a638f084ef4563e4d5a319ae8",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/experiments/README.md",
+        "sha": "fcd2bb7a244dd66dfe5644832220180231cb70f1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/research/README.md",
+        "sha": "77445507fd34a1f08f63fa38bbb48694a68a4845",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/ai-intelligence-0db397e/sources/README.md",
+        "sha": "afce25ab539f02eb05c7aacda133e38908e07476",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/expert-skills/ai-d-cognitive-core-original.md",
+        "sha": "bbb0291d60953bfea24d899526a23c2569a605ef",
+        "mode": "100644"
+      },
+      {
+        "path": "research/archive/expert-skills/expert-team-collaboration-original.md",
+        "sha": "6d08dc723f9d9b106dbfc5851d214f576f310e34",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/expert-audit-v2/knowledge-map.json",
+        "sha": "52f0248af83b31ffd8817c50d459d1c3c84cda8e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/expert-audit-v2/temporal-replay.json",
+        "sha": "bc2355ea85bc36111c614d7bc2d0685b23c068d0",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/branch-delta-20261127.json",
+        "sha": "a38e764ced05d6cad89d68adee5439d98022a284",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/pr1-pr2-line-overlap-v2.json",
+        "sha": "1f34863041eca4253d8010473ac97805d5df7129",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/source-contract-v2-probe.mjs",
+        "sha": "98b270a413e636ae3cecfc284405951cb0ab95ce",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/historical-expert-recovery/source-contract-v2-result.json",
+        "sha": "ac83a9c90a8c096be7f36d67c7c9202263a745f9",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/knowledge-driven-expression/audit.json",
+        "sha": "d3ef8154a6837cc9b74950679aa643af0b4a8c66",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/knowledge-driven-expression/expert-entry-audit-v0.2.json",
+        "sha": "159926f99951258d76109a170a78f48f43f4ab75",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/manufacturing-quality-v3/analyze.cjs",
+        "sha": "96ed0385f1e1cceb3570356f60c0b909b56d8e6b",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/manufacturing-quality-v3/claims.json",
+        "sha": "e0b53aabde2ca0f51d855556c818eecb8e049fc4",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/manufacturing-quality-v3/input.json",
+        "sha": "3a09bd620aaa6125624e83f025e96012ad6bdcdd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/manufacturing-quality-v3/results.json",
+        "sha": "9f88e09c1c3bc02a5496b3581a8dd1e1a4a4e5e7",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/mobile-chat-continuity/double_outage.cjs",
+        "sha": "1d323f6a1c64df18cdee43cc80336e814743cb66",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/mobile-chat-continuity/double_outage_results.json",
+        "sha": "0ecffb49d023db6da5721e8074b13e803615b24e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit.py",
+        "sha": "53a3c647f1005d8d659620c0e7eb1c67a7666981",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/r36-temporal-audit/aid_r36_temporal_audit_result.txt",
+        "sha": "c9a4c240247ed96c904d9f4bc528c55d5e4b1779",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/r36-temporal-audit/replay-2026-11-27.txt",
+        "sha": "b77a821853f3a2485c04325bfaa8fe31cf84983c",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/artifact-inventory.json",
+        "sha": "c5b4716177b6ae2c00fdf22afd0ac50f2f8bfe70",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-01.json",
+        "sha": "8dda8e16b7b9452e665d02b5d803e348e92c7d6e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-02.json",
+        "sha": "012f5fc35e4555d37634194527701dcfaf3256ba",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-03.json",
+        "sha": "fea115c7af6badce5ed59e5553bc388faff2d95f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/batch-04.json",
+        "sha": "b9337755c116a7edc50f0e24c077f5033168aaaf",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.cjs",
+        "sha": "a99c11733610721fe93d3505cec486d0772c6d0a",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/dual-outage-service-boundary.json",
+        "sha": "7cea63617f3e60280c520c66aef96964e3e75b6f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/knowledge-use-receipts.json",
+        "sha": "bb708ce89698cf8719e57541eedfdb11f31821c9",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/semantic-and-drift-validation.json",
+        "sha": "c58097e754321ca03f6245b8dd6a4b7a236ebefc",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-browser-probe-result.json",
+        "sha": "df7a8ec260073e2030bddf7904fbe8a8c5dc13a9",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-browser-probe.py",
+        "sha": "ede4ca3a5a583091d7551dff169c9e16fffc9b43",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-claim-review.json",
+        "sha": "9bb45c4322db3d444b140d2a0431b72bdcf55521",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/LICENSE-test-suite.txt",
+        "sha": "c28adbadd9114a30a302fef37c3d14f490645c1c",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/README.md",
+        "sha": "e0e403be89eb4182c0c701f26f2d3691d1d4db18",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/public-tests.json",
+        "sha": "305b2a567f45ff74d3fab4f79be08c7e49652c65",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/result.json",
+        "sha": "5eb07228004cb3bae74743a7c01aebfbf0108be4",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/review-contract.json",
+        "sha": "7b65a4850bb6d9aeb81e25ed5ae0e2d83df55c1c",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-contract/validate_reviews.py",
+        "sha": "8b168121de94fee72da3cca7475d963824a59c67",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v3-parallel-manufacturing-delta.json",
+        "sha": "25a360fd86be443e59f7d6dd4d848b7bf0e2570c",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-active-governance-regression.json",
+        "sha": "23f2edc83c2a4aebf777bd2d5b466f8c1a436e0a",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-claim-review.json",
+        "sha": "4099557c0c525cae353a526273685dc6efcadbca",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-dispatch-regression.json",
+        "sha": "a3ce8137023e4b9364e87bddbff49b573e5542fd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-entailment/entailment-diagnostic.cjs",
+        "sha": "88514f9c6760b05d3701c9a5365a6f394b8fa966",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-entailment/result.json",
+        "sha": "79413cfe270f16b26b61db366d506014beb83d5f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-lines-verified.json",
+        "sha": "2ed3d3362cde30661e2592ea827ebdabedd58bbe",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json",
+        "sha": "8b905c15abbfae608bcc1c29fbb46f52a42d66d1",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-evidence-use-guard.cjs",
+        "sha": "afbf0e466b9e8a1738a3d6b739b4f02acb4e2b34",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-governance-decisions.json",
+        "sha": "cd024f5555599fa304ddbc43af10be4b2a85ebdc",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-nine-claim-review.json",
+        "sha": "abb80da8e30258caafc10b212693606e56c0e9cd",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/v4-workbench-recovery.json",
+        "sha": "16aadabd3d18c49fa68508f7b02bb431239d58ba",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/validate-semantic-map.cjs",
+        "sha": "d87818b230d80f144912eaca9a669b8d689e5b08",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/workbench-v2-static-checks.json",
+        "sha": "17a62d80cffd30439ab68bfdedd56f53a16e66d9",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/semantic-reorganization/workbench-v3-static-checks.json",
+        "sha": "30a55d7864ade1e9153af7bd2546e16346168a09",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/v23.6-network-resilience/population.csv",
+        "sha": "3b034330a76f6ab8f3171c4f34618d0a9ed14c5c",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/v23.6-network-resilience/scenarios.csv",
+        "sha": "0897f4e81b7e10298e66f3e021b9dce43be6902e",
+        "mode": "100644"
+      },
+      {
+        "path": "research/artifacts/v23.6-network-resilience/solve.py",
+        "sha": "4d2e522b72b42c986fa77207f4e98d95bdc2b45f",
+        "mode": "100644"
+      },
+      {
+        "path": "research/expert-cognition-distillation-positioning-2026-11-06.md",
+        "sha": "1b89b2a2ef75a09cfd26c331b48c124ea14af78b",
+        "mode": "100644"
+      },
+      {
+        "path": "research/workflow-components-and-boundaries.md",
+        "sha": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+        "mode": "100644"
+      }
+    ],
+    "projection": {
+      "previousExact": true,
+      "deterministic": true,
+      "activeCardsUnchanged": true,
+      "edgesUnchanged": true,
+      "inventoryUnchanged": true,
+      "history27": true,
+      "historyEndpoints": true,
+      "routes8": true,
+      "scopedRoutes": true,
+      "scopedCard": true,
+      "continuation": true,
+      "preciseEvidence": true,
+      "uniqueIds": true,
+      "allInternalAnchors": true,
+      "historyUI": true,
+      "snapshotCount": true,
+      "reportLink": true
+    },
+    "htmlChars": 424330,
+    "parallelPreserved": [
+      "granularity control",
+      "task-specific/whole-project dispatch",
+      "exact evidence ranges"
+    ],
+    "oldMobileUnchanged": true,
+    "initialCandidateNotPublished": "9d2473524e5f08838dc989fb20bc1d1eb6f9db16"
+  },
+  "remoteReadbackAndTreeRecovery": {
+    "testedCommit": "227272911f51e3e3a89607a7658e0ebe83366218",
+    "repositoryTreeFiles": 198,
+    "detachedTree": "847fba1b487a1b78fc31927ea99bc3cbecbed317",
+    "detachedTreeFiles": 198,
+    "pathsAndBlobsExact": 198,
+    "removed": 0,
+    "scope": "actual remote Git object tree rebuild with no base tree, existing blobs referenced; not independent clone, local files/worktree or executable environment restore",
+    "readbackRendererExact": true,
+    "htmlChars": 424330,
+    "guardErrors": [],
+    "activeClaims": 28,
+    "historicalClaims": 27,
+    "currentPromptModes": 2,
+    "ledgerLink": true,
+    "mainAhead": 92,
+    "mainBehind": 0,
+    "mainUnchanged": true
+  }
+}

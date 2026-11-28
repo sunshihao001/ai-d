@@ -1,3 +1,5 @@
+> 历史候选，已退出默认调用；实际任务使用[现行统一入口](README.md)。[原文固定版本](https://github.com/sunshihao001/ai-d/blob/9767c315ce0466c35c5f4bf74748ab0a28518533/prompts/mobile-chat-continuation-v0.1.md)。下文保留原研究语境，不代表当前分支或任务。
+
 # 手机端 GPT 对话｜认知接力候选 V0.1
 状态：本轮研究候选，未部署为强制项目指令；继承现行 AGENTS 与用户授权。
 ## 稳定目标

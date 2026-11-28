@@ -1,0 +1,5 @@
+import {decideSource} from '../../../evaluation/source-decision-contract.test.mjs';
+const task={requiredOrigin:'external',subject:'source-A',claimId:'claim-1',requiredVersion:'v1',requiredAuthority:'observed-run',notBefore:'2026-11-01',asOf:'2026-11-15'};
+const s=(observedAt,relation='supports',extra={})=>({id:'s',origin:'external',subject:'source-A',version:'v1',authority:'observed-run',observedAt,claimRelations:{'claim-1':relation},...extra});
+const cases=[['valid baseline',[s('2026-11-10')],'CANDIDATE_EVIDENCE_MATCH'],['after as-of cutoff',[s('2026-11-20')],'SEEK_EXTERNAL_PRIMARY_EVIDENCE'],['malformed date',[s('not-a-date')],'SEEK_EXTERNAL_PRIMARY_EVIDENCE'],['not actual support despite metadata',[s('2026-11-10','supports',{excerpt:'The claim is false.'})],'SEEK_EXTERNAL_PRIMARY_EVIDENCE'],['different subject',[s('2026-11-10','supports',{subject:'source-B'})],'SEEK_EXTERNAL_PRIMARY_EVIDENCE']];
+for(const [name,sources,expected] of cases){const actual=decideSource(task,sources).action; console.log('PROBE '+JSON.stringify({name,expected,actual,pass:actual===expected}));}

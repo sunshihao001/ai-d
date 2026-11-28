@@ -1,250 +1,94 @@
-## 2026-11-27｜现行知识回收与调用导航
+# AI-D｜当前知识调用入口（V4审查候选）
+以[根本目标](../README.md)和[现行权限与执行规则](../AGENTS.md)为准。这里是当前知识入口，不是研究日志，不自动加载历史。选择问题→取适用主张的具体原文→实际改变判断/操作/验收→按结果修订；简单问题直接做。优先成熟成品及真实价值，不把工具、UI、专家团队、提示词、任何领域项目变成目的。
+- 当前固定整合基线：be25104d76a0f61135467746812ab93c0044dcca，88项资产/67份Markdown；[28个定向校勘主张和34关系](semantic-map-v4.json)。校勘不是全面外部真值。审查分支另有历史档案及执行产物，不混作已采用知识。
+- [当前台账与唯一接力](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
+- 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。按[组织规范](foundations/organization-protocol.md)治理。
 
-**[V3.0 条件性主张校勘](2026-11-27-conditional-claims-manufacturing-v3.md)**：8份原件12主张，实际公开制造质检作品、14项断言、独立SciPy复核。对象/分母、时点、交付与真人技能分评；[专业成果](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)及[研究](../research/2026-11-27-named-expert-conditional-knowledge-v3.md)。非全仓深读或模型增益。
-
-**[全域问题—专家方法—原件—行动导航V2.0](2026-11-27-problem-method-activation-map.md)**：72路径及8种任务表达，11项定向原文/结构/段落核查，其他目录级；[全域审查](../research/2026-11-27-named-expert-full-domain-audit-v2.md)以R36迁移历史评价，实证57同blob/5异blob/10原树未有。非全量语义审查或独立模型增益。
-
-**[具名专家认知与核心缺陷审查V1.1](../research/2026-11-27-named-expert-methods-and-defect-audit.md)**：按实际问题调用Keeney、Chi、Klein、Perkins/Salomon、Pirolli/Card、Leveson、Khattab/Agrawal、Husain/Shankar、Willison、Norman、Argyris的真实方法；区分角色与方法，实际检查入口及评价假阳性并修订，保留[独立手机入口候选](../prompts/mobile-chat-entry-v0.2.md)。主要断点仍是任务方向到执行及独立增益；非固定专家团队、未部署。
-
-**[知识驱动任务表达与运用断点 V1.0](../research/2026-11-27-knowledge-driven-task-expression-v1.md)**：实际核查V1.3运行、历史网页/当前正本版本差、提示词入口；将知识转译为具体对象、行动、成果与验收，[任务规格候选](../prompts/tasks/knowledge-utilization-audit-v1.md)及网页当前入口已补。历史25章与权限保持；独立模型/跨会话增益待验。
-
-**[手机端GPT深度认知与连续研究V1.0](../research/2026-11-27-mobile-chat-cognitive-continuity-v1.md)**（P1/P2/P4/P5/P6/P7/P8，K4–K9）：仅手机、不要求安装；多轮意图变化研究、有效状态与原件双层承接、原生Chat/Projects/Work候选。实际继承V23.6并执行83情景，找出原14候选下双停运全保障的结构性不可行；[接力候选](../prompts/mobile-chat-continuation-v0.1.md)未部署，跨聊天/独立模型增益待验。
-
-**现行工作空间选型条件（用户确认）**：当前以 ChatGPT 对话为主要研究与承接入口；优先验证已授权连接、跨会话调用/保存/回读与人机同源可视化。RAG（检索增强生成）是候选知识检索能力，非完整知识治理或自动学习。见[候选研究更新](../research/2026-11-27-shared-workspace-mature-candidate-selection.md)及[设计正本](../research/2026-11-27-human-ai-shared-knowledge-workspace-design.md)。不固定永久宿主。
-
-**[共享工作空间试用前置验收V0.3](../research/2026-11-27-shared-workspace-trial-v0-3.md)**：固定59文件清单、独立验收脚本，12份真实原件哈希一致及遗漏/改写反例；产品运行受DNS限制，真实导入与恢复待验。
-
-**[人机共享工作空间多轮候选搜索与试用裁决 V0.2](../research/2026-11-27-shared-workspace-mature-candidate-selection.md)**：Inkeep OpenKnowledge、思源、Trilium等具体项目；真实并发缺陷历史及现有测试源码、Git之外本地状态、58文件/7非Markdown及总提示词12条路径核查。优先隔离试用，不选定架构；承接、实际调用及恢复待验。
-
-**[人机共享认知工作空间：专业设计与成熟产品对照](../research/2026-11-27-human-ai-shared-knowledge-workspace-design.md)**（P1/P4/P5/P6/P7/P8，K4–K9）：恢复专家团队与UI思想；外部阅读/维护/工作台/运行知识路线；真实基线57文件、10份核心样本152条引用边；11视图候选及保全恢复、AI调用、回归验收。不预选架构，待隔离试用。
-
-**[提示词候选全文与人机阅读入口](../prompts/README.md)**：V1.0完整25章转录、阶段记录及可离线浏览网页。候选未部署；知识承接方式仍需竞争验证。现行执行保持 AGENTS.md 与 README，不把页面当新系统。
-
-**[知识承接、转化与持续打磨：竞争性承接方式](../research/2026-11-27-knowledge-transfer-transformation-and-evolution.md)**（P1/P2/P4/P5/P6/P7/P8，K4–K9）：总提示词候选而非唯一方式；动态上下文、关联记忆、推理经验、技能/回放优化、程序化及训练的多轮外部证据，AFTER五框架原表复算和SkillOpt门禁四构造案例，实际使用既有硬约束及回归知识；下一步真实未见任务对照。
-
-**[目标变更的实际锚点激活与知识互联复盘](../research/2026-11-27-anchor-activation-goal-change-replay.md)**：以39cab2f及最近自动研究为真实输入，回查历史决策、旧研究优先级、执行/验收与调度；复用EvoSkills问题—方法多对多关系与既有跨层追溯，找出未落实的知识调用证据、历史成品重复研究及未落库、执行预算候选与同名配置混淆；修复实际入口并保留反证及不变约束。P1/P2/P4/P6/P7/P8，不能替代独立运行验证。
-
-**[现行人机目标与成熟实践对齐](../research/2026-11-27-whole-goal-alignment-and-mature-practice.md)**（P1/P2/P6/P7/P8）：人的初始想法可不完整或错误，AI承担问题形成、专业探索和执行；优先成熟成品真实案例，减少人工规划、纠偏和阅读负担，保留必要学习与决定权。现行总目标见[README](../README.md)，按需调用[短句意图研究](../research/2026-11-07-short-intent-goal-context-delegation.md)及[专业正本](2026-11-27-professional-knowledge-and-leverage.md)。
-
-**[高阶提示词V1.1：主动缺陷发现与反馈验证](../research/2026-11-27-prompt-engineering-v1-1-evidence-driven-defect-discovery.md)**：关联问题表征、专业条件/反例、独立验证、反馈驱动与回归（P1/P2/P5/P7/P8）；原表复算及真实基准程序逻辑执行，独立模型增益待验。
-
-**[深度认知生产与执行预算专项 V1.0](../research/2026-11-27-deep-cognitive-production-and-execution-budget.md)**：关联既有11-07深度/停止研究；旧版R38运行审计、真实ASReview表格复算、AgentTime及原生长程宿主对照、候选提示词V1.2（未生效）。预算停止≠目标达成；无发现≠不存在；优先实际专业劳动及独立验收，增益待验证。
-以既有六域、P1–P8、K1–K9、跨层锚点和11月25日收敛为基线；不另建框架。新增 [专业知识、外部智能与杠杆](2026-11-27-professional-knowledge-and-leverage.md) 为 V10–V23 等历史专业内核的集中归位入口，覆盖专业问题表征、粒度与机制、工作流、专业任务、质量及真实增益。原研究及证据见 [回收记录](../research/2026-11-27-cognitive-asset-reconciliation.md)，旧正本不删除。
-当前目标以 [README](../README.md) 为准；[锚点与钩子](foundations/cross-layer-project-anchors.md) 用于情境触发、适用性与偏移/回归审查，[组织规范](foundations/organization-protocol.md) 用于按增量保存；[AGENTS.md](../AGENTS.md) 是短执行入口，[台账](../research/ACTIVE-RESEARCH-LEDGER.md) 保存下一步及未验证状态。不要重复研究所有既有成品，按问题导航。运行时自动召回、独立增益、效率倍率仍未验证。
-
-V23.2：专业表达/提示词优化、从专业成果反推隐含规格、反馈驱动改进及链上所有者归属复算，见[本轮证据及可复算案例](../research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md)；归属 P1/P2/P6/P7，不另建分类。
-
-V23.3：可复用已验证解决方案、真实提示词回归、工具证据可见性、评价反例及生产力测量边界，见[本轮研究与复算](../research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md)；P1/P2/P6/P7，优先实际借用并核查适用性。
-
-V23.4：已完成 CI 专业劳动继承、运行对象/版本绑定、真实失败责任域、非互斥事实与筛选截断缺陷，见[实际 Blix 验收及修复接力](../research/2026-11-27-v23-4-existing-evidence-reuse-and-blix-acceptance.md)；P1/P2/P6/P7。
-
-V23.4b：成熟行业数据劳动继承、数据契约与真实业务查询模板，见[Solana 数据能力复用](../research/2026-11-27-v23-4b-dune-curated-capability-reuse.md)；P1/P2/P6/P7，LIVE_QUERY=NOT_RUN。
-
-V23.5：实际调用成熟风险检测、复用已有模型预测、标签极性与阈值决策，见[研究与执行证据](../research/2026-11-27-v23-5-executable-risk-detector-and-reused-predictions.md)；P1/P2/P6/P7。
-
-V23.6：专业成果组合创造、可靠设施选址、事前决策/事后适应、任务后可复用证据，见[研究、脚本与情景验收](../research/2026-11-27-v23-6-composed-professional-work-network-resilience.md)；P1/P2/P6/P7。
-
-R36回收：时点可用性、上游污染、截断反例及原始执行资产，见[实际复现](../research/2026-11-27-r36-temporal-audit-recovery.md)；R38部分补证，独立利用待验。
-
-## 2026-11-25｜全局知识收敛与现行入口（审查分支候选）
-
-**定位与边界**：沿用 README 的人类能力增强目标；专业能力发现、理解、判断、吸收、组织、协同、应用及验证是核心机制，不是整个项目的排他定义。“信息揽客”是待验证的具体产品入口；Hermes 是运行环境候选；专家视角是按问题调取的专业责任，不等于固定 Agent 数量。本次不新增架构、目录、P9、K10 或强制步骤。
-
-### 同一知识体系的不同观察轴
-
-六域用于组织知识，P1–P8 用于按问题进入，K1–K9 用于诊断知识生命周期断点，跨层锚点用于追溯目标、知识、数据、实现、结果和变更的关系；专家专业视角用于按需调用，不能互相替代。以下为入口映射（主归属不是排他分类）：
-
-| 六域 | 问题入口 | 优先读取的既有正本 |
-| --- | --- | --- |
-| 人类与目标 | P1/P6 | [简短意图与人机委托](../research/2026-11-07-short-intent-goal-context-delegation.md)、[认知增强](../research/2026-11-07-human-ai-cognitive-augmentation-foundations.md)、[任务表现与学习](../research/2026-11-07-human-ai-delegation-performance-learning.md) |
-| 知识与认知 | P2/P3/P4/P5/P8 | [知识维护规范](foundations/organization-protocol.md)、[知识生命周期](foundations/knowledge-lifecycle-nine-stages.md)、[未知发现](../research/2026-11-07-problem-driven-unknown-discovery.md)、[理论互证](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md) |
-| 能力与方法 | P2/P3/P6 | [能力整合](../research/2026-11-15-capability-integration-and-hermes-evolution.md)、[外部智能吸收](../research/2026-11-16-external-intelligence-layer.md)、[成熟整体系统对照](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md) |
-| 运行与执行 | P6/P7 | [Hermes 能力账本](../research/2026-11-15-hermes-deep-capability-ledger.md)、[整体系统设计及停止/追溯](../research/2026-11-15-from-idea-to-open-adaptive-system.md) |
-| 领域与现实 | P1/P2/P5/P6 | [人的现实能力与机会](../research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md)、[制造业案例](../cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md)、[信息价值链入口](../research/2026-11-23-information-scouting-value-chain-direction.md) |
-| 验证与进化 | P5/P7/P8 | [跨层锚点及纠偏](foundations/cross-layer-project-anchors.md)、[两领域实践结果](../evaluation/2026-11-07-two-domain-practice-results.md)、[跨领域对照](../evaluation/first-cross-domain-tests.md)、[现行台账](../research/ACTIVE-RESEARCH-LEDGER.md) |
-
-### 优先收敛的知识关系与冲突处理
-
-- 目标与方法：早期 [四类路线裁决](../decisions/2026-11-05-goal-options.md) 的 B 首选是历史条件性建议；能力整合层亦是候选，信息揽客是应用入口。都不覆盖人的长期目标。
-- 专业团队：按问题表征寻找有独立贡献的专业知识，结合[未知发现](../research/2026-11-07-problem-driven-unknown-discovery.md)与[工作流边界](../research/workflow-components-and-boundaries.md)，不将专家名称或角色一致性视为独立证据。常规质量工作留在系统内部；向人报告结论、证据、重要未知、风险、取舍、授权及停止原因。
-- 知识价值：外部吸收研究强调转化价值，但 [知识维护规范 2026-11-09](foundations/organization-protocol.md)明确纯理论也有独立价值。区分研究保存价值与程序化/执行价值；无近期应用不自动淘汰。
-- 停止与探索：[理论互证](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md)允许有条件初步判断；[系统设计](../research/2026-11-15-from-idea-to-open-adaptive-system.md)要求关键不确定无法补证时停止受影响的行动，不应停止所有低风险探索，也不应把候选当事实。
-- 能力地图与界面：能力关系可供内部选择，是否需图数据库、固定编排或独立 UI 由真实任务缺口决定。用户不承担内部调度；重大决定与必要证据可外显。
-- 证据与纠偏：[源级案例](../research/2026-11-07-gpt-researcher-context-selection-audit.md)、[研究停止审查](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)保留原始反例；[跨层锚点](foundations/cross-layer-project-anchors.md)承担根因与责任关系；[评测](../evaluation/first-cross-domain-tests.md)承担实际效果主张。不要将同源重复、已见样本或文档提交升级为独立验证。
-- 对重复课题采用“唯一主要正文 + 原始研究与反例链接”；保留历史文本与适用边界，暂不删除材料。具体缺口和下一项验证见[研究台账](../research/ACTIVE-RESEARCH-LEDGER.md#2026-11-25全局研究架构收敛与能力转化缺口审查)。
-
-**本轮证据**：固定 main 提交 f89a300d154e6c85cbb61d81ca511664926b9725；31 份文件完整目录及定向正文审查，非逐字校勘、非独立模型实验。GitHub 星标清单仍不可由当前连接直接读取；无收藏分类结论，不凭空补充。此分支为可逆知识导航修订，不代表主分支已更新或 Hermes 已部署。
-
-> **2026-11-15｜系统级设计入口：** [从“思想”到“复杂全域系统” V1.0](../research/2026-11-15-from-idea-to-open-adaptive-system.md)。最近几轮的核心认识进一步收束：ai-d 的思想可以很简单——普通人不知道时，AI 去学习优秀知识并组织已有能力把事情做成；但实现它不是一个知识库、Skill 或单一能力整合层，而是同时处理目标、问题、知识、证据、能力、模型、Agent、Skill、MCP、领域、Runtime、执行、验证、经验和人类授权的开放式系统。该文件用于承接系统级设计，不新增 P9、不定义固定工作流。当前优先让真实任务暴露缺口，再决定哪些需要程序化。\n\n# 知识总入口｜从实际问题出发，跨学科调用
-
-> **2026-11-13｜新增纵向知识生命周期锚点：** [九阶段：规划→获取→接收→理解→关联→整合→转化→验证→进化](foundations/knowledge-lifecycle-nine-stages.md)。本索引的P1–P8仍是“研究什么问题”的横向入口；九阶段是“知识经过哪些形成与验证工作”的视角；具体行业业务目标是第三种独立层次。不要将九阶段改造成九个新分类、九个固定Agent或替代本索引。
-
-**状态**：知识组织候选 V0.2（2026-11-06）。这是 ai-d 的研究导航，不是每轮必须执行的指令，也不代表模型已经学会或验证了这些内容。
-
-> **2026-11-13｜知识如何约束真实项目的跨层使用：** [项目多层锚点与跨层一致性](foundations/cross-layer-project-anchors.md)。这不是P9、九个Agent或新数据仓库，而是将目标、知识、来源、代码、测试、运行与变更影响联系起来；记录权威来源、适用条件、直接影响和证据等级。与已有九阶段知识生命周期相互补充。
-
-**新认知导航（2026-11-13）**：对“锚点、映射、互相连接/理解/验证”的专业延伸已经在[跨层锚点 V0.2 的第11节](foundations/cross-layer-project-anchors.md#11-2026-11-13-体系收束从关键词集合走向可解释可验证的项目关系v02)完成收束。七类核心能力对应五种逻辑网络；包含结构/语义/关系/跨层/动态映射、双向追溯、血缘与来源、数字线程、知识图谱/本体、契约/不变量、保障论证、反证/交叉验证、变更影响、漂移与闭环等概念的区别及成熟成品来源。原有P1–P8和知识九阶段仍独立有效，**不新增P9或新分类框架**。
-
-**纠偏与错误修正的新增专业入口（2026-11-13）**：[多层锚点第13节：纠错、纠偏、根因、CAPA、单环/双环学习和防复发](foundations/cross-layer-project-anchors.md#13-2026-11-13纠偏能力的深层扩写纠错校准根因修复与学习v03)。不新增P9或固定阶段；当目标、知识来源、数据、设计、代码、验证或AI协作出现偏差时，先判断基线、原因与职责，按风险选择局部修复或上层认识修订，保留可核验结果，避免过度纠偏。
-
-## 定位
-ai-d 研究人与 AI 共同定义和修正目标、运用专业知识、比较方案、行动与复盘的通用方法。**以问题为一级入口；学科、资料类型、证据状态、适用范围为多维属性**。一个知识对象只维护一个主要版本，可以有多个学科标签和问题关联，不为了分类复制成多份文档。
-
-
-## 2026-11-07｜全项目上层整合：未知发现不是技术项目的子功能
-
-从一个人的实际问题开始：可能是工作、学习、经济机会、市场调查、软件开发、个人选择或此前根本没有想到的领域。用户未必知道“信息差、搜索成本、分散知识、逆向选择、结构类比、真实约束”等术语。AI 应主动从**现象与目标背后有哪些可能机制**寻找相关学科，并在新资料和反例出现时重新定义问题，而不能机械限定在已知标签、专家姓名或最近研究过的 Agent / Skills 上。
-
-**[完整现实目标实证：普通人借 AI 获得能力、职业机会与长期价值的条件与反例](../research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md)**：新一轮直接随机实验与经济机制综合（年轻人进入门槛、教育差距、学习是否真正保留、肯尼亚经营者真实负效应、价值获取）；给出四种条件路线和具体贯通案例。不是新的固定知识层级，也不声称已经有实际个人收益。
-
-**[全局深度研究：成熟系统全流程与源码、专业知识覆盖、研究失败机制和整体复用判断](../research/2026-11-07-whole-project-deep-research-and-mature-systems-audit.md)**：纠正简单三题替代复杂目标的范围问题；逐项检查 STORM、Open Deep Research、GPT Researcher、DeepAgents、Hermes、OpenWiki、LiveDRBench 与原始研究。不是新分类或必须执行的专家流程。
-
-**[全项目知识整合：原始目标 → 未说出的专业问题 → 跨学科知识 → 真实任务与能力边界](2026-11-07-whole-project-research-integration.md)**：综合刚才多轮检索的 Swanson、Bates、Gentner、Co-STORM/HorizonBench 与信息经济学案例，并与已有完整审查、实际任务、评测记录建立链接。它是**知识导航，不是强制执行程序**。新增问题直接回到原有学科源文件深化，不为此再建固定“信息差分类”或专家系统。
-
-下方 P1–P8 是已有的**研究方法与知识维护问题索引**，不是经济、社会、科学、生活和技术领域的穷尽目录。未来应允许新的专业问题和成熟成果改变项目对问题的理解；知识文件被保存和链接，也不等于模型已经自动学会或经过真实任务验收。
-
+- [整体流程与承接关系](../planning/process-architecture.json)：按真实交付对象查流程及上下游，P1–P8仍是知识入口；V2覆盖28张现行语义卡，七项遗漏按条件归位，领域知识不自动触发；交接绑定真实任务、对象、版本和证据；不恢复历史R路线默认权威，不另设知识分类。
 
 ## 一、按“实际要解决什么问题”导航
-| 编号 | 根本问题 | 相关学科示例 |
-|---|---|---|
-| P1 目标与问题形成 | 用户的模糊话语如何变成可检验的问题，目标何时改变？ | 组织意义建构、需求工程、认知科学、设计学 |
-| P2 研究与调查 | 怎样建立竞争解释、找到机制与反例？ | 科学方法、因果推断、历史研究、调查方法 |
-| P3 搜索与信息获取 | 搜索什么、覆盖哪些渠道、何时停止？ | 情报学、信息检索、系统综述、信息价值 |
-| P4 知识组织和检索 | 概念、术语、来源、上下位与关联怎样保存和调用？ | 图书情报学、知识工程、档案管理 |
-| P5 证据与可靠性 | 来源到底支持哪条主张、能否适用于新场景？ | 认识论、证据综合、统计学、研究方法 |
-| P6 选择与人机协调 | 何时解释、提问、继续研究、执行或交由人决定？ | 管理学、决策科学、人因工程、运筹学 |
-| P7 验收、修订与经验 | 新发现改变了什么，失败怎样修正旧知识？ | 质量管理、组织学习、评测科学 |
-| P8 噪音、污染与失效 | 为什么更多信息/规则可能损害当前判断？ | 信息质量、认知迁移、上下文工程 |
+### P1｜目标与问题形成
+触发：方向含糊、目标变更或错误前提。行动：区分确认目标与手段、错误前提及不变边界，从真实事件和专业机制重构问题；重大取舍留给用户。
+验收：可检验目标、问题对象、保持项、必要条件、具体成果。
+- **K-GOAL 根本目标与智能资本**：效率倍率是待验证目标；实际专业与现实能力优先；按需真实价值选任务，不以系统建设为目的；边界：不能用文件数量或UI证明价值。[README.md L1–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/README.md#L1-L5)
+- **K-INTENT 意图形成与专业问题表征**：区分意图、事实、适用性及授权不确定；按机制表征问题；按需形成对象、关键条件、竞争解释与验收；边界：人类物理专家研究不能证明LLM扮演专家有效。[2026-11-07-short-intent-goal-context-delegation.md L17–34](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-short-intent-goal-context-delegation.md#L17-L34)
+- **K-AUTH 授权与主动性边界**：常规专业决定由AI承担；重大价值、资源、不可逆行动仍需人授权；按需核实当前权限；边界：历史计划不构成当前授权。[README.md L3–3](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/README.md#L3-L3)
+- **K-REAL 现实价值及信息价值链**：信息揽客是具体入口，价值取决于信息是否改变判断、机会或行动，而不是收集量；按需从实际目标和约束筛选可行动事项，核真实成果、成本及价值获取；边界：候选应用不等于整个AI-D；没有现场或收入证据，不宣称实际收益。[2026-11-23-information-scouting-value-chain-direction.md L25–44](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-23-information-scouting-value-chain-direction.md#L25-L44)
 
-**分类不是执行顺序**。同一任务经常涉及多类问题；领域名以后允许增加、合并或调整。暂不为每类创建独立 Agent 或层层子文件夹。
+### P2｜研究与调查
+触发：专业问题、未知机制或真实领域成果。行动：查可改变当前判断的原始证据、竞争机制、反例和已有成果；按实际资源选择有价值的纵深研究。
+验收：新增解释、证据、反例或真实成果；不凭时长判定深度。
+- **K-EXPERT 具名专家方法而非角色**：具名专家是专业方法来源，按问题动态选取；按需调用具体问题表征、双时间、真实错误分析等方法；边界：多人名或同模型多个视角不等于独立验证。[2026-11-27-named-expert-full-domain-audit-v2.md L3–9](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L3-L9)
+- **K-UNKNOWN 未知发现与机制桥接**：竞争解释、隐藏变量、机制结构与反证有助于发现关键未知；相似词不是机制相同；按需选择最可能改变决策的未知，明确映射条件，发现候选与确认分离；边界：不是每次七步；诊断示范不是运行实证，类比可能失效。[2026-11-07-problem-driven-unknown-discovery.md L34–46](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-problem-driven-unknown-discovery.md#L34-L46)
+- **K-CAP 外部成熟能力吸收与组合**：区分外部概念、方法、模式、可调用能力和证据；按对象、许可、条件及真实验收复用成熟劳动；按需先还原成品工作链与责任，选择直接借用或组合，按边界验证；边界：流行度、作者自述、读取技能均不等于已安装或可执行；不能以工具路线覆盖目标。[2026-11-16-external-intelligence-layer.md L17–40](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-16-external-intelligence-layer.md#L17-L40)
+- **K-TRIANG 理论互证与阶段性认可**：理论互证允许有条件初步认可，不等于实际部署或因果成立；按需明确阶段结论、反例及实测需要；边界：关键高后果不确定不能用理论自洽抵消。[2026-11-07-theoretical-triangulation-provisional-acceptance.md L10–21](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-theoretical-triangulation-provisional-acceptance.md#L10-L21)
+- **K-RESILIENCE 固定决策与事后适应**：固定选址跨情景共享，故障后流量可重分配；在固定服务距离下总容量不能补救局部不可达；按需保持原对象、容量与距离，逐情景检查需求守恒、容量与可达性；边界：仅原公开数据和情景设定；未估计真实故障概率、企业成本或效益。[2026-11-27-v23-6-composed-professional-work-network-resilience.md L11–25](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-v23-6-composed-professional-work-network-resilience.md#L11-L25)
 
-### 问题驱动的专家认知发现与选择（2026-11-06 补充）
+### P3｜搜索与信息获取
+触发：缺少外部证据、搜索过窄或成本高。行动：根据具体证据缺口建立搜索路径，查原始论文、源码和负例，先对照既有资产。
+验收：明确来源版本、覆盖范围、关键未知，不将搜索数量当深度。
+- **K-SEARCH 上下文筛选与探索权衡**：筛选相关性、成本、事实正确率与开放报告偏好各异；漏掉陌生机制是待检验解释；按需任务比较检索与探索范围，保留可能改变判断的弱线索，独立验收未知发现；边界：8道开放题、同家族模型评审不证明未知机制发现率；不能推导全部全文注入。[2026-11-07-gpt-researcher-context-selection-audit.md L38–68](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-gpt-researcher-context-selection-audit.md#L38-L68)
+- **K-SEARCH 检索颗粒度实测**：历史12题旧条件路由Recall@3=.750，标题分段=.583，融合=.625；少读文本不等于不漏条件。先依知识职责找现行原件，分段只作定位，必要时展开上下文与互补来源。[实验](../evaluation/retrieval-multiscale-v3-results.json) · [组织规范3B](foundations/organization-protocol.md#3b-研究与知识颗粒度控制)。非独立模型增益。
+- **K-STOP 研究停止与价值判断**：按边际信息价值及实际交付判断停止；运行完成不等于目标达成；按需记录停止和复开条件；边界：一次受阻不应否定全部探索；[可逆行动的五项判据](../planning/proposal-review-v0.1.md#提前规划的停止条件避免钻牛角尖)（目标、竞争路线、风险、边际信息价值、验收）。[organization-protocol.md L42–49](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L42-L49) [停止/转实施原始判据](https://github.com/sunshihao001/ai-d/blob/9755c6f769f7ac8b64ada2359817045ec1e2e845/research/2026-11-07-open-source-research-depth-scope-stop-audit.md#L89-L100)；证据足以支持授权内可逆工作时，停止扩展研究分支、转实际操作与验收；资源、关键证据或权限不足时保全未完成及可复开条件。关联K-BUDGET/K-RECEIPT。
+- **K-BUDGET 深度生产与执行预算**：运行时长不能证明具体资源限制或停止原因；按需保留可恢复阶段和真实日志缺口；边界：R38运行50.656608秒、V1.3运行48.238269秒，属不同记录；缺少完整工具、模型和退出原因日志，不能推断一分钟硬上限或唯一根因。[2026-11-27-deep-cognitive-production-and-execution-budget.md L3–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-deep-cognitive-production-and-execution-budget.md#L3-L5)；[V1.3原记录L5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-knowledge-driven-task-expression-v1.md#L5)。
 
-这不是新的“专家委员会”或每次必跑的步骤。**专家视角是按问题选择的知识与判断方法，不是固定角色身份**。重点从问题表层深入到机制、证据和实际行动：
+### P4｜知识组织和检索
+触发：知识遗漏、调用、归并或上下文冲突。行动：沿既有问题轴、对象类型和证据状态定位原件；只读取相关知识，区分导航与经验证的语义关系。
+验收：原件与版本可读，明确知识改变什么行动；未读原文不称理解。
+- **K-FACET 多轴知识组织**：六域、P1–P8、K1–K9及跨层锚点是不同观察轴；按需复用原分类并整合入口，不新增分类；边界：标签非语义证据或执行顺序。[2026-11-27-named-expert-full-domain-audit-v2.md L4–5](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L4-L5)
+- **K-FACET 的颗粒度调用（关联P2）**：研究停留宏观、浓缩丢失条件或索引只到文档时，向上查目标/原理、向下查机制/具体操作与验收、横向查依赖；依据决策差异决定拆分或归并。正本：[组织规范3B](foundations/organization-protocol.md#3b-研究与知识颗粒度控制)。这是恢复的条件性方法，不新增独立知识编号；尚无独立模型增益验证。
+- **K-PROV 主张与证据独立**：来源、具体主张支持、适用性和实际验证须分开；按需核原文、版本、支持或反证关系；边界：同源转述不能算独立证据。[organization-protocol.md L13–34](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L13-L34)
+- **主张变更、失败经验与指令准入（K-PROV/K-HOOK/K-DEFECT）**：新证据或纠偏触发反向复查；无影响主张不改，证据变化必须裁决；区分实现阻塞与根本失败；按真实错误维护常驻指令。[正本4A](foundations/organization-protocol.md#4a-知识变更协调与失败经验复用) · [原始项目机制与证据](../research/2026-11-16-external-intelligence-layer.md#13-成熟项目原始机制审查与实际吸收)。固定V4投影仍为历史快照，现行增量以本索引和正本为准。
+- **K-HOOK 的实际提示词调用**：总锚点由README保持，当前子锚点由最新用户意图及台账确定；复杂任务按[提示词第0/0A节](../prompts/professional-task-modules.md)连接情境、具体知识对象、认知部件、操作和验收，动态双向追溯与回归；不另建知识本体，不把模块选择当作已调用。
+- **K-HOOK 认知钩子与跨层追溯**：沿实际依赖分析变更直接影响、保持项及反向验收；按需复查受影响原件和判断，保留不变项；边界：词面相近不构成强制技术依赖。[cross-layer-project-anchors.md L77–93](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/cross-layer-project-anchors.md#L77-L93)
+- **K-CONT 跨会话状态与知识保全**：长期目标/授权、阶段有效状态、原始资产应分层保存；按实际HEAD恢复并回读；按需从短入口查最新原件与状态，重大变化保留旧版本、实际证据、未完事项及下步；边界：保存和同会话恢复不证明独立新会话可接续；缺权限/源则标未知。[2026-11-27-mobile-chat-cognitive-continuity-v1.md L20–22](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-mobile-chat-cognitive-continuity-v1.md#L20-L22)
+- **K-UI 同源人机工作台**：工作台是同源认知投影，不是GPT执行环境；按需统一八问题路由及语义主张入口，标明快照；边界：复制文字不等于模型运行。[2026-11-27-named-expert-full-domain-audit-v2.md L22–25](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L22-L25)
 
-- **识别问题**（P1）：区分用户的原话、真实目标、背景约束、隐含假设和可能变化的目标；不能擅自把 AI 建议升级成用户确认的目标。
-- **寻找有用的专业视角**（P1/P2/P3/P4）：从问题结构、关键未知和竞争解释出发，发现相关学科及其标准概念、判断线索、条件化知识、案例、方法与资料；不能只靠词面匹配“金融专家/程序专家”。
-- **选择而非堆叠**（P4/P5/P6）：每个视角应提供不同的关键解释、可核查证据或决策影响；重叠或无关的视角可不启用。必要时主动搜索原先不在候选清单中的学科。
-- **综合并行动**（P5/P6/P7）：区分实证、权威来源、可推论机制和未知；审查不同视角的冲突，形成可实施方案，授权范围内执行并验收；失败反馈反过来修订所用知识。
-- **控制污染**（P8）：不要把专家角色提示词、固定人数或长流程当作能力；不得以多角色口吻一致作为独立证据。
+### P5｜证据与可靠性
+触发：数据、证据与适用条件不确定。行动：固定实际任务、源版本、事实时点与获知时点；比较同路径异版本、后续补充、真实读取与未知。
+验收：可复核原始证据及反例，不把现在知道的内容当过去已知。
+- **K-DATA 源级数据语义与真实可用性**：截断不变不能发现上游已错误标时的输入；核实际可用时点；按需分离事件、实际可用、决策、处理和事后标签时间；边界：R36构造反例不证明供应商违规。[2026-11-27-r36-temporal-audit-recovery.md L5–16](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-r36-temporal-audit-recovery.md#L5-L16)
+- **K-DATA 与 K-PROV 的源端对象/口径协同（V3实际案例）**：当上游证据交给下游判断时，区分请求绑定、响应自报对象和独立核实；数量的分母、计量口径及假设必须从真正产生该数字的上游传递，不能由消费者补猜；未知、无效与真实零值分离。按需拒绝显式错绑，保留旧响应的未知状态，核受影响下游与反例。依据：[MEME源端与消费端实际隔离验收](https://github.com/sunshihao001/grok/blob/66bdd89806cfdbf5daceda679765b6cf0f2d7983/docs/project/mint-evidence-acceptance-20261128.json)（构造夹具、非现场真值；领域阈值不迁移为通用规则）。
+- **K-TIME 历史证据与知识可见时点**：历史快照存在、提交、实际发布与读取时间不同；按需固定历史证据版本与截止时间，区分事后解释；边界：快照缺失不能证明模型不知道；版本差异不是模型泄漏率。[2026-11-27-named-expert-full-domain-audit-v2.md L12–21](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-named-expert-full-domain-audit-v2.md#L12-L21)
+- K-PROV：参见 P4 的唯一主入口；仅在本问题需要时交叉调用。
+- **K-EVAL 验证层级与证据门槛**：结构、来源、实际执行、独立模型对照和实际效果各有证据门槛；按需关键条件单独验收，保留正常与失败例；边界：模型自评或关键词命中不是独立真值。[2026-11-27-v23-3-verified-solutions-and-prompt-regression.md L8–10](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md#L8-L10)
 
-**专家知识要保存什么？** 不仅是领域标签，还包括：专家注意到的线索、问题表征、核心概念和因果假设、适用情境、判断与决策要求、典型失败、可推翻条件、原始来源。没有真实案例或原始证据时，应标为假设而非“专家经验”。
+### P6｜选择与人机协调
+触发：实际行动、工具调用、学习或协作。行动：确定本轮能完成的一项实际交付，调用已有成果与授权工具执行；受阻明确状态，不把专业选择交回用户。
+验收：实际产物、工具结果或真实阻塞，不只给下轮计划。
+- **K-RUNTIME 运行环境与认知责任分离**：认知方法、运行时、行业任务是不同职责；文档和动态指令不保证运行能力；按需核当前宿主真实权限、工具、输入输出及日志；优先成熟原生能力；边界：Hermes非唯一宿主；定时触发不等于持续思考，旧版本不能证明今日可用。[workflow-components-and-boundaries.md L4–31](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/workflow-components-and-boundaries.md#L4-L31)
+- **提示词实际调用**：复杂任务按[专业提示词模块](../prompts/professional-task-modules.md)选择既有P1–P8主模块及必要辅助模块，包含适用/不适用、专业动作、原件、否决门槛及组合示范；[外部机制来源](../research/2026-11-16-external-intelligence-layer.md#14-专业提示词分类组合与反馈优化2026-11-28)。不新增知识分类或默认全量提示词；独立增益待验。
+- **K-PROMPT 提示词与知识承接的关系**：提示词是知识向任务规格转换的候选接口；按需条件选择原件、规格、实际产物及验收；边界：更多规则或更长提示词不保证增益。[2026-11-27-knowledge-driven-task-expression-v1.md L4–7](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-knowledge-driven-task-expression-v1.md#L4-L7)
+- K-CAP：参见 P2 的唯一主入口；仅在本问题需要时交叉调用。
+- **K-LEARN 人机认知增强与真实学习**：AI辅助任务表现、独立技能及协作净效益不能相互替代；长期现实收益另验；按需代办、协作、教学按当前目标区分；评价辅助结果与移除AI后的迁移；边界：短期数学实验不证明普遍能力退化；人机组合并非必然胜过最强单方。[2026-11-07-human-ai-delegation-performance-learning.md L24–39](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-07-human-ai-delegation-performance-learning.md#L24-L39)
+- **K-RECEIPT 知识实际使用的行动收据**：实际使用必须改变对象、判断、行动或验收并留下证据；按需记录情境、实际动作、产物与限制；边界：方向正确无新增交付不能算专业劳动完成。[AGENTS.md L5–9](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/AGENTS.md#L5-L9) [现行专业模块0/0A及1A](../prompts/professional-task-modules.md)；[历史执行条款15章](https://github.com/sunshihao001/ai-d/blob/9755c6f769f7ac8b64ada2359817045ec1e2e845/prompts/master-v1.0.md#L458-L485)、[知识利用19章](https://github.com/sunshihao001/ai-d/blob/9755c6f769f7ac8b64ada2359817045ec1e2e845/prompts/master-v1.0.md#L570-L594)为原方法，不恢复旧总指令默认权威。
 
-**示例（设计推演，非实际运行验证）**：“现有程序怎样吸收旧项目知识？”应先检查产品目标和差距，再按需要选用知识工程（内容类型及版本）、领域机制（正确解释资金/钱包行为）、软件工程（承接位置）、质量工程（迁移验收）；不是自动召集四位专家。若证据揭示新问题，可引入原先未想到的图论、因果推断等专业方法，但须说明为何适用。
+### P7｜验收、修订与经验
+触发：成果验收、回归或真实增益。行动：从真实失败提取规格缺陷，检查评价器，保留旧版本及留出证据；能独立对照时比较相同输入与资源。
+验收：区分静态、真实执行及独立增益，不以提交/关键词/自评证明能力。
+- **K-DEFECT 提示词失败分析与评价回归**：关键词命中与聚合分数可能掩盖否定、错绑和必要条件失败；按需先校验评价器，再定向优化；边界：30/30构造反例不是实际模型错误率。[2026-11-27-v23-3-verified-solutions-and-prompt-regression.md L7–10](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md#L7-L10)
+- K-EVAL：参见 P5 的唯一主入口；仅在本问题需要时交叉调用。
+- K-RECEIPT：参见 P6 的唯一主入口；仅在本问题需要时交叉调用。
+- **K-EVOLVE 反馈进化与可复用成果**：按新证据、反例、适用边界及真实影响原位修订；保留历史、失败和可复用产物；按需追溯具体失败位置、记录撤销条件、更新相关正本与验收，非重构全架构；边界：候选不自动生效，无增益背景知识不默认激活；安全授权不能当噪音删除。[organization-protocol.md L42–61](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L42-L61)
 
-**后续深入研究（2026-11-07）**：[从普通问题发现未知知识：问题表征、机制桥接与反证](../research/2026-11-07-problem-driven-unknown-discovery.md)。它把“选已知专家视角”推进到“通过异常、测量条件、结构类比和跨领域中间机制，发现原本未注意的问题”，并明确发现候选≠验证成果。无需新增固定专家或强制阶段。
+### P8｜噪音、污染与失效
+触发：旧规则带偏、矛盾、错误权威或重复研究。行动：分离现行、候选及历史；识别冲突、失效、未来信息及预算停止，保留原历史与安全权限。
+验收：时点与版本绑定；不凭规则数量判定正确，不将停止冒充完成。
+- **K-POLLUTE 知识污染与纠偏**：区分六类污染；历史原件保留，旧规则默认权威可撤销；按需具体冲突修订，而非全库覆盖；边界：安全授权不属于应清除的污染。[organization-protocol.md L42–61](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/knowledge/foundations/organization-protocol.md#L42-L61)
+- **K-DECISION 历史决策的适用边界与复查**：11月5日B优先是历史条件性建议，不覆盖现行目标；按需重审旧条件，保留原裁决；边界：不得默认部署B路线。[2026-11-05-goal-options.md L1–6](https://github.com/sunshihao001/ai-d/blob/be25104d76a0f61135467746812ab93c0044dcca/decisions/2026-11-05-goal-options.md#L1-L6)
+- K-EVOLVE：参见 P7 的唯一主入口；仅在本问题需要时交叉调用。
+- K-HOOK：参见 P4 的唯一主入口；仅在本问题需要时交叉调用。
 
-**来源与证据边界**：见 [跨学科知识基础的专家认知小节](foundations/cross-disciplinary-foundations.md)；[跨领域评测](../evaluation/first-cross-domain-tests.md) 增加同资料条件下的动态视角选择对照。人类专家研究只能支持“专家的知识组织/决策线索值得提取”，不能直接证明 LLM 扮演专家或多角色协作会提升准确性。
+## 二、知识采用裁决
+- 现行治理、条件性专业方法、局部运行结果、历史候选分别读取。所有28项均有定向校勘记录，不表示已部署或独立增益。
+- 文本相关性只作检索：[70项外部语言蕴含反例](../research/artifacts/semantic-reorganization/v4-entailment/result.json)，80%覆盖仍错接纳6项、漏26项。采用前检查对象、版本、时点、证据支持/反驳/不足和适用范围；[50段落及适用门禁](../research/artifacts/semantic-reorganization/v4-evidence-use-guard-results.json)不自动判真。
+- 旧B路线、固定八专家/技能绑定、历史25章总提示词、以时长/数量/评分代替能力、词语相似等于证据等，均退出默认采用。保存原件，按需反证；历史研究不是现行权威。详见[实际治理裁决](../research/artifacts/semantic-reorganization/v4-governance-decisions.json)。
+- 理论价值与执行价值分开；未验证不等于错误。权限、安全、原始反例不得当污染删除。
+- **项目迁移边界**：通用治理与专业方法可以共享，目标、业务对象、数据语义、风险/授权、验收必须由目标项目自己的现行正本确定。AI-D当前衡量个人能力/专业劳动；MEME仅按其自身已授权任务执行，不从AI-D推导交易信号或扩大权限。
 
-## 二、知识“种类”不同，不能混着使用
-- **来源 SOURCE**：书籍、论文、官方标准、可核查源码及公开案例。
-- **概念 CONCEPT**：标准术语、定义、别名、学科和概念边界。
-- **主张 CLAIM**：可被支持、否定或限定的判断，需明确证据指向。
-- **方法 METHOD**：适用某类问题的研究/分析/行动方法，有前提和失败条件。
-- **案例 CASE**：问题、实际选择、事实证据、反例和结果。
-- **决策 DECISION**：选项、理由、被谁确认以及重审条件。
-- **假设 HYPOTHESIS**：有待检验的解释，不当作已验证事实。
-- **评测 EVALUATION**：任务基线、观测结果、误差和限制。
-- **约束 CONSTRAINT**：安全与授权的硬边界、可修订的偏好或旧工作方法；不得混为一谈。
+## 三、专业成果和精确原件
+- [证据结构契约实测](../research/artifacts/semantic-reorganization/v3-contract/result.json)；[真实制造质量作品](../cases/2026-11-27-manufacturing-quality-evidence-v3.md)；[双停运边界](../research/artifacts/semantic-reorganization/dual-outage-service-boundary.json)；[原时点反例](../research/2026-11-27-r36-temporal-audit-recovery.md)。均局部情景或公开资料，不自动外推现实收益。
+- [集中专业知识原件](2026-11-27-professional-knowledge-and-leverage.md) · [八问题专业方法原件](2026-11-27-problem-method-activation-map.md) · [历史专家恢复及归并](../research/2026-11-27-historical-expert-recovery-mainline-v2.md) · [历史原件目录](../research/archive/README.md)。历史27项及制造12项在V4地图条件性关联，不重复晋升。
+- [旧索引完整版本](https://github.com/sunshihao001/ai-d/blob/5c3e9b59757aac783b33e0c9f4b004b0783c0f50/knowledge/INDEX.md)（旧入口和历史章节；不默认加载）。所有研究原件继续保留。若旧链接使用本索引旧章节锚点，按固定版本查原段；不把旧优先级带入当前。
 
-## 三、浏览入口
-
-**[当前研究承接与修订台账](../research/ACTIVE-RESEARCH-LEDGER.md)**：用户口语意图由 AI 形成专业可执行表述；每轮保存已改正的问题、待修项目、来源与下一轮高价值候选。轻量连续性记录，不是必跑的步骤/专家模板。
-
-
-
-**[真实领域试点｜从制造业新手到专业能力、机会发现与成熟成品复用](../cases/2026-11-07-manufacturing-novice-to-ai-augmented-professional.md)**：AI 从不完整现实目标自主发现职业技能资格边界、岗位安全、AI 能力、市场条件和企业系统，核对官方 2026 原始文件及 ERPNext 源码/测试，交付可实际使用的安全观察与业务问题调查材料；现场收益尚未验收。此例是跨学科应用验证，**不是固定制造业模块或模型盲测结果**。
-
-
-- [跨领域实际核查｜Blix 当前源码的七项安全阻断与两项旧状态断言 + 工业新手安全学习卡](../evaluation/2026-11-07-two-domain-practice-results.md)（GitHub 源级静态检查、原始安全资料；非模型 A/B 或生产实跑）。
-- [2026-11-07｜全项目独立回溯、研究污染及原目标审查（批判性研究，非新规则）](../research/2026-11-07-independent-whole-project-direction-audit.md)：并列检查七八月原意、十月纠偏、十一月产品研究，以及学习、专业交付、现实决策和人的长期能力；**仅作为可质疑的审查报告，不自动替代 README 或决定下一轮唯一主题**。
-- [2026-11-07｜问题驱动的未知知识发现：中间机制、跨学科桥接及可检验边界](../research/2026-11-07-problem-driven-unknown-discovery.md)（P1/P2/P3/P4/P5/P6/P7/P8）；[第九节：为何研究停留表面或无限扩张，何时暂停、停止和复开](../research/2026-11-07-problem-driven-unknown-discovery.md)。这是现有研究的原位修订，不是新专家系统。
-- [跨学科成熟知识来源与适用条件](foundations/cross-disciplinary-foundations.md)
-- [分类、来源、知识生命周期与去噪原则](foundations/organization-protocol.md)
-- [2026-11-05 人机协调领域研究](../research/2026-11-05-ai-coordination-reverse-inference.md)
-- [AI 工作流的工具/运行时与认知方法边界](../research/workflow-components-and-boundaries.md)
-- [原有 AI 论文和工程资料索引](source-register-2026-11-05.md)
-- [初步跨领域评测方案（未执行）](../evaluation/first-cross-domain-tests.md)
-
-## 四、旧知识和已有研究归位（只做关联，不复制全文）
-| 历史线索／现有文件 | 主要归属 | 说明 |
-|---|---|---|
-| 七八月：普通表达→专业问题表征、概念邻域与证据工作 | P1、P4、P5 | 以历史母本和来源索引追溯；未声称本轮逐字复核全部七月原文 |
-| 十月：知识系统去约束、去污染与重构审计 | P7、P8 | 旧架构、固定专家制度属于可查询历史，不自动恢复为强制运行规则 |
-| [2026-11-05 人机协调和目标演化研究](../research/2026-11-05-ai-coordination-reverse-inference.md) | P1、P6、P8 | 目标状态、记忆冲突、下一行动价值 |
-| [AI 工作流组件对照](../research/workflow-components-and-boundaries.md) | P4、P6 | 运行时组件与认知知识的界限，不作为必建清单 |
-| [原始文献与技术来源登记](source-register-2026-11-05.md) | P3、P5 | 作为检索入口，具体主张仍需回到原始来源核对 |
-| [路线比较与可推翻条件](../decisions/2026-11-05-goal-options.md) | P6、P7 | 保留当时选择及其失效条件 |
-| [跨领域评测计划](../evaluation/first-cross-domain-tests.md) | P7 | 是设计，尚未执行独立模型对照 |
-
-## 五、首批九条真实研究认识的归位示范
-下面是真正用于检查分类是否可用的例子，**不是九项均已在 ai-d 的模型任务中验证**。仅将公开来源与历史研究的认识定位到问题类别，不复制内容，不建立九个孤立知识卡。
-
-| 认识／专业入口 | 主问题；关联问题 | 来源性质与当前边界 |
-|---|---|---|
-| 从普通表达重构问题 ≠ 擅自修改用户长期目标 | P1；P6 | [项目初步定位](../README.md)；用户目标与 AI 提议分开，属于当前协作原则 |
-| 只保存对话历史 ≠ 保存执行检查点或验证后的方法 | P4；P7 | [此前 Agent 源码研究的索引](source-register-2026-11-05.md)；SDK 功能与本项目实际跨重启验收分开 |
-| 知识可能促进也可能妨碍迁移 | P4；P8 | [National Academies](https://www.nationalacademies.org/read/9853/chapter/6)；人类学习证据，迁移至 LLM 属待检验假设 |
-| 搜索来源单一会增加筛选偏差风险 | P3；P5 | [Cochrane Handbook](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04)；来自系统综述实践，泛化程度须限定 |
-| 同义词、层级和概念关联必须区分 | P4；P8 | [W3C SKOS](https://www.w3.org/TR/skos-primer/)；概念组织规范，不代表因果关系 |
-| 来源及加工链应可追溯 | P5；P7 | [W3C PROV-O](https://www.w3.org/TR/prov-o/)；可追溯不等于结论真实 |
-| 探索新方向与交付现有成果需要权衡 | P6；P3 | [March 1991](https://pubsonline.informs.org/doi/abs/10.1287/orsc.2.1.71)；组织学习原始研究，不提供 Agent 最优预算 |
-| 知识管理不只是文件保存，涉及利用和改进 | P4；P7 | [HBR Press](https://store.hbr.org/product/working-knowledge-how-organizations-manage-what-they-know/3014)、[ISO 30401](https://www.iso.org/standard/68683.html)；来自企业管理，应用到个人系统是设计推论 |
-| 先明确研究问题，再决定检索、证据筛选和综合方法 | P2；P3、P5 | [Cochrane](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-01)；不是要求任何问答都采用系统综述的全部程序 |
-
-这一表格验证了**一条认识可以被多个问题入口找到，同时仍指向同一原始来源**。下一步要验证的是：实际检索/回答是否因此改善，而不是继续增加表格条目。
-
-## 六、示例：用户说“搜索越来越多，但越研究越没头绪”
-- **问题**：P1 当前目标可能没被正确恢复；P3 检索范围扩散；P4 同义知识重复；P8 无关历史污染；P6 没有停止决策。
-- **学科连接**：图书情报学负责术语和检索结构；Cochrane 的系统检索思想提示记录来源和选择偏差；管理学的探索/利用权衡说明不该无限搜；认知科学提示知识相关但不被正确调用的风险。
-- **判断变化**：先检查检索/目标的适配问题，不立即增加另一套专家架构或“必经十步”。
-- **验收**：对同一问题，在固定来源和相近预算下比较“原方式”与“按需整理后的方式”的事实准确度、真正影响决策的新增信息和输出负担。尚未完成该实验。
-
-**质量准绳**：保存≠检索到≠用对≠实际改善判断。这四件事需要分别核查。
-
-## 2026-11-07｜外挂大脑与人机认知增强的增量研究
-
-- [首轮：人机认知增强理论、问题形成与目标并存](../research/2026-11-07-human-ai-cognitive-augmentation-foundations.md)（P1/P2/P4/P6）：Licklider、Engelbart、延伸心智与认知卸载；理论来源≠已验证的 Agent 实现。
-- [第二轮：认知委托、任务表现、人的长期能力及协同效果](../research/2026-11-07-human-ai-delegation-performance-learning.md)（P5/P6/P7/P8）：随机实验、荟萃分析、工作论文与理论方案的区分。
-- **与旧目标关系**：外挂大脑是个人化的能力增强研究对象，既不覆盖 ai-d 通用研究目标，也不替代其他专业项目。两份文件作为问题入口，不是新的固定流程或必加载上下文。
-
-## 2026-11-07｜先研究成熟的整体系统，而不是继续堆局部能力
-
-- [全系统参照研究：OpenHuman、Hermes Agent、OpenClaw、Meta 第二大脑、OpenWiki、Dify 等](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md)（P1–P8 的完整用户目标与交付链）。目标是先理解成熟整体如何解决问题、真实运行与维护，再判断哪些知识/能力已成熟、哪些才是需要本项目研究的缺口。
-- **截至 2026-11-07 的进一步裁决（原报告 V0.4）**：不同成熟项目的 Skills、MCP 工具、独立 Agent 和专业研究方法可以按任务复用，不必预设 Hermes 或 OpenHuman 为整套 AI 系统唯一主体。Agent Skills 是可移植操作知识，MCP 是工具调用，A2A 是独立代理协作；Meta 的研究仍是认知方法参考，不能当可直接调用的工具。Hermes 外部 Skills、Tool Search、预设 Bundle，OpenHuman MCP 服务端以及 OpenWiki 的 SKILL.md/MCP 接口均已有源码或文档入口；端到端互联与 AI 自主技能选择质量**未实跑**。下一步先做一个跨项目短句任务的最小组合与可核查验收，参见[成熟整体参照报告第八节](../research/2026-11-07-whole-system-benchmarks-before-component-exploration.md)。
-
-## 2026-11-07｜理论互证可初步通过：避免证据过度保守
-
-- [多轮原始文献研究：稳健性、多路径互证、溯因与分阶段评价](../research/2026-11-07-theoretical-triangulation-provisional-acceptance.md)（P2/P5/P6/P7/P8）；[现有知识组织规则的原位修订](foundations/organization-protocol.md)。
-- **修订**：理论推导、不同假设下的共同结论、可核查源码及已有外部实证，可支持**有条件的初步通过与低风险可逆行动**；不要求每项知识先做本项目实跑。未实测的**具体实际效果**仍单独说明，不全盘否定理论价值。
-- **防止反向错误**：同一资料被多个模型或专家重复，不构成独立互证；理论层支持不等于完成真实部署、证明某人身份或收益。证据按当前主张和风险需要决定，而非统一程序门槛。
-
-## 2026-11-07｜资料筛选不等于深度理解：真实源码与逐题数据
-
-- [GPT Researcher 上下文筛选源级审查、正常设计负例与 28 题数据重算](../research/2026-11-07-gpt-researcher-context-selection-audit.md)（P1/P2/P3/P4/P5/P7/P8）。
-- **核心认识**：小输入直接跳过筛选、无词面命中时回退开头片段，都是原项目文档/测试说明的正常设计，不是发现的新 Bug；资料相关精度不等于开放式研究的解释质量。
-- **实证边界**：项目提交的逐题数据里，无过滤报告在 8 个开放题的模型偏好比较中优于 Embeddings（8:0）及 Jev（6胜2平）；但非独立真人机制验收，不证明不筛选能发现更多真实未知。
-- **当前行动**：任务类型影响筛选取舍；保留有证据的陌生线索，同时控制噪音、来源非独立及无限搜索；不新造固定算法或全量装载历史。
-
-## 2026-11-07｜GitHub 成品反证：深度研究范围与停止
-
-- [开源研究代理/停止机制与真实故障审查](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)（P2/P3/P5/P6/P7/P8）。定向读取 STORM、GPT Researcher、Open Deep Research、DeerFlow、HALT、AutoSearch、Pi 扩展与 ReportBench 的可核查材料，含部分核心源码、测试和 Issue。
-- **实际修正**：研究预算停止≠证据覆盖≠解释深入≠任务完成；固定搜索次数只管资源；HALT 式逐主张覆盖和 RAAC 式新颖性/覆盖仅是特定任务上有证据的参考方法，不能凭文章长短或检索次数断言深度。
-- **重大失败案例**：GPT Researcher 检索为空导致循环的 Issue #1579；DeerFlow Goal 停止/续执行/完成状态的 Issue #6555 与离线复现。保留源码事实、作者陈述、论文实证和 ai-d 适用推论的不同等级。
-- **实际完成的一个源级分支复现**：[Open Deep Research #283 异常结束与并发调查证据汇总缺失](../research/2026-11-07-open-source-research-depth-scope-stop-audit.md)（第八节）；已用隔离的 Python 转录控制逻辑检查 7 组条件，结果见[跨领域评测记录](../evaluation/first-cross-domain-tests.md)。这不是完整官方依赖运行，也不是独立模型质量 A/B。
-- **当前裁决**：不安装拼接所有研究系统；先利用既有公开源码真实错误案例检查知识调用、未知发现和研究终止判断。第三方完整运行和 ai-d 独立 A/B 均未完成。
-
-## 2026-11-07｜短句意图与认知委托的深研
-
-- [第三轮：从普通短句到目标恢复、知识调用、澄清与行动选择](../research/2026-11-07-short-intent-goal-context-delegation.md)（P1/P3/P4/P5/P6/P7/P8）。
-- **专业研究的关键分流**：用户意图不确定（用户才能定）、模型事实不确定（AI 自己研究）、历史知识适用不确定（追溯来源）、执行授权不确定（谨慎限制行为）不是同一种问题；无需因此建立四个专家 Bot。
-- **相关联的证据**：NAACL/ICML/ACL 2025–2026 澄清与信息增益研究；AACL 2026 JUMPSTARTER 的任务上下文选择；ACL 2026 PersonalAlign 的长期偏好；CHI 2026 Workshop 的目标作为一等对象。各自有效范围见研究原文，实际 ai-d 增益待独立验证。
-
-
-## 2026-11-15｜能力整合成为新的研究主线（假设，未完成模型验证）
-
-最新研究将现有 P1–P8、知识生命周期、跨层锚点、纠偏、Hermes、Skills、MCP、成熟开源项目重新放到“能力整合”关系中：**ai-d 不应以拥有更多知识/Skill/工具为目标，而应研究如何围绕真实目标发现能力缺口、选择已有能力、组合不同提供者、验证结果并在失败后修订组合。**
-
-这里的“整合”不是新增 P9、固定流程或 Capability Graph 数据库；它是当前的设计假设。Hermes 暂时定位为 Runtime provider，Skills 为 procedural capability，MCP 为 tool connectivity，外部专业方法为 method provider，证据和运行结果作为验证层。完整研究见 [2026-11-15 能力整合与 Hermes 演化研究](../research/2026-11-15-capability-integration-and-hermes-evolution.md)。
-
-当前最重要的 UNKNOWN：能力整合是否比普通 Agent workflow 有稳定收益；是否存在跨领域可迁移的组合机制；组合复杂度何时开始反噬；以及是否真的需要修改 Hermes。下一轮应做成熟系统能力整合的反证与真实任务对照，而不是继续堆理论文档。
+- [主干归并验收](../research/2026-11-27-mainline-acceptance-v3.md)：版本选择、43原件保全、固定候选树和回归证据；不是新的研究任务。

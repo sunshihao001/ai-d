@@ -1,0 +1,662 @@
+{
+  "rows": [
+    {
+      "path": "README.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+      "lines": 294,
+      "expected": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-GOAL",
+          "start": 1,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-AUTH",
+          "start": 3,
+          "end": 3,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "lines": 10,
+      "expected": "887210946eaedd084f45042aa1ea17b35cfd4b75",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-GOAL",
+          "start": 3,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-AUTH",
+          "start": 6,
+          "end": 9,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-HOOK",
+          "start": 5,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-RECEIPT",
+          "start": 5,
+          "end": 9,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-short-intent-goal-context-delegation.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "96a613853bc0d2337b64275c6b051790f4df542e",
+      "lines": 233,
+      "expected": "96a613853bc0d2337b64275c6b051790f4df542e",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-INTENT",
+          "start": 17,
+          "end": 34,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-v23-2-problem-formulation-prompt-optimization.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+      "lines": 31,
+      "expected": "b2e423131d3e2f1bd1738e46bfb4cfb651760092",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-INTENT",
+          "start": 3,
+          "end": 6,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "68d69028dacfc09e94037791828364a65d222bc6",
+      "lines": 81,
+      "expected": "68d69028dacfc09e94037791828364a65d222bc6",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-LEARN",
+          "start": 24,
+          "end": 39,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-human-ai-cognitive-augmentation-foundations.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+      "lines": 65,
+      "expected": "1aba83b1d0e94f7d174e1702708ae7da00caaca8",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-LEARN",
+          "start": 16,
+          "end": 23,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+      "lines": 26,
+      "expected": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-FACET",
+          "start": 4,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-FACET",
+          "start": 22,
+          "end": 23,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-EXPERT",
+          "start": 3,
+          "end": 9,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-UI",
+          "start": 22,
+          "end": 25,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-EVAL",
+          "start": 24,
+          "end": 25,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-TIME",
+          "start": 12,
+          "end": 21,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "5f409b574656ec00ba44557e29bf007d2c196eea",
+      "lines": 251,
+      "expected": "5f409b574656ec00ba44557e29bf007d2c196eea",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-FACET",
+          "start": 55,
+          "end": 55,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/foundations/organization-protocol.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+      "lines": 140,
+      "expected": "20e5427b8b4cbb579305c61b2efea6a6e81ed09d",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-PROV",
+          "start": 13,
+          "end": 34,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-STOP",
+          "start": 42,
+          "end": 49,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-POLLUTE",
+          "start": 42,
+          "end": 61,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-EVOLVE",
+          "start": 42,
+          "end": 61,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/foundations/cross-layer-project-anchors.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "lines": 484,
+      "expected": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-PROV",
+          "start": 46,
+          "end": 59,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-HOOK",
+          "start": 77,
+          "end": 93,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-problem-driven-unknown-discovery.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+      "lines": 247,
+      "expected": "206e3818d5a509abfe1cc6148da4697a5b5ab159",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-UNKNOWN",
+          "start": 34,
+          "end": 46,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-gpt-researcher-context-selection-audit.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+      "lines": 100,
+      "expected": "e2d0941b8c63a29d98276e7bd2fc91e23a1a54e1",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-SEARCH",
+          "start": 38,
+          "end": 68,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+      "lines": 43,
+      "expected": "ca9d0ccf837e619544e60331acf48a721fa9c169",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-STOP",
+          "start": 3,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-BUDGET",
+          "start": 3,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+      "lines": 106,
+      "expected": "9e27aa313841a63b14efeb073aa70f7420c4d8e9",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-TRIANG",
+          "start": 10,
+          "end": 21,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-16-external-intelligence-layer.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+      "lines": 135,
+      "expected": "ce04d73ccc9e40c817acf67afe36553ed93498bf",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-CAP",
+          "start": 17,
+          "end": 40,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/2026-11-27-professional-knowledge-and-leverage.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "46bd35ec18bff3b94a439222286cb9145512c96f",
+      "lines": 101,
+      "expected": "46bd35ec18bff3b94a439222286cb9145512c96f",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-CAP",
+          "start": 50,
+          "end": 60,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+      "commit": "506fe4d4655f2e94aae1c6a292b288287f1bcc35",
+      "blob": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+      "lines": 53,
+      "expected": "992eb40e97582c9f36a8dca42b0b20d5dadac196",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-EXPERT",
+          "start": 28,
+          "end": 42,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/workflow-components-and-boundaries.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+      "lines": 93,
+      "expected": "ae92eeb7af52c380d01a4e94c7f7cf15ee07f8ec",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-RUNTIME",
+          "start": 4,
+          "end": 31,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-knowledge-driven-task-expression-v1.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+      "lines": 13,
+      "expected": "e62d1a3cfa62f1056c0d60d9ae66e0f453fe1ceb",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-PROMPT",
+          "start": 4,
+          "end": 7,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-RECEIPT",
+          "start": 4,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-BUDGET",
+          "start": 5,
+          "end": 5,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-UI",
+          "start": 9,
+          "end": 10,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-knowledge-transfer-transformation-and-evolution.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+      "lines": 38,
+      "expected": "7a51c595e9f3693ef78e0f621318c7844680caa1",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-PROMPT",
+          "start": 29,
+          "end": 31,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-DEFECT",
+          "start": 22,
+          "end": 29,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-EVAL",
+          "start": 22,
+          "end": 29,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "lines": 38,
+      "expected": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-DEFECT",
+          "start": 7,
+          "end": 10,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-EVAL",
+          "start": 8,
+          "end": 10,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-mobile-chat-cognitive-continuity-v1.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+      "lines": 23,
+      "expected": "3666044bf23ee7d7d12de0e50b2d027d7797ebe1",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-CONT",
+          "start": 20,
+          "end": 22,
+          "valid": true,
+          "nonempty": true
+        },
+        {
+          "id": "K-RESILIENCE",
+          "start": 11,
+          "end": 19,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "prompts/mobile-chat-continuation-v0.1.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+      "lines": 15,
+      "expected": "d1d3fbe88c3425c52088e6aaee2110b2164fcbf6",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-CONT",
+          "start": 7,
+          "end": 14,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-23-information-scouting-value-chain-direction.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+      "lines": 164,
+      "expected": "babc160a7dcfd1e88cfe7a2fc9dcf95929015edb",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-REAL",
+          "start": 25,
+          "end": 44,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-r36-temporal-audit-recovery.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "f523c36fc83dab158e919ede0b50813ca35ec854",
+      "lines": 22,
+      "expected": "f523c36fc83dab158e919ede0b50813ca35ec854",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-DATA",
+          "start": 5,
+          "end": 16,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "db7c8500052078abcb088af945ac3b467a60ce05",
+      "lines": 29,
+      "expected": "db7c8500052078abcb088af945ac3b467a60ce05",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-RESILIENCE",
+          "start": 11,
+          "end": 25,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+      "lines": 122,
+      "expected": "10d1d2fdd77df938398e23ae2f3c9edfc216ff7c",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-EVOLVE",
+          "start": 33,
+          "end": 38,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "decisions/2026-11-05-goal-options.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+      "lines": 130,
+      "expected": "489dfe8303ce31669a598fffb2379711a1c2a68c",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-DECISION",
+          "start": 1,
+          "end": 6,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "prompts/tasks/historical-evidence-replay-v1.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "a8b737192790be5ce9568d123b7a78c149d9f955",
+      "lines": 4,
+      "expected": "a8b737192790be5ce9568d123b7a78c149d9f955",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-TIME",
+          "start": 1,
+          "end": 3,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "path": "knowledge/2026-11-27-problem-method-activation-map.md",
+      "commit": "be25104d76a0f61135467746812ab93c0044dcca",
+      "blob": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+      "lines": 57,
+      "expected": "5538ed30746c8c5996bbd640f833b9424f97e68f",
+      "match": true,
+      "locators": [
+        {
+          "id": "K-EXPERT",
+          "start": 28,
+          "end": 42,
+          "valid": true,
+          "nonempty": true
+        }
+      ]
+    }
+  ],
+  "scope": "29 source versions and one current remap; 50 active reviewed passages plus preserved prior pin."
+}
