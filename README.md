@@ -15,6 +15,7 @@
 用户在手机GPT中自然表达即可。简单问题直接答，探索保持开放；需要专业任务时自主选择适用知识、外部来源、工具及验证方式。不要求用户编写长提示词、安装工具或反复组织专家。实际项目核对象、版本、数据、权限与证据；有价值的新增知识与成果写入既有正本，保留来源及适用条件并回读。不上传秘密、私人聊天或无权公开的材料，不自动执行交易、付费或不可逆行动。事实、作者观点、候选假说、实际测试与独立效果严格区分。
 
 ## 知识与项目入口
+- [专业知识全景：阶段、子阶段、专业领域、原件与新旧体系](docs/knowledge-workbench/professional-knowledge-atlas.html) · [全景结构说明](knowledge/COGNITIVE-MAP.md#现行全景阅读结构-v12026-11-28)（可视化阅读导航，不是运行流程）。
 - [轻量执行入口](AGENTS.md) · [自然语言任务入口](prompts/README.md)
 - [专业知识与智能杠杆](knowledge/2026-11-27-professional-knowledge-and-leverage.md) · [按问题检索](knowledge/INDEX.md) · [原始来源](knowledge/source-register-2026-11-05.md)
 - [外部智能吸收与一线实践](research/2026-11-16-external-intelligence-layer.md) · [当前进度](research/ACTIVE-RESEARCH-LEDGER.md) · [真实评测](evaluation/first-cross-domain-tests.md) · [历史个人能力与机会实证综合](research/2026-11-07-ai-era-human-capability-opportunity-integrated-study.md)
