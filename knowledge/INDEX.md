@@ -1,5 +1,7 @@
 # AI-D｜当前知识调用入口（V4审查候选）
 以[根本目标](../README.md)和[现行权限与执行规则](../AGENTS.md)为准。这里是当前知识入口，不是研究日志，不自动加载历史。仅当当前问题确需外部认知资源时查相关条目；无需逐项遍历、登记调用或先完成索引映射。自主选择来源和方法，允许不用任何条目。优先成熟成品及真实价值，不把工具、UI、专家团队、提示词、任何领域项目变成目的。
+
+**专业能力入口（优先阅读）**：[成熟专业能力继承与领域专属工作流](2026-11-27-professional-knowledge-and-leverage.md#成熟专业能力继承与领域专属工作流)；从真实任务或已有专业成果定位专业知识、技能/提示词、组件、领域工作流和验收标准。K-CAP/K-EXPERT/K-PROMPT 是核心资源入口，K-EVAL用于实际效果判断；P1–P8为通用辅助，不替代领域方法。
 - 当前固定整合基线：be25104d76a0f61135467746812ab93c0044dcca，88项资产/67份Markdown；[28个定向校勘主张和34关系](semantic-map-v4.json)。校勘不是全面外部真值。审查分支另有历史档案及执行产物，不混作已采用知识。
 - [当前台账（仅项目接力）](../research/ACTIVE-RESEARCH-LEDGER.md) · [提示词入口](../prompts/README.md) · [工作台](../docs/knowledge-workbench/index.html)。
 - 六域=组织，P1–P8=问题入口，[九阶段](foundations/knowledge-lifecycle-nine-stages.md)=生命周期诊断，[跨层锚点](foundations/cross-layer-project-anchors.md)=真实依赖与影响；不是四套并行工作流。组织规范仅用于实际知识库维护，不是普通思考约束；各导航均为参考。
