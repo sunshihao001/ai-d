@@ -28,3 +28,32 @@
 
 ## 新文献后续怎么写入
 新增来源只有在与当前目标/知识/行动判断有明确关联时才登记。必须说明：支持的主张、研究方法/证据等级、局限、潜在反证、对哪个实际任务或决定产生影响。若只是技术流行名称，保留搜索线索，不提升为专业知识结论。
+
+## 2026-11-28｜强模型利用与一线实践
+本批检索并读取原文/公开讨论可见内容；来源按性质分开，非独立本地复现。访问受限的X全回复链仍待进一步核查，不把转述当已核原帖。
+| 来源 | 类型与可用内容 | 局限与归位 |
+|---|---|---|
+| [OpenAI: AI for self empowerment](https://openai.com/index/ai-for-self-empowerment/)；[能力积压](https://openai.com/index/how-countries-can-end-the-capability-overhang/) | 官方使用研究与观点；能力与利用的落差 | 使用行为不等于任务收益；K-GOAL |
+| [Anthropic: reflect with Claude](https://www.anthropic.com/news/reflect-with-claude) | 官方框架：委托、表达、鉴别、责任 | 能力发展框架，非本项目实验；K-PROMPT/K-LEARN |
+| [Ethan Mollick: The Overhang](https://www.oneusefulthing.org/p/the-overhang) | 学者实践观点；模型利用与人的优势 | 非因果效果；K-GOAL/K-UNKNOWN |
+| [Felix Rieseberg: How to be more ambitious](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) | 工程实践；目标高度、专业深度、速度与广度 | 作者经验，依赖现实工具条件；K-EXPERT/K-CAP |
+| [Geoffrey Litt: Understanding is the new bottleneck](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html)；[HN评论](https://news.ycombinator.com/item?id=49290299) | 原作者示范、社区异议；理解工具与低层技术债 | 评论为自述，图示不能替代实测；K-LEARN/K-POLLUTE |
+| [Vaccaro等，2024，人机组合元分析](https://www.nature.com/articles/s41562-024-02024-1) | 同行评审；人机组合与最佳单方比较 | 任务异质、非当前GPT专门测试；K-LEARN/K-EVAL |
+| [Microsoft: Lost in Conversation](https://www.microsoft.com/en-us/research/publication/llms-get-lost-in-multi-turn-conversation/) | 模拟多轮任务；早期假设与不可靠性 | 非当前产品实测；K-CONT/K-INTENT |
+| [Simon Willison: LLMs for code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/) | 原作者工作方法与代码示范 | 个人技术经验不可直接外推；K-CAP/K-EXPERT |
+| [Reddit：如何重访思想](https://www.reddit.com/r/ChatGPT/comments/1refk84/if_you_think_in_chatgpt_now_how_do_you_revisit/) | 讨论及回复；摘要重用、保存与重访区别 | 自述，压缩会丢失细节；K-CONT |
+| [Reddit：AI作为思考伙伴](https://www.reddit.com/r/AIAssisted/comments/1strqd6/using_ai_more_as_a_thinking_partner_than_a/) | 讨论及回复；反驳、共同思考、幻觉异议 | 自述，不能证明认知机制；K-LEARN/K-UNKNOWN |
+| [Brosch等：Task Expansion with Generative AI](https://digitaleconomy.stanford.edu/publication/task-expansion-with-generative-aiexperimental-evidence-on-middle-skilled-early-career-workers/) | 673名IT学徒现场实验，超训练范围任务26–31个百分点 | 工作论文；不外推长期技能或行业收益；K-LEARN |
+| [Wiles等：temporary upskilling](https://doi.org/10.1038/s41562-026-02566-6) | 487名咨询人员随机实验；辅助陌生专业任务的能力扩张 | 本轮摘要可读，全文入口受限；独立技能与辅助绩效分开；K-LEARN |
+| [Mollick原文评论](https://www.oneusefulthing.org/p/the-overhang/comments) | 对自主性与鉴别力的讨论线索 | 可见片段，非全回复审查；K-UNKNOWN |
+
+## 2026-11-28｜成熟领域技能与专业能力继承
+本次核对公开摘要、作者公告与官方说明；并非全文复验、技能安装或本地性能测试。
+| 来源 | 证据与可用内容 | 边界与归位 |
+|---|---|---|
+| [SkillsBench 初版](https://arxiv.org/abs/2602.12670v1)；[1.1版本公告](https://www.skillsbench.ai/blogs/skillsbench-1-1) | 初版86任务/11领域、+16.2个百分点，84有效任务中16下降；新版另报+16.6 | 版本不同；不能等同当前GPT或MEME效果；K-CAP/K-EVAL |
+| [技能增益测量复核](https://arxiv.org/abs/2611.33943) | 2026-11-26预印本；质疑单次技能增益和门控估计中的噪声 | 待深入全文核查；保留反证；K-EVAL |
+| [FinSkillBench 早期研究](https://arxiv.org/abs/2608.18099) | 投资管理任务与专业技能评测 | 不与后续技能贡献分解的统计口径混用；K-CAP |
+| [Knowledge or Calculator?](https://arxiv.org/abs/2610.03564) | 2603时点任务、12子任务；配对8模型整理技能0.366→0.528，临时生成+0.005 | 知识/程序/工具组合，非提示词单独效应、非真实交易回报；K-CAP/K-EVAL |
+| [Anthropic Agent Skills](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) | 领域专长的可组合资源与渐进披露 | 官方实践说明，非GPT手机端兼容性证明；需检查可信性/许可；K-PROMPT/K-CAP |
+| [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)；[Qlib](https://github.com/microsoft/qlib)；[RD-Agent](https://github.com/microsoft/RD-Agent) | 外部成熟专业能力候选；科研、量化、研究工作流 | 本次登记线索，未逐技能深读或运行；不能称已吸收；K-CAP |
