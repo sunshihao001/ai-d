@@ -43,3 +43,6 @@
 | [Simon Willison: LLMs for code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/) | 原作者工作方法与代码示范 | 个人技术经验不可直接外推；K-CAP/K-EXPERT |
 | [Reddit：如何重访思想](https://www.reddit.com/r/ChatGPT/comments/1refk84/if_you_think_in_chatgpt_now_how_do_you_revisit/) | 讨论及回复；摘要重用、保存与重访区别 | 自述，压缩会丢失细节；K-CONT |
 | [Reddit：AI作为思考伙伴](https://www.reddit.com/r/AIAssisted/comments/1strqd6/using_ai_more_as_a_thinking_partner_than_a/) | 讨论及回复；反驳、共同思考、幻觉异议 | 自述，不能证明认知机制；K-LEARN/K-UNKNOWN |
+| [Brosch等：Task Expansion with Generative AI](https://digitaleconomy.stanford.edu/publication/task-expansion-with-generative-aiexperimental-evidence-on-middle-skilled-early-career-workers/) | 673名IT学徒现场实验，超训练范围任务26–31个百分点 | 工作论文；不外推长期技能或行业收益；K-LEARN |
+| [Wiles等：temporary upskilling](https://doi.org/10.1038/s41562-026-02566-6) | 487名咨询人员随机实验；辅助陌生专业任务的能力扩张 | 本轮摘要可读，全文入口受限；独立技能与辅助绩效分开；K-LEARN |
+| [Mollick原文评论](https://www.oneusefulthing.org/p/the-overhang/comments) | 对自主性与鉴别力的讨论线索 | 可见片段，非全回复审查；K-UNKNOWN |
