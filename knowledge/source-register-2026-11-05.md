@@ -46,3 +46,14 @@
 | [Brosch等：Task Expansion with Generative AI](https://digitaleconomy.stanford.edu/publication/task-expansion-with-generative-aiexperimental-evidence-on-middle-skilled-early-career-workers/) | 673名IT学徒现场实验，超训练范围任务26–31个百分点 | 工作论文；不外推长期技能或行业收益；K-LEARN |
 | [Wiles等：temporary upskilling](https://doi.org/10.1038/s41562-026-02566-6) | 487名咨询人员随机实验；辅助陌生专业任务的能力扩张 | 本轮摘要可读，全文入口受限；独立技能与辅助绩效分开；K-LEARN |
 | [Mollick原文评论](https://www.oneusefulthing.org/p/the-overhang/comments) | 对自主性与鉴别力的讨论线索 | 可见片段，非全回复审查；K-UNKNOWN |
+
+## 2026-11-28｜成熟领域技能与专业能力继承
+本次核对公开摘要、作者公告与官方说明；并非全文复验、技能安装或本地性能测试。
+| 来源 | 证据与可用内容 | 边界与归位 |
+|---|---|---|
+| [SkillsBench 初版](https://arxiv.org/abs/2602.12670v1)；[1.1版本公告](https://www.skillsbench.ai/blogs/skillsbench-1-1) | 初版86任务/11领域、+16.2个百分点，84有效任务中16下降；新版另报+16.6 | 版本不同；不能等同当前GPT或MEME效果；K-CAP/K-EVAL |
+| [技能增益测量复核](https://arxiv.org/abs/2611.33943) | 2026-11-26预印本；质疑单次技能增益和门控估计中的噪声 | 待深入全文核查；保留反证；K-EVAL |
+| [FinSkillBench 早期研究](https://arxiv.org/abs/2608.18099) | 投资管理任务与专业技能评测 | 不与后续技能贡献分解的统计口径混用；K-CAP |
+| [Knowledge or Calculator?](https://arxiv.org/abs/2610.03564) | 2603时点任务、12子任务；配对8模型整理技能0.366→0.528，临时生成+0.005 | 知识/程序/工具组合，非提示词单独效应、非真实交易回报；K-CAP/K-EVAL |
+| [Anthropic Agent Skills](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) | 领域专长的可组合资源与渐进披露 | 官方实践说明，非GPT手机端兼容性证明；需检查可信性/许可；K-PROMPT/K-CAP |
+| [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)；[Qlib](https://github.com/microsoft/qlib)；[RD-Agent](https://github.com/microsoft/RD-Agent) | 外部成熟专业能力候选；科研、量化、研究工作流 | 本次登记线索，未逐技能深读或运行；不能称已吸收；K-CAP |
