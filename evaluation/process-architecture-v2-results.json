@@ -1,0 +1,860 @@
+{
+  "baseline": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+  "taskSpec": "真实软件质量工程：固定V1两版本，Git树复算差异与compare逐路径核对；定位知识、产物与最终验收缺陷。非盲测：V1计数此前已公开；逐路径审计及缺陷复现是本轮实际操作。",
+  "audit": {
+    "base": "34a8b5c46cda31f3017eef201cc9d96170173b98",
+    "head": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+    "baseTree": "e31b729964c6085f1da13c1c4b5100afe85a1039",
+    "headTree": "e2bd2836f5a9ef538dc6f7163c0af4bfc69750d6",
+    "before": 201,
+    "after": 204,
+    "unchanged": 192,
+    "added": 3,
+    "modified": 9,
+    "removed": 0,
+    "diff": [
+      {
+        "path": "AGENTS.md",
+        "status": "modified",
+        "before": "9a0105243d9c1765b78995089ea85f57698dbeef",
+        "after": "5c96118a2f559ed7378d29f0ed2e801822e4cfcc"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "before": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+        "after": "83f453b5861d36479ad815f34a5687370c9c97ae"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v4.json",
+        "status": "modified",
+        "before": "d2703b4a8d2bbbf1a0001b0b5db13a537fb02769",
+        "after": "dcf7ec75f6c189cc7b4657af69bcf16abe9de0c0"
+      },
+      {
+        "path": "docs/knowledge-workbench/generate-workbench.cjs",
+        "status": "modified",
+        "before": "c3ee9148a1940ed1b39e9d7ba91bec2a39687981",
+        "after": "643b6dbc58eee6263bd6985de52bed46a945437c"
+      },
+      {
+        "path": "docs/knowledge-workbench/index.html",
+        "status": "modified",
+        "before": "a9f958a8cb8b1c7478204d0b74ab6a143812763b",
+        "after": "ce6b80fa7ef5a8215d511e1225af2f3d80482194"
+      },
+      {
+        "path": "evaluation/process-architecture-contract-results.json",
+        "status": "added",
+        "before": null,
+        "after": "d0cbb3971e51da52ff4ea7ec53c112cf8affcfa9"
+      },
+      {
+        "path": "evaluation/process-architecture-contract.cjs",
+        "status": "added",
+        "before": null,
+        "after": "60407b7859fba119a6333797af58b3008749927b"
+      },
+      {
+        "path": "knowledge/INDEX.md",
+        "status": "modified",
+        "before": "efeff66131a8b3f8258af464fbf75c8d531f0fa6",
+        "after": "8eba53f5766f9a4fc7da8e4023e06a570e177dcc"
+      },
+      {
+        "path": "planning/README.md",
+        "status": "modified",
+        "before": "5b860e35928fc82907a66eea9ef72818e47ec31b",
+        "after": "924ca1ea749978d72a838ba46349f3f89eec6ae6"
+      },
+      {
+        "path": "planning/process-architecture.json",
+        "status": "added",
+        "before": null,
+        "after": "d0a0f76085fee4120f3e54123af5077bd4957912"
+      },
+      {
+        "path": "prompts/professional-task-modules.md",
+        "status": "modified",
+        "before": "c031fbb82469893a8369259a0d656cfde5c895db",
+        "after": "844b001afaaf69d479000c415756164a23a96d08"
+      },
+      {
+        "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+        "status": "modified",
+        "before": "8ba9b3feba5914381d8410b0030fa6d8ca998c77",
+        "after": "131505abde252a6f36f9fa575cff5047d3745d58"
+      }
+    ],
+    "compareMatches": true,
+    "independentCompare": [
+      {
+        "path": "AGENTS.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/knowledge-workbench/design-v4.json",
+        "status": "modified"
+      },
+      {
+        "path": "docs/knowledge-workbench/generate-workbench.cjs",
+        "status": "modified"
+      },
+      {
+        "path": "docs/knowledge-workbench/index.html",
+        "status": "modified"
+      },
+      {
+        "path": "evaluation/process-architecture-contract-results.json",
+        "status": "added"
+      },
+      {
+        "path": "evaluation/process-architecture-contract.cjs",
+        "status": "added"
+      },
+      {
+        "path": "knowledge/INDEX.md",
+        "status": "modified"
+      },
+      {
+        "path": "planning/process-architecture.json",
+        "status": "added"
+      },
+      {
+        "path": "planning/README.md",
+        "status": "modified"
+      },
+      {
+        "path": "prompts/professional-task-modules.md",
+        "status": "modified"
+      },
+      {
+        "path": "README.md",
+        "status": "modified"
+      },
+      {
+        "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+        "status": "modified"
+      }
+    ]
+  },
+  "pre": {
+    "oldValidatorAcceptsRealOrphans": true,
+    "oldValidatorAcceptsSubstring": true,
+    "uncovered": [
+      "K-LEARN",
+      "K-TRIANG",
+      "K-BUDGET",
+      "K-UI",
+      "K-DATA",
+      "K-RESILIENCE",
+      "K-TIME"
+    ],
+    "oldF3FinalEdge": {
+      "from": "S2",
+      "to": "S3",
+      "artifact": "知识修订"
+    },
+    "oldBlockedPath": false
+  },
+  "placements": {
+    "K-LEARN": [
+      [
+        "G1",
+        "C5"
+      ],
+      "目标涉及人的学习、独立胜任或代办取舍；分开辅助产物与独立能力验收",
+      "research/2026-11-07-human-ai-delegation-performance-learning.md",
+      24,
+      39
+    ],
+    "K-TRIANG": [
+      [
+        "C2",
+        "C5"
+      ],
+      "理论互证时核适用性、致命反例及边界；阶段认可不是实际运行",
+      "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+      10,
+      21
+    ],
+    "K-BUDGET": [
+      [
+        "G2",
+        "S1",
+        "S4"
+      ],
+      "短时结束或中断时区分运行时长、有效劳动、日志缺口和停止原因",
+      "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+      3,
+      5
+    ],
+    "K-UI": [
+      [
+        "S3"
+      ],
+      "工作台或复制入口涉及同源投影；静态HTML不执行GPT",
+      "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+      22,
+      25
+    ],
+    "K-DATA": [
+      [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "数据驱动或历史时点任务核字段语义、实际可用时间及转换",
+      "research/2026-11-27-r36-temporal-audit-recovery.md",
+      5,
+      16
+    ],
+    "K-RESILIENCE": [
+      [
+        "C3",
+        "C5"
+      ],
+      "只在网络容量、可达性和中断情景问题使用；保持固定决策，逐情景检验可行性",
+      "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+      11,
+      25
+    ],
+    "K-TIME": [
+      [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "历史证据或版本审计固定对象、提交、可见性截止；当前文件非旧时事实",
+      "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+      12,
+      21
+    ]
+  },
+  "trace": {
+    "task": "V2-real-release-audit",
+    "object": "AI-D V1固定版本交付及流程契约",
+    "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+    "flow": "F4",
+    "outcome": "accepted",
+    "artifacts": [
+      {
+        "id": "A1",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "S3",
+        "type": "恢复状态",
+        "status": "ready",
+        "payload": {
+          "head": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "ledger": "V1完成初步关系，下一项真实交付"
+        },
+        "evidence": [
+          {
+            "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "131505abde252a6f36f9fa575cff5047d3745d58"
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "G1",
+        "type": "任务规格",
+        "status": "ready",
+        "payload": {
+          "goal": "固定V1版本交付审计及知识承接",
+          "accept": "逐路径双源核对，缺陷反例，保留目标权限"
+        },
+        "evidence": [
+          {
+            "path": "AGENTS.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "5c96118a2f559ed7378d29f0ed2e801822e4cfcc"
+          },
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          }
+        ]
+      },
+      {
+        "id": "A3",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "G2",
+        "type": "工作订单",
+        "status": "ready",
+        "payload": {
+          "target": [
+            "34a8b5c46cda31f3017eef201cc9d96170173b98",
+            "941f7d3442721cd526a8cc2b1720b2aee6b0ce52"
+          ],
+          "actions": [
+            "固定树和compare",
+            "查卡和契约",
+            "输出逐路径差异"
+          ]
+        },
+        "evidence": [
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          },
+          {
+            "path": "evaluation/process-architecture-contract.cjs",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "60407b7859fba119a6333797af58b3008749927b"
+          }
+        ]
+      },
+      {
+        "id": "A4",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "C1",
+        "type": "证据包",
+        "status": "ready",
+        "payload": {
+          "oldTree": "e31b729964c6085f1da13c1c4b5100afe85a1039",
+          "newTree": "e2bd2836f5a9ef538dc6f7163c0af4bfc69750d6",
+          "compareFiles": 12,
+          "uncovered": [
+            "K-LEARN",
+            "K-TRIANG",
+            "K-BUDGET",
+            "K-UI",
+            "K-DATA",
+            "K-RESILIENCE",
+            "K-TIME"
+          ]
+        },
+        "evidence": [
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          },
+          {
+            "path": "knowledge/semantic-map-v4.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "a1d568e0b0c9589f42de73577d1b8bd00024e8c8"
+          },
+          {
+            "path": "knowledge/INDEX.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "8eba53f5766f9a4fc7da8e4023e06a570e177dcc"
+          }
+        ]
+      },
+      {
+        "id": "A5",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "C2",
+        "type": "知识包",
+        "status": "ready",
+        "payload": {
+          "selected": [
+            "K-TIME",
+            "K-DATA",
+            "K-PROV",
+            "K-FACET",
+            "K-DEFECT",
+            "K-EVAL",
+            "K-HOOK",
+            "K-UI"
+          ],
+          "actualUse": "固定版本、精确ID、反例、7卡条件归位；排除网络求解方法"
+        },
+        "evidence": [
+          {
+            "path": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe"
+          },
+          {
+            "path": "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "9aa2344d782c08fec3a73909664787aca29b14dd"
+          },
+          {
+            "path": "knowledge/foundations/cross-layer-project-anchors.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "0c64ea48b16695006724b01f37ff1a13a8cbfebe"
+          }
+        ]
+      },
+      {
+        "id": "A6",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "C3",
+        "type": "方案",
+        "status": "ready",
+        "payload": {
+          "method": "双源Git审计、精确ID、对象绑定、阻塞和最终再验",
+          "preserve": "12流程4路径、固定语义卡、历史和权限"
+        },
+        "evidence": [
+          {
+            "path": "evaluation/process-architecture-contract.cjs",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "60407b7859fba119a6333797af58b3008749927b"
+          },
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          }
+        ]
+      },
+      {
+        "id": "A7",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "C4",
+        "type": "实际产物",
+        "status": "ready",
+        "payload": {
+          "audit": {
+            "base": "34a8b5c46cda31f3017eef201cc9d96170173b98",
+            "head": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "baseTree": "e31b729964c6085f1da13c1c4b5100afe85a1039",
+            "headTree": "e2bd2836f5a9ef538dc6f7163c0af4bfc69750d6",
+            "before": 201,
+            "after": 204,
+            "unchanged": 192,
+            "added": 3,
+            "modified": 9,
+            "removed": 0,
+            "diff": [
+              {
+                "path": "AGENTS.md",
+                "status": "modified",
+                "before": "9a0105243d9c1765b78995089ea85f57698dbeef",
+                "after": "5c96118a2f559ed7378d29f0ed2e801822e4cfcc"
+              },
+              {
+                "path": "README.md",
+                "status": "modified",
+                "before": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950",
+                "after": "83f453b5861d36479ad815f34a5687370c9c97ae"
+              },
+              {
+                "path": "docs/knowledge-workbench/design-v4.json",
+                "status": "modified",
+                "before": "d2703b4a8d2bbbf1a0001b0b5db13a537fb02769",
+                "after": "dcf7ec75f6c189cc7b4657af69bcf16abe9de0c0"
+              },
+              {
+                "path": "docs/knowledge-workbench/generate-workbench.cjs",
+                "status": "modified",
+                "before": "c3ee9148a1940ed1b39e9d7ba91bec2a39687981",
+                "after": "643b6dbc58eee6263bd6985de52bed46a945437c"
+              },
+              {
+                "path": "docs/knowledge-workbench/index.html",
+                "status": "modified",
+                "before": "a9f958a8cb8b1c7478204d0b74ab6a143812763b",
+                "after": "ce6b80fa7ef5a8215d511e1225af2f3d80482194"
+              },
+              {
+                "path": "evaluation/process-architecture-contract-results.json",
+                "status": "added",
+                "before": null,
+                "after": "d0cbb3971e51da52ff4ea7ec53c112cf8affcfa9"
+              },
+              {
+                "path": "evaluation/process-architecture-contract.cjs",
+                "status": "added",
+                "before": null,
+                "after": "60407b7859fba119a6333797af58b3008749927b"
+              },
+              {
+                "path": "knowledge/INDEX.md",
+                "status": "modified",
+                "before": "efeff66131a8b3f8258af464fbf75c8d531f0fa6",
+                "after": "8eba53f5766f9a4fc7da8e4023e06a570e177dcc"
+              },
+              {
+                "path": "planning/README.md",
+                "status": "modified",
+                "before": "5b860e35928fc82907a66eea9ef72818e47ec31b",
+                "after": "924ca1ea749978d72a838ba46349f3f89eec6ae6"
+              },
+              {
+                "path": "planning/process-architecture.json",
+                "status": "added",
+                "before": null,
+                "after": "d0a0f76085fee4120f3e54123af5077bd4957912"
+              },
+              {
+                "path": "prompts/professional-task-modules.md",
+                "status": "modified",
+                "before": "c031fbb82469893a8369259a0d656cfde5c895db",
+                "after": "844b001afaaf69d479000c415756164a23a96d08"
+              },
+              {
+                "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+                "status": "modified",
+                "before": "8ba9b3feba5914381d8410b0030fa6d8ca998c77",
+                "after": "131505abde252a6f36f9fa575cff5047d3745d58"
+              }
+            ],
+            "compareMatches": true,
+            "independentCompare": [
+              {
+                "path": "AGENTS.md",
+                "status": "modified"
+              },
+              {
+                "path": "docs/knowledge-workbench/design-v4.json",
+                "status": "modified"
+              },
+              {
+                "path": "docs/knowledge-workbench/generate-workbench.cjs",
+                "status": "modified"
+              },
+              {
+                "path": "docs/knowledge-workbench/index.html",
+                "status": "modified"
+              },
+              {
+                "path": "evaluation/process-architecture-contract-results.json",
+                "status": "added"
+              },
+              {
+                "path": "evaluation/process-architecture-contract.cjs",
+                "status": "added"
+              },
+              {
+                "path": "knowledge/INDEX.md",
+                "status": "modified"
+              },
+              {
+                "path": "planning/process-architecture.json",
+                "status": "added"
+              },
+              {
+                "path": "planning/README.md",
+                "status": "modified"
+              },
+              {
+                "path": "prompts/professional-task-modules.md",
+                "status": "modified"
+              },
+              {
+                "path": "README.md",
+                "status": "modified"
+              },
+              {
+                "path": "research/ACTIVE-RESEARCH-LEDGER.md",
+                "status": "modified"
+              }
+            ]
+          },
+          "pre": {
+            "oldValidatorAcceptsRealOrphans": true,
+            "oldValidatorAcceptsSubstring": true,
+            "uncovered": [
+              "K-LEARN",
+              "K-TRIANG",
+              "K-BUDGET",
+              "K-UI",
+              "K-DATA",
+              "K-RESILIENCE",
+              "K-TIME"
+            ],
+            "oldF3FinalEdge": {
+              "from": "S2",
+              "to": "S3",
+              "artifact": "知识修订"
+            },
+            "oldBlockedPath": false
+          }
+        },
+        "evidence": [
+          {
+            "path": "README.md",
+            "ref": "34a8b5c46cda31f3017eef201cc9d96170173b98",
+            "blob": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950"
+          },
+          {
+            "path": "README.md",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "83f453b5861d36479ad815f34a5687370c9c97ae"
+          },
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          }
+        ]
+      },
+      {
+        "id": "A8",
+        "task": "V2-real-release-audit",
+        "object": "AI-D V1固定版本交付及流程契约",
+        "version": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+        "producer": "C5",
+        "type": "验收结果",
+        "status": "accepted",
+        "payload": {
+          "scope": "V1交付审计通过；V2保存另验",
+          "compareMatches": true,
+          "deleted": 0,
+          "uncovered": [
+            "K-LEARN",
+            "K-TRIANG",
+            "K-BUDGET",
+            "K-UI",
+            "K-DATA",
+            "K-RESILIENCE",
+            "K-TIME"
+          ]
+        },
+        "evidence": [
+          {
+            "path": "planning/process-architecture.json",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "d0a0f76085fee4120f3e54123af5077bd4957912"
+          },
+          {
+            "path": "evaluation/process-architecture-contract.cjs",
+            "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+            "blob": "60407b7859fba119a6333797af58b3008749927b"
+          }
+        ]
+      }
+    ],
+    "handoffs": [
+      {
+        "from": "S3",
+        "to": "G1",
+        "type": "恢复状态",
+        "artifactId": "A1"
+      },
+      {
+        "from": "G1",
+        "to": "G2",
+        "type": "任务规格",
+        "artifactId": "A2"
+      },
+      {
+        "from": "G2",
+        "to": "C1",
+        "type": "工作订单",
+        "artifactId": "A3"
+      },
+      {
+        "from": "C1",
+        "to": "C2",
+        "type": "证据包",
+        "artifactId": "A4"
+      },
+      {
+        "from": "C2",
+        "to": "C3",
+        "type": "知识包",
+        "artifactId": "A5"
+      },
+      {
+        "from": "C3",
+        "to": "C4",
+        "type": "方案",
+        "artifactId": "A6"
+      },
+      {
+        "from": "C4",
+        "to": "C5",
+        "type": "实际产物",
+        "artifactId": "A7"
+      },
+      {
+        "from": "C5",
+        "to": "S3",
+        "type": "验收结果",
+        "artifactId": "A8"
+      }
+    ],
+    "persistence": "准备提交，远端读回另验"
+  },
+  "pins": {
+    "941f7d3442721cd526a8cc2b1720b2aee6b0ce52": {
+      "research/ACTIVE-RESEARCH-LEDGER.md": "131505abde252a6f36f9fa575cff5047d3745d58",
+      "AGENTS.md": "5c96118a2f559ed7378d29f0ed2e801822e4cfcc",
+      "planning/process-architecture.json": "d0a0f76085fee4120f3e54123af5077bd4957912",
+      "evaluation/process-architecture-contract.cjs": "60407b7859fba119a6333797af58b3008749927b",
+      "knowledge/semantic-map-v4.json": "a1d568e0b0c9589f42de73577d1b8bd00024e8c8",
+      "knowledge/INDEX.md": "8eba53f5766f9a4fc7da8e4023e06a570e177dcc",
+      "research/2026-11-27-named-expert-full-domain-audit-v2.md": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe",
+      "research/2026-11-27-v23-3-verified-solutions-and-prompt-regression.md": "9aa2344d782c08fec3a73909664787aca29b14dd",
+      "knowledge/foundations/cross-layer-project-anchors.md": "0c64ea48b16695006724b01f37ff1a13a8cbfebe",
+      "README.md": "83f453b5861d36479ad815f34a5687370c9c97ae"
+    },
+    "34a8b5c46cda31f3017eef201cc9d96170173b98": {
+      "README.md": "4ae767a49e0283ffe0dec6ff62e8b37a213c8950"
+    }
+  },
+  "tests": [
+    {
+      "name": "exact knowledge and static interfaces",
+      "pass": true
+    },
+    {
+      "name": "all current cards placed",
+      "pass": true
+    },
+    {
+      "name": "actual version-bound receipt",
+      "pass": true
+    },
+    {
+      "name": "orphan card detected",
+      "pass": true
+    },
+    {
+      "name": "substring fake knowledge rejected",
+      "pass": true
+    },
+    {
+      "name": "missing actual payload",
+      "pass": true
+    },
+    {
+      "name": "wrong task",
+      "pass": true
+    },
+    {
+      "name": "wrong object",
+      "pass": true
+    },
+    {
+      "name": "stale version",
+      "pass": true
+    },
+    {
+      "name": "wrong producer",
+      "pass": true
+    },
+    {
+      "name": "wrong source blob",
+      "pass": true
+    },
+    {
+      "name": "missing artifact",
+      "pass": true
+    },
+    {
+      "name": "false completion",
+      "pass": true
+    },
+    {
+      "name": "blocked path saves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "blocked path cannot be accepted",
+      "pass": true
+    },
+    {
+      "name": "F2/F3 revalidate final revision",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "同会话真实仓库任务，非独立模型或外部现场",
+    "结构与收据验证不证明语义真值",
+    "手机浏览器、独立跨会话及净增益未验",
+    "构造反例非实际模型错误"
+  ],
+  "projection": [
+    {
+      "name": "old generated HTML exact",
+      "pass": true
+    },
+    {
+      "name": "new repeat exact",
+      "pass": true
+    },
+    {
+      "name": "seven conditional cards displayed",
+      "pass": true
+    },
+    {
+      "name": "outside process section unchanged",
+      "pass": true
+    },
+    {
+      "name": "same 12 nodes 4 flows",
+      "pass": true
+    }
+  ],
+  "historicalRegression": {
+    "checks": [
+      {
+        "name": "actual map interfaces",
+        "pass": true
+      },
+      {
+        "name": "missing handoff",
+        "pass": true
+      },
+      {
+        "name": "missing canonical source",
+        "pass": true
+      },
+      {
+        "name": "missing knowledge object",
+        "pass": true
+      },
+      {
+        "name": "broken order",
+        "pass": true
+      },
+      {
+        "name": "missing acceptance",
+        "pass": true
+      },
+      {
+        "name": "wrong completion",
+        "pass": true
+      },
+      {
+        "name": "duplicate node",
+        "pass": true
+      },
+      {
+        "name": "historical real input replay count",
+        "pass": true
+      },
+      {
+        "name": "historical real input replay signals",
+        "pass": true
+      }
+    ],
+    "replay": {
+      "n": 1500,
+      "d": 347,
+      "center": 0.23133333333333334,
+      "signals": [
+        15,
+        23
+      ],
+      "scope": "published worked example; no causal, specification, field or independent model claim"
+    },
+    "errors": []
+  }
+}

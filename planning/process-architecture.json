@@ -1,6 +1,6 @@
 {
-  "status": "审查候选；业务流程关系投影，不是运行时、强制阶段或已验证独立智能增益",
-  "baseline": "34a8b5c46cda31f3017eef201cc9d96170173b98",
+  "status": "V2审查候选：同一12流程、4路径；条件性知识映射与实际产物约束，非自动运行或独立增益",
+  "baseline": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
   "mission": "发现、理解、判断、吸收并利用优秀智能，扩大个人长期智能资本与实际问题解决能力。以README为唯一目标正本。",
   "groups": [
     {
@@ -40,12 +40,14 @@
       "knowledge": [
         "K-GOAL",
         "K-INTENT",
-        "K-AUTH"
+        "K-AUTH",
+        "K-LEARN"
       ],
       "source": [
         "README.md",
         "planning/goal-navigation-v0.1.md",
-        "knowledge/foundations/cross-layer-project-anchors.md"
+        "knowledge/foundations/cross-layer-project-anchors.md",
+        "research/2026-11-07-human-ai-delegation-performance-learning.md"
       ],
       "activities": [
         "恢复目标和保持项",
@@ -53,7 +55,20 @@
         "明确交付、授权和成功条件"
       ],
       "accept": "任务对象、边界及成功条件可查",
-      "exception": "重要歧义/授权不足，提出必要决定，不擅定目标"
+      "exception": "重要歧义/授权不足，提出必要决定，不擅定目标",
+      "conditionalKnowledge": [
+        {
+          "id": "K-LEARN",
+          "when": "目标涉及人的学习、独立胜任或代办取舍；分开辅助产物与独立能力验收",
+          "source": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            24,
+            39
+          ],
+          "blob": "68d69028dacfc09e94037791828364a65d222bc6"
+        }
+      ]
     },
     {
       "id": "G2",
@@ -66,7 +81,8 @@
         "反馈"
       ],
       "output": [
-        "工作订单"
+        "工作订单",
+        "工作阻塞"
       ],
       "questions": [
         "P1",
@@ -76,11 +92,13 @@
       "knowledge": [
         "K-REAL",
         "K-STOP",
-        "K-DECISION"
+        "K-DECISION",
+        "K-BUDGET"
       ],
       "source": [
         "planning/proposal-review-v0.1.md",
-        "research/ACTIVE-RESEARCH-LEDGER.md"
+        "research/ACTIVE-RESEARCH-LEDGER.md",
+        "research/2026-11-27-deep-cognitive-production-and-execution-budget.md"
       ],
       "activities": [
         "衡量价值和竞争路径",
@@ -88,7 +106,20 @@
         "选实际下一动作"
       ],
       "accept": "明确工作对象、投入/停止与复开条件",
-      "exception": "无可行工作标具体阻塞，不用报告冒充交付"
+      "exception": "无可行工作标具体阻塞，不用报告冒充交付",
+      "conditionalKnowledge": [
+        {
+          "id": "K-BUDGET",
+          "when": "短时结束或中断时区分运行时长、有效劳动、日志缺口和停止原因",
+          "source": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            3,
+            5
+          ],
+          "blob": "ca9d0ccf837e619544e60331acf48a721fa9c169"
+        }
+      ]
     },
     {
       "id": "G3",
@@ -101,7 +132,8 @@
         "反馈"
       ],
       "output": [
-        "授权决定"
+        "授权决定",
+        "工作阻塞"
       ],
       "questions": [
         "P1",
@@ -134,7 +166,8 @@
         "纠正要求"
       ],
       "output": [
-        "证据包"
+        "证据包",
+        "工作阻塞"
       ],
       "questions": [
         "P2",
@@ -146,11 +179,15 @@
         "K-UNKNOWN",
         "K-SEARCH",
         "K-CAP",
-        "K-PROV"
+        "K-PROV",
+        "K-DATA",
+        "K-TIME"
       ],
       "source": [
         "research/2026-11-16-external-intelligence-layer.md",
-        "knowledge/source-register-2026-11-05.md"
+        "knowledge/source-register-2026-11-05.md",
+        "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "research/2026-11-27-named-expert-full-domain-audit-v2.md"
       ],
       "activities": [
         "按机制找原始材料",
@@ -158,7 +195,31 @@
         "保存时点/对象/来源"
       ],
       "accept": "来源定位、证据缺口与候选结论分离",
-      "exception": "找不到原始证据则降级，不凭摘要宣称真值"
+      "exception": "找不到原始证据则降级，不凭摘要宣称真值",
+      "conditionalKnowledge": [
+        {
+          "id": "K-DATA",
+          "when": "数据驱动或历史时点任务核字段语义、实际可用时间及转换",
+          "source": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            5,
+            16
+          ],
+          "blob": "f523c36fc83dab158e919ede0b50813ca35ec854"
+        },
+        {
+          "id": "K-TIME",
+          "when": "历史证据或版本审计固定对象、提交、可见性截止；当前文件非旧时事实",
+          "source": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            12,
+            21
+          ],
+          "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe"
+        }
+      ]
     },
     {
       "id": "C2",
@@ -183,12 +244,18 @@
         "K-FACET",
         "K-PROV",
         "K-POLLUTE",
-        "K-HOOK"
+        "K-HOOK",
+        "K-TRIANG",
+        "K-DATA",
+        "K-TIME"
       ],
       "source": [
         "knowledge/INDEX.md",
         "knowledge/foundations/knowledge-lifecycle-nine-stages.md",
-        "knowledge/foundations/organization-protocol.md"
+        "knowledge/foundations/organization-protocol.md",
+        "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+        "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "research/2026-11-27-named-expert-full-domain-audit-v2.md"
       ],
       "activities": [
         "主张级恢复、浓缩及关系判断",
@@ -196,7 +263,42 @@
         "选择与任务有关的知识"
       ],
       "accept": "对象/条件/版本/行动关系成立，保留原件",
-      "exception": "来源错绑或冲突回C1；不适用或不足则不采用"
+      "exception": "来源错绑或冲突回C1；不适用或不足则不采用",
+      "conditionalKnowledge": [
+        {
+          "id": "K-TRIANG",
+          "when": "理论互证时核适用性、致命反例及边界；阶段认可不是实际运行",
+          "source": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            10,
+            21
+          ],
+          "blob": "9e27aa313841a63b14efeb073aa70f7420c4d8e9"
+        },
+        {
+          "id": "K-DATA",
+          "when": "数据驱动或历史时点任务核字段语义、实际可用时间及转换",
+          "source": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            5,
+            16
+          ],
+          "blob": "f523c36fc83dab158e919ede0b50813ca35ec854"
+        },
+        {
+          "id": "K-TIME",
+          "when": "历史证据或版本审计固定对象、提交、可见性截止；当前文件非旧时事实",
+          "source": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            12,
+            21
+          ],
+          "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe"
+        }
+      ]
     },
     {
       "id": "C3",
@@ -211,7 +313,8 @@
         "纠正要求"
       ],
       "output": [
-        "方案"
+        "方案",
+        "工作阻塞"
       ],
       "questions": [
         "P2",
@@ -223,12 +326,14 @@
         "K-CAP",
         "K-HOOK",
         "K-PROMPT",
-        "K-RUNTIME"
+        "K-RUNTIME",
+        "K-RESILIENCE"
       ],
       "source": [
         "prompts/professional-task-modules.md",
         "research/2026-11-27-named-expert-full-domain-audit-v2.md",
-        "research/workflow-components-and-boundaries.md"
+        "research/workflow-components-and-boundaries.md",
+        "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md"
       ],
       "activities": [
         "匹配具体专业机制而非角色名称",
@@ -236,7 +341,20 @@
         "规定操作、依赖与验收"
       ],
       "accept": "方案有对象、专业方法、输入、条件、否决与接收方",
-      "exception": "能力不可用回S1或G2，不冒充独立专家"
+      "exception": "能力不可用回S1或G2，不冒充独立专家",
+      "conditionalKnowledge": [
+        {
+          "id": "K-RESILIENCE",
+          "when": "只在网络容量、可达性和中断情景问题使用；保持固定决策，逐情景检验可行性",
+          "source": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            11,
+            25
+          ],
+          "blob": "db7c8500052078abcb088af945ac3b467a60ce05"
+        }
+      ]
     },
     {
       "id": "C4",
@@ -251,7 +369,8 @@
         "纠正要求"
       ],
       "output": [
-        "实际产物"
+        "实际产物",
+        "工作阻塞"
       ],
       "questions": [
         "P6",
@@ -284,7 +403,9 @@
         "实际产物",
         "任务规格",
         "方案",
-        "证据包"
+        "证据包",
+        "工作阻塞",
+        "知识修订"
       ],
       "output": [
         "验收结果",
@@ -297,19 +418,86 @@
       "knowledge": [
         "K-EVAL",
         "K-RECEIPT",
-        "K-PROV"
+        "K-PROV",
+        "K-LEARN",
+        "K-TRIANG",
+        "K-DATA",
+        "K-RESILIENCE",
+        "K-TIME"
       ],
       "source": [
         "evaluation/first-cross-domain-tests.md",
-        "research/artifacts/semantic-reorganization/v4-evidence-use-guard.cjs"
+        "research/artifacts/semantic-reorganization/v4-evidence-use-guard.cjs",
+        "research/2026-11-07-human-ai-delegation-performance-learning.md",
+        "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+        "research/2026-11-27-r36-temporal-audit-recovery.md",
+        "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+        "research/2026-11-27-named-expert-full-domain-audit-v2.md"
       ],
       "activities": [
         "核任务条件及专业真值",
         "比较结果和反例",
         "交付成果、限制、未完成"
       ],
-      "accept": "区分实际运行、静态验证、模型独立验证与价值",
-      "exception": "失败回具体责任节点，不将缺证据作通过"
+      "accept": "区分实际运行、静态验证、模型独立验证与价值；最终修订须再验，阻塞另记未完成",
+      "exception": "失败回具体责任节点，不将缺证据作通过",
+      "conditionalKnowledge": [
+        {
+          "id": "K-LEARN",
+          "when": "目标涉及人的学习、独立胜任或代办取舍；分开辅助产物与独立能力验收",
+          "source": "research/2026-11-07-human-ai-delegation-performance-learning.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            24,
+            39
+          ],
+          "blob": "68d69028dacfc09e94037791828364a65d222bc6"
+        },
+        {
+          "id": "K-TRIANG",
+          "when": "理论互证时核适用性、致命反例及边界；阶段认可不是实际运行",
+          "source": "research/2026-11-07-theoretical-triangulation-provisional-acceptance.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            10,
+            21
+          ],
+          "blob": "9e27aa313841a63b14efeb073aa70f7420c4d8e9"
+        },
+        {
+          "id": "K-DATA",
+          "when": "数据驱动或历史时点任务核字段语义、实际可用时间及转换",
+          "source": "research/2026-11-27-r36-temporal-audit-recovery.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            5,
+            16
+          ],
+          "blob": "f523c36fc83dab158e919ede0b50813ca35ec854"
+        },
+        {
+          "id": "K-RESILIENCE",
+          "when": "只在网络容量、可达性和中断情景问题使用；保持固定决策，逐情景检验可行性",
+          "source": "research/2026-11-27-v23-6-composed-professional-work-network-resilience.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            11,
+            25
+          ],
+          "blob": "db7c8500052078abcb088af945ac3b467a60ce05"
+        },
+        {
+          "id": "K-TIME",
+          "when": "历史证据或版本审计固定对象、提交、可见性截止；当前文件非旧时事实",
+          "source": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            12,
+            21
+          ],
+          "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe"
+        }
+      ]
     },
     {
       "id": "S1",
@@ -323,7 +511,8 @@
         "纠正要求"
       ],
       "output": [
-        "能力状态"
+        "能力状态",
+        "工作阻塞"
       ],
       "questions": [
         "P2",
@@ -332,11 +521,13 @@
       "knowledge": [
         "K-CAP",
         "K-RUNTIME",
-        "K-AUTH"
+        "K-AUTH",
+        "K-BUDGET"
       ],
       "source": [
         "research/workflow-components-and-boundaries.md",
-        "research/2026-11-16-external-intelligence-layer.md"
+        "research/2026-11-16-external-intelligence-layer.md",
+        "research/2026-11-27-deep-cognitive-production-and-execution-budget.md"
       ],
       "activities": [
         "查已有成品与能力",
@@ -344,7 +535,20 @@
         "准备输入与回退"
       ],
       "accept": "可用性、许可与依赖明确",
-      "exception": "不可用时选择替代或阻塞，不提前建运行时"
+      "exception": "不可用时选择替代或阻塞，不提前建运行时",
+      "conditionalKnowledge": [
+        {
+          "id": "K-BUDGET",
+          "when": "短时结束或中断时区分运行时长、有效劳动、日志缺口和停止原因",
+          "source": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            3,
+            5
+          ],
+          "blob": "ca9d0ccf837e619544e60331acf48a721fa9c169"
+        }
+      ]
     },
     {
       "id": "S2",
@@ -405,20 +609,35 @@
       "knowledge": [
         "K-CONT",
         "K-RECEIPT",
-        "K-HOOK"
+        "K-HOOK",
+        "K-UI"
       ],
       "source": [
         "planning/research-to-github-v0.1.md",
         "research/ACTIVE-RESEARCH-LEDGER.md",
-        "AGENTS.md"
+        "AGENTS.md",
+        "research/2026-11-27-named-expert-full-domain-audit-v2.md"
       ],
       "activities": [
         "原位保存及版本锁定",
         "同步必要索引/工作台",
         "回读与唯一接力"
       ],
-      "accept": "实际Git提交与回读，保留未完成项",
-      "exception": "并行冲突停止覆盖；保存失败明示，独立接力另验"
+      "accept": "实际Git提交与回读，保留未完成项；保存检查点不晋升为成功",
+      "exception": "并行冲突停止覆盖；保存失败明示，独立接力另验",
+      "conditionalKnowledge": [
+        {
+          "id": "K-UI",
+          "when": "工作台或复制入口涉及同源投影；静态HTML不执行GPT",
+          "source": "research/2026-11-27-named-expert-full-domain-audit-v2.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            22,
+            25
+          ],
+          "blob": "8001b4bfd4e5b95c04ef838d4c5769ec98fd0cfe"
+        }
+      ]
     },
     {
       "id": "S4",
@@ -443,12 +662,14 @@
         "K-DEFECT",
         "K-EVAL",
         "K-EVOLVE",
-        "K-HOOK"
+        "K-HOOK",
+        "K-BUDGET"
       ],
       "source": [
         "knowledge/foundations/cross-layer-project-anchors.md",
         "knowledge/foundations/organization-protocol.md",
-        "prompts/professional-task-modules.md"
+        "prompts/professional-task-modules.md",
+        "research/2026-11-27-deep-cognitive-production-and-execution-budget.md"
       ],
       "activities": [
         "从结果追溯规格、对象与知识",
@@ -456,7 +677,20 @@
         "回归、重新进入实际工作"
       ],
       "accept": "具体责任/对象、操作、保持项、重新验收",
-      "exception": "根因未知保留假设，不将每次失败变新全局规则"
+      "exception": "根因未知保留假设，不将每次失败变新全局规则",
+      "conditionalKnowledge": [
+        {
+          "id": "K-BUDGET",
+          "when": "短时结束或中断时区分运行时长、有效劳动、日志缺口和停止原因",
+          "source": "research/2026-11-27-deep-cognitive-production-and-execution-budget.md",
+          "ref": "941f7d3442721cd526a8cc2b1720b2aee6b0ce52",
+          "lines": [
+            3,
+            5
+          ],
+          "blob": "ca9d0ccf837e619544e60331acf48a721fa9c169"
+        }
+      ]
     }
   ],
   "flows": [
@@ -529,6 +763,41 @@
           "from": "G1",
           "to": "C4",
           "artifact": "任务规格"
+        },
+        {
+          "from": "G2",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "G3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C4",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "S1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C5",
+          "to": "S3",
+          "artifact": "验收结果"
         }
       ],
       "feedback": [
@@ -548,7 +817,7 @@
           "artifact": "纠正要求"
         }
       ],
-      "boundary": "简单低风险工作可直接执行；跨行业事实和权限由行业任务本身决定。"
+      "boundary": "简单低风险工作可直接执行；跨行业事实和权限由行业任务本身决定。 同名产物不能代替同一任务、对象和版本的实际交接。"
     },
     {
       "id": "F2",
@@ -580,8 +849,13 @@
         },
         {
           "from": "S2",
-          "to": "S3",
+          "to": "C5",
           "artifact": "知识修订"
+        },
+        {
+          "from": "C5",
+          "to": "S3",
+          "artifact": "验收结果"
         }
       ],
       "optional": [
@@ -604,6 +878,41 @@
           "from": "C5",
           "to": "S2",
           "artifact": "验收结果"
+        },
+        {
+          "from": "G2",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "G3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C4",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "S1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C5",
+          "to": "S3",
+          "artifact": "验收结果"
         }
       ],
       "feedback": [
@@ -618,7 +927,7 @@
           "artifact": "纠正要求"
         }
       ],
-      "boundary": "理论可独立保留，未实跑的能力不晋升为已验证。"
+      "boundary": "理论可独立保留，未实跑的能力不晋升为已验证。 同名产物不能代替同一任务、对象和版本的实际交接。 治理修订后必须再验收。"
     },
     {
       "id": "F3",
@@ -670,8 +979,13 @@
         },
         {
           "from": "S2",
-          "to": "S3",
+          "to": "C5",
           "artifact": "知识修订"
+        },
+        {
+          "from": "C5",
+          "to": "S3",
+          "artifact": "验收结果"
         }
       ],
       "optional": [
@@ -689,6 +1003,36 @@
           "from": "C5",
           "to": "S3",
           "artifact": "验收结果"
+        },
+        {
+          "from": "G2",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "G3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C4",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "S1",
+          "to": "C5",
+          "artifact": "工作阻塞"
         }
       ],
       "feedback": [
@@ -708,7 +1052,7 @@
           "artifact": "纠正要求"
         }
       ],
-      "boundary": "局部操作完成不等于独立模型改善；原始证据和无影响资产保持。"
+      "boundary": "局部操作完成不等于独立模型改善；原始证据和无影响资产保持。 同名产物不能代替同一任务、对象和版本的实际交接。 治理修订后必须再验收。"
     },
     {
       "id": "F4",
@@ -769,6 +1113,41 @@
           "from": "G1",
           "to": "C4",
           "artifact": "任务规格"
+        },
+        {
+          "from": "G2",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "G3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C3",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C4",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "S1",
+          "to": "C5",
+          "artifact": "工作阻塞"
+        },
+        {
+          "from": "C5",
+          "to": "S3",
+          "artifact": "验收结果"
         }
       ],
       "feedback": [
@@ -783,14 +1162,16 @@
           "artifact": "反馈"
         }
       ],
-      "boundary": "只在用户要求整项目接力时使用；具体任务不能自动启动整轮研究。"
+      "boundary": "只在用户要求整项目接力时使用；具体任务不能自动启动整轮研究。 同名产物不能代替同一任务、对象和版本的实际交接。"
     }
   ],
   "relations": {
     "taxonomy": "G/C/S是流程职责分类；P1–P8为按问题选认知方法，六域为知识组织，K1–K9为知识生命周期；不得按编号强制执行。",
     "vertical": "目标→流程领域→流程→具体活动→现行知识编号/正本、输入和验收；原件内继续按颗粒度钻取。",
-    "horizontal": "流程的有向边表示实际产物和接收方；边上产物存在才准称接力；可跳步、并行、分叉、递归和回退。",
-    "crosscutting": "授权与证据约束覆盖每个动作；S2/S3/S4可按事件介入；专家、技能、工具是按需能力，不是固定部门。"
+    "horizontal": "有向边只是允许的产物类型；复杂交接绑定任务、对象、版本、生产者、接收者及实际证据；允许跳步、并行、分叉、递归和回退。",
+    "crosscutting": "授权与证据约束覆盖每个动作；S2/S3/S4可按事件介入；专家、技能、工具是按需能力，不是固定部门。",
+    "conditional": "28张现行语义卡均有条件入口；领域方法仅在专业条件成立时调用，不默认加载全部。",
+    "blocked": "阻塞进入C5并由S3保存检查点，不能称成功；知识修订后重新验收。"
   },
   "references": [
     "https://www.apqc.org/What-Is-Process-Architecture",
